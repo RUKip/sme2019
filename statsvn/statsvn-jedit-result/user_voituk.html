@@ -1,0 +1,601 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>StatSVN - /jEdit/trunk Developers: voituk</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+    <meta name="Generator" content="StatSVN 0.7.0"/>
+<link rel="stylesheet" href="objectlab-statcvs.css" type="text/css"/>
+<script type="text/javascript" charset="utf-8" src="http://bit.ly/javascript-api.js?version=latest&#38;login=statsvn&#38;apiKey=R_2c362b417d0517c27876cbaca1bb68cc"></script>
+<script type="text/javascript" charset="utf-8">
+   // wait until page is loaded to call API
+   var redir_url;
+   var short_url;
+   BitlyCB.myShortenCallback = function(data) {
+      // this is how to get a result of shortening a single url
+      var result;
+      short_url=null;
+      for (var r in data.results) {
+         result = data.results[r];
+         result['longUrl'] = r;
+         short_url = result['shortUrl'];
+         break;
+      }
+      if (short_url==null) // bit.ly failed
+      document.location=redir_url;
+      else
+      redirToTwitter();
+   };
+   function shortenTweet(url) {
+      if (short_url == null || redir_url!=url) {
+      redir_url = url;
+      BitlyClient.shorten(document.location, 'BitlyCB.myShortenCallback');
+      }
+      else
+      redirToTwitter();
+      return false;
+   }
+   function redirToTwitter() { 
+      // replace {0} which is visible as %7B0} in the link
+      document.location = redir_url.replace('%7B0}', short_url);
+   }
+</script>
+  </head>
+
+<body>
+
+<h1>/jEdit/trunk Developers: voituk</h1>
+<div id="parentlink">&#171; <a href="index.html">Development Statistics for /jEdit/trunk</a> &#171; <a href="developers.html">Developers</a></div>
+<dl class="attributes">
+    <dt>Login name:</dt>
+    <dd>voituk</dd>
+    <dt>Total Commits:</dt>
+    <dd>69 (0.2%)</dd>
+    <dt>Lines of Code:</dt>
+    <dd>372 (0.0%)</dd>
+    <dt>Most Recent Commit:</dt>
+    <dd><span class="date">2010-11-16 12:36</span></dd>
+    <dt>Tweet this:</dt>
+    <dd><a onclick="return shortenTweet(this.href);" href="http://twitter.com/home?status=voituk%20contributed%20372%20(0.0%25)%20lines%20to%20%2FjEdit%2Ftrunk%20%7B0}%20most%20recent%20commit%202010-11-16%20stats%20by%20StatSVN%20http%3A%2F%2Fstatsvn.org"><img style="border:0px" alt="Tweet this" src="tweet-this.png"/></a></dd>
+</dl>
+
+<div class="section">
+<h2>Activity by Clock Time</h2>
+<p class="chart"><img src="activity_time_voituk.png" alt="Activity by Hour of Day for voituk" width="800" height="500" /></p><p class="chart"><img src="activity_day_voituk.png" alt="Activity by Day of Week for voituk" width="800" height="500" /></p></div>
+<div class="section">
+<h2>Activity in Directories</h2>
+  <table  rules="groups" summary="Overview of this author's activities in different directories">
+    <colgroup align="left"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <thead>
+      <tr>
+        <th>Directory</th>
+        <th>Changes</th>
+        <th>Lines of Code</th>
+        <th>Lines per Change</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <th>Totals</th>
+        <td>69 (100.0%)</td>
+        <td>372 (100.0%)</td>
+        <td>5.3</td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_io.html" class="directory">org/gjt/sp/jedit/io/</a></th>
+        <td>5 (7.2%)</td>
+        <td>102 (27.4%)</td>
+        <td>20.4</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit.html" class="directory">org/gjt/sp/jedit/</a></th>
+        <td>9 (13.0%)</td>
+        <td>66 (17.7%)</td>
+        <td>7.3</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_macros_Text.html" class="directory">macros/Text/</a></th>
+        <td>4 (5.8%)</td>
+        <td>63 (16.9%)</td>
+        <td>15.7</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_util.html" class="directory">org/gjt/sp/util/</a></th>
+        <td>8 (11.6%)</td>
+        <td>37 (9.9%)</td>
+        <td>4.6</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_search.html" class="directory">org/gjt/sp/jedit/search/</a></th>
+        <td>1 (1.4%)</td>
+        <td>21 (5.6%)</td>
+        <td>21.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_bsh.html" class="directory">org/gjt/sp/jedit/bsh/</a></th>
+        <td>12 (17.4%)</td>
+        <td>20 (5.4%)</td>
+        <td>1.6</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_buffer.html" class="directory">org/gjt/sp/jedit/buffer/</a></th>
+        <td>2 (2.9%)</td>
+        <td>15 (4.0%)</td>
+        <td>7.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_gui.html" class="directory">org/gjt/sp/jedit/gui/</a></th>
+        <td>6 (8.7%)</td>
+        <td>13 (3.5%)</td>
+        <td>2.1</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_modes.html" class="directory">modes/</a></th>
+        <td>6 (8.7%)</td>
+        <td>9 (2.4%)</td>
+        <td>1.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir.html" class="directory">/</a></th>
+        <td>5 (7.2%)</td>
+        <td>8 (2.2%)</td>
+        <td>1.6</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_bsh_org_objectweb_asm.html" class="directory">org/gjt/sp/jedit/bsh/org/objectweb/asm/</a></th>
+        <td>1 (1.4%)</td>
+        <td>6 (1.6%)</td>
+        <td>6.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_bufferio.html" class="directory">org/gjt/sp/jedit/bufferio/</a></th>
+        <td>1 (1.4%)</td>
+        <td>3 (0.8%)</td>
+        <td>3.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_indent.html" class="directory">org/gjt/sp/jedit/indent/</a></th>
+        <td>2 (2.9%)</td>
+        <td>2 (0.5%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_help.html" class="directory">org/gjt/sp/jedit/help/</a></th>
+        <td>2 (2.9%)</td>
+        <td>2 (0.5%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_bsh_commands.html" class="directory">org/gjt/sp/jedit/bsh/commands/</a></th>
+        <td>1 (1.4%)</td>
+        <td>2 (0.5%)</td>
+        <td>2.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_textarea.html" class="directory">org/gjt/sp/jedit/textarea/</a></th>
+        <td>1 (1.4%)</td>
+        <td>1 (0.3%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_syntax.html" class="directory">org/gjt/sp/jedit/syntax/</a></th>
+        <td>1 (1.4%)</td>
+        <td>1 (0.3%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_browser.html" class="directory">org/gjt/sp/jedit/browser/</a></th>
+        <td>1 (1.4%)</td>
+        <td>1 (0.3%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_doc.html" class="directory">doc/</a></th>
+        <td>1 (1.4%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+<p class="chart"><img src="directory_sizes_voituk.png" alt="Activity of voituk" width="800" height="500" /></p></div>
+<div class="section">
+<h2>Most Recent Commits</h2>
+<dl class="commitlist">
+  <dt><a name="20"></a>
+    <a href="user_voituk.html" class="author">voituk</a>
+    <span class="date">2010-11-16 12:36</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">18975</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Added tag templates to Insert_Tag macros
+    </p>
+    <p class="commitdetails"><strong>30</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>macros/Text</strong>:
+        Insert_Tag.bsh&#160;<span class="change">(+30&#160;-10)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="19"></a>
+    <a href="user_voituk.html" class="author">voituk</a>
+    <span class="date">2010-10-27 09:49</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">18860</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fixed NPE if no tag specified.
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>macros/Text</strong>:
+        Insert_Tag.bsh&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="18"></a>
+    <a href="user_voituk.html" class="author">voituk</a>
+    <span class="date">2010-10-27 09:47</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">18859</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Added support for few nested tags (separated by space) input. For example: "ul li a" will insert &lt;ul&gt;&lt;li&gt;&lt;a&gt;...&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+    </p>
+    <p class="commitdetails"><strong>19</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>macros/Text</strong>:
+        Insert_Tag.bsh&#160;<span class="change">(+19&#160;-10)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="17"></a>
+    <a href="user_voituk.html" class="author">voituk</a>
+    <span class="date">2010-10-22 08:12</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">18812</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Join lines to inprove code readability (sorry for microcommit)
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/io</strong>:
+        VFSManager.java&#160;<span class="change">(+1&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="16"></a>
+    <a href="user_voituk.html" class="author">voituk</a>
+    <span class="date">2010-10-22 08:11</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">18811</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+The Task for asynchronous saving local file to disk ommiting VFS API stack.
+    </p>
+    <p class="commitdetails"><strong>91</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/io</strong>:
+        LocalFileSaveTask.java&#160;<span class="new">(new&#160;91)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="15"></a>
+    <a href="user_voituk.html" class="author">voituk</a>
+    <span class="date">2010-10-15 12:49</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">18780</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+removed by Matthiew`s request
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        .gitignore&#160;<span class="del">(del)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="14"></a>
+    <a href="user_voituk.html" class="author">voituk</a>
+    <span class="date">2010-10-15 08:49</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">18779</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Added .gitignore file to the ones, who are using 'git svn' while working on jEdit. (like me and sholmy for example)
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        .gitignore&#160;<span class="new">(new)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="13"></a>
+    <a href="user_voituk.html" class="author">voituk</a>
+    <span class="date">2010-10-10 13:19</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">18758</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Hey folks! Are we still using 80 chars/line? Don`t think so!
+    </p>
+    <p class="commitdetails"><strong>8</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/io</strong>:
+        VFS.java&#160;<span class="change">(+6&#160;-4)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/util</strong>:
+        Task.java&#160;<span class="change">(+1&#160;-2)</span>,
+        ThreadUtilities.java&#160;<span class="change">(+1&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="12"></a>
+    <a href="user_voituk.html" class="author">voituk</a>
+    <span class="date">2010-10-10 13:18</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">18757</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Organized imports
+    </p>
+    <p class="commitdetails"><strong>5</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/util</strong>:
+        ThreadUtilities.java&#160;<span class="change">(+5&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="11"></a>
+    <a href="user_voituk.html" class="author">voituk</a>
+    <span class="date">2010-09-29 13:58</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">18645</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Added few more CSS properties to KEYWORDS list
+    </p>
+    <p class="commitdetails"><strong>3</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modes</strong>:
+        css.xml&#160;<span class="change">(+3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="10"></a>
+    <a href="user_voituk.html" class="author">voituk</a>
+    <span class="date">2010-07-29 10:47</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">18274</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Added CSS3 last-child pseudo-class
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modes</strong>:
+        css.xml&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="9"></a>
+    <a href="user_voituk.html" class="author">voituk</a>
+    <span class="date">2010-06-18 22:07</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">18112</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Minor code refactoring
+    </p>
+    <p class="commitdetails"><strong>3</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/util</strong>:
+        StringList.java&#160;<span class="change">(+3&#160;-7)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="8"></a>
+    <a href="user_voituk.html" class="author">voituk</a>
+    <span class="date">2010-06-04 10:41</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">17984</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+- Added @since tag to new param-less JEditBuffer.getText() method<br />
+- Noted about this metod into API Changes secion of doc/CHANGES.txt<br />
+
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(changed)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/buffer</strong>:
+        JEditBuffer.java&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="7"></a>
+    <a href="user_voituk.html" class="author">voituk</a>
+    <span class="date">2010-06-03 14:53</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">17972</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+md5() method moved from MictUtilities to StandardUtilities (in according to Matthieu advise)
+    </p>
+    <p class="commitdetails"><strong>27</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        Buffer.java&#160;<span class="change">(+2&#160;-1)</span>,
+        MiscUtilities.java&#160;<span class="change">(-22)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/util</strong>:
+        StandardUtilities.java&#160;<span class="change">(+25)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="6"></a>
+    <a href="user_voituk.html" class="author">voituk</a>
+    <span class="date">2010-06-03 13:56</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">17971</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Added MiscUtilities.md5() method for calculating md5sum of the string<br />
+and as result Buffer.calculateHash() method refactored to avoid code duplications.	<br />
+
+    </p>
+    <p class="commitdetails"><strong>48</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        Buffer.java&#160;<span class="change">(+26&#160;-44)</span>,
+        MiscUtilities.java&#160;<span class="change">(+22)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="5"></a>
+    <a href="user_voituk.html" class="author">voituk</a>
+    <span class="date">2010-06-03 13:18</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">17970</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Added convenience method getText() as alias to getText(0, getLength())
+    </p>
+    <p class="commitdetails"><strong>15</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/buffer</strong>:
+        JEditBuffer.java&#160;<span class="change">(+15)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="4"></a>
+    <a href="user_voituk.html" class="author">voituk</a>
+    <span class="date">2010-05-10 09:22</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">17793</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Prevent warning in Ant 1.8
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        build.xml&#160;<span class="change">(+2&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="3"></a>
+    <a href="user_voituk.html" class="author">voituk</a>
+    <span class="date">2010-03-11 17:33</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">17453</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Before this commit, each VFS implementation was cared about backups feature status itself.<br />
+Now BufferSaveRequest class cares about this and call VFS::_backup() method if "backup" option enabled only.<br />
+<br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>5</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/bufferio</strong>:
+        BufferSaveRequest.java&#160;<span class="change">(+3&#160;-2)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/io</strong>:
+        FileVFS.java&#160;<span class="change">(+2&#160;-6)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="2"></a>
+    <a href="user_voituk.html" class="author">voituk</a>
+    <span class="date">2009-08-19 07:35</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">15981</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Added new Compose_Tag macro docbook xml description<br />
+
+    </p>
+    <p class="commitdetails"><strong>12</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>macros/Text</strong>:
+        Compose_Tag.bsh&#160;<span class="change">(+12)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="1"></a>
+    <a href="user_voituk.html" class="author">voituk</a>
+    <span class="date">2009-07-25 10:10</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">15769</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Commented antialiazing text rendering enabled on MacOSX due this discussion<br />
+<a href="https://sourceforge.net/tracker">https://sourceforge.net/tracker</a>/?func=detail&amp;atid=100588&amp;aid=2820535&amp;group_id=588<br />
+
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        build.xml&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+</dl>
+
+<p>(7 more)</p>
+</div><div id="generatedby">Generated by <a href="http://www.statsvn.org">StatSVN</a> 0.7.0</div>
+</body>
+</html>

@@ -1,0 +1,407 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>StatSVN - Directory macros/Interface/</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+    <meta name="Generator" content="StatSVN 0.7.0"/>
+<link rel="stylesheet" href="objectlab-statcvs.css" type="text/css"/>
+<script type="text/javascript" charset="utf-8" src="http://bit.ly/javascript-api.js?version=latest&#38;login=statsvn&#38;apiKey=R_2c362b417d0517c27876cbaca1bb68cc"></script>
+<script type="text/javascript" charset="utf-8">
+   // wait until page is loaded to call API
+   var redir_url;
+   var short_url;
+   BitlyCB.myShortenCallback = function(data) {
+      // this is how to get a result of shortening a single url
+      var result;
+      short_url=null;
+      for (var r in data.results) {
+         result = data.results[r];
+         result['longUrl'] = r;
+         short_url = result['shortUrl'];
+         break;
+      }
+      if (short_url==null) // bit.ly failed
+      document.location=redir_url;
+      else
+      redirToTwitter();
+   };
+   function shortenTweet(url) {
+      if (short_url == null || redir_url!=url) {
+      redir_url = url;
+      BitlyClient.shorten(document.location, 'BitlyCB.myShortenCallback');
+      }
+      else
+      redirToTwitter();
+      return false;
+   }
+   function redirToTwitter() { 
+      // replace {0} which is visible as %7B0} in the link
+      document.location = redir_url.replace('%7B0}', short_url);
+   }
+</script>
+  </head>
+
+<body>
+
+<h1>Directory macros/Interface/</h1>
+<div id="parentlink">&#171; <a href="index.html">Development Statistics for /jEdit/trunk</a></div>
+<dl class="attributes">
+    <dt>Directory Created:</dt>
+    <dd><span class="date">2003-10-26 21:57</span></dd>
+    <dt>Total Files:</dt>
+    <dd>9</dd>
+    <dt>Deleted Files:</dt>
+    <dd>1</dd>
+    <dt>Lines of Code:</dt>
+    <dd>338</dd>
+</dl>
+<p class="dirtree">
+<a href="dir.html">[root]</a>/<a href="dir_macros.html">macros</a>/<strong>Interface</strong><br/>
+</p>
+
+<div class="section">
+<h2>Lines of Code</h2>
+<p class="chart"><img src="loc_module_macros_Interface.png" alt="macros/Interface/ Lines of Code" width="800" height="500" /></p></div>
+<div class="section">
+<h2>Developers</h2>
+  <table  rules="groups" summary="All authors and the number of their changes and lines of code in this directory">
+    <colgroup align="left"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <thead>
+      <tr>
+        <th>Author</th>
+        <th>Changes</th>
+        <th>Lines of Code</th>
+        <th>Lines per Change</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <th>Totals</th>
+        <td>41 (100.0%)</td>
+        <td>708 (100.0%)</td>
+        <td>17.2</td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr  class="odd">
+        <th><a href="user_Vampire0.html" class="author">Vampire0</a></th>
+        <td>19 (46.3%)</td>
+        <td>338 (47.7%)</td>
+        <td>17.7</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_spestov.html" class="author">spestov</a></th>
+        <td>14 (34.1%)</td>
+        <td>273 (38.6%)</td>
+        <td>19.5</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_ezust.html" class="author">ezust</a></th>
+        <td>5 (12.2%)</td>
+        <td>86 (12.1%)</td>
+        <td>17.2</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_jojaba_67.html" class="author">jojaba_67</a></th>
+        <td>2 (4.9%)</td>
+        <td>10 (1.4%)</td>
+        <td>5.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_vanza.html" class="author">vanza</a></th>
+        <td>1 (2.4%)</td>
+        <td>1 (0.1%)</td>
+        <td>1.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+<div class="section">
+<h2>Most Recent Commits</h2>
+<dl class="commitlist">
+  <dt><a name="13"></a>
+    <a href="user_Vampire0.html" class="author">Vampire0</a>
+    <span class="date">2013-08-31 12:39</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">23162</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+reinstantiate trunk and branches
+    </p>
+    <p class="commitdetails"><strong>338</strong> lines of code changed in <span class="files">9 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>macros/Interface</strong>:
+        Decrease_Font_Size.bsh&#160;<span class="new">(new&#160;42)</span>,
+        Increase_Font_Size.bsh&#160;<span class="new">(new&#160;42)</span>,
+        Open_Context_Menu.bsh&#160;<span class="new">(new&#160;28)</span>,
+        Reset_TextArea.bsh&#160;<span class="new">(new&#160;16)</span>,
+        Splitpane_Grow.bsh&#160;<span class="new">(new&#160;58)</span>,
+        Toggle_Bottom_Docking_Area.bsh&#160;<span class="new">(new&#160;44)</span>,
+        Toggle_Left_Docking_Area.bsh&#160;<span class="new">(new&#160;36)</span>,
+        Toggle_Right_Docking_Area.bsh&#160;<span class="new">(new&#160;36)</span>,
+        Toggle_Top_Docking_Area.bsh&#160;<span class="new">(new&#160;36)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="12"></a>
+    <a href="user_Vampire0.html" class="author">Vampire0</a>
+    <span class="date">2013-08-27 22:41</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">23150</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+put tombstone in place, official repository for jEdit core is now in Git
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">10 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>macros/Interface</strong>:
+        Cascade_jEdit_Windows.bsh&#160;<span class="del">(del)</span>,
+        Decrease_Font_Size.bsh&#160;<span class="del">(del)</span>,
+        Increase_Font_Size.bsh&#160;<span class="del">(del)</span>,
+        Open_Context_Menu.bsh&#160;<span class="del">(del)</span>,
+        Reset_TextArea.bsh&#160;<span class="del">(del)</span>,
+        Splitpane_Grow.bsh&#160;<span class="del">(del)</span>,
+        Toggle_Bottom_Docking_Area.bsh&#160;<span class="del">(del)</span>,
+        Toggle_Left_Docking_Area.bsh&#160;<span class="del">(del)</span>,
+        Toggle_Right_Docking_Area.bsh&#160;<span class="del">(del)</span>,
+        Toggle_Top_Docking_Area.bsh&#160;<span class="del">(del)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="11"></a>
+    <a href="user_jojaba_67.html" class="author">jojaba_67</a>
+    <span class="date">2012-03-14 10:46</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">21353</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Almost all macros localization.
+    </p>
+    <p class="commitdetails"><strong>10</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>macros/Interface</strong>:
+        Decrease_Font_Size.bsh&#160;<span class="change">(+5&#160;-1)</span>,
+        Increase_Font_Size.bsh&#160;<span class="change">(+5&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="10"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2011-02-01 22:27</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">19325</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Support more than 2 editpanes in splitpane_grow.<br />
+
+    </p>
+    <p class="commitdetails"><strong>10</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>macros/Interface</strong>:
+        Splitpane_Grow.bsh&#160;<span class="change">(+10&#160;-9)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="9"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2010-10-03 00:17</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">18701</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Added a short delay to reset_textarea so it works again.
+    </p>
+    <p class="commitdetails"><strong>11</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>macros/Interface</strong>:
+        Reset_TextArea.bsh&#160;<span class="change">(+11&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="8"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2008-02-24 21:52</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">11859</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+A macro that I find I need often enough that it should be added<br />
+to jEdit core, at least until the textarea issues are fixed.<br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>8</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>macros/Interface</strong>:
+        Reset_TextArea.bsh&#160;<span class="new">(new&#160;8)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="7"></a>
+    <a href="user_vanza.html" class="author">vanza</a>
+    <span class="date">2007-06-17 21:59</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">9820</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+- change open context menu macro to use new method in JEditTextArea<br />
+- make the JEditTextArea code behave like the old macro<br />
+- "undeprecate" GUIUtilities.showPopupMenu(), but keep the comment about using JComponent#setComponentPopupMenu().
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>macros/Interface</strong>:
+        Open_Context_Menu.bsh&#160;<span class="change">(+1&#160;-12)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="6"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2006-10-24 20:42</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">7634</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Patch 1577448 by k_satoda<br />
+<br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>macros/Interface</strong>:
+        Open_Context_Menu.bsh&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="5"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2005-09-20 19:12</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">5278</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+*** empty log message ***<br />
+
+    </p>
+    <p class="commitdetails"><strong>57</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>macros/Interface</strong>:
+        Splitpane_Grow.bsh&#160;<span class="new">(new&#160;57)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="4"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-12-23 03:15</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4938</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+various bug fixes<br />
+
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>macros/Interface</strong>:
+        Increase_Font_Size.bsh&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="3"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-12-22 05:14</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4937</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+documentation updates; updated macro index to match included set of macros; added a macro that was missing from cvs<br />
+
+    </p>
+    <p class="commitdetails"><strong>4</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>macros/Interface</strong>:
+        Decrease_Font_Size.bsh&#160;<span class="change">(+1&#160;-1)</span>,
+        Open_Context_Menu.bsh&#160;<span class="change">(+2&#160;-2)</span>,
+        Toggle_Right_Docking_Area.bsh&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="2"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-11-22 21:32</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4921</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+updated font size switching macros, new mqsc mode, vfs browser performance fix<br />
+
+    </p>
+    <p class="commitdetails"><strong>5</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>macros/Interface</strong>:
+        Decrease_Font_Size.bsh&#160;<span class="change">(+3&#160;-1)</span>,
+        Increase_Font_Size.bsh&#160;<span class="change">(+2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="1"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-10-26 21:57</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4906</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+some macros from ollie<br />
+
+    </p>
+    <p class="commitdetails"><strong>263</strong> lines of code changed in <span class="files">8 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>macros/Interface</strong>:
+        Cascade_jEdit_Windows.bsh&#160;<span class="new">(new)</span>,
+        Decrease_Font_Size.bsh&#160;<span class="new">(new&#160;36)</span>,
+        Increase_Font_Size.bsh&#160;<span class="new">(new&#160;36)</span>,
+        Open_Context_Menu.bsh&#160;<span class="new">(new&#160;39)</span>,
+        Toggle_Bottom_Docking_Area.bsh&#160;<span class="new">(new&#160;44)</span>,
+        Toggle_Left_Docking_Area.bsh&#160;<span class="new">(new&#160;36)</span>,
+        Toggle_Right_Docking_Area.bsh&#160;<span class="new">(new&#160;36)</span>,
+        Toggle_Top_Docking_Area.bsh&#160;<span class="new">(new&#160;36)</span>
+      </li>
+    </ul>
+  </dd>
+
+</dl>
+
+</div><div id="generatedby">Generated by <a href="http://www.statsvn.org">StatSVN</a> 0.7.0</div>
+</body>
+</html>

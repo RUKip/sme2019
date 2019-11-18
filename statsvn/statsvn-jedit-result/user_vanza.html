@@ -1,0 +1,724 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>StatSVN - /jEdit/trunk Developers: vanza</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+    <meta name="Generator" content="StatSVN 0.7.0"/>
+<link rel="stylesheet" href="objectlab-statcvs.css" type="text/css"/>
+<script type="text/javascript" charset="utf-8" src="http://bit.ly/javascript-api.js?version=latest&#38;login=statsvn&#38;apiKey=R_2c362b417d0517c27876cbaca1bb68cc"></script>
+<script type="text/javascript" charset="utf-8">
+   // wait until page is loaded to call API
+   var redir_url;
+   var short_url;
+   BitlyCB.myShortenCallback = function(data) {
+      // this is how to get a result of shortening a single url
+      var result;
+      short_url=null;
+      for (var r in data.results) {
+         result = data.results[r];
+         result['longUrl'] = r;
+         short_url = result['shortUrl'];
+         break;
+      }
+      if (short_url==null) // bit.ly failed
+      document.location=redir_url;
+      else
+      redirToTwitter();
+   };
+   function shortenTweet(url) {
+      if (short_url == null || redir_url!=url) {
+      redir_url = url;
+      BitlyClient.shorten(document.location, 'BitlyCB.myShortenCallback');
+      }
+      else
+      redirToTwitter();
+      return false;
+   }
+   function redirToTwitter() { 
+      // replace {0} which is visible as %7B0} in the link
+      document.location = redir_url.replace('%7B0}', short_url);
+   }
+</script>
+  </head>
+
+<body>
+
+<h1>/jEdit/trunk Developers: vanza</h1>
+<div id="parentlink">&#171; <a href="index.html">Development Statistics for /jEdit/trunk</a> &#171; <a href="developers.html">Developers</a></div>
+<dl class="attributes">
+    <dt>Login name:</dt>
+    <dd>vanza</dd>
+    <dt>Total Commits:</dt>
+    <dd>572 (1.9%)</dd>
+    <dt>Lines of Code:</dt>
+    <dd>10,255 (1.1%)</dd>
+    <dt>Most Recent Commit:</dt>
+    <dd><span class="date">2015-02-12 05:54</span></dd>
+    <dt>Tweet this:</dt>
+    <dd><a onclick="return shortenTweet(this.href);" href="http://twitter.com/home?status=vanza%20contributed%2010%2C255%20(1.1%25)%20lines%20to%20%2FjEdit%2Ftrunk%20%7B0}%20most%20recent%20commit%202015-02-12%20stats%20by%20StatSVN%20http%3A%2F%2Fstatsvn.org"><img style="border:0px" alt="Tweet this" src="tweet-this.png"/></a></dd>
+</dl>
+
+<div class="section">
+<h2>Activity by Clock Time</h2>
+<p class="chart"><img src="activity_time_vanza.png" alt="Activity by Hour of Day for vanza" width="800" height="500" /></p><p class="chart"><img src="activity_day_vanza.png" alt="Activity by Day of Week for vanza" width="800" height="500" /></p></div>
+<div class="section">
+<h2>Activity in Directories</h2>
+  <table  rules="groups" summary="Overview of this author's activities in different directories">
+    <colgroup align="left"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <thead>
+      <tr>
+        <th>Directory</th>
+        <th>Changes</th>
+        <th>Lines of Code</th>
+        <th>Lines per Change</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <th>Totals</th>
+        <td>572 (100.0%)</td>
+        <td>10255 (100.0%)</td>
+        <td>17.9</td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr  class="odd">
+        <th><a href="dir_modes.html" class="directory">modes/</a></th>
+        <td>239 (41.8%)</td>
+        <td>2506 (24.4%)</td>
+        <td>10.4</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit.html" class="directory">org/gjt/sp/jedit/</a></th>
+        <td>77 (13.5%)</td>
+        <td>1475 (14.4%)</td>
+        <td>19.1</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_syntax.html" class="directory">org/gjt/sp/jedit/syntax/</a></th>
+        <td>34 (5.9%)</td>
+        <td>1078 (10.5%)</td>
+        <td>31.7</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_gui.html" class="directory">org/gjt/sp/jedit/gui/</a></th>
+        <td>11 (1.9%)</td>
+        <td>900 (8.8%)</td>
+        <td>81.8</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_util.html" class="directory">org/gjt/sp/util/</a></th>
+        <td>14 (2.4%)</td>
+        <td>786 (7.7%)</td>
+        <td>56.1</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_doc.html" class="directory">doc/</a></th>
+        <td>61 (10.7%)</td>
+        <td>537 (5.2%)</td>
+        <td>8.8</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_browser.html" class="directory">org/gjt/sp/jedit/browser/</a></th>
+        <td>7 (1.2%)</td>
+        <td>483 (4.7%)</td>
+        <td>69.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_indent.html" class="directory">org/gjt/sp/jedit/indent/</a></th>
+        <td>24 (4.2%)</td>
+        <td>342 (3.3%)</td>
+        <td>14.2</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_buffer.html" class="directory">org/gjt/sp/jedit/buffer/</a></th>
+        <td>15 (2.6%)</td>
+        <td>340 (3.3%)</td>
+        <td>22.6</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_io.html" class="directory">org/gjt/sp/jedit/io/</a></th>
+        <td>11 (1.9%)</td>
+        <td>284 (2.8%)</td>
+        <td>25.8</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_options.html" class="directory">org/gjt/sp/jedit/options/</a></th>
+        <td>10 (1.7%)</td>
+        <td>258 (2.5%)</td>
+        <td>25.8</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_search.html" class="directory">org/gjt/sp/jedit/search/</a></th>
+        <td>19 (3.3%)</td>
+        <td>214 (2.1%)</td>
+        <td>11.2</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_bsh.html" class="directory">bsh/</a></th>
+        <td>1 (0.2%)</td>
+        <td>202 (2.0%)</td>
+        <td>202.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_menu.html" class="directory">org/gjt/sp/jedit/menu/</a></th>
+        <td>4 (0.7%)</td>
+        <td>161 (1.6%)</td>
+        <td>40.2</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_pluginmgr.html" class="directory">org/gjt/sp/jedit/pluginmgr/</a></th>
+        <td>10 (1.7%)</td>
+        <td>153 (1.5%)</td>
+        <td>15.3</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_jars_MacOS_macos.html" class="directory">jars/MacOS/macos/</a></th>
+        <td>2 (0.3%)</td>
+        <td>110 (1.1%)</td>
+        <td>55.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_textarea.html" class="directory">org/gjt/sp/jedit/textarea/</a></th>
+        <td>12 (2.1%)</td>
+        <td>105 (1.0%)</td>
+        <td>8.7</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_msg.html" class="directory">org/gjt/sp/jedit/msg/</a></th>
+        <td>4 (0.7%)</td>
+        <td>86 (0.8%)</td>
+        <td>21.5</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_doc_users-guide.html" class="directory">doc/users-guide/</a></th>
+        <td>5 (0.9%)</td>
+        <td>74 (0.7%)</td>
+        <td>14.8</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_bufferio.html" class="directory">org/gjt/sp/jedit/bufferio/</a></th>
+        <td>3 (0.5%)</td>
+        <td>59 (0.6%)</td>
+        <td>19.6</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir.html" class="directory">/</a></th>
+        <td>2 (0.3%)</td>
+        <td>44 (0.4%)</td>
+        <td>22.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_doclet.html" class="directory">doclet/</a></th>
+        <td>2 (0.3%)</td>
+        <td>28 (0.3%)</td>
+        <td>14.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_help.html" class="directory">org/gjt/sp/jedit/help/</a></th>
+        <td>2 (0.3%)</td>
+        <td>23 (0.2%)</td>
+        <td>11.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_installer.html" class="directory">installer/</a></th>
+        <td>1 (0.2%)</td>
+        <td>4 (0.0%)</td>
+        <td>4.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_jars_MacOS.html" class="directory">jars/MacOS/</a></th>
+        <td>1 (0.2%)</td>
+        <td>2 (0.0%)</td>
+        <td>2.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_macros_Interface.html" class="directory">macros/Interface/</a></th>
+        <td>1 (0.2%)</td>
+        <td>1 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+<p class="chart"><img src="directory_sizes_vanza.png" alt="Activity of vanza" width="800" height="500" /></p></div>
+<div class="section">
+<h2>Most Recent Commits</h2>
+<dl class="commitlist">
+  <dt><a name="20"></a>
+    <a href="user_vanza.html" class="author">vanza</a>
+    <span class="date">2015-02-12 05:54</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">23861</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fix AWT thread-safety issue in VFSManager.error().<br />
+<br />
+JOptionPane.getFrameForComponent(comp) can cause a deadlock if called<br />
+from a thread that is not the EDT. So fix that.
+    </p>
+    <p class="commitdetails"><strong>36</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/io</strong>:
+        VFSManager.java&#160;<span class="change">(+36&#160;-24)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="19"></a>
+    <a href="user_vanza.html" class="author">vanza</a>
+    <span class="date">2014-06-11 05:03</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">23589</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Scala mode enhancements.<br />
+<br />
+- s, f and raw string interpolators<br />
+- XML highlighting<br />
+<br />
+Note XML highlighting cannot (at least in any way I can figure out)<br />
+properly parse attributes.
+    </p>
+    <p class="commitdetails"><strong>65</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modes</strong>:
+        scala.xml&#160;<span class="change">(+65&#160;-33)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="18"></a>
+    <a href="user_vanza.html" class="author">vanza</a>
+    <span class="date">2014-06-11 05:03</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">23588</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Scala mode: cleanup and fix indentation.<br />
+<br />
+Also add a few simple highlighting enhancements.
+    </p>
+    <p class="commitdetails"><strong>289</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modes</strong>:
+        scala.xml&#160;<span class="change">(+289&#160;-275)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="17"></a>
+    <a href="user_vanza.html" class="author">vanza</a>
+    <span class="date">2012-07-02 05:25</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">21901</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Some improvements to the jamon mode.
+    </p>
+    <p class="commitdetails"><strong>51</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modes</strong>:
+        jamon.xml&#160;<span class="change">(+51&#160;-13)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="16"></a>
+    <a href="user_vanza.html" class="author">vanza</a>
+    <span class="date">2012-07-02 03:03</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">21900</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Very crude Jamon template highlighting support.
+    </p>
+    <p class="commitdetails"><strong>89</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modes</strong>:
+        catalog&#160;<span class="change">(+4)</span>,
+        jamon.xml&#160;<span class="new">(new&#160;85)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="15"></a>
+    <a href="user_vanza.html" class="author">vanza</a>
+    <span class="date">2012-03-27 04:31</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">21451</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Better (and more correct) highlighting of python decorators.
+    </p>
+    <p class="commitdetails"><strong>5</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modes</strong>:
+        python.xml&#160;<span class="change">(+5&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="14"></a>
+    <a href="user_vanza.html" class="author">vanza</a>
+    <span class="date">2012-03-15 05:00</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">21377</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Add avro idl mode file.
+    </p>
+    <p class="commitdetails"><strong>111</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modes</strong>:
+        avro.xml&#160;<span class="new">(new&#160;96)</span>,
+        catalog&#160;<span class="change">(+15&#160;-11)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="13"></a>
+    <a href="user_vanza.html" class="author">vanza</a>
+    <span class="date">2011-11-10 05:21</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">20275</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Add a 'break' for correctness.
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doclet</strong>:
+        GenerateTocXML.java&#160;<span class="change">(+1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="12"></a>
+    <a href="user_vanza.html" class="author">vanza</a>
+    <span class="date">2011-11-10 05:13</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">20274</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fix GenerateTocXML to compile under Java 7.<br />
+<br />
+Seems to work just like before.
+    </p>
+    <p class="commitdetails"><strong>27</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doclet</strong>:
+        GenerateTocXML.java&#160;<span class="change">(+27&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="11"></a>
+    <a href="user_vanza.html" class="author">vanza</a>
+    <span class="date">2011-02-01 05:22</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">19318</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Make org.gjt.sp.jedit.browser.VFSFileNameField public.
+    </p>
+    <p class="commitdetails"><strong>11</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+5&#160;-1)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/browser</strong>:
+        VFSFileNameField.java&#160;<span class="change">(+6&#160;-6)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="10"></a>
+    <a href="user_vanza.html" class="author">vanza</a>
+    <span class="date">2011-01-22 22:40</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">19253</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Encoding mix up: fix Vampire's name.
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="9"></a>
+    <a href="user_vanza.html" class="author">vanza</a>
+    <span class="date">2011-01-22 22:27</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">19252</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+De-reference symlinks when getting file permissions (bug 3160310).<br />
+<br />
+So that when saving a file, the original file's permissions are not<br />
+overwritten.
+    </p>
+    <p class="commitdetails"><strong>22</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+18&#160;-15)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/io</strong>:
+        FileVFS.java&#160;<span class="change">(+4&#160;-4)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="8"></a>
+    <a href="user_vanza.html" class="author">vanza</a>
+    <span class="date">2010-07-04 23:51</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">18176</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Don't overwrite user properties when loading mode catalog.<br />
+<br />
+This is a workaround for SF Bug 3023175. When first loading the mode<br />
+catalog, do not overwrite the mode's properties in the user settings,<br />
+so that the user's settings can correctly override the default properties<br />
+in the catalog.
+    </p>
+    <p class="commitdetails"><strong>27</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        JEditMode.java&#160;<span class="change">(+27&#160;-6)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="7"></a>
+    <a href="user_vanza.html" class="author">vanza</a>
+    <span class="date">2010-03-12 05:40</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">17456</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Remove dependency on jEdit class from Chunk.java.<br />
+<br />
+Read config data through IPropertyManager instead. Also<br />
+call Chunk.propertiesChanged() from the StandaloneTextArea<br />
+implementation.<br />
+
+    </p>
+    <p class="commitdetails"><strong>50</strong> lines of code changed in <span class="files">4 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        jEdit.java&#160;<span class="change">(+2)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/syntax</strong>:
+        Chunk.java&#160;<span class="change">(+46&#160;-20)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/textarea</strong>:
+        StandaloneTextArea.java&#160;<span class="change">(+2)</span>,
+        TextArea.java&#160;<span class="change">(-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="6"></a>
+    <a href="user_vanza.html" class="author">vanza</a>
+    <span class="date">2010-03-07 20:42</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">17434</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fix xToOffset(), again.<br />
+<br />
+Fix the logic so it's closer to the previous version of the code,<br />
+but, mainly, account for the offset of the current chunk when<br />
+calculating the offset of the requested position inside the chunk.<br />
+
+    </p>
+    <p class="commitdetails"><strong>19</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/syntax</strong>:
+        Chunk.java&#160;<span class="change">(+19&#160;-7)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="5"></a>
+    <a href="user_vanza.html" class="author">vanza</a>
+    <span class="date">2010-03-07 06:13</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">17432</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fix Chunk.xToOffset().<br />
+
+    </p>
+    <p class="commitdetails"><strong>4</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/syntax</strong>:
+        Chunk.java&#160;<span class="change">(+4&#160;-8)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="4"></a>
+    <a href="user_vanza.html" class="author">vanza</a>
+    <span class="date">2010-03-07 04:43</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">17431</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Clean up existing font config before saving new list.<br />
+
+    </p>
+    <p class="commitdetails"><strong>9</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/options</strong>:
+        TextAreaOptionPane.java&#160;<span class="change">(+9&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="3"></a>
+    <a href="user_vanza.html" class="author">vanza</a>
+    <span class="date">2010-03-07 04:16</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">17430</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Add new option to perform font substitution in the text area.<br />
+<br />
+This will cause the text rendering code to choose appropriate<br />
+fonts to display characters the current font can't. It's off<br />
+by default, and can be turned on along with a list of preferred<br />
+fonts in the text area option pane.<br />
+<br />
+This required minor changes in other areas:<br />
+. make the FontSelectorDialog class public so it can be<br />
+  used from the new code in the text area option pane.<br />
+. small change to clean the font cache in the Chunk<br />
+  class was added to TextArea.java.<br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>840</strong> lines of code changed in <span class="files">7 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+7&#160;-1)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        jedit_gui.props&#160;<span class="change">(+4)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/gui</strong>:
+        FontSelector.java&#160;<span class="change">(-329)</span>,
+        FontSelectorDialog.java&#160;<span class="new">(new&#160;386)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/options</strong>:
+        TextAreaOptionPane.java&#160;<span class="change">(+177)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/syntax</strong>:
+        Chunk.java&#160;<span class="change">(+265&#160;-49)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/textarea</strong>:
+        TextArea.java&#160;<span class="change">(+1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="2"></a>
+    <a href="user_vanza.html" class="author">vanza</a>
+    <span class="date">2010-01-29 06:31</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">17139</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+. Make EditBus messages always be delivered on the AWT thread. Also add<br />
+  EditBus.sendAsync(), which just queues delivery and returns immediately.<br />
+<br />
+. Allow EditBus.EBHandler to annotate classes; only useful for EditPlugin<br />
+  instances, makes them behave as if they implemented EBPlugin.<br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>102</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+14&#160;-2)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        EditBus.java&#160;<span class="change">(+77&#160;-6)</span>,
+        PluginJAR.java&#160;<span class="change">(+11&#160;-5)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="1"></a>
+    <a href="user_vanza.html" class="author">vanza</a>
+    <span class="date">2009-11-12 07:32</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">16473</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Modify the EditBus so that it can dispatch messages just to handlers interested in the specific message being sent.<br />
+<br />
+Summary: handler method is annotated with special annotation provided by the EditBus class; signature of the method defines what messages will be delivered to it. More details in the javadoc.<br />
+<br />
+This should make EBMessage handling code cleaner since there's no more need to do "instanceof" to figure out the type of the message being delivered.<br />
+<br />
+Nothing changes in the behavior for existing EBComponent objects.
+    </p>
+    <p class="commitdetails"><strong>296</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+13&#160;-1)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        EditBus.java&#160;<span class="change">(+283&#160;-46)</span>
+      </li>
+    </ul>
+  </dd>
+
+</dl>
+
+<p>(139 more)</p>
+</div><div id="generatedby">Generated by <a href="http://www.statsvn.org">StatSVN</a> 0.7.0</div>
+</body>
+</html>

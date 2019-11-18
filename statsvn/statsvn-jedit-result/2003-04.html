@@ -1,0 +1,3053 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>StatSVN - April 2003 Commit Log</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+    <meta name="Generator" content="StatSVN 0.7.0"/>
+<link rel="stylesheet" href="objectlab-statcvs.css" type="text/css"/>
+<script type="text/javascript" charset="utf-8" src="http://bit.ly/javascript-api.js?version=latest&#38;login=statsvn&#38;apiKey=R_2c362b417d0517c27876cbaca1bb68cc"></script>
+<script type="text/javascript" charset="utf-8">
+   // wait until page is loaded to call API
+   var redir_url;
+   var short_url;
+   BitlyCB.myShortenCallback = function(data) {
+      // this is how to get a result of shortening a single url
+      var result;
+      short_url=null;
+      for (var r in data.results) {
+         result = data.results[r];
+         result['longUrl'] = r;
+         short_url = result['shortUrl'];
+         break;
+      }
+      if (short_url==null) // bit.ly failed
+      document.location=redir_url;
+      else
+      redirToTwitter();
+   };
+   function shortenTweet(url) {
+      if (short_url == null || redir_url!=url) {
+      redir_url = url;
+      BitlyClient.shorten(document.location, 'BitlyCB.myShortenCallback');
+      }
+      else
+      redirToTwitter();
+      return false;
+   }
+   function redirToTwitter() { 
+      // replace {0} which is visible as %7B0} in the link
+      document.location = redir_url.replace('%7B0}', short_url);
+   }
+</script>
+  </head>
+
+<body>
+
+<h1>April 2003 Commit Log</h1>
+<div id="parentlink">&#171; <a href="index.html">Development Statistics for /jEdit/trunk</a></div>
+
+<div id="nav" class="section">
+<h2>Commit Logs</h2>
+<ul>
+    <li><a href="commitlog.html">October 2019</a></li>
+    <li><a href="2019-09.html">September 2019</a></li>
+    <li><a href="2019-08.html">August 2019</a></li>
+    <li><a href="2019-07.html">July 2019</a></li>
+    <li><a href="2019-06.html">June 2019</a></li>
+    <li><a href="2019-05.html">May 2019</a></li>
+    <li><a href="2019-04.html">April 2019</a></li>
+    <li><a href="2019-03.html">March 2019</a></li>
+    <li><a href="2019-02.html">February 2019</a></li>
+    <li><a href="2019-01.html">January 2019</a></li>
+    <li><a href="2018-12.html">December 2018</a></li>
+    <li><a href="2018-11.html">November 2018</a></li>
+    <li><a href="2018-10.html">October 2018</a></li>
+    <li><a href="2018-09.html">September 2018</a></li>
+    <li><a href="2018-08.html">August 2018</a></li>
+    <li><a href="2018-07.html">July 2018</a></li>
+    <li><a href="2018-06.html">June 2018</a></li>
+    <li><a href="2018-05.html">May 2018</a></li>
+    <li><a href="2018-04.html">April 2018</a></li>
+    <li><a href="2018-03.html">March 2018</a></li>
+    <li><a href="2018-02.html">February 2018</a></li>
+    <li><a href="2018-01.html">January 2018</a></li>
+    <li><a href="2017-12.html">December 2017</a></li>
+    <li><a href="2017-11.html">November 2017</a></li>
+    <li><a href="2017-10.html">October 2017</a></li>
+    <li><a href="2017-09.html">September 2017</a></li>
+    <li><a href="2017-08.html">August 2017</a></li>
+    <li><a href="2017-07.html">July 2017</a></li>
+    <li><a href="2017-06.html">June 2017</a></li>
+    <li><a href="2017-05.html">May 2017</a></li>
+    <li><a href="2017-04.html">April 2017</a></li>
+    <li><a href="2017-03.html">March 2017</a></li>
+    <li><a href="2017-02.html">February 2017</a></li>
+    <li><a href="2017-01.html">January 2017</a></li>
+    <li><a href="2016-12.html">December 2016</a></li>
+    <li><a href="2016-11.html">November 2016</a></li>
+    <li><a href="2016-10.html">October 2016</a></li>
+    <li><a href="2016-09.html">September 2016</a></li>
+    <li><a href="2016-08.html">August 2016</a></li>
+    <li><a href="2016-07.html">July 2016</a></li>
+    <li><a href="2016-06.html">June 2016</a></li>
+    <li><a href="2016-05.html">May 2016</a></li>
+    <li><a href="2016-04.html">April 2016</a></li>
+    <li><a href="2016-03.html">March 2016</a></li>
+    <li><a href="2016-02.html">February 2016</a></li>
+    <li><a href="2016-01.html">January 2016</a></li>
+    <li><a href="2015-12.html">December 2015</a></li>
+    <li><a href="2015-11.html">November 2015</a></li>
+    <li><a href="2015-10.html">October 2015</a></li>
+    <li><a href="2015-09.html">September 2015</a></li>
+    <li><a href="2015-08.html">August 2015</a></li>
+    <li><a href="2015-07.html">July 2015</a></li>
+    <li><a href="2015-06.html">June 2015</a></li>
+    <li><a href="2015-05.html">May 2015</a></li>
+    <li><a href="2015-04.html">April 2015</a></li>
+    <li><a href="2015-03.html">March 2015</a></li>
+    <li><a href="2015-02.html">February 2015</a></li>
+    <li><a href="2015-01.html">January 2015</a></li>
+    <li><a href="2014-12.html">December 2014</a></li>
+    <li><a href="2014-11.html">November 2014</a></li>
+    <li><a href="2014-10.html">October 2014</a></li>
+    <li><a href="2014-09.html">September 2014</a></li>
+    <li><a href="2014-08.html">August 2014</a></li>
+    <li><a href="2014-07.html">July 2014</a></li>
+    <li><a href="2014-06.html">June 2014</a></li>
+    <li><a href="2014-05.html">May 2014</a></li>
+    <li><a href="2014-04.html">April 2014</a></li>
+    <li><a href="2014-03.html">March 2014</a></li>
+    <li><a href="2014-02.html">February 2014</a></li>
+    <li><a href="2014-01.html">January 2014</a></li>
+    <li><a href="2013-12.html">December 2013</a></li>
+    <li><a href="2013-11.html">November 2013</a></li>
+    <li><a href="2013-10.html">October 2013</a></li>
+    <li><a href="2013-09.html">September 2013</a></li>
+    <li><a href="2013-08.html">August 2013</a></li>
+    <li><a href="2013-07.html">July 2013</a></li>
+    <li><a href="2013-06.html">June 2013</a></li>
+    <li><a href="2013-05.html">May 2013</a></li>
+    <li><a href="2013-04.html">April 2013</a></li>
+    <li><a href="2013-03.html">March 2013</a></li>
+    <li><a href="2013-02.html">February 2013</a></li>
+    <li><a href="2013-01.html">January 2013</a></li>
+    <li><a href="2012-12.html">December 2012</a></li>
+    <li><a href="2012-11.html">November 2012</a></li>
+    <li><a href="2012-10.html">October 2012</a></li>
+    <li><a href="2012-09.html">September 2012</a></li>
+    <li><a href="2012-08.html">August 2012</a></li>
+    <li><a href="2012-07.html">July 2012</a></li>
+    <li><a href="2012-06.html">June 2012</a></li>
+    <li><a href="2012-05.html">May 2012</a></li>
+    <li><a href="2012-04.html">April 2012</a></li>
+    <li><a href="2012-03.html">March 2012</a></li>
+    <li><a href="2012-02.html">February 2012</a></li>
+    <li><a href="2012-01.html">January 2012</a></li>
+    <li><a href="2011-12.html">December 2011</a></li>
+    <li><a href="2011-11.html">November 2011</a></li>
+    <li><a href="2011-10.html">October 2011</a></li>
+    <li><a href="2011-09.html">September 2011</a></li>
+    <li><a href="2011-08.html">August 2011</a></li>
+    <li><a href="2011-07.html">July 2011</a></li>
+    <li><a href="2011-06.html">June 2011</a></li>
+    <li><a href="2011-05.html">May 2011</a></li>
+    <li><a href="2011-04.html">April 2011</a></li>
+    <li><a href="2011-03.html">March 2011</a></li>
+    <li><a href="2011-02.html">February 2011</a></li>
+    <li><a href="2011-01.html">January 2011</a></li>
+    <li><a href="2010-12.html">December 2010</a></li>
+    <li><a href="2010-11.html">November 2010</a></li>
+    <li><a href="2010-10.html">October 2010</a></li>
+    <li><a href="2010-09.html">September 2010</a></li>
+    <li><a href="2010-08.html">August 2010</a></li>
+    <li><a href="2010-07.html">July 2010</a></li>
+    <li><a href="2010-06.html">June 2010</a></li>
+    <li><a href="2010-05.html">May 2010</a></li>
+    <li><a href="2010-04.html">April 2010</a></li>
+    <li><a href="2010-03.html">March 2010</a></li>
+    <li><a href="2010-02.html">February 2010</a></li>
+    <li><a href="2010-01.html">January 2010</a></li>
+    <li><a href="2009-12.html">December 2009</a></li>
+    <li><a href="2009-11.html">November 2009</a></li>
+    <li><a href="2009-10.html">October 2009</a></li>
+    <li><a href="2009-09.html">September 2009</a></li>
+    <li><a href="2009-08.html">August 2009</a></li>
+    <li><a href="2009-07.html">July 2009</a></li>
+    <li><a href="2009-06.html">June 2009</a></li>
+    <li><a href="2009-05.html">May 2009</a></li>
+    <li><a href="2009-04.html">April 2009</a></li>
+    <li><a href="2009-03.html">March 2009</a></li>
+    <li><a href="2009-02.html">February 2009</a></li>
+    <li><a href="2009-01.html">January 2009</a></li>
+    <li><a href="2008-12.html">December 2008</a></li>
+    <li><a href="2008-11.html">November 2008</a></li>
+    <li><a href="2008-10.html">October 2008</a></li>
+    <li><a href="2008-09.html">September 2008</a></li>
+    <li><a href="2008-08.html">August 2008</a></li>
+    <li><a href="2008-07.html">July 2008</a></li>
+    <li><a href="2008-06.html">June 2008</a></li>
+    <li><a href="2008-05.html">May 2008</a></li>
+    <li><a href="2008-04.html">April 2008</a></li>
+    <li><a href="2008-03.html">March 2008</a></li>
+    <li><a href="2008-02.html">February 2008</a></li>
+    <li><a href="2008-01.html">January 2008</a></li>
+    <li><a href="2007-12.html">December 2007</a></li>
+    <li><a href="2007-11.html">November 2007</a></li>
+    <li><a href="2007-10.html">October 2007</a></li>
+    <li><a href="2007-09.html">September 2007</a></li>
+    <li><a href="2007-08.html">August 2007</a></li>
+    <li><a href="2007-07.html">July 2007</a></li>
+    <li><a href="2007-06.html">June 2007</a></li>
+    <li><a href="2007-05.html">May 2007</a></li>
+    <li><a href="2007-04.html">April 2007</a></li>
+    <li><a href="2007-03.html">March 2007</a></li>
+    <li><a href="2007-02.html">February 2007</a></li>
+    <li><a href="2007-01.html">January 2007</a></li>
+    <li><a href="2006-12.html">December 2006</a></li>
+    <li><a href="2006-11.html">November 2006</a></li>
+    <li><a href="2006-10.html">October 2006</a></li>
+    <li><a href="2006-09.html">September 2006</a></li>
+    <li><a href="2006-08.html">August 2006</a></li>
+    <li><a href="2006-07.html">July 2006</a></li>
+    <li><a href="2006-06.html">June 2006</a></li>
+    <li><a href="2006-05.html">May 2006</a></li>
+    <li><a href="2006-04.html">April 2006</a></li>
+    <li><a href="2006-03.html">March 2006</a></li>
+    <li><a href="2006-02.html">February 2006</a></li>
+    <li><a href="2006-01.html">January 2006</a></li>
+    <li><a href="2005-12.html">December 2005</a></li>
+    <li><a href="2005-11.html">November 2005</a></li>
+    <li><a href="2005-10.html">October 2005</a></li>
+    <li><a href="2005-09.html">September 2005</a></li>
+    <li><a href="2005-08.html">August 2005</a></li>
+    <li><a href="2005-07.html">July 2005</a></li>
+    <li><a href="2005-06.html">June 2005</a></li>
+    <li><a href="2005-05.html">May 2005</a></li>
+    <li><a href="2005-04.html">April 2005</a></li>
+    <li><a href="2005-03.html">March 2005</a></li>
+    <li><a href="2005-02.html">February 2005</a></li>
+    <li><a href="2005-01.html">January 2005</a></li>
+    <li><a href="2004-12.html">December 2004</a></li>
+    <li><a href="2004-11.html">November 2004</a></li>
+    <li><a href="2004-10.html">October 2004</a></li>
+    <li><a href="2004-09.html">September 2004</a></li>
+    <li><a href="2004-08.html">August 2004</a></li>
+    <li><a href="2004-07.html">July 2004</a></li>
+    <li><a href="2004-06.html">June 2004</a></li>
+    <li><a href="2004-05.html">May 2004</a></li>
+    <li><a href="2004-04.html">April 2004</a></li>
+    <li><a href="2004-03.html">March 2004</a></li>
+    <li><a href="2004-02.html">February 2004</a></li>
+    <li><a href="2004-01.html">January 2004</a></li>
+    <li><a href="2003-12.html">December 2003</a></li>
+    <li><a href="2003-11.html">November 2003</a></li>
+    <li><a href="2003-10.html">October 2003</a></li>
+    <li><a href="2003-09.html">September 2003</a></li>
+    <li><a href="2003-08.html">August 2003</a></li>
+    <li><a href="2003-07.html">July 2003</a></li>
+    <li><a href="2003-06.html">June 2003</a></li>
+    <li><a href="2003-05.html">May 2003</a></li>
+    <li><span class="here">April 2003</span></li>
+    <li><a href="2003-03.html">March 2003</a></li>
+    <li><a href="2003-02.html">February 2003</a></li>
+    <li><a href="2003-01.html">January 2003</a></li>
+    <li><a href="2002-12.html">December 2002</a></li>
+    <li><a href="2002-11.html">November 2002</a></li>
+    <li><a href="2002-10.html">October 2002</a></li>
+    <li><a href="2002-09.html">September 2002</a></li>
+    <li><a href="2002-08.html">August 2002</a></li>
+    <li><a href="2002-07.html">July 2002</a></li>
+    <li><a href="2002-06.html">June 2002</a></li>
+    <li><a href="2002-05.html">May 2002</a></li>
+    <li><a href="2002-04.html">April 2002</a></li>
+    <li><a href="2002-03.html">March 2002</a></li>
+    <li><a href="2002-02.html">February 2002</a></li>
+    <li><a href="2002-01.html">January 2002</a></li>
+    <li><a href="2001-12.html">December 2001</a></li>
+    <li><a href="2001-11.html">November 2001</a></li>
+    <li><a href="2001-10.html">October 2001</a></li>
+    <li><a href="2001-09.html">September 2001</a></li>
+</ul>
+</div><dl class="attributes">
+    <dt>Number of Commits:</dt>
+    <dd>80</dd>
+    <dt>Number of Active Developers:</dt>
+    <dd>2</dd>
+</dl>
+<dl class="commitlist">
+  <dt><a name="80"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-04-30 23:07</span>
+    <a class="permalink" title="Permalink to this commit" href="#80">#80</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4668</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+property cache -- if you used previous commit, remoev all your jars-cache files<br />
+
+    </p>
+    <p class="commitdetails"><strong>144</strong> lines of code changed in <span class="files">5 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        TODO.txt&#160;<span class="change">(+3&#160;-11)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        ActionSet.java&#160;<span class="change">(+18)</span>,
+        PluginJAR.java&#160;<span class="change">(+96&#160;-14)</span>,
+        jEdit.java&#160;<span class="change">(+15)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/gui</strong>:
+        DockableWindowManager.java&#160;<span class="change">(+12)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="79"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-04-30 22:22</span>
+    <a class="permalink" title="Permalink to this commit" href="#79">#79</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4667</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+plugin summary cache<br />
+
+    </p>
+    <p class="commitdetails"><strong>551</strong> lines of code changed in <span class="files">13 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        TODO.txt&#160;<span class="change">(+17&#160;-9)</span>
+      </li>
+      <li>
+        <strong>jars/QuickNotepad</strong>:
+        users-guide.xml&#160;<span class="change">(+2&#160;-12)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        ActionContext.java&#160;<span class="change">(+1&#160;-8)</span>,
+        ActionSet.java&#160;<span class="change">(+1&#160;-11)</span>,
+        EditPlugin.java&#160;<span class="change">(+7&#160;-2)</span>,
+        JARClassLoader.java&#160;<span class="change">(+17&#160;-8)</span>,
+        PluginJAR.java&#160;<span class="change">(+393&#160;-82)</span>,
+        ServiceListHandler.java&#160;<span class="change">(+21&#160;-6)</span>,
+        ServiceManager.java&#160;<span class="change">(+7&#160;-8)</span>,
+        jEdit.java&#160;<span class="change">(+25&#160;-4)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/gui</strong>:
+        DockableWindowManager.java&#160;<span class="change">(+50&#160;-9)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/options</strong>:
+        ShortcutsOptionPane.java&#160;<span class="change">(+5&#160;-7)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/pluginmgr</strong>:
+        Roster.java&#160;<span class="change">(+5)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="78"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-04-30 06:47</span>
+    <a class="permalink" title="Permalink to this commit" href="#78">#78</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4666</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+don't bomb if plugin.stop() fails<br />
+
+    </p>
+    <p class="commitdetails"><strong>33</strong> lines of code changed in <span class="files">4 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        PluginJAR.java&#160;<span class="change">(+4&#160;-1)</span>,
+        jEdit.java&#160;<span class="change">(+2&#160;-4)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/gui</strong>:
+        ActionBar.java&#160;<span class="change">(+20)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/textarea</strong>:
+        JEditTextArea.java&#160;<span class="change">(+7&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="77"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-04-30 06:28</span>
+    <a class="permalink" title="Permalink to this commit" href="#77">#77</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4665</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+new option pane api for deferred plugins; updated quicknotepad for 4.2 api; various fixes<br />
+
+    </p>
+    <p class="commitdetails"><strong>541</strong> lines of code changed in <span class="files">22 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        TODO.txt&#160;<span class="change">(+11&#160;-11)</span>
+      </li>
+      <li>
+        <strong>jars/QuickNotepad</strong>:
+        QuickNotepad.java&#160;<span class="change">(-1)</span>,
+        QuickNotepad.props&#160;<span class="change">(+32&#160;-15)</span>,
+        QuickNotepadPlugin.java&#160;<span class="change">(+1&#160;-23)</span>,
+        changes42.txt&#160;<span class="new">(new&#160;28)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        Buffer.java&#160;<span class="change">(+12&#160;-6)</span>,
+        MiscUtilities.java&#160;<span class="change">(+1&#160;-1)</span>,
+        OptionGroup.java&#160;<span class="change">(+60&#160;-41)</span>,
+        jEdit.java&#160;<span class="change">(+33&#160;-13)</span>,
+        jedit_gui.props&#160;<span class="change">(+34&#160;-17)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/browser</strong>:
+        BrowserView.java&#160;<span class="change">(-7)</span>,
+        VFSBrowser.java&#160;<span class="change">(-10)</span>,
+        VFSDirectoryEntryTable.java&#160;<span class="change">(+15)</span>,
+        VFSFileChooserDialog.java&#160;<span class="change">(+133&#160;-68)</span>,
+        VFSFileNameField.java&#160;<span class="change">(-3)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/gui</strong>:
+        OptionsDialog.java&#160;<span class="change">(+119&#160;-50)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/io</strong>:
+        FileVFS.java&#160;<span class="change">(+3&#160;-7)</span>,
+        VFS.java&#160;<span class="change">(+5&#160;-3)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/options</strong>:
+        GlobalOptions.java&#160;<span class="change">(+17&#160;-19)</span>,
+        PluginManagerOptionPane.java&#160;<span class="change">(+1&#160;-1)</span>,
+        PluginOptions.java&#160;<span class="change">(+35&#160;-8)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/search</strong>:
+        SearchDialog.java&#160;<span class="change">(+1&#160;-6)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="76"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-04-29 23:31</span>
+    <a class="permalink" title="Permalink to this commit" href="#76">#76</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4664</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+fixed layout bug in VariableGridLayout<br />
+
+    </p>
+    <p class="commitdetails"><strong>154</strong> lines of code changed in <span class="files">9 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        TODO.txt&#160;<span class="change">(+28&#160;-35)</span>
+      </li>
+      <li>
+        <strong>installer</strong>:
+        VariableGridLayout.java&#160;<span class="change">(+25&#160;-28)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        ActionSet.java&#160;<span class="change">(+1&#160;-1)</span>,
+        PluginJAR.java&#160;<span class="change">(+28)</span>,
+        View.java&#160;<span class="change">(+9&#160;-10)</span>,
+        jEdit.java&#160;<span class="change">(+19&#160;-11)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/gui</strong>:
+        VariableGridLayout.java&#160;<span class="change">(+25&#160;-29)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/pluginmgr</strong>:
+        ManagePanel.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/search</strong>:
+        SearchBar.java&#160;<span class="change">(+18&#160;-9)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="75"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-04-29 04:44</span>
+    <a class="permalink" title="Permalink to this commit" href="#75">#75</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4663</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+fixed plugin manager null pointer exception<br />
+
+    </p>
+    <p class="commitdetails"><strong>12</strong> lines of code changed in <span class="files">4 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+4)</span>,
+        TODO.txt&#160;<span class="change">(-2)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        PluginJAR.java&#160;<span class="change">(+1)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/browser</strong>:
+        VFSBrowser.java&#160;<span class="change">(+7&#160;-20)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="74"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-04-29 04:31</span>
+    <a class="permalink" title="Permalink to this commit" href="#74">#74</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4662</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+added api for plugin menu items in browser to replace VFS.BROWSE_CAP. Define plugin.XXX.browser-menu-item or plugin.XXX.browser-menu properties listing browser action names<br />
+
+    </p>
+    <p class="commitdetails"><strong>88</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        EditPlugin.java&#160;<span class="change">(+57&#160;-1)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/browser</strong>:
+        VFSBrowser.java&#160;<span class="change">(+27&#160;-19)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/io</strong>:
+        VFS.java&#160;<span class="change">(+4&#160;-5)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="73"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-04-29 04:21</span>
+    <a class="permalink" title="Permalink to this commit" href="#73">#73</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4661</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+browser actions API. provide a browser.actions.xml file in your plugin's JAR; reference the 'browser' variable in the CODE blocks of the actions<br />
+
+    </p>
+    <p class="commitdetails"><strong>631</strong> lines of code changed in <span class="files">18 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        ActionContext.java&#160;<span class="new">(new&#160;21)</span>,
+        ActionSet.java&#160;<span class="change">(+16&#160;-25)</span>,
+        BeanShellAction.java&#160;<span class="change">(+31&#160;-3)</span>,
+        EditAction.java&#160;<span class="change">(+20&#160;-19)</span>,
+        GUIUtilities.java&#160;<span class="change">(+115&#160;-26)</span>,
+        PluginJAR.java&#160;<span class="change">(+37&#160;-19)</span>,
+        ResourceCache.java&#160;<span class="change">(+2)</span>,
+        browser.actions.xml&#160;<span class="new">(new&#160;158)</span>,
+        jEdit.java&#160;<span class="change">(+43&#160;-83)</span>,
+        jedit_gui.props&#160;<span class="change">(+56&#160;-35)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/browser</strong>:
+        BrowserCommandsMenu.java&#160;<span class="change">(+11&#160;-103)</span>,
+        VFSBrowser.java&#160;<span class="change">(+73&#160;-70)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/gui</strong>:
+        EnhancedButton.java&#160;<span class="change">(+7&#160;-3)</span>,
+        EnhancedCheckBoxMenuItem.java&#160;<span class="change">(+22&#160;-6)</span>,
+        EnhancedMenu.java&#160;<span class="change">(+11&#160;-2)</span>,
+        EnhancedMenuItem.java&#160;<span class="change">(+7&#160;-4)</span>,
+        MacrosMenu.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/textarea</strong>:
+        JEditTextArea.java&#160;<span class="change">(-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="72"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-04-29 02:13</span>
+    <a class="permalink" title="Permalink to this commit" href="#72">#72</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4660</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+add Debug.DISABLE_GLYPH_VECTOR<br />
+
+    </p>
+    <p class="commitdetails"><strong>6</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        Debug.java&#160;<span class="change">(+5)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/textarea</strong>:
+        TextAreaPainter.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="71"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-04-29 02:05</span>
+    <a class="permalink" title="Permalink to this commit" href="#71">#71</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4659</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+add Debug.DISABLE_MONOSPACE_FONT_HACK<br />
+
+    </p>
+    <p class="commitdetails"><strong>23</strong> lines of code changed in <span class="files">6 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        TODO.txt&#160;<span class="change">(+1)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        Debug.java&#160;<span class="change">(+5)</span>,
+        jEdit.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/browser</strong>:
+        VFSDirectoryEntryTable.java&#160;<span class="change">(+8)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/io</strong>:
+        VFS.java&#160;<span class="change">(+7&#160;-3)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/syntax</strong>:
+        Chunk.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="70"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-04-28 22:51</span>
+    <a class="permalink" title="Permalink to this commit" href="#70">#70</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4658</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+added missing file<br />
+
+    </p>
+    <p class="commitdetails"><strong>106</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/msg</strong>:
+        DockableWindowUpdate.java&#160;<span class="new">(new&#160;106)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="69"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-04-28 22:40</span>
+    <a class="permalink" title="Permalink to this commit" href="#69">#69</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4657</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+electric scroll fix<br />
+
+    </p>
+    <p class="commitdetails"><strong>5</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        TODO.txt&#160;<span class="change">(-1)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/textarea</strong>:
+        JEditTextArea.java&#160;<span class="change">(+5&#160;-5)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="68"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-04-28 22:17</span>
+    <a class="permalink" title="Permalink to this commit" href="#68">#68</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4656</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+fixed infinite loop with invalid vfs color pattern; fix rectangular selection exception<br />
+
+    </p>
+    <p class="commitdetails"><strong>147</strong> lines of code changed in <span class="files">10 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        TODO.txt&#160;<span class="change">(-2)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        EditPlugin.java&#160;<span class="change">(+3&#160;-4)</span>,
+        PluginJAR.java&#160;<span class="change">(+29&#160;-30)</span>,
+        View.java&#160;<span class="change">(-1)</span>,
+        jEdit.java&#160;<span class="change">(-2)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/browser</strong>:
+        VFSBrowser.java&#160;<span class="change">(+2&#160;-9)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/gui</strong>:
+        DockableWindowManager.java&#160;<span class="change">(+104&#160;-81)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/io</strong>:
+        VFS.java&#160;<span class="change">(+2&#160;-1)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/syntax</strong>:
+        ParserRuleSet.java&#160;<span class="change">(+6)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/textarea</strong>:
+        Selection.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="67"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-04-28 19:52</span>
+    <a class="permalink" title="Permalink to this commit" href="#67">#67</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4655</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+fixed incorrect roots vfs service entry; fixed tree table scrolling; added NO_ESCAPE attribute to SPAN and SPAN_REGEXP rules<br />
+
+    </p>
+    <p class="commitdetails"><strong>95</strong> lines of code changed in <span class="files">31 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+3)</span>,
+        TODO.txt&#160;<span class="change">(+2&#160;-1)</span>
+      </li>
+      <li>
+        <strong>modes</strong>:
+        actionscript.xml&#160;<span class="change">(+1&#160;-1)</span>,
+        aspect-j.xml&#160;<span class="change">(+2&#160;-79)</span>,
+        b.xml&#160;<span class="change">(+2&#160;-2)</span>,
+        bcel.xml&#160;<span class="change">(+2&#160;-2)</span>,
+        beanshell.xml&#160;<span class="change">(+2&#160;-2)</span>,
+        c.xml&#160;<span class="change">(+1&#160;-1)</span>,
+        cil.xml&#160;<span class="change">(+1&#160;-1)</span>,
+        coldfusion.xml&#160;<span class="change">(+5&#160;-5)</span>,
+        cplusplus.xml&#160;<span class="change">(+1&#160;-1)</span>,
+        csharp.xml&#160;<span class="change">(+4&#160;-4)</span>,
+        idl.xml&#160;<span class="change">(+1&#160;-1)</span>,
+        java.xml&#160;<span class="change">(+8&#160;-10)</span>,
+        javascript.xml&#160;<span class="change">(+1&#160;-1)</span>,
+        nqc.xml&#160;<span class="change">(+1&#160;-1)</span>,
+        objective-c.xml&#160;<span class="change">(+2&#160;-2)</span>,
+        pascal.xml&#160;<span class="change">(+3&#160;-3)</span>,
+        php.xml&#160;<span class="change">(+1&#160;-1)</span>,
+        povray.xml&#160;<span class="change">(+1&#160;-1)</span>,
+        rview.xml&#160;<span class="change">(+1&#160;-1)</span>,
+        verilog.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        jedit.props&#160;<span class="change">(+2&#160;-2)</span>,
+        package.html&#160;<span class="change">(+4&#160;-1)</span>,
+        services.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/browser</strong>:
+        FileCellRenderer.java&#160;<span class="change">(+4)</span>,
+        VFSDirectoryEntryTable.java&#160;<span class="change">(+9&#160;-1)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/syntax</strong>:
+        ParserRule.java&#160;<span class="change">(+9&#160;-6)</span>,
+        TokenMarker.java&#160;<span class="change">(+7&#160;-4)</span>,
+        XModeHandler.java&#160;<span class="change">(+11&#160;-2)</span>,
+        xmode.dtd&#160;<span class="change">(+2&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="66"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-04-28 04:55</span>
+    <a class="permalink" title="Permalink to this commit" href="#66">#66</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4654</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+add backwards compatibility EditPlugin.JAR class to avoid breaking plugins<br />
+
+    </p>
+    <p class="commitdetails"><strong>29</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        EditPlugin.java&#160;<span class="change">(+24&#160;-2)</span>,
+        PluginJAR.java&#160;<span class="change">(+3&#160;-3)</span>,
+        jEdit.java&#160;<span class="change">(+2&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="65"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-04-28 04:48</span>
+    <a class="permalink" title="Permalink to this commit" href="#65">#65</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4653</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+fixed a deadlock<br />
+
+    </p>
+    <p class="commitdetails"><strong>11</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        PluginJAR.java&#160;<span class="change">(+11&#160;-8)</span>,
+        jEdit.java&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="64"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-04-28 02:55</span>
+    <a class="permalink" title="Permalink to this commit" href="#64">#64</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4652</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+NPE fix for invalid delegates<br />
+
+    </p>
+    <p class="commitdetails"><strong>18</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/syntax</strong>:
+        XModeHandler.java&#160;<span class="change">(+18&#160;-13)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="63"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-04-28 02:35</span>
+    <a class="permalink" title="Permalink to this commit" href="#63">#63</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4651</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+independent syntax package<br />
+
+    </p>
+    <p class="commitdetails"><strong>404</strong> lines of code changed in <span class="files">19 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+4)</span>,
+        TODO.txt&#160;<span class="change">(+16&#160;-4)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        Buffer.java&#160;<span class="change">(+2&#160;-1)</span>,
+        EditPlugin.java&#160;<span class="change">(+3&#160;-29)</span>,
+        Mode.java&#160;<span class="change">(+3)</span>,
+        TextUtilities.java&#160;<span class="change">(-32)</span>,
+        View.java&#160;<span class="change">(+3&#160;-3)</span>,
+        jEdit.java&#160;<span class="change">(+35&#160;-18)</span>,
+        jedit_gui.props&#160;<span class="change">(+1)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/search</strong>:
+        SearchAndReplace.java&#160;<span class="change">(+1)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/syntax</strong>:
+        DefaultTokenHandler.java&#160;<span class="change">(+1&#160;-1)</span>,
+        KeywordMap.java&#160;<span class="change">(+1&#160;-2)</span>,
+        ParserRule.java&#160;<span class="change">(+31&#160;-44)</span>,
+        ParserRuleSet.java&#160;<span class="change">(+24&#160;-15)</span>,
+        SyntaxUtilities.java&#160;<span class="new">(new&#160;64)</span>,
+        TokenMarker.java&#160;<span class="change">(+13&#160;-78)</span>,
+        XModeHandler.java&#160;<span class="change">(+89&#160;-68)</span>,
+        package.html&#160;<span class="change">(+15&#160;-1)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/util</strong>:
+        CharIndexedSegment.java&#160;<span class="new">(new&#160;98)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="62"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-04-26 21:51</span>
+    <a class="permalink" title="Permalink to this commit" href="#62">#62</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4650</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+deferred loading works for LatestVersion plugin<br />
+
+    </p>
+    <p class="commitdetails"><strong>281</strong> lines of code changed in <span class="files">11 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        TODO.txt&#160;<span class="change">(+2)</span>
+      </li>
+      <li>
+        <strong>jars/LatestVersion</strong>:
+        LatestVersion.props&#160;<span class="change">(+6&#160;-2)</span>,
+        LatestVersionPlugin.java&#160;<span class="change">(+1&#160;-7)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        EditPlugin.java&#160;<span class="change">(+12&#160;-7)</span>,
+        GUIUtilities.java&#160;<span class="change">(+12&#160;-4)</span>,
+        JARClassLoader.java&#160;<span class="change">(+2)</span>,
+        PluginJAR.java&#160;<span class="change">(+132&#160;-77)</span>,
+        jEdit.java&#160;<span class="change">(+1&#160;-1)</span>,
+        jedit_gui.props&#160;<span class="change">(+4)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/browser</strong>:
+        VFSFileNameField.java&#160;<span class="change">(+7)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/msg</strong>:
+        PluginUpdate.java&#160;<span class="new">(new&#160;102)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="61"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-04-26 21:05</span>
+    <a class="permalink" title="Permalink to this commit" href="#61">#61</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4649</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+refactored EditPlugin.JAR and portions of JARClassLoader into new PluginJAR class; many code cleanups in plugin loader<br />
+
+    </p>
+    <p class="commitdetails"><strong>872</strong> lines of code changed in <span class="files">22 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+8)</span>,
+        TODO.txt&#160;<span class="change">(-2)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        ActionSet.java&#160;<span class="change">(+2&#160;-2)</span>,
+        EBMessage.java&#160;<span class="change">(+4&#160;-1)</span>,
+        EditPane.java&#160;<span class="change">(+9)</span>,
+        EditPlugin.java&#160;<span class="change">(+5&#160;-410)</span>,
+        JARClassLoader.java&#160;<span class="change">(+37&#160;-390)</span>,
+        MiscUtilities.java&#160;<span class="change">(+2&#160;-15)</span>,
+        PluginJAR.java&#160;<span class="new">(new&#160;719)</span>,
+        ResourceCache.java&#160;<span class="change">(+6&#160;-7)</span>,
+        ServiceListHandler.java&#160;<span class="change">(+2&#160;-2)</span>,
+        ServiceManager.java&#160;<span class="change">(+5&#160;-5)</span>,
+        View.java&#160;<span class="change">(+9)</span>,
+        jEdit.java&#160;<span class="change">(+30&#160;-41)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/gui</strong>:
+        DockableWindowManager.java&#160;<span class="change">(+8&#160;-8)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/help</strong>:
+        HelpIndex.java&#160;<span class="change">(+1&#160;-1)</span>,
+        HelpTOCPanel.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/pluginmgr</strong>:
+        ManagePanel.java&#160;<span class="change">(+1&#160;-1)</span>,
+        PluginList.java&#160;<span class="change">(+4&#160;-4)</span>,
+        Roster.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/proto/jeditresource</strong>:
+        PluginResURLConnection.java&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/textarea</strong>:
+        TextAreaPainter.java&#160;<span class="change">(+16&#160;-9)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="60"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-04-25 07:09</span>
+    <a class="permalink" title="Permalink to this commit" href="#60">#60</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4648</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+plugin api refactoring under way<br />
+
+    </p>
+    <p class="commitdetails"><strong>617</strong> lines of code changed in <span class="files">28 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+3&#160;-3)</span>,
+        TODO.txt&#160;<span class="change">(+16&#160;-13)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        ActionSet.java&#160;<span class="change">(+46&#160;-7)</span>,
+        BeanShellAction.java&#160;<span class="change">(+3&#160;-6)</span>,
+        EditAction.java&#160;<span class="change">(+20&#160;-5)</span>,
+        EditPlugin.java&#160;<span class="change">(+262&#160;-38)</span>,
+        GUIUtilities.java&#160;<span class="change">(+12&#160;-12)</span>,
+        JARClassLoader.java&#160;<span class="change">(+34&#160;-105)</span>,
+        Macros.java&#160;<span class="change">(+3&#160;-7)</span>,
+        MiscUtilities.java&#160;<span class="change">(+2&#160;-1)</span>,
+        ResourceCache.java&#160;<span class="change">(+11&#160;-19)</span>,
+        ServiceManager.java&#160;<span class="change">(+40&#160;-14)</span>,
+        jEdit.java&#160;<span class="change">(+22&#160;-10)</span>,
+        jedit_gui.props&#160;<span class="change">(+1)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/browser</strong>:
+        BrowserView.java&#160;<span class="change">(+5&#160;-20)</span>,
+        VFSBrowser.java&#160;<span class="change">(+11)</span>,
+        VFSDirectoryEntryTable.java&#160;<span class="change">(+24&#160;-7)</span>,
+        VFSDirectoryEntryTableModel.java&#160;<span class="change">(+12&#160;-6)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/buffer</strong>:
+        FoldHandler.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/gui</strong>:
+        DockableWindowManager.java&#160;<span class="change">(+28&#160;-30)</span>,
+        EnhancedButton.java&#160;<span class="change">(+6&#160;-6)</span>,
+        EnhancedCheckBoxMenuItem.java&#160;<span class="change">(+13&#160;-11)</span>,
+        EnhancedMenuItem.java&#160;<span class="change">(+10&#160;-10)</span>,
+        FloatingWindowContainer.java&#160;<span class="change">(+6)</span>,
+        MacrosMenu.java&#160;<span class="change">(+4&#160;-3)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/pluginmgr</strong>:
+        Roster.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/syntax</strong>:
+        xmode.dtd&#160;<span class="change">(+20&#160;-10)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/textarea</strong>:
+        JEditTextArea.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="59"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-04-25 02:11</span>
+    <a class="permalink" title="Permalink to this commit" href="#59">#59</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4647</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+added missing file<br />
+
+    </p>
+    <p class="commitdetails"><strong>32</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        services.xml&#160;<span class="new">(new&#160;32)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="58"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-04-24 03:36</span>
+    <a class="permalink" title="Permalink to this commit" href="#58">#58</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4646</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+krisk's patch<br />
+
+    </p>
+    <p class="commitdetails"><strong>29</strong> lines of code changed in <span class="files">5 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        TODO.txt&#160;<span class="change">(-1)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        OperatingSystem.java&#160;<span class="change">(+24)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/buffer</strong>:
+        FoldHandler.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/gui</strong>:
+        EnhancedCheckBoxMenuItem.java&#160;<span class="change">(+3&#160;-1)</span>,
+        EnhancedMenuItem.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="57"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-04-24 03:29</span>
+    <a class="permalink" title="Permalink to this commit" href="#57">#57</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4645</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+vfs uses services api now<br />
+
+    </p>
+    <p class="commitdetails"><strong>66</strong> lines of code changed in <span class="files">5 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        TODO.txt&#160;<span class="change">(+1)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/browser</strong>:
+        VFSBrowser.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/buffer</strong>:
+        FoldHandler.java&#160;<span class="change">(+8&#160;-3)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/io</strong>:
+        VFS.java&#160;<span class="change">(+9&#160;-2)</span>,
+        VFSManager.java&#160;<span class="change">(+47&#160;-15)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="56"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-04-24 02:39</span>
+    <a class="permalink" title="Permalink to this commit" href="#56">#56</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4644</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+loads services.xml now<br />
+
+    </p>
+    <p class="commitdetails"><strong>11</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        EditPlugin.java&#160;<span class="change">(+6)</span>,
+        ResourceCache.java&#160;<span class="change">(+3)</span>,
+        jEdit.java&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="55"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-04-24 02:32</span>
+    <a class="permalink" title="Permalink to this commit" href="#55">#55</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4643</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+added services api which is only used for fold handlers at the present<br />
+
+    </p>
+    <p class="commitdetails"><strong>674</strong> lines of code changed in <span class="files">13 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        jedit.1&#160;<span class="change">(+5&#160;-1)</span>
+      </li>
+      <li>
+        <strong>doc</strong>:
+        TODO.txt&#160;<span class="change">(+10&#160;-6)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        Debug.java&#160;<span class="change">(+6)</span>,
+        EditPlugin.java&#160;<span class="change">(+42&#160;-18)</span>,
+        ResourceCache.java&#160;<span class="change">(+3&#160;-19)</span>,
+        ServiceListHandler.java&#160;<span class="new">(new&#160;184)</span>,
+        ServiceManager.java&#160;<span class="new">(new&#160;276)</span>,
+        jEdit.java&#160;<span class="change">(+10&#160;-15)</span>,
+        services.dtd&#160;<span class="new">(new&#160;8)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/buffer</strong>:
+        FoldHandler.java&#160;<span class="change">(+31&#160;-20)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/gui</strong>:
+        DockableWindowManager.java&#160;<span class="change">(+3&#160;-6)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/textarea</strong>:
+        DisplayManager.java&#160;<span class="change">(+89&#160;-48)</span>,
+        JEditTextArea.java&#160;<span class="change">(+7&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="54"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-04-23 19:52</span>
+    <a class="permalink" title="Permalink to this commit" href="#54">#54</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4642</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+more refactoring for new plugin API<br />
+
+    </p>
+    <p class="commitdetails"><strong>509</strong> lines of code changed in <span class="files">15 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        build.properties&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+      <li>
+        <strong>doc</strong>:
+        TODO.txt&#160;<span class="change">(+4)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        ActionSet.java&#160;<span class="change">(+44&#160;-35)</span>,
+        EditPane.java&#160;<span class="change">(+1&#160;-1)</span>,
+        EditPlugin.java&#160;<span class="change">(+84&#160;-13)</span>,
+        JARClassLoader.java&#160;<span class="change">(+2&#160;-4)</span>,
+        MiscUtilities.java&#160;<span class="change">(+2&#160;-1)</span>,
+        ResourceCache.java&#160;<span class="new">(new&#160;86)</span>,
+        View.java&#160;<span class="change">(+6)</span>,
+        jEdit.java&#160;<span class="change">(+17&#160;-28)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/browser</strong>:
+        FileCellRenderer.java&#160;<span class="change">(+14&#160;-14)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/gui</strong>:
+        DockableWindowManager.java&#160;<span class="change">(+23&#160;-28)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/textarea</strong>:
+        DisplayManager.java&#160;<span class="change">(+21&#160;-9)</span>,
+        JEditTextArea.java&#160;<span class="change">(+5&#160;-6)</span>,
+        TextAreaPainter.java&#160;<span class="change">(+198&#160;-169)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="53"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-04-23 03:58</span>
+    <a class="permalink" title="Permalink to this commit" href="#53">#53</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4641</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+more rectangular selection work<br />
+
+    </p>
+    <p class="commitdetails"><strong>45</strong> lines of code changed in <span class="files">5 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+16&#160;-8)</span>,
+        TODO.txt&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        jedit_gui.props&#160;<span class="change">(+1&#160;-2)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/textarea</strong>:
+        JEditTextArea.java&#160;<span class="change">(+2&#160;-1)</span>,
+        Selection.java&#160;<span class="change">(+25&#160;-11)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="52"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-04-23 02:59</span>
+    <a class="permalink" title="Permalink to this commit" href="#52">#52</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4640</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+much better up/down/left/right with rectangular selection, changed text area rect select behavior<br />
+
+    </p>
+    <p class="commitdetails"><strong>445</strong> lines of code changed in <span class="files">15 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        build.properties&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+6)</span>,
+        TODO.txt&#160;<span class="change">(+2&#160;-12)</span>
+      </li>
+      <li>
+        <strong>installer</strong>:
+        OperatingSystem.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        actions.xml&#160;<span class="change">(+1&#160;-11)</span>,
+        jedit_gui.props&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/browser</strong>:
+        BrowserView.java&#160;<span class="change">(-79)</span>,
+        VFSDirectoryEntryTable.java&#160;<span class="change">(+67&#160;-3)</span>,
+        VFSFileNameField.java&#160;<span class="change">(+8)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/buffer</strong>:
+        OffsetManager.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/gui</strong>:
+        DockableWindowManager.java&#160;<span class="change">(+90&#160;-36)</span>,
+        PanelWindowContainer.java&#160;<span class="change">(+88&#160;-46)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/textarea</strong>:
+        ChunkCache.java&#160;<span class="change">(+10&#160;-4)</span>,
+        DisplayManager.java&#160;<span class="change">(-17)</span>,
+        JEditTextArea.java&#160;<span class="change">(+168&#160;-62)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="51"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-04-22 20:46</span>
+    <a class="permalink" title="Permalink to this commit" href="#51">#51</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4639</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+detects if running on VMS<br />
+
+    </p>
+    <p class="commitdetails"><strong>80</strong> lines of code changed in <span class="files">5 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+2)</span>,
+        TODO.txt&#160;<span class="change">(-1)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        Buffer.java&#160;<span class="change">(+52)</span>,
+        OperatingSystem.java&#160;<span class="change">(+25&#160;-8)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/io</strong>:
+        FileVFS.java&#160;<span class="change">(+1&#160;-26)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="50"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-04-22 20:34</span>
+    <a class="permalink" title="Permalink to this commit" href="#50">#50</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4638</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+installer now supports VMS, array index out of bounds fix for untitled files<br />
+
+    </p>
+    <p class="commitdetails"><strong>23</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>installer</strong>:
+        OperatingSystem.java&#160;<span class="change">(+10)</span>,
+        done-VMS.html&#160;<span class="new">(new&#160;13)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="49"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-04-22 20:27</span>
+    <a class="permalink" title="Permalink to this commit" href="#49">#49</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4637</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+simpler offset manager no longer uses 64-bit arithmetic<br />
+
+    </p>
+    <p class="commitdetails"><strong>168</strong> lines of code changed in <span class="files">5 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        TODO.txt&#160;<span class="change">(+5&#160;-1)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        Buffer.java&#160;<span class="change">(+13&#160;-14)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/buffer</strong>:
+        BufferIORequest.java&#160;<span class="change">(+4&#160;-4)</span>,
+        OffsetManager.java&#160;<span class="change">(+53&#160;-58)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/util</strong>:
+        IntegerArray.java&#160;<span class="new">(new&#160;93)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="48"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-04-22 05:11</span>
+    <a class="permalink" title="Permalink to this commit" href="#48">#48</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4636</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+last commit of the day<br />
+
+    </p>
+    <p class="commitdetails"><strong>167</strong> lines of code changed in <span class="files">12 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+13&#160;-1)</span>,
+        TODO.txt&#160;<span class="change">(+14&#160;-12)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        Buffer.java&#160;<span class="change">(+71&#160;-3)</span>,
+        jedit_gui.props&#160;<span class="change">(+6&#160;-4)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/browser</strong>:
+        FileCellRenderer.java&#160;<span class="change">(+18&#160;-8)</span>,
+        VFSBrowser.java&#160;<span class="change">(+2)</span>,
+        VFSDirectoryEntryTable.java&#160;<span class="change">(+4&#160;-1)</span>,
+        VFSDirectoryEntryTableModel.java&#160;<span class="change">(+7&#160;-3)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/io</strong>:
+        FileVFS.java&#160;<span class="change">(-33)</span>,
+        VFS.java&#160;<span class="change">(+17&#160;-3)</span>,
+        VFSManager.java&#160;<span class="change">(+5&#160;-4)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/options</strong>:
+        BrowserOptionPane.java&#160;<span class="change">(+10&#160;-7)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="47"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-04-22 04:04</span>
+    <a class="permalink" title="Permalink to this commit" href="#47">#47</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4635</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+extended attributes API and more details view work<br />
+
+    </p>
+    <p class="commitdetails"><strong>232</strong> lines of code changed in <span class="files">8 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        TODO.txt&#160;<span class="change">(-4)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        MiscUtilities.java&#160;<span class="change">(+20)</span>,
+        jedit_gui.props&#160;<span class="change">(+4&#160;-3)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/browser</strong>:
+        FileCellRenderer.java&#160;<span class="change">(+18&#160;-14)</span>,
+        VFSDirectoryEntryTable.java&#160;<span class="change">(+34&#160;-5)</span>,
+        VFSDirectoryEntryTableModel.java&#160;<span class="change">(+17&#160;-62)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/io</strong>:
+        FileVFS.java&#160;<span class="change">(+26&#160;-21)</span>,
+        VFS.java&#160;<span class="change">(+113)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="46"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-04-22 02:35</span>
+    <a class="permalink" title="Permalink to this commit" href="#46">#46</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4634</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+file system browser detail view almost done<br />
+
+    </p>
+    <p class="commitdetails"><strong>189</strong> lines of code changed in <span class="files">6 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/browser</strong>:
+        BrowserView.java&#160;<span class="change">(+87&#160;-122)</span>,
+        FileCellRenderer.java&#160;<span class="change">(+29&#160;-8)</span>,
+        VFSDirectoryEntryTable.java&#160;<span class="change">(+41&#160;-7)</span>,
+        VFSDirectoryEntryTableModel.java&#160;<span class="change">(+27&#160;-26)</span>,
+        VFSFileNameField.java&#160;<span class="change">(+5)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/pluginmgr</strong>:
+        InstallPanel.java&#160;<span class="change">(-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="45"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-04-22 00:38</span>
+    <a class="permalink" title="Permalink to this commit" href="#45">#45</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4633</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+didn't compile<br />
+
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/browser</strong>:
+        VFSBrowser.java&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="44"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-04-22 00:32</span>
+    <a class="permalink" title="Permalink to this commit" href="#44">#44</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4632</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+renamed VFSDirectoryEntryCellRenderer to FileCellRenderer for backward compatibility<br />
+
+    </p>
+    <p class="commitdetails"><strong>148</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/browser</strong>:
+        FileCellRenderer.java&#160;<span class="new">(new&#160;146)</span>,
+        VFSDirectoryEntryTable.java&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="43"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-04-22 00:30</span>
+    <a class="permalink" title="Permalink to this commit" href="#43">#43</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4631</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+started details view in file system browser<br />
+
+    </p>
+    <p class="commitdetails"><strong>858</strong> lines of code changed in <span class="files">17 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        TODO.txt&#160;<span class="change">(+15&#160;-6)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        Buffer.java&#160;<span class="change">(+4&#160;-7)</span>,
+        jedit.props&#160;<span class="change">(+1&#160;-1)</span>,
+        jedit_gui.props&#160;<span class="change">(+1)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/browser</strong>:
+        BrowserIORequest.java&#160;<span class="change">(+3&#160;-6)</span>,
+        BrowserView.java&#160;<span class="change">(+71&#160;-367)</span>,
+        FileCellRenderer.java&#160;<span class="del">(del)</span>,
+        VFSBrowser.java&#160;<span class="change">(+16&#160;-16)</span>,
+        VFSDirectoryEntryCellRenderer.java&#160;<span class="new">(new&#160;149)</span>,
+        VFSDirectoryEntryTable.java&#160;<span class="new">(new&#160;257)</span>,
+        VFSDirectoryEntryTableModel.java&#160;<span class="new">(new&#160;272)</span>,
+        VFSFileChooserDialog.java&#160;<span class="change">(+4&#160;-3)</span>,
+        VFSFileNameField.java&#160;<span class="change">(+5&#160;-5)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/buffer</strong>:
+        OffsetManager.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/options</strong>:
+        PluginManagerOptionPane.java&#160;<span class="change">(+52&#160;-26)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/pluginmgr</strong>:
+        MirrorList.java&#160;<span class="change">(+2&#160;-1)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/textarea</strong>:
+        DisplayManager.java&#160;<span class="change">(+2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="42"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-04-21 05:10</span>
+    <a class="permalink" title="Permalink to this commit" href="#42">#42</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4630</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+moved a few classes<br />
+
+    </p>
+    <p class="commitdetails"><strong>337</strong> lines of code changed in <span class="files">6 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        TODO.txt&#160;<span class="change">(+2)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/options</strong>:
+        PluginManagerOptionPane.java&#160;<span class="change">(+29&#160;-28)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/pluginmgr</strong>:
+        MirrorList.java&#160;<span class="new">(new&#160;114)</span>,
+        MirrorListHandler.java&#160;<span class="new">(new&#160;173)</span>,
+        PluginList.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/textarea</strong>:
+        DisplayManager.java&#160;<span class="change">(+18)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="41"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-04-21 04:21</span>
+    <a class="permalink" title="Permalink to this commit" href="#41">#41</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4629</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+bug fixes, started column insert<br />
+
+    </p>
+    <p class="commitdetails"><strong>361</strong> lines of code changed in <span class="files">15 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        TODO.txt&#160;<span class="change">(+6&#160;-5)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        Buffer.java&#160;<span class="change">(+30&#160;-40)</span>,
+        Debug.java&#160;<span class="change">(+5)</span>,
+        View.java&#160;<span class="change">(+2&#160;-1)</span>,
+        jedit_gui.props&#160;<span class="change">(+12)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/browser</strong>:
+        BrowserView.java&#160;<span class="change">(+3&#160;-1)</span>,
+        VFSBrowser.java&#160;<span class="change">(+1&#160;-1)</span>,
+        VFSFileChooserDialog.java&#160;<span class="change">(+3&#160;-6)</span>,
+        VFSFileNameField.java&#160;<span class="change">(+40&#160;-19)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/buffer</strong>:
+        OffsetManager.java&#160;<span class="change">(+46&#160;-63)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/gui</strong>:
+        LogViewer.java&#160;<span class="change">(+12&#160;-4)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/pluginmgr</strong>:
+        ManagePanel.java&#160;<span class="change">(-1)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/textarea</strong>:
+        DisplayManager.java&#160;<span class="change">(+13&#160;-46)</span>,
+        JEditTextArea.java&#160;<span class="change">(+100&#160;-23)</span>,
+        Selection.java&#160;<span class="change">(+88&#160;-15)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="40"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-04-19 17:43</span>
+    <a class="permalink" title="Permalink to this commit" href="#40">#40</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4628</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+better completion<br />
+
+    </p>
+    <p class="commitdetails"><strong>8</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        TODO.txt&#160;<span class="change">(+6)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/browser</strong>:
+        VFSFileChooserDialog.java&#160;<span class="change">(+1&#160;-1)</span>,
+        VFSFileNameField.java&#160;<span class="change">(+1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="39"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-04-19 04:48</span>
+    <a class="permalink" title="Permalink to this commit" href="#39">#39</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4627</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+better completion in file system browser dialog boxes; bug fixes<br />
+
+    </p>
+    <p class="commitdetails"><strong>136</strong> lines of code changed in <span class="files">10 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        TODO.txt&#160;<span class="change">(+2&#160;-1)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        Buffer.java&#160;<span class="change">(+2&#160;-2)</span>,
+        EditServer.java&#160;<span class="change">(+19&#160;-3)</span>,
+        View.java&#160;<span class="change">(+9&#160;-9)</span>,
+        actions.xml&#160;<span class="change">(+2&#160;-2)</span>,
+        jEdit.java&#160;<span class="change">(+4&#160;-6)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/browser</strong>:
+        VFSFileChooserDialog.java&#160;<span class="change">(+9&#160;-13)</span>,
+        VFSFileNameField.java&#160;<span class="change">(+55&#160;-9)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/gui</strong>:
+        HistoryTextField.java&#160;<span class="change">(+8&#160;-4)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/textarea</strong>:
+        JEditTextArea.java&#160;<span class="change">(+26&#160;-15)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="38"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-04-17 00:56</span>
+    <a class="permalink" title="Permalink to this commit" href="#38">#38</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4626</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+bug fixes and starting better completion in file system browser<br />
+
+    </p>
+    <p class="commitdetails"><strong>531</strong> lines of code changed in <span class="files">20 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+21)</span>,
+        TODO.txt&#160;<span class="change">(+81&#160;-111)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        Buffer.java&#160;<span class="change">(+2&#160;-1)</span>,
+        MiscUtilities.java&#160;<span class="change">(+5&#160;-5)</span>,
+        View.java&#160;<span class="change">(+31)</span>,
+        actions.xml&#160;<span class="change">(+1&#160;-1)</span>,
+        jEdit.java&#160;<span class="change">(+12&#160;-4)</span>,
+        jedit.props&#160;<span class="change">(+2&#160;-2)</span>,
+        jedit_gui.props&#160;<span class="change">(+7&#160;-3)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/browser</strong>:
+        BrowserView.java&#160;<span class="change">(+30&#160;-26)</span>,
+        VFSBrowser.java&#160;<span class="change">(+52&#160;-24)</span>,
+        VFSFileChooserDialog.java&#160;<span class="change">(+19&#160;-1)</span>,
+        VFSFileNameField.java&#160;<span class="change">(+38&#160;-16)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/options</strong>:
+        BrowserOptionPane.java&#160;<span class="change">(+18&#160;-8)</span>,
+        PluginManagerOptionPane.java&#160;<span class="change">(+62&#160;-26)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/pluginmgr</strong>:
+        ManagePanel.java&#160;<span class="change">(+15&#160;-7)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/syntax</strong>:
+        TokenMarker.java&#160;<span class="change">(+6&#160;-2)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/textarea</strong>:
+        ChunkCache.java&#160;<span class="change">(+6&#160;-4)</span>,
+        DisplayManager.java&#160;<span class="change">(+98&#160;-73)</span>,
+        JEditTextArea.java&#160;<span class="change">(+25&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="37"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-04-16 00:25</span>
+    <a class="permalink" title="Permalink to this commit" href="#37">#37</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4625</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+started better completion in file system browser<br />
+
+    </p>
+    <p class="commitdetails"><strong>181</strong> lines of code changed in <span class="files">17 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+9&#160;-4)</span>,
+        TODO.txt&#160;<span class="change">(+23&#160;-8)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        Autosave.java&#160;<span class="change">(+3)</span>,
+        MiscUtilities.java&#160;<span class="change">(+4&#160;-2)</span>,
+        View.java&#160;<span class="change">(+1)</span>,
+        actions.xml&#160;<span class="change">(+1&#160;-1)</span>,
+        dockables.xml&#160;<span class="change">(+1&#160;-1)</span>,
+        jEdit.java&#160;<span class="change">(+11&#160;-11)</span>,
+        jedit.props&#160;<span class="change">(-1)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/browser</strong>:
+        VFSBrowser.java&#160;<span class="change">(+17&#160;-22)</span>,
+        VFSFileChooserDialog.java&#160;<span class="change">(+7&#160;-86)</span>,
+        VFSFileNameField.java&#160;<span class="new">(new&#160;60)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/buffer</strong>:
+        OffsetManager.java&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/syntax</strong>:
+        xmode.dtd&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/textarea</strong>:
+        ChunkCache.java&#160;<span class="change">(+1&#160;-2)</span>,
+        DisplayManager.java&#160;<span class="change">(+38&#160;-10)</span>,
+        JEditTextArea.java&#160;<span class="change">(+1&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="36"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-04-15 23:22</span>
+    <a class="permalink" title="Permalink to this commit" href="#36">#36</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4624</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+added a mail mode, handy if you use jEdit as a mail composition editor<br />
+
+    </p>
+    <p class="commitdetails"><strong>33</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modes</strong>:
+        catalog&#160;<span class="change">(+2)</span>,
+        mail.xml&#160;<span class="new">(new&#160;31)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="35"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-04-15 00:15</span>
+    <a class="permalink" title="Permalink to this commit" href="#35">#35</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4623</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+improved color scheme from krisk<br />
+
+    </p>
+    <p class="commitdetails"><strong>39</strong> lines of code changed in <span class="files">4 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        TODO.txt&#160;<span class="change">(+14&#160;-2)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        JARClassLoader.java&#160;<span class="change">(+2&#160;-2)</span>,
+        jedit.props&#160;<span class="change">(+17&#160;-17)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/gui</strong>:
+        FilesChangedDialog.java&#160;<span class="change">(+6&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="34"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-04-14 23:43</span>
+    <a class="permalink" title="Permalink to this commit" href="#34">#34</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4622</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+started refactoring for deferred plugin load API<br />
+
+    </p>
+    <p class="commitdetails"><strong>496</strong> lines of code changed in <span class="files">11 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+10)</span>,
+        TODO.txt&#160;<span class="change">(+3)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        ActionSet.java&#160;<span class="change">(+155&#160;-13)</span>,
+        EditPlugin.java&#160;<span class="change">(+38&#160;-18)</span>,
+        JARClassLoader.java&#160;<span class="change">(+2&#160;-3)</span>,
+        jEdit.java&#160;<span class="change">(+53&#160;-28)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/gui</strong>:
+        ActionBar.java&#160;<span class="change">(+11&#160;-11)</span>,
+        DefaultInputHandler.java&#160;<span class="change">(+71&#160;-29)</span>,
+        DockableWindowManager.java&#160;<span class="change">(+130&#160;-45)</span>,
+        InputHandler.java&#160;<span class="change">(+22)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/options</strong>:
+        ToolBarOptionPane.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="33"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-04-14 06:34</span>
+    <a class="permalink" title="Permalink to this commit" href="#33">#33</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4621</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+files changed dialog should work now<br />
+
+    </p>
+    <p class="commitdetails"><strong>26</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        TODO.txt&#160;<span class="change">(+2)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/gui</strong>:
+        FilesChangedDialog.java&#160;<span class="change">(+24&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="32"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-04-14 06:28</span>
+    <a class="permalink" title="Permalink to this commit" href="#32">#32</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4620</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+added missing files<br />
+
+    </p>
+    <p class="commitdetails"><strong>255</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        PerspectiveManager.java&#160;<span class="change">(+13)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/gui</strong>:
+        DefaultFocusComponent.java&#160;<span class="new">(new&#160;40)</span>,
+        FilesChangedDialog.java&#160;<span class="new">(new&#160;202)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="31"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-04-14 06:21</span>
+    <a class="permalink" title="Permalink to this commit" href="#31">#31</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4619</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+markers menu fixed<br />
+
+    </p>
+    <p class="commitdetails"><strong>76</strong> lines of code changed in <span class="files">18 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+4)</span>,
+        TODO.txt&#160;<span class="change">(+6&#160;-12)</span>
+      </li>
+      <li>
+        <strong>jars/QuickNotepad</strong>:
+        QuickNotepad.java&#160;<span class="change">(+6&#160;-1)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        Buffer.java&#160;<span class="change">(-23)</span>,
+        MiscUtilities.java&#160;<span class="change">(+4&#160;-2)</span>,
+        View.java&#160;<span class="change">(+10)</span>,
+        default.abbrevs&#160;<span class="change">(changed)</span>,
+        jEdit.java&#160;<span class="change">(+6&#160;-6)</span>,
+        jedit_gui.props&#160;<span class="change">(+1)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/browser</strong>:
+        VFSBrowser.java&#160;<span class="change">(+3&#160;-4)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/buffer</strong>:
+        BufferChangeAdapter.java&#160;<span class="change">(-11)</span>,
+        BufferChangeListener.java&#160;<span class="change">(-11)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/gui</strong>:
+        DefaultInputHandler.java&#160;<span class="change">(+1)</span>,
+        FloatingWindowContainer.java&#160;<span class="change">(+9&#160;-1)</span>,
+        LogViewer.java&#160;<span class="change">(+3&#160;-4)</span>,
+        PanelWindowContainer.java&#160;<span class="change">(+18&#160;-4)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/search</strong>:
+        HyperSearchResults.java&#160;<span class="change">(+5&#160;-4)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/textarea</strong>:
+        JEditTextArea.java&#160;<span class="change">(-10)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="30"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-04-14 05:38</span>
+    <a class="permalink" title="Permalink to this commit" href="#30">#30</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4618</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+didn't save a few files<br />
+
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        jEdit.java&#160;<span class="change">(-3)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/io</strong>:
+        FileVFS.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="29"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-04-14 05:33</span>
+    <a class="permalink" title="Permalink to this commit" href="#29">#29</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4617</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+path handling cleanup, fixed files changed dialog npe<br />
+
+    </p>
+    <p class="commitdetails"><strong>36</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        TODO.txt&#160;<span class="change">(+1&#160;-12)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        MiscUtilities.java&#160;<span class="change">(+35&#160;-16)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="28"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-04-14 04:59</span>
+    <a class="permalink" title="Permalink to this commit" href="#28">#28</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4616</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+better handling of files being changed on disk<br />
+
+    </p>
+    <p class="commitdetails"><strong>64</strong> lines of code changed in <span class="files">9 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+8&#160;-1)</span>,
+        TODO.txt&#160;<span class="change">(+4&#160;-3)</span>
+      </li>
+      <li>
+        <strong>modes</strong>:
+        catalog&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        Buffer.java&#160;<span class="change">(+7&#160;-41)</span>,
+        EditPane.java&#160;<span class="change">(-1)</span>,
+        View.java&#160;<span class="change">(+1&#160;-17)</span>,
+        jEdit.java&#160;<span class="change">(+28)</span>,
+        jedit_gui.props&#160;<span class="change">(+10&#160;-14)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/gui</strong>:
+        PanelWindowContainer.java&#160;<span class="change">(+5&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="27"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-04-14 03:41</span>
+    <a class="permalink" title="Permalink to this commit" href="#27">#27</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4615</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+first line could lose sync with display when folds are collapsed<br />
+
+    </p>
+    <p class="commitdetails"><strong>56</strong> lines of code changed in <span class="files">7 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+3)</span>,
+        TODO.txt&#160;<span class="change">(-6)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        jedit_gui.props&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/gui</strong>:
+        DefaultInputHandler.java&#160;<span class="change">(+7&#160;-6)</span>,
+        InputHandler.java&#160;<span class="change">(+38&#160;-43)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/textarea</strong>:
+        DisplayManager.java&#160;<span class="change">(+3&#160;-3)</span>,
+        JEditTextArea.java&#160;<span class="change">(+4&#160;-4)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="26"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-04-14 03:25</span>
+    <a class="permalink" title="Permalink to this commit" href="#26">#26</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4614</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+better invalidation for slightly faster chunk cache operations<br />
+
+    </p>
+    <p class="commitdetails"><strong>118</strong> lines of code changed in <span class="files">6 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+2&#160;-3)</span>,
+        TODO.txt&#160;<span class="change">(+2)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/textarea</strong>:
+        ChunkCache.java&#160;<span class="change">(+28&#160;-32)</span>,
+        Gutter.java&#160;<span class="change">(+8&#160;-29)</span>,
+        JEditTextArea.java&#160;<span class="change">(+78&#160;-18)</span>,
+        TextAreaPainter.java&#160;<span class="change">(-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="25"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-04-14 01:51</span>
+    <a class="permalink" title="Permalink to this commit" href="#25">#25</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4613</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+-wait works<br />
+
+    </p>
+    <p class="commitdetails"><strong>22</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+16&#160;-6)</span>,
+        TODO.txt&#160;<span class="change">(+4&#160;-3)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        Buffer.java&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="24"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-04-13 02:35</span>
+    <a class="permalink" title="Permalink to this commit" href="#24">#24</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4612</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+started -wait switch<br />
+
+    </p>
+    <p class="commitdetails"><strong>76</strong> lines of code changed in <span class="files">6 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        Buffer.java&#160;<span class="change">(+20&#160;-27)</span>,
+        EditServer.java&#160;<span class="change">(+30&#160;-23)</span>,
+        jEdit.java&#160;<span class="change">(+26&#160;-8)</span>,
+        jedit.props&#160;<span class="change">(-3)</span>,
+        jedit_gui.props&#160;<span class="change">(-1)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/options</strong>:
+        LoadSaveOptionPane.java&#160;<span class="change">(-7)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="23"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-04-13 01:17</span>
+    <a class="permalink" title="Permalink to this commit" href="#23">#23</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4611</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+added -newview, -newplainview, -reuseview command line switches -- they work in the client only<br />
+
+    </p>
+    <p class="commitdetails"><strong>260</strong> lines of code changed in <span class="files">11 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        TODO.txt&#160;<span class="change">(+3&#160;-4)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        Buffer.java&#160;<span class="change">(+56&#160;-38)</span>,
+        EditServer.java&#160;<span class="change">(+31&#160;-3)</span>,
+        View.java&#160;<span class="change">(+14&#160;-1)</span>,
+        jEdit.java&#160;<span class="change">(+55&#160;-36)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/buffer</strong>:
+        BufferChangeAdapter.java&#160;<span class="change">(+12&#160;-1)</span>,
+        BufferChangeListener.java&#160;<span class="change">(+12&#160;-1)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/search</strong>:
+        SearchAndReplace.java&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/textarea</strong>:
+        ChunkCache.java&#160;<span class="change">(+5&#160;-3)</span>,
+        DisplayManager.java&#160;<span class="change">(+55&#160;-37)</span>,
+        JEditTextArea.java&#160;<span class="change">(+15&#160;-10)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="22"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-04-11 18:41</span>
+    <a class="permalink" title="Permalink to this commit" href="#22">#22</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4610</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+fixed a few problems, removed unneeded debug messages<br />
+
+    </p>
+    <p class="commitdetails"><strong>11</strong> lines of code changed in <span class="files">4 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        Debug.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/buffer</strong>:
+        OffsetManager.java&#160;<span class="change">(+1&#160;-2)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/textarea</strong>:
+        DisplayManager.java&#160;<span class="change">(-2)</span>,
+        JEditTextArea.java&#160;<span class="change">(+9&#160;-26)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="21"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-04-11 01:59</span>
+    <a class="permalink" title="Permalink to this commit" href="#21">#21</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4609</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+various display bug fixes<br />
+
+    </p>
+    <p class="commitdetails"><strong>158</strong> lines of code changed in <span class="files">12 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        TODO.txt&#160;<span class="change">(+9&#160;-14)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        Buffer.java&#160;<span class="change">(+7&#160;-4)</span>,
+        Debug.java&#160;<span class="change">(+6&#160;-1)</span>,
+        actions.xml&#160;<span class="change">(+12&#160;-2)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/buffer</strong>:
+        OffsetManager.java&#160;<span class="change">(+48&#160;-13)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/gui</strong>:
+        LogViewer.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/help</strong>:
+        HelpViewer.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/syntax</strong>:
+        DisplayTokenHandler.java&#160;<span class="change">(+3&#160;-3)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/textarea</strong>:
+        ChunkCache.java&#160;<span class="change">(+1&#160;-1)</span>,
+        DisplayManager.java&#160;<span class="change">(+50&#160;-1)</span>,
+        JEditTextArea.java&#160;<span class="change">(+15&#160;-27)</span>,
+        TextAreaPainter.java&#160;<span class="change">(+5&#160;-5)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="20"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-04-10 22:11</span>
+    <a class="permalink" title="Permalink to this commit" href="#20">#20</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4608</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+bug fixes<br />
+
+    </p>
+    <p class="commitdetails"><strong>427</strong> lines of code changed in <span class="files">12 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+11&#160;-2)</span>,
+        TODO.txt&#160;<span class="change">(+3&#160;-5)</span>
+      </li>
+      <li>
+        <strong>macros/Files</strong>:
+        Open_Selection.bsh&#160;<span class="change">(+8&#160;-3)</span>
+      </li>
+      <li>
+        <strong>modes</strong>:
+        aspect-j.xml&#160;<span class="new">(new&#160;244)</span>,
+        catalog&#160;<span class="change">(+3)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        Buffer.java&#160;<span class="change">(+3&#160;-1)</span>,
+        Debug.java&#160;<span class="change">(+39&#160;-4)</span>,
+        jedit_gui.props&#160;<span class="change">(+2)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/buffer</strong>:
+        OffsetManager.java&#160;<span class="change">(+13&#160;-25)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/syntax</strong>:
+        DisplayTokenHandler.java&#160;<span class="change">(+2)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/textarea</strong>:
+        DisplayManager.java&#160;<span class="change">(+30&#160;-87)</span>,
+        JEditTextArea.java&#160;<span class="change">(+69&#160;-28)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="19"></a>
+    <a href="user_krisko.html" class="author">krisko</a>
+    <span class="date">2003-04-09 03:50</span>
+    <a class="permalink" title="Permalink to this commit" href="#19">#19</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4607</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+minor changes<br />
+
+    </p>
+    <p class="commitdetails"><strong>64</strong> lines of code changed in <span class="files">4 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>jars/MacOS</strong>:
+        MacOS.props&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+      <li>
+        <strong>jars/MacOS/macos</strong>:
+        Delegate.java&#160;<span class="change">(+11&#160;-13)</span>,
+        MacOSActions.java&#160;<span class="change">(+51&#160;-3)</span>,
+        MacOSPlugin.java&#160;<span class="change">(-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="18"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-04-09 03:33</span>
+    <a class="permalink" title="Permalink to this commit" href="#18">#18</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4606</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+expandFolds works again, offset manager optimizations<br />
+
+    </p>
+    <p class="commitdetails"><strong>39</strong> lines of code changed in <span class="files">4 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+3)</span>,
+        TODO.txt&#160;<span class="change">(+6&#160;-13)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        Buffer.java&#160;<span class="change">(+12&#160;-9)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/buffer</strong>:
+        OffsetManager.java&#160;<span class="change">(+18&#160;-12)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="17"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-04-09 02:01</span>
+    <a class="permalink" title="Permalink to this commit" href="#17">#17</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4605</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+skew handling was messed up<br />
+
+    </p>
+    <p class="commitdetails"><strong>12</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/textarea</strong>:
+        DisplayManager.java&#160;<span class="change">(+12&#160;-7)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="16"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-04-09 01:50</span>
+    <a class="permalink" title="Permalink to this commit" href="#16">#16</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4604</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+working JEditTextArea.scrollTo()<br />
+
+    </p>
+    <p class="commitdetails"><strong>87</strong> lines of code changed in <span class="files">4 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        README.txt&#160;<span class="change">(+1&#160;-1)</span>,
+        TODO.txt&#160;<span class="change">(+2&#160;-1)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/textarea</strong>:
+        DisplayManager.java&#160;<span class="change">(+28&#160;-2)</span>,
+        JEditTextArea.java&#160;<span class="change">(+56&#160;-71)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="15"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-04-08 22:53</span>
+    <a class="permalink" title="Permalink to this commit" href="#15">#15</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4603</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+additions to menu code<br />
+
+    </p>
+    <p class="commitdetails"><strong>178</strong> lines of code changed in <span class="files">7 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        TODO.txt&#160;<span class="change">(+2)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        EditPlugin.java&#160;<span class="change">(+42&#160;-1)</span>,
+        GUIUtilities.java&#160;<span class="change">(+30&#160;-34)</span>,
+        jedit_gui.props&#160;<span class="change">(+31&#160;-7)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/gui</strong>:
+        EnhancedMenu.java&#160;<span class="change">(+7&#160;-7)</span>,
+        RolloverButton.java&#160;<span class="change">(+50&#160;-8)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/textarea</strong>:
+        JEditTextArea.java&#160;<span class="change">(+16&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="14"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-04-08 19:37</span>
+    <a class="permalink" title="Permalink to this commit" href="#14">#14</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4602</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+added JEditTextArea.addLeftOfScrollBar()<br />
+
+    </p>
+    <p class="commitdetails"><strong>90</strong> lines of code changed in <span class="files">5 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+2)</span>,
+        TODO.txt&#160;<span class="change">(+8&#160;-11)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/textarea</strong>:
+        ChunkCache.java&#160;<span class="change">(+33&#160;-60)</span>,
+        DisplayManager.java&#160;<span class="change">(+20&#160;-1)</span>,
+        JEditTextArea.java&#160;<span class="change">(+27&#160;-21)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="13"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-04-08 03:13</span>
+    <a class="permalink" title="Permalink to this commit" href="#13">#13</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4601</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+faster scrolling<br />
+
+    </p>
+    <p class="commitdetails"><strong>58</strong> lines of code changed in <span class="files">10 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        TODO.txt&#160;<span class="change">(+2&#160;-1)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/browser</strong>:
+        BrowserView.java&#160;<span class="change">(+2)</span>,
+        FileCellRenderer.java&#160;<span class="change">(+2)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/gui</strong>:
+        DockableWindowManager.java&#160;<span class="change">(-1)</span>,
+        EnhancedCheckBoxMenuItem.java&#160;<span class="change">(+4&#160;-22)</span>,
+        EnhancedMenuItem.java&#160;<span class="change">(+19&#160;-6)</span>,
+        OptionsDialog.java&#160;<span class="change">(+2)</span>,
+        StatusBar.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/textarea</strong>:
+        ChunkCache.java&#160;<span class="change">(+26&#160;-98)</span>,
+        JEditTextArea.java&#160;<span class="change">(-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="12"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-04-08 01:48</span>
+    <a class="permalink" title="Permalink to this commit" href="#12">#12</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4600</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+latest from freebsd partition<br />
+
+    </p>
+    <p class="commitdetails"><strong>8</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        TODO.txt&#160;<span class="change">(+8)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="11"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-04-05 23:18</span>
+    <a class="permalink" title="Permalink to this commit" href="#11">#11</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4599</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+soft wrap works better<br />
+
+    </p>
+    <p class="commitdetails"><strong>65</strong> lines of code changed in <span class="files">6 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        TODO.txt&#160;<span class="change">(-7)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        jEdit.java&#160;<span class="change">(+1&#160;-1)</span>,
+        jedit_gui.props&#160;<span class="change">(+2&#160;-1)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/gui</strong>:
+        DockableWindowManager.java&#160;<span class="change">(+14&#160;-1)</span>,
+        PanelWindowContainer.java&#160;<span class="change">(+7&#160;-4)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/textarea</strong>:
+        ChunkCache.java&#160;<span class="change">(+41&#160;-10)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="10"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-04-04 20:51</span>
+    <a class="permalink" title="Permalink to this commit" href="#10">#10</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4598</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+fixed compile error<br />
+
+    </p>
+    <p class="commitdetails"><strong>56</strong> lines of code changed in <span class="files">4 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        TODO.txt&#160;<span class="change">(+17)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/gui</strong>:
+        DockableWindowManager.java&#160;<span class="change">(+4&#160;-3)</span>,
+        FloatingWindowContainer.java&#160;<span class="change">(+1)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/textarea</strong>:
+        JEditTextArea.java&#160;<span class="change">(+34&#160;-28)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="9"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-04-03 05:40</span>
+    <a class="permalink" title="Permalink to this commit" href="#9">#9</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4597</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+didn't compile<br />
+
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/textarea</strong>:
+        JEditTextArea.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="8"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-04-03 05:39</span>
+    <a class="permalink" title="Permalink to this commit" href="#8">#8</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4596</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+prev-line uses virtual space<br />
+
+    </p>
+    <p class="commitdetails"><strong>27</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        TODO.txt&#160;<span class="change">(-2)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/textarea</strong>:
+        JEditTextArea.java&#160;<span class="change">(+27&#160;-19)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="7"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-04-03 05:37</span>
+    <a class="permalink" title="Permalink to this commit" href="#7">#7</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4595</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+more virtual space work<br />
+
+    </p>
+    <p class="commitdetails"><strong>163</strong> lines of code changed in <span class="files">7 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+7&#160;-5)</span>,
+        TODO.txt&#160;<span class="change">(+4)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        View.java&#160;<span class="change">(+16&#160;-1)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/gui</strong>:
+        DockableWindowManager.java&#160;<span class="change">(+45&#160;-83)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/textarea</strong>:
+        ChunkCache.java&#160;<span class="change">(+2)</span>,
+        DisplayManager.java&#160;<span class="change">(+1&#160;-1)</span>,
+        JEditTextArea.java&#160;<span class="change">(+88&#160;-16)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="6"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-04-02 19:26</span>
+    <a class="permalink" title="Permalink to this commit" href="#6">#6</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4594</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+didn't compile<br />
+
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/gui</strong>:
+        PanelWindowContainer.java&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="5"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-04-02 19:25</span>
+    <a class="permalink" title="Permalink to this commit" href="#5">#5</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4593</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+more docking work<br />
+
+    </p>
+    <p class="commitdetails"><strong>254</strong> lines of code changed in <span class="files">8 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+12&#160;-3)</span>,
+        TODO.txt&#160;<span class="change">(+6&#160;-5)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        jedit_gui.props&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/gui</strong>:
+        ActionBar.java&#160;<span class="change">(+25&#160;-31)</span>,
+        DockableWindowManager.java&#160;<span class="change">(+77&#160;-54)</span>,
+        PanelWindowContainer.java&#160;<span class="change">(+96&#160;-60)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/textarea</strong>:
+        ChunkCache.java&#160;<span class="change">(+1&#160;-1)</span>,
+        DisplayManager.java&#160;<span class="change">(+36&#160;-4)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="4"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-04-02 04:32</span>
+    <a class="permalink" title="Permalink to this commit" href="#4">#4</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4592</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+more display bug fixes and cleanups<br />
+
+    </p>
+    <p class="commitdetails"><strong>94</strong> lines of code changed in <span class="files">7 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+2)</span>,
+        TODO.txt&#160;<span class="change">(+1&#160;-7)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        Buffer.java&#160;<span class="change">(+3)</span>,
+        EBMessage.java&#160;<span class="change">(+4&#160;-3)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/textarea</strong>:
+        ChunkCache.java&#160;<span class="change">(+2&#160;-1)</span>,
+        DisplayManager.java&#160;<span class="change">(+38&#160;-53)</span>,
+        JEditTextArea.java&#160;<span class="change">(+44&#160;-49)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="3"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-04-02 02:52</span>
+    <a class="permalink" title="Permalink to this commit" href="#3">#3</a>
+  </dt>
+  <dd>
+    <p class="comment">
+debug<br />
+
+    </p>
+    <p class="commitdetails"><strong>3</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/textarea</strong>:
+        DisplayManager.java&#160;<span class="change">(+2&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="2"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-04-02 02:45</span>
+    <a class="permalink" title="Permalink to this commit" href="#2">#2</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4589</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+menu bar tweaks, more display work<br />
+
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">13 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        TODO.txt&#160;<span class="change">(changed)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        Buffer.java&#160;<span class="change">(changed)</span>,
+        View.java&#160;<span class="change">(changed)</span>,
+        jEdit.java&#160;<span class="change">(changed)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/buffer</strong>:
+        OffsetManager.java&#160;<span class="change">(changed)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/gui</strong>:
+        EnhancedCheckBoxMenuItem.java&#160;<span class="change">(changed)</span>,
+        EnhancedMenuItem.java&#160;<span class="change">(changed)</span>,
+        StatusBar.java&#160;<span class="change">(changed)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/pluginmgr</strong>:
+        InstallPanel.java&#160;<span class="change">(changed)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/textarea</strong>:
+        DisplayManager.java&#160;<span class="change">(changed)</span>,
+        JEditTextArea.java&#160;<span class="change">(changed)</span>,
+        Selection.java&#160;<span class="change">(changed)</span>,
+        TextAreaPainter.java&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="1"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-04-01 03:58</span>
+    <a class="permalink" title="Permalink to this commit" href="#1">#1</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4588</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+added status indicator for rectangular selection<br />
+
+    </p>
+    <p class="commitdetails"><strong>79</strong> lines of code changed in <span class="files">10 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+2)</span>,
+        TODO.txt&#160;<span class="change">(+1&#160;-6)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        MiscUtilities.java&#160;<span class="change">(+5)</span>,
+        jEdit.java&#160;<span class="change">(+11)</span>,
+        jedit.props&#160;<span class="change">(+3)</span>,
+        jedit_gui.props&#160;<span class="change">(+2)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/gui</strong>:
+        StatusBar.java&#160;<span class="change">(+36&#160;-9)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/io</strong>:
+        VFS.java&#160;<span class="change">(+3)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/options</strong>:
+        StatusBarOptionPane.java&#160;<span class="change">(+11)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/textarea</strong>:
+        JEditTextArea.java&#160;<span class="change">(+5&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+</dl>
+
+<p class="previous"><a href="2003-03.html">March 2003</a> &#187; </p>
+<div id="generatedby">Generated by <a href="http://www.statsvn.org">StatSVN</a> 0.7.0</div>
+</body>
+</html>

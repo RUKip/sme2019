@@ -1,0 +1,349 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>StatSVN - Directory org/gjt/sp/jedit/bsh/commands/</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+    <meta name="Generator" content="StatSVN 0.7.0"/>
+<link rel="stylesheet" href="objectlab-statcvs.css" type="text/css"/>
+<script type="text/javascript" charset="utf-8" src="http://bit.ly/javascript-api.js?version=latest&#38;login=statsvn&#38;apiKey=R_2c362b417d0517c27876cbaca1bb68cc"></script>
+<script type="text/javascript" charset="utf-8">
+   // wait until page is loaded to call API
+   var redir_url;
+   var short_url;
+   BitlyCB.myShortenCallback = function(data) {
+      // this is how to get a result of shortening a single url
+      var result;
+      short_url=null;
+      for (var r in data.results) {
+         result = data.results[r];
+         result['longUrl'] = r;
+         short_url = result['shortUrl'];
+         break;
+      }
+      if (short_url==null) // bit.ly failed
+      document.location=redir_url;
+      else
+      redirToTwitter();
+   };
+   function shortenTweet(url) {
+      if (short_url == null || redir_url!=url) {
+      redir_url = url;
+      BitlyClient.shorten(document.location, 'BitlyCB.myShortenCallback');
+      }
+      else
+      redirToTwitter();
+      return false;
+   }
+   function redirToTwitter() { 
+      // replace {0} which is visible as %7B0} in the link
+      document.location = redir_url.replace('%7B0}', short_url);
+   }
+</script>
+  </head>
+
+<body>
+
+<h1>Directory org/gjt/sp/jedit/bsh/commands/</h1>
+<div id="parentlink">&#171; <a href="index.html">Development Statistics for /jEdit/trunk</a></div>
+<dl class="attributes">
+    <dt>Total Files:</dt>
+    <dd>22</dd>
+    <dt>Deleted Files:</dt>
+    <dd>0</dd>
+    <dt>Lines of Code:</dt>
+    <dd>1274</dd>
+</dl>
+<p class="dirtree">
+<a href="dir.html">[root]</a>/<a href="dir_org.html">org</a>/<a href="dir_org_gjt.html">gjt</a>/<a href="dir_org_gjt_sp.html">sp</a>/<a href="dir_org_gjt_sp_jedit.html">jedit</a>/<a href="dir_org_gjt_sp_jedit_bsh.html">bsh</a>/<strong>commands</strong><br/>
+</p>
+
+<div class="section">
+<h2>Lines of Code</h2>
+<p class="chart"><img src="loc_module_org_gjt_sp_jedit_bsh_commands.png" alt="org/gjt/sp/jedit/bsh/commands/ Lines of Code" width="800" height="500" /></p></div>
+<div class="section">
+<h2>Developers</h2>
+  <table  rules="groups" summary="All authors and the number of their changes and lines of code in this directory">
+    <colgroup align="left"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <thead>
+      <tr>
+        <th>Author</th>
+        <th>Changes</th>
+        <th>Lines of Code</th>
+        <th>Lines per Change</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <th>Totals</th>
+        <td>94 (100.0%)</td>
+        <td>1283 (100.0%)</td>
+        <td>13.6</td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr  class="odd">
+        <th><a href="user_Vampire0.html" class="author">Vampire0</a></th>
+        <td>44 (46.8%)</td>
+        <td>1274 (99.3%)</td>
+        <td>28.9</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_shlomy.html" class="author">shlomy</a></th>
+        <td>7 (7.4%)</td>
+        <td>6 (0.5%)</td>
+        <td>0.8</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_voituk.html" class="author">voituk</a></th>
+        <td>1 (1.1%)</td>
+        <td>2 (0.2%)</td>
+        <td>2.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_ezust.html" class="author">ezust</a></th>
+        <td>2 (2.1%)</td>
+        <td>1 (0.1%)</td>
+        <td>0.5</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_kpouer.html" class="author">kpouer</a></th>
+        <td>40 (42.6%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+<div class="section">
+<h2>Most Recent Commits</h2>
+<dl class="commitlist">
+  <dt><a name="8"></a>
+    <a href="user_Vampire0.html" class="author">Vampire0</a>
+    <span class="date">2013-08-31 12:39</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">23162</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+reinstantiate trunk and branches
+    </p>
+    <p class="commitdetails"><strong>1274</strong> lines of code changed in <span class="files">22 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/bsh/commands</strong>:
+        addClassPath.bsh&#160;<span class="new">(new&#160;30)</span>,
+        bind.bsh&#160;<span class="new">(new&#160;10)</span>,
+        browseClass.bsh&#160;<span class="new">(new&#160;42)</span>,
+        classBrowser.bsh&#160;<span class="new">(new&#160;48)</span>,
+        desktop.bsh&#160;<span class="new">(new&#160;224)</span>,
+        dir.java&#160;<span class="new">(new&#160;102)</span>,
+        extend.bsh&#160;<span class="new">(new&#160;50)</span>,
+        frame.bsh&#160;<span class="new">(new&#160;53)</span>,
+        getClassPath.bsh&#160;<span class="new">(new&#160;13)</span>,
+        getResource.bsh&#160;<span class="new">(new&#160;14)</span>,
+        getSourceFileInfo.bsh&#160;<span class="new">(new&#160;27)</span>,
+        javap.bsh&#160;<span class="new">(new&#160;62)</span>,
+        load.bsh&#160;<span class="new">(new&#160;88)</span>,
+        makeWorkspace.bsh&#160;<span class="new">(new&#160;138)</span>,
+        print.bsh&#160;<span class="new">(new&#160;53)</span>,
+        printBanner.bsh&#160;<span class="new">(new&#160;37)</span>,
+        reloadClasses.bsh&#160;<span class="new">(new&#160;55)</span>,
+        save.bsh&#160;<span class="new">(new&#160;34)</span>,
+        server.bsh&#160;<span class="new">(new&#160;15)</span>,
+        setAccessibility.bsh&#160;<span class="new">(new&#160;11)</span>,
+        which.bsh&#160;<span class="new">(new&#160;44)</span>,
+        workspaceEditor.bsh&#160;<span class="new">(new&#160;124)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="7"></a>
+    <a href="user_Vampire0.html" class="author">Vampire0</a>
+    <span class="date">2013-08-27 22:41</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">23150</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+put tombstone in place, official repository for jEdit core is now in Git
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">22 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/bsh/commands</strong>:
+        addClassPath.bsh&#160;<span class="del">(del)</span>,
+        bind.bsh&#160;<span class="del">(del)</span>,
+        browseClass.bsh&#160;<span class="del">(del)</span>,
+        classBrowser.bsh&#160;<span class="del">(del)</span>,
+        desktop.bsh&#160;<span class="del">(del)</span>,
+        dir.java&#160;<span class="del">(del)</span>,
+        extend.bsh&#160;<span class="del">(del)</span>,
+        frame.bsh&#160;<span class="del">(del)</span>,
+        getClassPath.bsh&#160;<span class="del">(del)</span>,
+        getResource.bsh&#160;<span class="del">(del)</span>,
+        getSourceFileInfo.bsh&#160;<span class="del">(del)</span>,
+        javap.bsh&#160;<span class="del">(del)</span>,
+        load.bsh&#160;<span class="del">(del)</span>,
+        makeWorkspace.bsh&#160;<span class="del">(del)</span>,
+        print.bsh&#160;<span class="del">(del)</span>,
+        printBanner.bsh&#160;<span class="del">(del)</span>,
+        reloadClasses.bsh&#160;<span class="del">(del)</span>,
+        save.bsh&#160;<span class="del">(del)</span>,
+        server.bsh&#160;<span class="del">(del)</span>,
+        setAccessibility.bsh&#160;<span class="del">(del)</span>,
+        which.bsh&#160;<span class="del">(del)</span>,
+        workspaceEditor.bsh&#160;<span class="del">(del)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="6"></a>
+    <a href="user_shlomy.html" class="author">shlomy</a>
+    <span class="date">2010-02-18 19:18</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">17314</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fixed bug #2927555: beanshell load() fails w/ exception<br />
+This was another missing package qualification after the move of Beanshell inside jEdit.
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/bsh/commands</strong>:
+        load.bsh&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="5"></a>
+    <a href="user_shlomy.html" class="author">shlomy</a>
+    <span class="date">2009-11-20 17:03</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">16524</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fixed bug #2899265: beanshell save() doesn't work.<br />
+The namespace change for BeanShell was incomplete and did not include some BeanShell macros in bsh/commands.
+    </p>
+    <p class="commitdetails"><strong>5</strong> lines of code changed in <span class="files">6 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/bsh/commands</strong>:
+        bind.bsh&#160;<span class="change">(+1&#160;-1)</span>,
+        extend.bsh&#160;<span class="new">(new)</span>,
+        load.bsh&#160;<span class="change">(+1&#160;-1)</span>,
+        save.bsh&#160;<span class="new">(new)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="4"></a>
+    <a href="user_voituk.html" class="author">voituk</a>
+    <span class="date">2009-06-30 08:07</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">15613</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Code cleanup performed: <br />
+	- Syncronized StringBuffer was replaced to non-locking StringBuilder (where it is possible)<br />
+	- Introduced Java5 generic types into collections usage (code become more easy to read)<br />
+	- Removed few compiler warnings<br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/bsh/commands</strong>:
+        dir.java&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="3"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2008-04-23 00:12</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">12504</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Property fixes. svn:eol-style native<br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/bsh/commands</strong>:
+        dir.java&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="2"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2008-04-22 02:18</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">12502</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+find . -name \*.java | xargs svn propset eol-style native<br />
+as suggested by daniel hahler.<br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/bsh/commands</strong>:
+        dir.java&#160;<span class="change">(+1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="1"></a>
+    <a href="user_kpouer.html" class="author">kpouer</a>
+    <span class="date">2007-10-04 21:45</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">10803</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+beanshell package refactored (bug 893349)
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">40 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/bsh/commands</strong>:
+        addClassPath.bsh&#160;<span class="change">(changed)</span>,
+        bind.bsh&#160;<span class="new">(new)</span>,
+        browseClass.bsh&#160;<span class="new">(new)</span>,
+        classBrowser.bsh&#160;<span class="change">(changed)</span>,
+        desktop.bsh&#160;<span class="change">(changed)</span>,
+        dir.java&#160;<span class="change">(changed)</span>,
+        frame.bsh&#160;<span class="new">(new)</span>,
+        getClassPath.bsh&#160;<span class="change">(changed)</span>,
+        getResource.bsh&#160;<span class="change">(changed)</span>,
+        getSourceFileInfo.bsh&#160;<span class="change">(changed)</span>,
+        javap.bsh&#160;<span class="new">(new)</span>,
+        load.bsh&#160;<span class="change">(changed)</span>,
+        makeWorkspace.bsh&#160;<span class="change">(changed)</span>,
+        print.bsh&#160;<span class="change">(changed)</span>,
+        printBanner.bsh&#160;<span class="change">(changed)</span>,
+        reloadClasses.bsh&#160;<span class="new">(new)</span>,
+        server.bsh&#160;<span class="new">(new)</span>,
+        setAccessibility.bsh&#160;<span class="new">(new)</span>,
+        which.bsh&#160;<span class="new">(new)</span>,
+        workspaceEditor.bsh&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+</dl>
+
+</div><div id="generatedby">Generated by <a href="http://www.statsvn.org">StatSVN</a> 0.7.0</div>
+</body>
+</html>

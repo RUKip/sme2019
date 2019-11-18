@@ -1,0 +1,739 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>StatSVN - Development Statistics for /jEdit/trunk</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+    <meta name="Generator" content="StatSVN 0.7.0"/>
+<link rel="stylesheet" href="objectlab-statcvs.css" type="text/css"/>
+<script type="text/javascript" charset="utf-8" src="http://bit.ly/javascript-api.js?version=latest&#38;login=statsvn&#38;apiKey=R_2c362b417d0517c27876cbaca1bb68cc"></script>
+<script type="text/javascript" charset="utf-8">
+   // wait until page is loaded to call API
+   var redir_url;
+   var short_url;
+   BitlyCB.myShortenCallback = function(data) {
+      // this is how to get a result of shortening a single url
+      var result;
+      short_url=null;
+      for (var r in data.results) {
+         result = data.results[r];
+         result['longUrl'] = r;
+         short_url = result['shortUrl'];
+         break;
+      }
+      if (short_url==null) // bit.ly failed
+      document.location=redir_url;
+      else
+      redirToTwitter();
+   };
+   function shortenTweet(url) {
+      if (short_url == null || redir_url!=url) {
+      redir_url = url;
+      BitlyClient.shorten(document.location, 'BitlyCB.myShortenCallback');
+      }
+      else
+      redirToTwitter();
+      return false;
+   }
+   function redirToTwitter() { 
+      // replace {0} which is visible as %7B0} in the link
+      document.location = redir_url.replace('%7B0}', short_url);
+   }
+</script>
+  </head>
+
+<body>
+
+<h1>Development Statistics for /jEdit/trunk</h1>
+<dl class="attributes">
+    <dt>Generated:</dt>
+    <dd><span class="date">2019-11-18 10:41</span></dd>
+    <dt>Head revision:</dt>
+    <dd>24950</dd>
+    <dt>Report Period:</dt>
+    <dd><span class="date">2001-09-02</span> to <span class="date">2019-10-14</span></dd>
+    <dt>Total Files:</dt>
+    <dd>2109</dd>
+    <dt>Total Lines of Code:</dt>
+    <dd>358091</dd>
+    <dt>Developers:</dt>
+    <dd>42</dd>
+    <dt>Tweet this:</dt>
+    <dd><a onclick="return shortenTweet(this.href);" href="http://twitter.com/home?status=Project%20%2FjEdit%2Ftrunk%20%7B0}%20on%202019-10-14%20has%20358%2C091%20Lines%20of%20Code%20and%2042%20Developers%3A%20stats%20by%20StatSVN%20http%3A%2F%2Fstatsvn.org"><img style="border:0px" alt="Tweet this" src="tweet-this.png"/></a></dd>
+</dl>
+<ul class="linklist">
+    <li><a href="developers.html">Developers</a></li>
+    <li><a href="commitlog.html">Commit Logs</a></li>
+    <li><a href="loc.html">Lines of Code</a></li>
+    <li><a href="file_sizes.html">File Statistics</a></li>
+    <li><a href="dir_sizes.html">Directory Sizes</a></li>
+    <li><a href="repomap.html">Repo Heatmap</a></li>
+    <li><a href="churn.html">LOC and Churn</a></li>
+    <li><a href="cloud.html">Cloud Commit</a></li>
+</ul>
+<div class="section">
+<h2>Lines of Code</h2>
+<p class="chart"><a href="loc.html"><img src="loc_small.png" alt="Lines of Code" width="512" height="320" /></a></p></div>
+<div class="section">
+<h2>Top 10 Authors</h2>
+  <table  rules="groups" summary="The Top 10 authors and the number of code lines they wrote or changed">
+    <colgroup align="left"/>
+    <colgroup align="right"/>
+    <thead>
+      <tr>
+        <th>Author</th>
+        <th>Lines of Code</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr  class="odd">
+        <th><a href="user_Vampire0.html" class="author">Vampire0</a></th>
+        <td>389498 (39.9%)</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_spestov.html" class="author">spestov</a></th>
+        <td>317248 (32.5%)</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_ezust.html" class="author">ezust</a></th>
+        <td>84700 (8.7%)</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_kpouer.html" class="author">kpouer</a></th>
+        <td>75074 (7.7%)</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_daleanson.html" class="author">daleanson</a></th>
+        <td>28418 (2.9%)</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_k_satoda.html" class="author">k_satoda</a></th>
+        <td>18131 (1.9%)</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_vanza.html" class="author">vanza</a></th>
+        <td>10255 (1.1%)</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_shlomy.html" class="author">shlomy</a></th>
+        <td>8928 (0.9%)</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_jgellene.html" class="author">jgellene</a></th>
+        <td>5438 (0.6%)</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_kerik-sf.html" class="author">kerik-sf</a></th>
+        <td>5119 (0.5%)</td>
+      </tr>
+    </tbody>
+  </table>
+
+<a href="developers.html">more...</a></div>
+<div class="section">
+<h2>Tag Cloud of Words in Commit Log Messages</h2>
+<p><font size="5">about </font> <font size="6">action </font> <font size="5">area </font> <font size="5">before </font> <font size="5">better </font> <font size="5">browser </font> <font size="7">buffer </font> <font size="5">bufferset </font> <font size="6">build </font> <font size="5">call </font> <font size="5">case </font> <font size="7">change </font> <font size="5">changelog </font> <font size="5">check </font> <font size="6">class </font> <font size="5">close </font> <font size="6">code </font> <font size="6">comment </font> <font size="5">create </font> <font size="5">current </font> <font size="5">default </font> <font size="5">deprecate </font> <font size="6">dialog </font> <font size="5">directory </font> <font size="6">docs </font> <font size="5">documentation </font> <font size="6">edit </font> <font size="5">empty </font> <font size="5">encoding </font> <font size="6">error </font> <font size="5">exception </font> <font size="5">feature </font> <font size="7">file </font> <font size="8">fixe </font> <font size="6">fold </font> <font size="5">handling </font> <font size="5">highlight </font> <font size="5">http </font> <font size="5">icon </font> <font size="5">indent </font> <font size="5">indentation </font> <font size="5">instead </font> <font size="6">java </font> <font size="5">javadoc </font> <font size="7">jedit </font> <font size="5">like </font> <font size="6">line </font> <font size="5">list </font> <font size="5">load </font> <font size="6">macro </font> <font size="6">made </font> <font size="5">make </font> <font size="5">manager </font> <font size="6">menu </font> <font size="5">merge </font> <font size="6">message </font> <font size="6">method </font> <font size="6">minor </font> <font size="5">miss </font> <font size="7">mode </font> <font size="5">move </font> <font size="5">name </font> <font size="5">need </font> <font size="5">number </font> <font size="6">only </font> <font size="6">option </font> <font size="5">other </font> <font size="5">pane </font> <font size="7">patch </font> <font size="5">path </font> <font size="7">plugin </font> <font size="5">previous </font> <font size="5">problem </font> <font size="5">propertie </font> <font size="5">property </font> <font size="7">remove </font> <font size="5">replace </font> <font size="5">request </font> <font size="5">save </font> <font size="5">search </font> <font size="5">selection </font> <font size="5">setting </font> <font size="5">since </font> <font size="5">status </font> <font size="5">string </font> <font size="5">style </font> <font size="5">support </font> <font size="5">syntax </font> <font size="5">system </font> <font size="6">text </font> <font size="5">textarea </font> <font size="5">tracker </font> <font size="7">update </font> <font size="5">user </font> <font size="5">using </font> <font size="5">version </font> <font size="6">view </font> <font size="5">window </font> <font size="5">wrap </font> <font size="5">wrong </font> </p><a href="cloud.html">more...</a></div>
+<div class="section">
+<h2>Directories</h2>
+<p class="dirtree">
+<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir.html">[root]</a> 
+(7 files, 2567 lines)<br />
+&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_.idea.html">.idea</a> 
+(9 files, 998 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_.idea_copyright.html">copyright</a> 
+(2 files, 26 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_.idea_libraries.html">libraries</a> 
+(3 files, 45 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_.idea_runConfigurations.html">runConfigurations</a> 
+(6 files, 196 lines)<br />
+&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_bsh.html">bsh</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_bsh_classpath.html">classpath</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_bsh_collection.html">collection</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_bsh_commands.html">commands</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_bsh_org.html">org</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_bsh_org_objectweb.html">objectweb</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_bsh_org_objectweb_asm.html">asm</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_bsh_reflect.html">reflect</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_build-support.html">build-support</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_com.html">com</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_com_loomcom.html">loomcom</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_com_loomcom_ant.html">ant</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_com_loomcom_ant_tasks.html">tasks</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_com_loomcom_ant_tasks_jarbundler.html">jarbundler</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_com_microstar.html">microstar</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_com_microstar_xml.html">xml</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_com_ultramixer.html">ultramixer</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_com_ultramixer_jarbundler.html">jarbundler</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_de.html">de</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_de_masters_of_disaster.html">masters_of_disaster</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_de_masters_of_disaster_ant.html">ant</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_de_masters_of_disaster_ant_tasks.html">tasks</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_de_masters_of_disaster_ant_tasks_ar.html">ar</a> 
+(5 files, 1207 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_de_masters_of_disaster_ant_tasks_calculatesize.html">calculatesize</a> 
+(1 files, 94 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_de_masters_of_disaster_ant_tasks_deb.html">deb</a> 
+(1 files, 354 lines)<br />
+&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_doc.html">doc</a> 
+(15 files, 1926 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_doc_FAQ.html">FAQ</a> 
+(9 files, 2392 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_doc_news42.html">news42</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_doc_news43.html">news43</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_doc_news44.html">news44</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_doc_news45.html">news45</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_doc_tips.html">tips</a> 
+(99 files, 669 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_doc_users-guide.html">users-guide</a> 
+(27 files, 14018 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_doc_whatsnew.html">whatsnew</a> 
+(1 files, 25 lines)<br />
+&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_doclet.html">doclet</a> 
+(1 files, 130 lines)<br />
+&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_gnu.html">gnu</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_gnu_regexp.html">regexp</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_icons.html">icons</a> 
+(7 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_installer.html">installer</a> 
+(28 files, 8221 lines)<br />
+&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_jars.html">jars</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_jars_Firewall.html">Firewall</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_jars_LatestVersion.html">LatestVersion</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_jars_MacOS.html">MacOS</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_jars_MacOS_com.html">com</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_jars_MacOS_com_apple.html">apple</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_jars_MacOS_com_apple_cocoa.html">cocoa</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_jars_MacOS_com_apple_cocoa_application.html">application</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_jars_MacOS_com_apple_cocoa_foundation.html">foundation</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_jars_MacOS_com_apple_eawt.html">eawt</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_jars_MacOS_com_apple_eio.html">eio</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_jars_MacOS_macos.html">macos</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_jars_MacOS_macos_menu.html">menu</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_jars_MacOS_macos_script.html">script</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_jars_MacOSX.html">MacOSX</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_jars_MacOSX_macosx.html">macosx</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_jars_QuickNotepad.html">QuickNotepad</a> 
+(3 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_keymaps.html">keymaps</a> 
+(6 files, 1411 lines)<br />
+&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_macros.html">macros</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_macros_C.html">C</a> 
+(2 files, 284 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_macros_Clipboard.html">Clipboard</a> 
+(6 files, 230 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_macros_Editing.html">Editing</a> 
+(15 files, 1086 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_macros_Emacs.html">Emacs</a> 
+(25 files, 1102 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_macros_Files.html">Files</a> 
+(15 files, 1131 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_macros_Interface.html">Interface</a> 
+(9 files, 338 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_macros_Java.html">Java</a> 
+(6 files, 1891 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_macros_Misc.html">Misc</a> 
+(15 files, 1824 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_macros_Misc_Properties.html">Properties</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_macros_Properties.html">Properties</a> 
+(5 files, 859 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_macros_Search.html">Search</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_macros_Text.html">Text</a> 
+(11 files, 1133 lines)<br />
+&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_misc.html">misc</a> 
+(1 files, 2 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_misc_clojure.html">clojure</a> 
+(4 files, 1132 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_misc_debug.html">debug</a> 
+(4 files, 124 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_misc_indentation_problems.html">indentation_problems</a> 
+(6 files, 63 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_misc_mode_lint.html">mode_lint</a> 
+(1 files, 106 lines)<br />
+&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_modes.html">modes</a> 
+(230 files, 92250 lines)<br />
+&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_net.html">net</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_net_sourceforge.html">sourceforge</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_net_sourceforge_jarbundler.html">jarbundler</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org.html">org</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_gjt.html">gjt</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_gjt_sp.html">sp</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_gjt_sp_jedit.html">jedit</a> 
+(70 files, 35073 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_gjt_sp_jedit_browser.html">browser</a> 
+(15 files, 6530 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_gjt_sp_jedit_bsh.html">bsh</a> 
+(92 files, 32431 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_gjt_sp_jedit_bsh_classpath.html">classpath</a> 
+(5 files, 1789 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_gjt_sp_jedit_bsh_collection.html">collection</a> 
+(2 files, 162 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_gjt_sp_jedit_bsh_commands.html">commands</a> 
+(22 files, 1274 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_gjt_sp_jedit_bsh_org.html">org</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_gjt_sp_jedit_bsh_org_objectweb.html">objectweb</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_gjt_sp_jedit_bsh_org_objectweb_asm.html">asm</a> 
+(10 files, 4971 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_gjt_sp_jedit_bsh_reflect.html">reflect</a> 
+(1 files, 65 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_gjt_sp_jedit_buffer.html">buffer</a> 
+(17 files, 5886 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_gjt_sp_jedit_bufferio.html">bufferio</a> 
+(8 files, 1516 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_gjt_sp_jedit_bufferset.html">bufferset</a> 
+(5 files, 928 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_gjt_sp_jedit_datatransfer.html">datatransfer</a> 
+(10 files, 517 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_gjt_sp_jedit_gui.html">gui</a> 
+(79 files, 24709 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_gjt_sp_jedit_gui_statusbar.html">statusbar</a> 
+(22 files, 2677 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_gjt_sp_jedit_gui_tray.html">tray</a> 
+(5 files, 632 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_gjt_sp_jedit_help.html">help</a> 
+(10 files, 2442 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_gjt_sp_jedit_icons.html">icons</a> 
+(85 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_gjt_sp_jedit_icons_themes.html">themes</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_gjt_sp_jedit_icons_themes_classic.html">classic</a> 
+(16 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_gjt_sp_jedit_icons_themes_classic_10x10.html">10x10</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_gjt_sp_jedit_icons_themes_classic_10x10_actions.html">actions</a> 
+(1 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_gjt_sp_jedit_icons_themes_classic_10x10_emblem.html">emblem</a> 
+(1 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_gjt_sp_jedit_icons_themes_classic_10x10_status.html">status</a> 
+(3 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_gjt_sp_jedit_icons_themes_classic_16x16.html">16x16</a> 
+(8 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_gjt_sp_jedit_icons_themes_classic_16x16_actions.html">actions</a> 
+(4 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_gjt_sp_jedit_icons_themes_classic_16x16_devices.html">devices</a> 
+(1 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_gjt_sp_jedit_icons_themes_classic_16x16_mimetypes.html">mimetypes</a> 
+(1 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_gjt_sp_jedit_icons_themes_classic_16x16_places.html">places</a> 
+(1 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_gjt_sp_jedit_icons_themes_classic_16x16_status.html">status</a> 
+(1 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_gjt_sp_jedit_icons_themes_classic_22x22.html">22x22</a> 
+(57 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_gjt_sp_jedit_icons_themes_classic_22x22_actions.html">actions</a> 
+(51 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_gjt_sp_jedit_icons_themes_classic_22x22_apps.html">apps</a> 
+(2 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_gjt_sp_jedit_icons_themes_classic_22x22_categories.html">categories</a> 
+(1 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_gjt_sp_jedit_icons_themes_classic_22x22_devices.html">devices</a> 
+(3 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_gjt_sp_jedit_icons_themes_classic_22x22_places.html">places</a> 
+(1 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_gjt_sp_jedit_icons_themes_classic_22x22_status.html">status</a> 
+(2 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_gjt_sp_jedit_icons_themes_classic_32x32.html">32x32</a> 
+(1 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_gjt_sp_jedit_icons_themes_classic_32x32_apps.html">apps</a> 
+(1 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_gjt_sp_jedit_icons_themes_classic_8x8.html">8x8</a> 
+(4 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_gjt_sp_jedit_icons_themes_tango.html">tango</a> 
+(15 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_gjt_sp_jedit_icons_themes_tango_10x10.html">10x10</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_gjt_sp_jedit_icons_themes_tango_10x10_actions.html">actions</a> 
+(1 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_gjt_sp_jedit_icons_themes_tango_10x10_emblem.html">emblem</a> 
+(1 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_gjt_sp_jedit_icons_themes_tango_10x10_status.html">status</a> 
+(3 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_gjt_sp_jedit_icons_themes_tango_16x16.html">16x16</a> 
+(207 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_gjt_sp_jedit_icons_themes_tango_16x16_actions.html">actions</a> 
+(28 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_gjt_sp_jedit_icons_themes_tango_16x16_animations.html">animations</a> 
+(1 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_gjt_sp_jedit_icons_themes_tango_16x16_apps.html">apps</a> 
+(2 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_gjt_sp_jedit_icons_themes_tango_16x16_categories.html">categories</a> 
+(2 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_gjt_sp_jedit_icons_themes_tango_16x16_devices.html">devices</a> 
+(1 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_gjt_sp_jedit_icons_themes_tango_16x16_emblem.html">emblem</a> 
+(7 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_gjt_sp_jedit_icons_themes_tango_16x16_mimetypes.html">mimetypes</a> 
+(2 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_gjt_sp_jedit_icons_themes_tango_16x16_places.html">places</a> 
+(1 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_gjt_sp_jedit_icons_themes_tango_16x16_status.html">status</a> 
+(10 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_gjt_sp_jedit_icons_themes_tango_22x22.html">22x22</a> 
+(218 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_gjt_sp_jedit_icons_themes_tango_22x22_actions.html">actions</a> 
+(68 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_gjt_sp_jedit_icons_themes_tango_22x22_animations.html">animations</a> 
+(1 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_gjt_sp_jedit_icons_themes_tango_22x22_apps.html">apps</a> 
+(5 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_gjt_sp_jedit_icons_themes_tango_22x22_categories.html">categories</a> 
+(3 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_gjt_sp_jedit_icons_themes_tango_22x22_devices.html">devices</a> 
+(3 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_gjt_sp_jedit_icons_themes_tango_22x22_emblems.html">emblems</a> 
+(5 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_gjt_sp_jedit_icons_themes_tango_22x22_mimetypes.html">mimetypes</a> 
+(5 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_gjt_sp_jedit_icons_themes_tango_22x22_places.html">places</a> 
+(4 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_gjt_sp_jedit_icons_themes_tango_22x22_status.html">status</a> 
+(8 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_gjt_sp_jedit_icons_themes_tango_32x32.html">32x32</a> 
+(1 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_gjt_sp_jedit_icons_themes_tango_32x32_apps.html">apps</a> 
+(1 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_gjt_sp_jedit_icons_themes_tango_8x8.html">8x8</a> 
+(3 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_gjt_sp_jedit_indent.html">indent</a> 
+(10 files, 1230 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_gjt_sp_jedit_input.html">input</a> 
+(5 files, 867 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_gjt_sp_jedit_io.html">io</a> 
+(20 files, 5070 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_org_gjt_sp_jedit_keymap.html">keymap</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_gjt_sp_jedit_menu.html">menu</a> 
+(14 files, 1838 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_org_gjt_sp_jedit_migration.html">migration</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_gjt_sp_jedit_msg.html">msg</a> 
+(18 files, 1347 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_gjt_sp_jedit_options.html">options</a> 
+(33 files, 9236 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_gjt_sp_jedit_pluginmgr.html">pluginmgr</a> 
+(13 files, 5563 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_gjt_sp_jedit_print.html">print</a> 
+(17 files, 5641 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_gjt_sp_jedit_proto.html">proto</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_gjt_sp_jedit_proto_jeditresource.html">jeditresource</a> 
+(3 files, 230 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_gjt_sp_jedit_search.html">search</a> 
+(20 files, 6769 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_gjt_sp_jedit_syntax.html">syntax</a> 
+(16 files, 5644 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_gjt_sp_jedit_textarea.html">textarea</a> 
+(45 files, 20967 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_org_gjt_sp_jedit_tips.html">tips</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_gjt_sp_jedit_visitors.html">visitors</a> 
+(4 files, 159 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_gjt_sp_util.html">util</a> 
+(24 files, 4945 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_jedit.html">jedit</a> 
+(1 files, 4 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_jedit_core.html">core</a> 
+(3 files, 125 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_org_jedit_i18n.html">i18n</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_jedit_io.html">io</a> 
+(1 files, 474 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_jedit_keymap.html">keymap</a> 
+(7 files, 974 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_jedit_localization.html">localization</a> 
+(10 files, 23683 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_jedit_migration.html">migration</a> 
+(4 files, 193 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_jedit_options.html">options</a> 
+(7 files, 1105 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_org_objectweb.html">objectweb</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_org_objectweb_asm.html">asm</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_package-files.html">package-files</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_package-files_linux.html">linux</a> 
+(2 files, 188 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_package-files_linux_deb.html">deb</a> 
+(6 files, 99 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_package-files_linux_rpm.html">rpm</a> 
+(1 files, 74 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_package-files_linux_slackware.html">slackware</a> 
+(4 files, 35 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_package-files_os2.html">os2</a> 
+(1 files, 73 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_package-files_osx.html">osx</a> 
+(2 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_package-files_osx_.background.html">.background</a> 
+(1 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_package-files_windows.html">windows</a> 
+(4 files, 350 lines)<br />
+&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_properties.html">properties</a> 
+(1 files, 12 lines)<br />
+&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_startup.html">startup</a> 
+(2 files, 162 lines)<br />
+&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_test.html">test</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_test_org.html">org</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_test_org_jedit.html">jedit</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_test_org_jedit_io.html">io</a> 
+(1 files, 1598 lines)<br />
+</p>
+</div><div id="generatedby">Generated by <a href="http://www.statsvn.org">StatSVN</a> 0.7.0</div>
+</body>
+</html>

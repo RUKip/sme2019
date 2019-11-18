@@ -1,0 +1,351 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>StatSVN - File Sizes and File Counts</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+    <meta name="Generator" content="StatSVN 0.7.0"/>
+<link rel="stylesheet" href="objectlab-statcvs.css" type="text/css"/>
+<script type="text/javascript" charset="utf-8" src="http://bit.ly/javascript-api.js?version=latest&#38;login=statsvn&#38;apiKey=R_2c362b417d0517c27876cbaca1bb68cc"></script>
+<script type="text/javascript" charset="utf-8">
+   // wait until page is loaded to call API
+   var redir_url;
+   var short_url;
+   BitlyCB.myShortenCallback = function(data) {
+      // this is how to get a result of shortening a single url
+      var result;
+      short_url=null;
+      for (var r in data.results) {
+         result = data.results[r];
+         result['longUrl'] = r;
+         short_url = result['shortUrl'];
+         break;
+      }
+      if (short_url==null) // bit.ly failed
+      document.location=redir_url;
+      else
+      redirToTwitter();
+   };
+   function shortenTweet(url) {
+      if (short_url == null || redir_url!=url) {
+      redir_url = url;
+      BitlyClient.shorten(document.location, 'BitlyCB.myShortenCallback');
+      }
+      else
+      redirToTwitter();
+      return false;
+   }
+   function redirToTwitter() { 
+      // replace {0} which is visible as %7B0} in the link
+      document.location = redir_url.replace('%7B0}', short_url);
+   }
+</script>
+  </head>
+
+<body>
+
+<h1>File Sizes and File Counts</h1>
+<div id="parentlink">&#171; <a href="index.html">Development Statistics for /jEdit/trunk</a></div>
+<dl class="attributes">
+    <dt>Total Files:</dt>
+    <dd>2109</dd>
+    <dt>Average File Size:</dt>
+    <dd>169.8 lines</dd>
+    <dt>Average Revisions Per File:</dt>
+    <dd>12.5</dd>
+</dl>
+<p class="chart"><img src="file_count.png" alt="File Count" width="800" height="500" /></p><p class="chart"><img src="file_size.png" alt="Average File Size" width="800" height="500" /></p>
+<div class="section">
+<h2>File Types</h2>
+  <table  rules="groups" summary="File Extensions">
+    <colgroup align="left"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Files</th>
+        <th>LOC</th>
+        <th>LOC per file</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <th>Totals</th>
+        <td>2109 (100.0%)</td>
+        <td>358091 (100.0%)</td>
+        <td>169.7</td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr  class="odd">
+        <th>*.java</th>
+        <td>593 (28.1%)</td>
+        <td>193635 (54.1%)</td>
+        <td>326.5</td>
+      </tr>
+      <tr  class="even">
+        <th>*.xml</th>
+        <td>294 (13.9%)</td>
+        <td>114388 (31.9%)</td>
+        <td>389.0</td>
+      </tr>
+      <tr  class="odd">
+        <th>*.props</th>
+        <td>18 (0.9%)</td>
+        <td>26694 (7.5%)</td>
+        <td>1483.0</td>
+      </tr>
+      <tr  class="even">
+        <th>*.bsh</th>
+        <td>131 (6.2%)</td>
+        <td>11219 (3.1%)</td>
+        <td>85.6</td>
+      </tr>
+      <tr  class="odd">
+        <th>*.jj</th>
+        <td>1 (0.0%)</td>
+        <td>2965 (0.8%)</td>
+        <td>2965.0</td>
+      </tr>
+      <tr  class="even">
+        <th>*.txt</th>
+        <td>17 (0.8%)</td>
+        <td>1879 (0.5%)</td>
+        <td>110.5</td>
+      </tr>
+      <tr  class="odd">
+        <th>*.html</th>
+        <td>138 (6.5%)</td>
+        <td>1400 (0.4%)</td>
+        <td>10.1</td>
+      </tr>
+      <tr  class="even">
+        <th>*.jjt</th>
+        <td>1 (0.0%)</td>
+        <td>1380 (0.4%)</td>
+        <td>1380.0</td>
+      </tr>
+      <tr  class="odd">
+        <th>*.last</th>
+        <td>1 (0.0%)</td>
+        <td>914 (0.3%)</td>
+        <td>914.0</td>
+      </tr>
+      <tr  class="even">
+        <th>*.csv</th>
+        <td>1 (0.0%)</td>
+        <td>856 (0.2%)</td>
+        <td>856.0</td>
+      </tr>
+      <tr  class="odd">
+        <th>Others</th>
+        <td>46 (2.2%)</td>
+        <td>2761 (0.8%)</td>
+        <td>60.0</td>
+      </tr>
+      <tr  class="even">
+        <th>Non-Code Files</th>
+        <td>868 (41.2%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+<div class="section">
+<h2>Largest Files</h2>
+  <table  rules="groups" summary="The largest files in the repository">
+    <colgroup align="left"/>
+    <colgroup align="right"/>
+    <thead>
+      <tr>
+        <th>File</th>
+        <th>Lines of Code</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr  class="odd">
+        <th><img src="file.png" width="15" height="13" alt="file in repo" title="file in repo"/> modes/apdl.xml</th>
+        <td>7536</td>
+      </tr>
+      <tr  class="even">
+        <th><img src="file.png" width="15" height="13" alt="file in repo" title="file in repo"/> org/gjt/sp/jedit/textarea/TextArea.java</th>
+        <td>6748</td>
+      </tr>
+      <tr  class="odd">
+        <th><img src="file.png" width="15" height="13" alt="file in repo" title="file in repo"/> org/gjt/sp/jedit/bsh/Parser.java</th>
+        <td>5815</td>
+      </tr>
+      <tr  class="even">
+        <th><img src="file.png" width="15" height="13" alt="file in repo" title="file in repo"/> org/gjt/sp/jedit/jEdit.java</th>
+        <td>4952</td>
+      </tr>
+      <tr  class="odd">
+        <th><img src="file.png" width="15" height="13" alt="file in repo" title="file in repo"/> modes/php.xml</th>
+        <td>4933</td>
+      </tr>
+      <tr  class="even">
+        <th><img src="file.png" width="15" height="13" alt="file in repo" title="file in repo"/> modes/progress.xml</th>
+        <td>3748</td>
+      </tr>
+      <tr  class="odd">
+        <th><img src="file.png" width="15" height="13" alt="file in repo" title="file in repo"/> org/gjt/sp/jedit/buffer/JEditBuffer.java</th>
+        <td>3014</td>
+      </tr>
+      <tr  class="even">
+        <th><img src="file.png" width="15" height="13" alt="file in repo" title="file in repo"/> modes/stata.xml</th>
+        <td>2979</td>
+      </tr>
+      <tr  class="odd">
+        <th><img src="file.png" width="15" height="13" alt="file in repo" title="file in repo"/> org/gjt/sp/jedit/bsh/bsh.jj</th>
+        <td>2965</td>
+      </tr>
+      <tr  class="even">
+        <th><img src="file.png" width="15" height="13" alt="file in repo" title="file in repo"/> modes/osql.xml</th>
+        <td>2887</td>
+      </tr>
+      <tr  class="odd">
+        <th><img src="file.png" width="15" height="13" alt="file in repo" title="file in repo"/> modes/plaintex.xml</th>
+        <td>2886</td>
+      </tr>
+      <tr  class="even">
+        <th><img src="file.png" width="15" height="13" alt="file in repo" title="file in repo"/> org/jedit/localization/jedit_de.props</th>
+        <td>2820</td>
+      </tr>
+      <tr  class="odd">
+        <th><img src="file.png" width="15" height="13" alt="file in repo" title="file in repo"/> org/jedit/localization/jedit_en.props</th>
+        <td>2801</td>
+      </tr>
+      <tr  class="even">
+        <th><img src="file.png" width="15" height="13" alt="file in repo" title="file in repo"/> org/jedit/localization/jedit_ru.props</th>
+        <td>2760</td>
+      </tr>
+      <tr  class="odd">
+        <th><img src="file.png" width="15" height="13" alt="file in repo" title="file in repo"/> org/jedit/localization/jedit_zh-tw.props</th>
+        <td>2708</td>
+      </tr>
+      <tr  class="even">
+        <th><img src="file.png" width="15" height="13" alt="file in repo" title="file in repo"/> modes/lilypond.xml</th>
+        <td>2681</td>
+      </tr>
+      <tr  class="odd">
+        <th><img src="file.png" width="15" height="13" alt="file in repo" title="file in repo"/> org/jedit/localization/jedit_zh.props</th>
+        <td>2521</td>
+      </tr>
+      <tr  class="even">
+        <th><img src="file.png" width="15" height="13" alt="file in repo" title="file in repo"/> org/jedit/localization/jedit_cs.props</th>
+        <td>2519</td>
+      </tr>
+      <tr  class="odd">
+        <th><img src="file.png" width="15" height="13" alt="file in repo" title="file in repo"/> org/jedit/localization/jedit_ja.props</th>
+        <td>2517</td>
+      </tr>
+      <tr  class="even">
+        <th><img src="file.png" width="15" height="13" alt="file in repo" title="file in repo"/> org/jedit/localization/jedit_fr.props</th>
+        <td>2510</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+<div class="section">
+<h2>Files With Most Revisions</h2>
+  <table  rules="groups" summary="The files with most revisions">
+    <colgroup align="left"/>
+    <colgroup align="right"/>
+    <thead>
+      <tr>
+        <th>File</th>
+        <th>Revisions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr  class="odd">
+        <th><img src="file.png" width="15" height="13" alt="file in repo" title="file in repo"/> doc/CHANGES.txt</th>
+        <td>2380</td>
+      </tr>
+      <tr  class="even">
+        <th><img src="file.png" width="15" height="13" alt="file in repo" title="file in repo"/> doc/TODO.txt</th>
+        <td>753</td>
+      </tr>
+      <tr  class="odd">
+        <th><img src="file.png" width="15" height="13" alt="file in repo" title="file in repo"/> org/gjt/sp/jedit/jedit_gui.props</th>
+        <td>636</td>
+      </tr>
+      <tr  class="even">
+        <th><img src="file.png" width="15" height="13" alt="file in repo" title="file in repo"/> org/gjt/sp/jedit/jEdit.java</th>
+        <td>550</td>
+      </tr>
+      <tr  class="odd">
+        <th><img src="file.png" width="15" height="13" alt="file in repo" title="file in repo"/> org/gjt/sp/jedit/textarea/JEditTextArea.java</th>
+        <td>433</td>
+      </tr>
+      <tr  class="even">
+        <th><img src="file.png" width="15" height="13" alt="file in repo" title="file in repo"/> org/gjt/sp/jedit/Buffer.java</th>
+        <td>376</td>
+      </tr>
+      <tr  class="odd">
+        <th><img src="file.png" width="15" height="13" alt="file in repo" title="file in repo"/> org/gjt/sp/jedit/View.java</th>
+        <td>271</td>
+      </tr>
+      <tr  class="even">
+        <th><img src="file.png" width="15" height="13" alt="file in repo" title="file in repo"/> org/gjt/sp/jedit/MiscUtilities.java</th>
+        <td>242</td>
+      </tr>
+      <tr  class="odd">
+        <th><img src="file.png" width="15" height="13" alt="file in repo" title="file in repo"/> modes/catalog</th>
+        <td>224</td>
+      </tr>
+      <tr  class="even">
+        <th><img src="file.png" width="15" height="13" alt="file in repo" title="file in repo"/> build.xml</th>
+        <td>223</td>
+      </tr>
+      <tr  class="odd">
+        <th><img src="file.png" width="15" height="13" alt="file in repo" title="file in repo"/> org/gjt/sp/jedit/browser/VFSBrowser.java</th>
+        <td>214</td>
+      </tr>
+      <tr  class="even">
+        <th><img src="file.png" width="15" height="13" alt="file in repo" title="file in repo"/> org/gjt/sp/jedit/GUIUtilities.java</th>
+        <td>196</td>
+      </tr>
+      <tr  class="odd">
+        <th><img src="file.png" width="15" height="13" alt="file in repo" title="file in repo"/> org/gjt/sp/jedit/textarea/TextArea.java</th>
+        <td>182</td>
+      </tr>
+      <tr  class="even">
+        <th><img src="file.png" width="15" height="13" alt="file in repo" title="file in repo"/> org/gjt/sp/jedit/textarea/TextAreaPainter.java</th>
+        <td>170</td>
+      </tr>
+      <tr  class="odd">
+        <th><img src="file.png" width="15" height="13" alt="file in repo" title="file in repo"/> org/gjt/sp/jedit/jedit.props</th>
+        <td>167</td>
+      </tr>
+      <tr  class="even">
+        <th><img src="file.png" width="15" height="13" alt="file in repo" title="file in repo"/> org/gjt/sp/jedit/EditPane.java</th>
+        <td>166</td>
+      </tr>
+      <tr  class="odd">
+        <th><img src="file.png" width="15" height="13" alt="file in repo" title="file in repo"/> org/gjt/sp/jedit/actions.xml</th>
+        <td>164</td>
+      </tr>
+      <tr  class="even">
+        <th><img src="file.png" width="15" height="13" alt="file in repo" title="file in repo"/> org/gjt/sp/jedit/textarea/DisplayManager.java</th>
+        <td>161</td>
+      </tr>
+      <tr  class="odd">
+        <th><img src="file.png" width="15" height="13" alt="file in repo" title="file in repo"/> org/gjt/sp/jedit/gui/DockableWindowManager.java</th>
+        <td>159</td>
+      </tr>
+      <tr  class="even">
+        <th><img src="file.png" width="15" height="13" alt="file in repo" title="file in repo"/> org/gjt/sp/jedit/textarea/ChunkCache.java</th>
+        <td>128</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div><div id="generatedby">Generated by <a href="http://www.statsvn.org">StatSVN</a> 0.7.0</div>
+</body>
+</html>

@@ -1,0 +1,330 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>StatSVN - Directory gnu/regexp/</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+    <meta name="Generator" content="StatSVN 0.7.0"/>
+<link rel="stylesheet" href="objectlab-statcvs.css" type="text/css"/>
+<script type="text/javascript" charset="utf-8" src="http://bit.ly/javascript-api.js?version=latest&#38;login=statsvn&#38;apiKey=R_2c362b417d0517c27876cbaca1bb68cc"></script>
+<script type="text/javascript" charset="utf-8">
+   // wait until page is loaded to call API
+   var redir_url;
+   var short_url;
+   BitlyCB.myShortenCallback = function(data) {
+      // this is how to get a result of shortening a single url
+      var result;
+      short_url=null;
+      for (var r in data.results) {
+         result = data.results[r];
+         result['longUrl'] = r;
+         short_url = result['shortUrl'];
+         break;
+      }
+      if (short_url==null) // bit.ly failed
+      document.location=redir_url;
+      else
+      redirToTwitter();
+   };
+   function shortenTweet(url) {
+      if (short_url == null || redir_url!=url) {
+      redir_url = url;
+      BitlyClient.shorten(document.location, 'BitlyCB.myShortenCallback');
+      }
+      else
+      redirToTwitter();
+      return false;
+   }
+   function redirToTwitter() { 
+      // replace {0} which is visible as %7B0} in the link
+      document.location = redir_url.replace('%7B0}', short_url);
+   }
+</script>
+  </head>
+
+<body>
+
+<h1>Directory gnu/regexp/</h1>
+<div id="parentlink">&#171; <a href="index.html">Development Statistics for /jEdit/trunk</a></div>
+<dl class="attributes">
+    <dt>Directory Created:</dt>
+    <dd><span class="date">2001-09-02 06:36</span></dd>
+    <dt>Directory Deleted:</dt>
+    <dd><span class="date">2008-02-25 18:15</span></dd>
+    <dt>Total Files:</dt>
+    <dd>0</dd>
+    <dt>Deleted Files:</dt>
+    <dd>29</dd>
+    <dt>Lines of Code:</dt>
+    <dd>0</dd>
+</dl>
+<p class="dirtree">
+<a href="dir.html">[root]</a>/<a href="dir_gnu.html">gnu</a>/<strong>regexp</strong><br/>
+</p>
+
+<div class="section">
+<h2>Lines of Code</h2>
+<p class="chart"><img src="loc_module_gnu_regexp.png" alt="gnu/regexp/ Lines of Code" width="800" height="500" /></p></div>
+<div class="section">
+<h2>Developers</h2>
+  <table  rules="groups" summary="All authors and the number of their changes and lines of code in this directory">
+    <colgroup align="left"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <thead>
+      <tr>
+        <th>Author</th>
+        <th>Changes</th>
+        <th>Lines of Code</th>
+        <th>Lines per Change</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <th>Totals</th>
+        <td>71 (100.0%)</td>
+        <td>318 (100.0%)</td>
+        <td>4.4</td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr  class="odd">
+        <th><a href="user_spestov.html" class="author">spestov</a></th>
+        <td>40 (56.3%)</td>
+        <td>316 (99.4%)</td>
+        <td>7.9</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_ezust.html" class="author">ezust</a></th>
+        <td>31 (43.7%)</td>
+        <td>2 (0.6%)</td>
+        <td>0.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+<div class="section">
+<h2>Most Recent Commits</h2>
+<dl class="commitlist">
+  <dt><a name="8"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2008-02-25 18:15</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">11869</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Removing gnu.regexp<br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">29 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>gnu/regexp</strong>:
+        CharIndexed.java&#160;<span class="del">(del)</span>,
+        CharIndexedCharArray.java&#160;<span class="del">(del)</span>,
+        CharIndexedInputStream.java&#160;<span class="del">(del)</span>,
+        CharIndexedReader.java&#160;<span class="del">(del)</span>,
+        CharIndexedString.java&#160;<span class="del">(del)</span>,
+        CharIndexedStringBuffer.java&#160;<span class="del">(del)</span>,
+        MessagesBundle.properties&#160;<span class="del">(del)</span>,
+        RE.java&#160;<span class="del">(del)</span>,
+        REException.java&#160;<span class="del">(del)</span>,
+        REFilterInputStream.java&#160;<span class="del">(del)</span>,
+        REFilterReader.java&#160;<span class="del">(del)</span>,
+        REMatch.java&#160;<span class="del">(del)</span>,
+        REMatchEnumeration.java&#160;<span class="del">(del)</span>,
+        RESyntax.java&#160;<span class="del">(del)</span>,
+        REToken.java&#160;<span class="del">(del)</span>,
+        RETokenAny.java&#160;<span class="del">(del)</span>,
+        RETokenBackRef.java&#160;<span class="del">(del)</span>,
+        RETokenChar.java&#160;<span class="del">(del)</span>,
+        RETokenEnd.java&#160;<span class="del">(del)</span>,
+        RETokenEndSub.java&#160;<span class="del">(del)</span>,
+        RETokenLookAhead.java&#160;<span class="del">(del)</span>,
+        RETokenOneOf.java&#160;<span class="del">(del)</span>,
+        RETokenPOSIX.java&#160;<span class="del">(del)</span>,
+        RETokenRange.java&#160;<span class="del">(del)</span>,
+        RETokenRepeated.java&#160;<span class="del">(del)</span>,
+        RETokenStart.java&#160;<span class="del">(del)</span>,
+        RETokenWordBoundary.java&#160;<span class="del">(del)</span>,
+        UncheckedRE.java&#160;<span class="del">(del)</span>,
+        package.html&#160;<span class="del">(del)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="7"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2006-10-04 00:14</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">7165</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>gnu/regexp</strong>:
+        package.html&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="6"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2006-07-01 06:14</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">5511</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+*** empty log message ***<br />
+
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>gnu/regexp</strong>:
+        package.html&#160;<span class="new">(new&#160;1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="5"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-07-10 20:05</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4824</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+updated nsis2 mode<br />
+
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>gnu/regexp</strong>:
+        REMatch.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="4"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2002-03-17 04:43</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4094</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+gnu.regexp 1.1.5 snapshot from GNU savannah CVS<br />
+
+    </p>
+    <p class="commitdetails"><strong>49</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>gnu/regexp</strong>:
+        MessagesBundle.properties&#160;<span class="change">(+1&#160;-1)</span>,
+        RE.java&#160;<span class="change">(+35&#160;-22)</span>,
+        RESyntax.java&#160;<span class="change">(+13&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="3"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2001-10-22 08:56</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">3848</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+gnu.regexp 1.1.4<br />
+
+    </p>
+    <p class="commitdetails"><strong>200</strong> lines of code changed in <span class="files">8 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>gnu/regexp</strong>:
+        CharIndexed.java&#160;<span class="change">(+10&#160;-4)</span>,
+        RE.java&#160;<span class="change">(+57&#160;-30)</span>,
+        REMatch.java&#160;<span class="change">(+15&#160;-7)</span>,
+        REMatchEnumeration.java&#160;<span class="change">(+5&#160;-3)</span>,
+        RESyntax.java&#160;<span class="change">(+3&#160;-3)</span>,
+        REToken.java&#160;<span class="change">(+3&#160;-4)</span>,
+        RETokenLookAhead.java&#160;<span class="change">(+14&#160;-5)</span>,
+        UncheckedRE.java&#160;<span class="new">(new&#160;93)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="2"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2001-09-21 09:09</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">3811</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+More minor changes here and there<br />
+
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>gnu/regexp</strong>:
+        REMatch.java&#160;<span class="change">(-9)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="1"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2001-09-02 06:36</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">3791</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Initial revision<br />
+
+    </p>
+    <p class="commitdetails"><strong>66</strong> lines of code changed in <span class="files">27 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>gnu/regexp</strong>:
+        CharIndexed.java&#160;<span class="new">(new&#160;4)</span>,
+        CharIndexedCharArray.java&#160;<span class="new">(new)</span>,
+        CharIndexedInputStream.java&#160;<span class="new">(new)</span>,
+        CharIndexedReader.java&#160;<span class="new">(new)</span>,
+        CharIndexedString.java&#160;<span class="new">(new)</span>,
+        CharIndexedStringBuffer.java&#160;<span class="new">(new)</span>,
+        MessagesBundle.properties&#160;<span class="new">(new&#160;1)</span>,
+        RE.java&#160;<span class="new">(new&#160;30)</span>,
+        REException.java&#160;<span class="new">(new)</span>,
+        REFilterInputStream.java&#160;<span class="new">(new)</span>,
+        REFilterReader.java&#160;<span class="new">(new)</span>,
+        REMatch.java&#160;<span class="new">(new&#160;16)</span>,
+        REMatchEnumeration.java&#160;<span class="new">(new&#160;3)</span>,
+        RESyntax.java&#160;<span class="new">(new&#160;3)</span>,
+        REToken.java&#160;<span class="new">(new&#160;4)</span>,
+        RETokenAny.java&#160;<span class="new">(new)</span>,
+        RETokenBackRef.java&#160;<span class="new">(new)</span>,
+        RETokenChar.java&#160;<span class="new">(new)</span>,
+        RETokenEnd.java&#160;<span class="new">(new)</span>,
+        RETokenEndSub.java&#160;<span class="new">(new)</span>,
+        RETokenLookAhead.java&#160;<span class="new">(new&#160;5)</span>,
+        RETokenOneOf.java&#160;<span class="new">(new)</span>,
+        RETokenPOSIX.java&#160;<span class="new">(new)</span>,
+        RETokenRange.java&#160;<span class="new">(new)</span>,
+        RETokenRepeated.java&#160;<span class="new">(new)</span>,
+        RETokenStart.java&#160;<span class="new">(new)</span>,
+        RETokenWordBoundary.java&#160;<span class="new">(new)</span>
+      </li>
+    </ul>
+  </dd>
+
+</dl>
+
+</div><div id="generatedby">Generated by <a href="http://www.statsvn.org">StatSVN</a> 0.7.0</div>
+</body>
+</html>

@@ -1,0 +1,1054 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>StatSVN - Directory bsh/</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+    <meta name="Generator" content="StatSVN 0.7.0"/>
+<link rel="stylesheet" href="objectlab-statcvs.css" type="text/css"/>
+<script type="text/javascript" charset="utf-8" src="http://bit.ly/javascript-api.js?version=latest&#38;login=statsvn&#38;apiKey=R_2c362b417d0517c27876cbaca1bb68cc"></script>
+<script type="text/javascript" charset="utf-8">
+   // wait until page is loaded to call API
+   var redir_url;
+   var short_url;
+   BitlyCB.myShortenCallback = function(data) {
+      // this is how to get a result of shortening a single url
+      var result;
+      short_url=null;
+      for (var r in data.results) {
+         result = data.results[r];
+         result['longUrl'] = r;
+         short_url = result['shortUrl'];
+         break;
+      }
+      if (short_url==null) // bit.ly failed
+      document.location=redir_url;
+      else
+      redirToTwitter();
+   };
+   function shortenTweet(url) {
+      if (short_url == null || redir_url!=url) {
+      redir_url = url;
+      BitlyClient.shorten(document.location, 'BitlyCB.myShortenCallback');
+      }
+      else
+      redirToTwitter();
+      return false;
+   }
+   function redirToTwitter() { 
+      // replace {0} which is visible as %7B0} in the link
+      document.location = redir_url.replace('%7B0}', short_url);
+   }
+</script>
+  </head>
+
+<body>
+
+<h1>Directory bsh/</h1>
+<div id="parentlink">&#171; <a href="index.html">Development Statistics for /jEdit/trunk</a></div>
+<dl class="attributes">
+    <dt>Directory Created:</dt>
+    <dd><span class="date">2001-09-02 06:37</span></dd>
+    <dt>Directory Deleted:</dt>
+    <dd><span class="date">2007-10-04 21:45</span></dd>
+    <dt>Total Files:</dt>
+    <dd>0</dd>
+    <dt>Deleted Files:</dt>
+    <dd>97</dd>
+    <dt>Lines of Code:</dt>
+    <dd>0</dd>
+</dl>
+<p class="dirtree">
+<a href="dir.html">[root]</a>/<strong>bsh</strong><br/>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_bsh_classpath.html">classpath</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_bsh_collection.html">collection</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_bsh_commands.html">commands</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_bsh_org.html">org</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_bsh_org_objectweb.html">objectweb</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_bsh_org_objectweb_asm.html">asm</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_bsh_reflect.html">reflect</a> 
+(0 files, 0 lines)<br />
+</p>
+
+<div class="section">
+<h2>Lines of Code</h2>
+<p class="chart"><img src="loc_module_bsh.png" alt="bsh/ Lines of Code" width="800" height="500" /></p></div>
+<div class="section">
+<h2>Developers</h2>
+  <table  rules="groups" summary="All authors and the number of their changes and lines of code in this directory">
+    <colgroup align="left"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <thead>
+      <tr>
+        <th>Author</th>
+        <th>Changes</th>
+        <th>Lines of Code</th>
+        <th>Lines per Change</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <th>Totals</th>
+        <td>465 (100.0%)</td>
+        <td>8548 (100.0%)</td>
+        <td>18.3</td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr  class="odd">
+        <th><a href="user_spestov.html" class="author">spestov</a></th>
+        <td>327 (70.3%)</td>
+        <td>8341 (97.6%)</td>
+        <td>25.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_vanza.html" class="author">vanza</a></th>
+        <td>1 (0.2%)</td>
+        <td>202 (2.4%)</td>
+        <td>202.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_ezust.html" class="author">ezust</a></th>
+        <td>4 (0.9%)</td>
+        <td>5 (0.1%)</td>
+        <td>1.2</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_kpouer.html" class="author">kpouer</a></th>
+        <td>133 (28.6%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+<div class="section">
+<h2>Most Recent Commits</h2>
+<dl class="commitlist">
+  <dt><a name="24"></a>
+    <a href="user_kpouer.html" class="author">kpouer</a>
+    <span class="date">2007-10-04 21:45</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">10803</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+beanshell package refactored (bug 893349)
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">97 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>bsh</strong>:
+        ASCII_UCodeESC_CharStream.java&#160;<span class="del">(del)</span>,
+        BSHAllocationExpression.java&#160;<span class="del">(del)</span>,
+        BSHAmbiguousName.java&#160;<span class="del">(del)</span>,
+        BSHArguments.java&#160;<span class="del">(del)</span>,
+        BSHArrayDimensions.java&#160;<span class="del">(del)</span>,
+        BSHArrayInitializer.java&#160;<span class="del">(del)</span>,
+        BSHAssignment.java&#160;<span class="del">(del)</span>,
+        BSHBinaryExpression.java&#160;<span class="del">(del)</span>,
+        BSHBlock.java&#160;<span class="del">(del)</span>,
+        BSHCastExpression.java&#160;<span class="del">(del)</span>,
+        BSHClassDeclaration.java&#160;<span class="del">(del)</span>,
+        BSHEnhancedForStatement.java&#160;<span class="del">(del)</span>,
+        BSHForStatement.java&#160;<span class="del">(del)</span>,
+        BSHFormalComment.java&#160;<span class="del">(del)</span>,
+        BSHFormalParameter.java&#160;<span class="del">(del)</span>,
+        BSHFormalParameters.java&#160;<span class="del">(del)</span>,
+        BSHIfStatement.java&#160;<span class="del">(del)</span>,
+        BSHImportDeclaration.java&#160;<span class="del">(del)</span>,
+        BSHLHSPrimaryExpression.java&#160;<span class="del">(del)</span>,
+        BSHLHSPrimarySuffix.java&#160;<span class="del">(del)</span>,
+        BSHLiteral.java&#160;<span class="del">(del)</span>,
+        BSHMethodDeclaration.java&#160;<span class="del">(del)</span>,
+        BSHMethodInvocation.java&#160;<span class="del">(del)</span>,
+        BSHPackageDeclaration.java&#160;<span class="del">(del)</span>,
+        BSHPrimaryExpression.java&#160;<span class="del">(del)</span>,
+        BSHPrimarySuffix.java&#160;<span class="del">(del)</span>,
+        BSHPrimitiveType.java&#160;<span class="del">(del)</span>,
+        BSHReturnStatement.java&#160;<span class="del">(del)</span>,
+        BSHReturnType.java&#160;<span class="del">(del)</span>,
+        BSHStatementExpressionList.java&#160;<span class="del">(del)</span>,
+        BSHSwitchLabel.java&#160;<span class="del">(del)</span>,
+        BSHSwitchStatement.java&#160;<span class="del">(del)</span>,
+        BSHTernaryExpression.java&#160;<span class="del">(del)</span>,
+        BSHThrowStatement.java&#160;<span class="del">(del)</span>,
+        BSHTryStatement.java&#160;<span class="del">(del)</span>,
+        BSHType.java&#160;<span class="del">(del)</span>,
+        BSHTypedVariableDeclaration.java&#160;<span class="del">(del)</span>,
+        BSHUnaryExpression.java&#160;<span class="del">(del)</span>,
+        BSHVariableDeclarator.java&#160;<span class="del">(del)</span>,
+        BSHWhileStatement.java&#160;<span class="del">(del)</span>,
+        BlockNameSpace.java&#160;<span class="del">(del)</span>,
+        BshClass.scripted&#160;<span class="del">(del)</span>,
+        BshClassManager.java&#160;<span class="del">(del)</span>,
+        BshIterator.java&#160;<span class="del">(del)</span>,
+        BshMethod.java&#160;<span class="del">(del)</span>,
+        CallStack.java&#160;<span class="del">(del)</span>,
+        Capabilities.java&#160;<span class="del">(del)</span>,
+        ClassGenerator.java&#160;<span class="del">(del)</span>,
+        ClassGeneratorImpl.java&#160;<span class="del">(del)</span>,
+        ClassGeneratorUtil.java&#160;<span class="del">(del)</span>,
+        ClassIdentifier.java&#160;<span class="del">(del)</span>,
+        ClassNameSpace.java&#160;<span class="del">(del)</span>,
+        ClassNameSpace.scripted&#160;<span class="del">(del)</span>,
+        ClassPathException.java&#160;<span class="del">(del)</span>,
+        CollectionManager.java&#160;<span class="del">(del)</span>,
+        CommandLineReader.java&#160;<span class="del">(del)</span>,
+        Console.java&#160;<span class="del">(del)</span>,
+        ConsoleInterface.java&#160;<span class="del">(del)</span>,
+        DelayedEvalBshMethod.java&#160;<span class="del">(del)</span>,
+        EvalError.java&#160;<span class="del">(del)</span>,
+        ExternalNameSpace.java&#160;<span class="del">(del)</span>,
+        Interpreter.java&#160;<span class="del">(del)</span>,
+        InterpreterError.java&#160;<span class="del">(del)</span>,
+        JJTParserState.java&#160;<span class="del">(del)</span>,
+        JThis.java&#160;<span class="del">(del)</span>,
+        JavaCharStream.java&#160;<span class="del">(del)</span>,
+        LHS.java&#160;<span class="del">(del)</span>,
+        Modifiers.java&#160;<span class="del">(del)</span>,
+        Name.java&#160;<span class="del">(del)</span>,
+        NameSource.java&#160;<span class="del">(del)</span>,
+        NameSpace.java&#160;<span class="del">(del)</span>,
+        Node.java&#160;<span class="del">(del)</span>,
+        ParseException.java&#160;<span class="del">(del)</span>,
+        Parser.java&#160;<span class="del">(del)</span>,
+        ParserConstants.java&#160;<span class="del">(del)</span>,
+        ParserTokenManager.java&#160;<span class="del">(del)</span>,
+        ParserTreeConstants.java&#160;<span class="del">(del)</span>,
+        Primitive.java&#160;<span class="del">(del)</span>,
+        Reflect.java&#160;<span class="del">(del)</span>,
+        Reflect.last&#160;<span class="del">(del)</span>,
+        ReflectError.java&#160;<span class="del">(del)</span>,
+        ReflectManager.java&#160;<span class="del">(del)</span>,
+        Remote.java&#160;<span class="del">(del)</span>,
+        ReturnControl.java&#160;<span class="del">(del)</span>,
+        SimpleNode.java&#160;<span class="del">(del)</span>,
+        StringUtil.java&#160;<span class="del">(del)</span>,
+        TargetError.java&#160;<span class="del">(del)</span>,
+        This.java&#160;<span class="del">(del)</span>,
+        Token.java&#160;<span class="del">(del)</span>,
+        TokenMgrError.java&#160;<span class="del">(del)</span>,
+        Types.java&#160;<span class="del">(del)</span>,
+        UtilEvalError.java&#160;<span class="del">(del)</span>,
+        UtilTargetError.java&#160;<span class="del">(del)</span>,
+        Variable.java&#160;<span class="del">(del)</span>,
+        XThis.java&#160;<span class="del">(del)</span>,
+        bsh.jj&#160;<span class="del">(del)</span>,
+        bsh.jjt&#160;<span class="del">(del)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="23"></a>
+    <a href="user_vanza.html" class="author">vanza</a>
+    <span class="date">2006-08-27 02:28</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">6809</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+- fix bug #1543889: "Return value for Beanshell snippet" problem<br />
+BeanShell was not properly overwriting new methods added with the same signature of old method. <br />
+<br />
+There were two side-effects of this:<br />
+<br />
+ (i) the first method with a particular name and signature would always be used, forever, even if a new method with the same signature was added. This broke the way the SearchAndReplace class cached the BS snippet used to do the substitution.<br />
+<br />
+(ii) Since the method was still "compiled" and added to the internal list, there would be a slow memory leak.<br />
+<br />
+Fix is to properly compare the signature of the new method with any old method registered with the same name, and get rid of the old method if it matches.
+    </p>
+    <p class="commitdetails"><strong>202</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>bsh</strong>:
+        NameSpace.java&#160;<span class="change">(+202&#160;-162)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="22"></a>
+    <a href="user_kpouer.html" class="author">kpouer</a>
+    <span class="date">2006-07-07 23:28</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">5555</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+beanshell 2.0b4 bundled<br />
+
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">36 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>bsh</strong>:
+        BSHArrayInitializer.java&#160;<span class="change">(changed)</span>,
+        BSHBinaryExpression.java&#160;<span class="change">(changed)</span>,
+        BSHCastExpression.java&#160;<span class="change">(changed)</span>,
+        BSHEnhancedForStatement.java&#160;<span class="change">(changed)</span>,
+        BSHLiteral.java&#160;<span class="change">(changed)</span>,
+        BSHMethodInvocation.java&#160;<span class="change">(changed)</span>,
+        BSHPrimarySuffix.java&#160;<span class="change">(changed)</span>,
+        BSHTryStatement.java&#160;<span class="change">(changed)</span>,
+        BshClass.scripted&#160;<span class="new">(new)</span>,
+        BshClassManager.java&#160;<span class="change">(changed)</span>,
+        BshMethod.java&#160;<span class="change">(changed)</span>,
+        Capabilities.java&#160;<span class="change">(changed)</span>,
+        ClassGeneratorImpl.java&#160;<span class="change">(changed)</span>,
+        ClassGeneratorUtil.java&#160;<span class="change">(changed)</span>,
+        ClassNameSpace.scripted&#160;<span class="new">(new)</span>,
+        ExternalNameSpace.java&#160;<span class="new">(new)</span>,
+        Interpreter.java&#160;<span class="change">(changed)</span>,
+        JavaCharStream.java&#160;<span class="change">(changed)</span>,
+        Modifiers.java&#160;<span class="change">(changed)</span>,
+        Name.java&#160;<span class="change">(changed)</span>,
+        NameSpace.java&#160;<span class="change">(changed)</span>,
+        ParseException.java&#160;<span class="change">(changed)</span>,
+        Parser.java&#160;<span class="change">(changed)</span>,
+        ParserTokenManager.java&#160;<span class="change">(changed)</span>,
+        ParserTreeConstants.java&#160;<span class="change">(changed)</span>,
+        Primitive.java&#160;<span class="change">(changed)</span>,
+        Reflect.java&#160;<span class="change">(changed)</span>,
+        Reflect.last&#160;<span class="new">(new)</span>,
+        Remote.java&#160;<span class="change">(changed)</span>,
+        Token.java&#160;<span class="change">(changed)</span>,
+        TokenMgrError.java&#160;<span class="change">(changed)</span>,
+        Types.java&#160;<span class="change">(changed)</span>,
+        Variable.java&#160;<span class="change">(changed)</span>,
+        XThis.java&#160;<span class="change">(changed)</span>,
+        bsh.jj&#160;<span class="change">(changed)</span>,
+        bsh.jjt&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="21"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2006-03-03 17:18</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">5354</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+1. removed redundant casts (1438828)<br />
+2. Applied patch to sort macro folders at top<br />
+3. Applied sourcecode formatting to some classes.<br />
+
+    </p>
+    <p class="commitdetails"><strong>5</strong> lines of code changed in <span class="files">4 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>bsh</strong>:
+        BshMethod.java&#160;<span class="change">(+1&#160;-1)</span>,
+        ParserTokenManager.java&#160;<span class="change">(+1&#160;-1)</span>,
+        Primitive.java&#160;<span class="change">(+1&#160;-1)</span>,
+        Reflect.java&#160;<span class="change">(+2&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="20"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2004-02-22 21:00</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4972</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+various bug fixes<br />
+
+    </p>
+    <p class="commitdetails"><strong>8</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>bsh</strong>:
+        ClassGeneratorUtil.java&#160;<span class="change">(+8&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="19"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-12-27 06:02</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4943</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+beanshell 2.0b1<br />
+
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">48 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>bsh</strong>:
+        BSHAllocationExpression.java&#160;<span class="change">(changed)</span>,
+        BSHAmbiguousName.java&#160;<span class="change">(changed)</span>,
+        BSHArrayInitializer.java&#160;<span class="change">(changed)</span>,
+        BSHAssignment.java&#160;<span class="change">(changed)</span>,
+        BSHBinaryExpression.java&#160;<span class="change">(changed)</span>,
+        BSHBlock.java&#160;<span class="change">(changed)</span>,
+        BSHCastExpression.java&#160;<span class="change">(changed)</span>,
+        BSHClassDeclaration.java&#160;<span class="change">(changed)</span>,
+        BSHFormalParameter.java&#160;<span class="change">(changed)</span>,
+        BSHFormalParameters.java&#160;<span class="change">(changed)</span>,
+        BSHImportDeclaration.java&#160;<span class="change">(changed)</span>,
+        BSHLiteral.java&#160;<span class="change">(changed)</span>,
+        BSHMethodDeclaration.java&#160;<span class="change">(changed)</span>,
+        BSHMethodInvocation.java&#160;<span class="change">(changed)</span>,
+        BSHPackageDeclaration.java&#160;<span class="new">(new)</span>,
+        BSHPrimarySuffix.java&#160;<span class="change">(changed)</span>,
+        BSHPrimitiveType.java&#160;<span class="change">(changed)</span>,
+        BSHReturnType.java&#160;<span class="change">(changed)</span>,
+        BSHTryStatement.java&#160;<span class="change">(changed)</span>,
+        BSHType.java&#160;<span class="change">(changed)</span>,
+        BSHTypedVariableDeclaration.java&#160;<span class="change">(changed)</span>,
+        BSHVariableDeclarator.java&#160;<span class="change">(changed)</span>,
+        BlockNameSpace.java&#160;<span class="change">(changed)</span>,
+        BshClassManager.java&#160;<span class="change">(changed)</span>,
+        BshMethod.java&#160;<span class="change">(changed)</span>,
+        ClassGenerator.java&#160;<span class="new">(new)</span>,
+        ClassGeneratorImpl.java&#160;<span class="new">(new)</span>,
+        ClassGeneratorUtil.java&#160;<span class="new">(new&#160;2)</span>,
+        ConsoleInterface.java&#160;<span class="change">(changed)</span>,
+        DelayedEvalBshMethod.java&#160;<span class="new">(new)</span>,
+        EvalError.java&#160;<span class="change">(changed)</span>,
+        Interpreter.java&#160;<span class="change">(changed)</span>,
+        JThis.java&#160;<span class="change">(changed)</span>,
+        LHS.java&#160;<span class="change">(changed)</span>,
+        Modifiers.java&#160;<span class="change">(changed)</span>,
+        Name.java&#160;<span class="change">(changed)</span>,
+        NameSpace.java&#160;<span class="change">(changed)</span>,
+        Parser.java&#160;<span class="change">(changed)</span>,
+        ParserConstants.java&#160;<span class="change">(changed)</span>,
+        ParserTokenManager.java&#160;<span class="change">(changed)</span>,
+        ParserTreeConstants.java&#160;<span class="change">(changed)</span>,
+        Primitive.java&#160;<span class="change">(changed)</span>,
+        Reflect.java&#160;<span class="change">(changed)</span>,
+        Remote.java&#160;<span class="new">(new)</span>,
+        This.java&#160;<span class="change">(changed)</span>,
+        Types.java&#160;<span class="new">(new)</span>,
+        Variable.java&#160;<span class="new">(new)</span>,
+        XThis.java&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="18"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-09-10 00:40</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4883</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+some bug fixes<br />
+
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>bsh</strong>:
+        Interpreter.java&#160;<span class="change">(+1&#160;-44)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="17"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-09-02 20:08</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4879</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+BeanShell 1.3.0 final<br />
+
+    </p>
+    <p class="commitdetails"><strong>850</strong> lines of code changed in <span class="files">6 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>bsh</strong>:
+        BSHLHSPrimaryExpression.java&#160;<span class="change">(-98)</span>,
+        BSHLHSPrimarySuffix.java&#160;<span class="change">(-154)</span>,
+        Interpreter.java&#160;<span class="change">(+3&#160;-3)</span>,
+        Name.java&#160;<span class="change">(+19&#160;-15)</span>,
+        bsh.jj&#160;<span class="change">(+512&#160;-331)</span>,
+        bsh.jjt&#160;<span class="change">(+316&#160;-170)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="16"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-08-08 03:22</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4845</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+latest bug fixes<br />
+
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>bsh</strong>:
+        NameSpace.java&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="15"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-07-16 22:55</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4828</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+bsh 1.3b2 works now<br />
+
+    </p>
+    <p class="commitdetails"><strong>83</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>bsh</strong>:
+        NameSpace.java&#160;<span class="change">(+83&#160;-55)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="14"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-07-15 00:00</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4826</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+BeanShell 1.3b2<br />
+
+    </p>
+    <p class="commitdetails"><strong>8</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>bsh</strong>:
+        Interpreter.java&#160;<span class="change">(+3&#160;-3)</span>,
+        NameSpace.java&#160;<span class="change">(+5)</span>,
+        Remote.java&#160;<span class="del">(del)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="13"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-07-14 23:46</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4825</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+BeanShell 1.3b2<br />
+
+    </p>
+    <p class="commitdetails"><strong>260</strong> lines of code changed in <span class="files">53 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>bsh</strong>:
+        BSHAllocationExpression.java&#160;<span class="change">(changed)</span>,
+        BSHAmbiguousName.java&#160;<span class="change">(changed)</span>,
+        BSHArguments.java&#160;<span class="change">(changed)</span>,
+        BSHArrayDimensions.java&#160;<span class="change">(changed)</span>,
+        BSHArrayInitializer.java&#160;<span class="change">(changed)</span>,
+        BSHAssignment.java&#160;<span class="change">(changed)</span>,
+        BSHBinaryExpression.java&#160;<span class="change">(changed)</span>,
+        BSHBlock.java&#160;<span class="change">(changed)</span>,
+        BSHClassDeclaration.java&#160;<span class="new">(new)</span>,
+        BSHEnhancedForStatement.java&#160;<span class="new">(new)</span>,
+        BSHForStatement.java&#160;<span class="change">(changed)</span>,
+        BSHMethodDeclaration.java&#160;<span class="change">(changed)</span>,
+        BSHPrimaryExpression.java&#160;<span class="change">(changed)</span>,
+        BSHPrimarySuffix.java&#160;<span class="change">(changed)</span>,
+        BSHSwitchStatement.java&#160;<span class="change">(changed)</span>,
+        BSHTryStatement.java&#160;<span class="change">(changed)</span>,
+        BSHType.java&#160;<span class="change">(changed)</span>,
+        BSHTypedVariableDeclaration.java&#160;<span class="change">(changed)</span>,
+        BSHUnaryExpression.java&#160;<span class="change">(changed)</span>,
+        BSHVariableDeclarator.java&#160;<span class="change">(changed)</span>,
+        BlockNameSpace.java&#160;<span class="change">(changed)</span>,
+        BshClassManager.java&#160;<span class="change">(changed)</span>,
+        BshIterator.java&#160;<span class="new">(new)</span>,
+        BshMethod.java&#160;<span class="change">(changed)</span>,
+        CallStack.java&#160;<span class="change">(changed)</span>,
+        ClassIdentifier.java&#160;<span class="new">(new)</span>,
+        ClassNameSpace.java&#160;<span class="new">(new)</span>,
+        CollectionManager.java&#160;<span class="new">(new)</span>,
+        CommandLineReader.java&#160;<span class="change">(changed)</span>,
+        Console.java&#160;<span class="new">(new&#160;65)</span>,
+        EvalError.java&#160;<span class="change">(changed)</span>,
+        Interpreter.java&#160;<span class="change">(changed)</span>,
+        JThis.java&#160;<span class="change">(changed)</span>,
+        JavaCharStream.java&#160;<span class="new">(new)</span>,
+        LHS.java&#160;<span class="change">(changed)</span>,
+        Modifiers.java&#160;<span class="new">(new)</span>,
+        Name.java&#160;<span class="change">(changed)</span>,
+        NameSpace.java&#160;<span class="change">(changed)</span>,
+        ParseException.java&#160;<span class="change">(changed)</span>,
+        Parser.java&#160;<span class="change">(changed)</span>,
+        ParserConstants.java&#160;<span class="change">(changed)</span>,
+        ParserTokenManager.java&#160;<span class="change">(changed)</span>,
+        ParserTreeConstants.java&#160;<span class="change">(changed)</span>,
+        Primitive.java&#160;<span class="change">(changed)</span>,
+        Reflect.java&#160;<span class="change">(changed)</span>,
+        Remote.java&#160;<span class="new">(new&#160;195)</span>,
+        SimpleNode.java&#160;<span class="change">(changed)</span>,
+        StringUtil.java&#160;<span class="change">(changed)</span>,
+        This.java&#160;<span class="change">(changed)</span>,
+        Token.java&#160;<span class="change">(changed)</span>,
+        TokenMgrError.java&#160;<span class="change">(changed)</span>,
+        UtilEvalError.java&#160;<span class="change">(changed)</span>,
+        XThis.java&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="12"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-05-08 21:37</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4694</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+command path added<br />
+
+    </p>
+    <p class="commitdetails"><strong>88</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>bsh</strong>:
+        Name.java&#160;<span class="change">(+11&#160;-12)</span>,
+        NameSpace.java&#160;<span class="change">(+77&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="11"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-05-06 21:24</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4689</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+bug fixes<br />
+
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>bsh</strong>:
+        EvalError.java&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="10"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-05-06 06:16</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4687</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+more unloading work, beanshell debugging<br />
+
+    </p>
+    <p class="commitdetails"><strong>41</strong> lines of code changed in <span class="files">5 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>bsh</strong>:
+        BshClassManager.java&#160;<span class="change">(+10&#160;-4)</span>,
+        Interpreter.java&#160;<span class="change">(+3&#160;-3)</span>,
+        NameSpace.java&#160;<span class="change">(-2)</span>,
+        Primitive.java&#160;<span class="change">(+2&#160;-3)</span>,
+        Reflect.java&#160;<span class="change">(+26&#160;-21)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="9"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-05-05 23:39</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4684</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+BeanShell 1.3<br />
+
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">57 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>bsh</strong>:
+        ASCII_UCodeESC_CharStream.java&#160;<span class="change">(changed)</span>,
+        BSHAllocationExpression.java&#160;<span class="change">(changed)</span>,
+        BSHAmbiguousName.java&#160;<span class="change">(changed)</span>,
+        BSHArrayDimensions.java&#160;<span class="change">(changed)</span>,
+        BSHArrayInitializer.java&#160;<span class="change">(changed)</span>,
+        BSHAssignment.java&#160;<span class="change">(changed)</span>,
+        BSHBinaryExpression.java&#160;<span class="change">(changed)</span>,
+        BSHBlock.java&#160;<span class="change">(changed)</span>,
+        BSHCastExpression.java&#160;<span class="change">(changed)</span>,
+        BSHFormalParameter.java&#160;<span class="change">(changed)</span>,
+        BSHFormalParameters.java&#160;<span class="change">(changed)</span>,
+        BSHIfStatement.java&#160;<span class="change">(changed)</span>,
+        BSHImportDeclaration.java&#160;<span class="change">(changed)</span>,
+        BSHLHSPrimaryExpression.java&#160;<span class="change">(changed)</span>,
+        BSHLHSPrimarySuffix.java&#160;<span class="change">(changed)</span>,
+        BSHMethodDeclaration.java&#160;<span class="change">(changed)</span>,
+        BSHMethodInvocation.java&#160;<span class="change">(changed)</span>,
+        BSHPrimarySuffix.java&#160;<span class="change">(changed)</span>,
+        BSHReturnStatement.java&#160;<span class="change">(changed)</span>,
+        BSHReturnType.java&#160;<span class="change">(changed)</span>,
+        BSHSwitchStatement.java&#160;<span class="change">(changed)</span>,
+        BSHThrowStatement.java&#160;<span class="change">(changed)</span>,
+        BSHTryStatement.java&#160;<span class="change">(changed)</span>,
+        BSHType.java&#160;<span class="change">(changed)</span>,
+        BSHTypedVariableDeclaration.java&#160;<span class="change">(changed)</span>,
+        BSHUnaryExpression.java&#160;<span class="change">(changed)</span>,
+        BlockNameSpace.java&#160;<span class="change">(changed)</span>,
+        BshClassManager.java&#160;<span class="change">(changed)</span>,
+        BshMethod.java&#160;<span class="change">(changed)</span>,
+        CallStack.java&#160;<span class="change">(changed)</span>,
+        Capabilities.java&#160;<span class="change">(changed)</span>,
+        ClassPathException.java&#160;<span class="change">(changed)</span>,
+        EvalError.java&#160;<span class="change">(changed)</span>,
+        Interpreter.java&#160;<span class="change">(changed)</span>,
+        JThis.java&#160;<span class="change">(changed)</span>,
+        LHS.java&#160;<span class="change">(changed)</span>,
+        Name.java&#160;<span class="change">(changed)</span>,
+        NameSpace.java&#160;<span class="change">(changed)</span>,
+        ParseException.java&#160;<span class="change">(changed)</span>,
+        Parser.java&#160;<span class="change">(changed)</span>,
+        ParserConstants.java&#160;<span class="change">(changed)</span>,
+        ParserTokenManager.java&#160;<span class="change">(changed)</span>,
+        ParserTreeConstants.java&#160;<span class="change">(changed)</span>,
+        Primitive.java&#160;<span class="change">(changed)</span>,
+        Reflect.java&#160;<span class="change">(changed)</span>,
+        ReflectManager.java&#160;<span class="change">(changed)</span>,
+        ReturnControl.java&#160;<span class="change">(changed)</span>,
+        SimpleNode.java&#160;<span class="change">(changed)</span>,
+        StringUtil.java&#160;<span class="change">(changed)</span>,
+        TargetError.java&#160;<span class="change">(changed)</span>,
+        This.java&#160;<span class="change">(changed)</span>,
+        Token.java&#160;<span class="change">(changed)</span>,
+        UtilEvalError.java&#160;<span class="new">(new)</span>,
+        UtilTargetError.java&#160;<span class="new">(new)</span>,
+        XThis.java&#160;<span class="change">(changed)</span>,
+        bsh.jj&#160;<span class="change">(changed)</span>,
+        bsh.jjt&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="8"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2002-12-25 03:12</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4397</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+oops<br />
+
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>bsh</strong>:
+        Console.java&#160;<span class="del">(del)</span>,
+        Remote.java&#160;<span class="del">(del)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="7"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2002-12-25 03:08</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4396</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+BeanShell 1.2b7<br />
+
+    </p>
+    <p class="commitdetails"><strong>329</strong> lines of code changed in <span class="files">14 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>bsh</strong>:
+        ASCII_UCodeESC_CharStream.java&#160;<span class="change">(changed)</span>,
+        BSHArrayDimensions.java&#160;<span class="change">(+1&#160;-1)</span>,
+        BSHAssignment.java&#160;<span class="change">(-1)</span>,
+        BSHLHSPrimarySuffix.java&#160;<span class="change">(+1&#160;-1)</span>,
+        BSHUnaryExpression.java&#160;<span class="change">(+1&#160;-1)</span>,
+        Console.java&#160;<span class="new">(new&#160;65)</span>,
+        Interpreter.java&#160;<span class="change">(+15&#160;-10)</span>,
+        Name.java&#160;<span class="change">(+31&#160;-17)</span>,
+        NameSpace.java&#160;<span class="change">(+3&#160;-2)</span>,
+        ParseException.java&#160;<span class="change">(changed)</span>,
+        Reflect.java&#160;<span class="change">(+15&#160;-9)</span>,
+        Remote.java&#160;<span class="new">(new&#160;195)</span>,
+        Token.java&#160;<span class="change">(changed)</span>,
+        XThis.java&#160;<span class="change">(+2&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="6"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2002-05-28 05:07</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4204</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+BeanShell 1.2b6<br />
+
+    </p>
+    <p class="commitdetails"><strong>1979</strong> lines of code changed in <span class="files">24 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>bsh</strong>:
+        BSHBlock.java&#160;<span class="change">(+27&#160;-15)</span>,
+        BSHForStatement.java&#160;<span class="change">(+18&#160;-7)</span>,
+        BSHFormalComment.java&#160;<span class="new">(new&#160;15)</span>,
+        BSHTryStatement.java&#160;<span class="change">(+28&#160;-7)</span>,
+        BlockNameSpace.java&#160;<span class="change">(+14&#160;-1)</span>,
+        BshClassManager.java&#160;<span class="change">(+3&#160;-3)</span>,
+        BshMethod.java&#160;<span class="change">(+18&#160;-2)</span>,
+        CallStack.java&#160;<span class="change">(+13&#160;-3)</span>,
+        Capabilities.java&#160;<span class="change">(+1&#160;-1)</span>,
+        EvalError.java&#160;<span class="change">(+2&#160;-2)</span>,
+        Interpreter.java&#160;<span class="change">(+30&#160;-6)</span>,
+        JJTParserState.java&#160;<span class="change">(+1&#160;-1)</span>,
+        JThis.java&#160;<span class="change">(+2)</span>,
+        Name.java&#160;<span class="change">(+5&#160;-3)</span>,
+        NameSpace.java&#160;<span class="change">(+47&#160;-16)</span>,
+        Parser.java&#160;<span class="change">(+1394&#160;-1295)</span>,
+        ParserConstants.java&#160;<span class="change">(+50&#160;-50)</span>,
+        ParserTokenManager.java&#160;<span class="change">(+238&#160;-238)</span>,
+        ParserTreeConstants.java&#160;<span class="change">(+12&#160;-10)</span>,
+        Primitive.java&#160;<span class="change">(+2&#160;-3)</span>,
+        Reflect.java&#160;<span class="change">(+45&#160;-15)</span>,
+        TargetError.java&#160;<span class="change">(+1&#160;-1)</span>,
+        This.java&#160;<span class="change">(+11&#160;-3)</span>,
+        XThis.java&#160;<span class="change">(+2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="5"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2002-03-23 04:20</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4108</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+BeanShell 1.2b5<br />
+
+    </p>
+    <p class="commitdetails"><strong>79</strong> lines of code changed in <span class="files">9 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>bsh</strong>:
+        BSHLHSPrimarySuffix.java&#160;<span class="change">(+3&#160;-15)</span>,
+        BSHPrimarySuffix.java&#160;<span class="change">(+31&#160;-14)</span>,
+        Interpreter.java&#160;<span class="change">(+7&#160;-7)</span>,
+        JThis.java&#160;<span class="change">(-24)</span>,
+        NameSpace.java&#160;<span class="change">(+1&#160;-1)</span>,
+        Reflect.java&#160;<span class="change">(+1)</span>,
+        TargetError.java&#160;<span class="change">(+6&#160;-4)</span>,
+        This.java&#160;<span class="change">(+11&#160;-20)</span>,
+        XThis.java&#160;<span class="change">(+19&#160;-24)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="4"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2002-03-10 05:31</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4076</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+BeanShell 1.2b41<br />
+
+    </p>
+    <p class="commitdetails"><strong>236</strong> lines of code changed in <span class="files">9 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>bsh</strong>:
+        BSHAllocationExpression.java&#160;<span class="change">(+3)</span>,
+        BSHArrayDimensions.java&#160;<span class="change">(-1)</span>,
+        BlockNameSpace.java&#160;<span class="change">(+28)</span>,
+        BshClassManager.java&#160;<span class="change">(+27&#160;-7)</span>,
+        Interpreter.java&#160;<span class="change">(+8&#160;-1)</span>,
+        LHS.java&#160;<span class="change">(-3)</span>,
+        NameSpace.java&#160;<span class="change">(+25&#160;-1)</span>,
+        bsh.jj&#160;<span class="change">(+106&#160;-124)</span>,
+        bsh.jjt&#160;<span class="change">(+39&#160;-27)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="3"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2001-10-29 06:39</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">3855</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+BeanShell 1.2b3<br />
+
+    </p>
+    <p class="commitdetails"><strong>1705</strong> lines of code changed in <span class="files">15 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>bsh</strong>:
+        BSHAllocationExpression.java&#160;<span class="change">(+2&#160;-1)</span>,
+        BSHLHSPrimarySuffix.java&#160;<span class="change">(+2&#160;-1)</span>,
+        BSHMethodInvocation.java&#160;<span class="change">(+19&#160;-2)</span>,
+        BSHPrimarySuffix.java&#160;<span class="change">(+2&#160;-1)</span>,
+        BshClassManager.java&#160;<span class="change">(+3&#160;-1)</span>,
+        BshMethod.java&#160;<span class="change">(+2&#160;-2)</span>,
+        EvalError.java&#160;<span class="change">(+32&#160;-28)</span>,
+        Interpreter.java&#160;<span class="change">(+80&#160;-7)</span>,
+        NameSpace.java&#160;<span class="change">(+179&#160;-145)</span>,
+        ParseException.java&#160;<span class="change">(+70&#160;-9)</span>,
+        Parser.java&#160;<span class="change">(+1238&#160;-1189)</span>,
+        ParserTokenManager.java&#160;<span class="change">(+16&#160;-4)</span>,
+        Reflect.java&#160;<span class="change">(+13&#160;-2)</span>,
+        TargetError.java&#160;<span class="change">(+28&#160;-42)</span>,
+        XThis.java&#160;<span class="change">(+19&#160;-4)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="2"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2001-09-08 05:50</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">3801</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+BeanShell performance fixes, removed Log statements from source files<br />
+
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>bsh</strong>:
+        Interpreter.java&#160;<span class="change">(changed)</span>,
+        NameSpace.java&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="1"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2001-09-02 06:37</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">3792</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Initial revision<br />
+
+    </p>
+    <p class="commitdetails"><strong>2672</strong> lines of code changed in <span class="files">73 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>bsh</strong>:
+        ASCII_UCodeESC_CharStream.java&#160;<span class="new">(new)</span>,
+        BSHAllocationExpression.java&#160;<span class="new">(new&#160;1)</span>,
+        BSHAmbiguousName.java&#160;<span class="new">(new)</span>,
+        BSHArguments.java&#160;<span class="new">(new)</span>,
+        BSHArrayDimensions.java&#160;<span class="new">(new&#160;2)</span>,
+        BSHArrayInitializer.java&#160;<span class="new">(new)</span>,
+        BSHAssignment.java&#160;<span class="new">(new&#160;1)</span>,
+        BSHBinaryExpression.java&#160;<span class="new">(new)</span>,
+        BSHBlock.java&#160;<span class="new">(new&#160;15)</span>,
+        BSHCastExpression.java&#160;<span class="new">(new)</span>,
+        BSHForStatement.java&#160;<span class="new">(new&#160;7)</span>,
+        BSHFormalParameter.java&#160;<span class="new">(new)</span>,
+        BSHFormalParameters.java&#160;<span class="new">(new)</span>,
+        BSHIfStatement.java&#160;<span class="new">(new)</span>,
+        BSHImportDeclaration.java&#160;<span class="new">(new)</span>,
+        BSHLHSPrimaryExpression.java&#160;<span class="new">(new&#160;98)</span>,
+        BSHLHSPrimarySuffix.java&#160;<span class="new">(new&#160;165)</span>,
+        BSHLiteral.java&#160;<span class="new">(new)</span>,
+        BSHMethodDeclaration.java&#160;<span class="new">(new)</span>,
+        BSHMethodInvocation.java&#160;<span class="new">(new&#160;2)</span>,
+        BSHPrimaryExpression.java&#160;<span class="new">(new)</span>,
+        BSHPrimarySuffix.java&#160;<span class="new">(new&#160;13)</span>,
+        BSHPrimitiveType.java&#160;<span class="new">(new)</span>,
+        BSHReturnStatement.java&#160;<span class="new">(new)</span>,
+        BSHReturnType.java&#160;<span class="new">(new)</span>,
+        BSHStatementExpressionList.java&#160;<span class="new">(new)</span>,
+        BSHSwitchLabel.java&#160;<span class="new">(new)</span>,
+        BSHSwitchStatement.java&#160;<span class="new">(new)</span>,
+        BSHTernaryExpression.java&#160;<span class="new">(new)</span>,
+        BSHThrowStatement.java&#160;<span class="new">(new)</span>,
+        BSHTryStatement.java&#160;<span class="new">(new&#160;7)</span>,
+        BSHType.java&#160;<span class="new">(new)</span>,
+        BSHTypedVariableDeclaration.java&#160;<span class="new">(new)</span>,
+        BSHUnaryExpression.java&#160;<span class="new">(new&#160;1)</span>,
+        BSHVariableDeclarator.java&#160;<span class="new">(new)</span>,
+        BSHWhileStatement.java&#160;<span class="new">(new)</span>,
+        BlockNameSpace.java&#160;<span class="new">(new)</span>,
+        BshClassManager.java&#160;<span class="new">(new&#160;5)</span>,
+        BshMethod.java&#160;<span class="new">(new&#160;2)</span>,
+        CallStack.java&#160;<span class="new">(new&#160;3)</span>,
+        Capabilities.java&#160;<span class="new">(new&#160;1)</span>,
+        ClassPathException.java&#160;<span class="new">(new)</span>,
+        CommandLineReader.java&#160;<span class="new">(new)</span>,
+        ConsoleInterface.java&#160;<span class="new">(new)</span>,
+        EvalError.java&#160;<span class="new">(new&#160;28)</span>,
+        Interpreter.java&#160;<span class="new">(new&#160;7)</span>,
+        InterpreterError.java&#160;<span class="new">(new)</span>,
+        JJTParserState.java&#160;<span class="new">(new&#160;1)</span>,
+        JThis.java&#160;<span class="new">(new&#160;24)</span>,
+        LHS.java&#160;<span class="new">(new&#160;3)</span>,
+        Name.java&#160;<span class="new">(new&#160;15)</span>,
+        NameSource.java&#160;<span class="new">(new)</span>,
+        NameSpace.java&#160;<span class="new">(new&#160;145)</span>,
+        Node.java&#160;<span class="new">(new)</span>,
+        ParseException.java&#160;<span class="new">(new&#160;9)</span>,
+        Parser.java&#160;<span class="new">(new&#160;1246)</span>,
+        ParserConstants.java&#160;<span class="new">(new&#160;50)</span>,
+        ParserTokenManager.java&#160;<span class="new">(new&#160;226)</span>,
+        ParserTreeConstants.java&#160;<span class="new">(new&#160;10)</span>,
+        Primitive.java&#160;<span class="new">(new&#160;4)</span>,
+        Reflect.java&#160;<span class="new">(new&#160;3)</span>,
+        ReflectError.java&#160;<span class="new">(new)</span>,
+        ReflectManager.java&#160;<span class="new">(new)</span>,
+        ReturnControl.java&#160;<span class="new">(new)</span>,
+        SimpleNode.java&#160;<span class="new">(new)</span>,
+        StringUtil.java&#160;<span class="new">(new)</span>,
+        TargetError.java&#160;<span class="new">(new&#160;42)</span>,
+        This.java&#160;<span class="new">(new&#160;20)</span>,
+        Token.java&#160;<span class="new">(new)</span>,
+        TokenMgrError.java&#160;<span class="new">(new)</span>,
+        XThis.java&#160;<span class="new">(new&#160;9)</span>,
+        bsh.jj&#160;<span class="new">(new&#160;349)</span>,
+        bsh.jjt&#160;<span class="new">(new&#160;158)</span>
+      </li>
+    </ul>
+  </dd>
+
+</dl>
+
+</div><div id="generatedby">Generated by <a href="http://www.statsvn.org">StatSVN</a> 0.7.0</div>
+</body>
+</html>

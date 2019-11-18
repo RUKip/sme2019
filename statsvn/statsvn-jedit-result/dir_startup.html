@@ -1,0 +1,623 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>StatSVN - Directory startup/</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+    <meta name="Generator" content="StatSVN 0.7.0"/>
+<link rel="stylesheet" href="objectlab-statcvs.css" type="text/css"/>
+<script type="text/javascript" charset="utf-8" src="http://bit.ly/javascript-api.js?version=latest&#38;login=statsvn&#38;apiKey=R_2c362b417d0517c27876cbaca1bb68cc"></script>
+<script type="text/javascript" charset="utf-8">
+   // wait until page is loaded to call API
+   var redir_url;
+   var short_url;
+   BitlyCB.myShortenCallback = function(data) {
+      // this is how to get a result of shortening a single url
+      var result;
+      short_url=null;
+      for (var r in data.results) {
+         result = data.results[r];
+         result['longUrl'] = r;
+         short_url = result['shortUrl'];
+         break;
+      }
+      if (short_url==null) // bit.ly failed
+      document.location=redir_url;
+      else
+      redirToTwitter();
+   };
+   function shortenTweet(url) {
+      if (short_url == null || redir_url!=url) {
+      redir_url = url;
+      BitlyClient.shorten(document.location, 'BitlyCB.myShortenCallback');
+      }
+      else
+      redirToTwitter();
+      return false;
+   }
+   function redirToTwitter() { 
+      // replace {0} which is visible as %7B0} in the link
+      document.location = redir_url.replace('%7B0}', short_url);
+   }
+</script>
+  </head>
+
+<body>
+
+<h1>Directory startup/</h1>
+<div id="parentlink">&#171; <a href="index.html">Development Statistics for /jEdit/trunk</a></div>
+<dl class="attributes">
+    <dt>Directory Created:</dt>
+    <dd><span class="date">2001-09-02 06:36</span></dd>
+    <dt>Total Files:</dt>
+    <dd>2</dd>
+    <dt>Deleted Files:</dt>
+    <dd>4</dd>
+    <dt>Lines of Code:</dt>
+    <dd>162</dd>
+</dl>
+<p class="dirtree">
+<a href="dir.html">[root]</a>/<strong>startup</strong><br/>
+</p>
+
+<div class="section">
+<h2>Lines of Code</h2>
+<p class="chart"><img src="loc_module_startup.png" alt="startup/ Lines of Code" width="800" height="500" /></p></div>
+<div class="section">
+<h2>Developers</h2>
+  <table  rules="groups" summary="All authors and the number of their changes and lines of code in this directory">
+    <colgroup align="left"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <thead>
+      <tr>
+        <th>Author</th>
+        <th>Changes</th>
+        <th>Lines of Code</th>
+        <th>Lines per Change</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <th>Totals</th>
+        <td>32 (100.0%)</td>
+        <td>475 (100.0%)</td>
+        <td>14.8</td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr  class="odd">
+        <th><a href="user_spestov.html" class="author">spestov</a></th>
+        <td>9 (28.1%)</td>
+        <td>200 (42.1%)</td>
+        <td>22.2</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_Vampire0.html" class="author">Vampire0</a></th>
+        <td>8 (25.0%)</td>
+        <td>141 (29.7%)</td>
+        <td>17.6</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_ezust.html" class="author">ezust</a></th>
+        <td>7 (21.9%)</td>
+        <td>75 (15.8%)</td>
+        <td>10.7</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_delvinj.html" class="author">delvinj</a></th>
+        <td>3 (9.4%)</td>
+        <td>31 (6.5%)</td>
+        <td>10.3</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_shlomy.html" class="author">shlomy</a></th>
+        <td>3 (9.4%)</td>
+        <td>27 (5.7%)</td>
+        <td>9.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_olearyni.html" class="author">olearyni</a></th>
+        <td>1 (3.1%)</td>
+        <td>1 (0.2%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_k_satoda.html" class="author">k_satoda</a></th>
+        <td>1 (3.1%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+<div class="section">
+<h2>Most Recent Commits</h2>
+<dl class="commitlist">
+  <dt><a name="25"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2013-10-27 18:07</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">23292</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+s/translateKey/addTranslation/g<br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>6</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>startup</strong>:
+        startup.bsh&#160;<span class="change">(+6&#160;-6)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="24"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2013-10-11 23:52</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">23237</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+modifiers too.<br />
+
+    </p>
+    <p class="commitdetails"><strong>20</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>startup</strong>:
+        startup.bsh&#160;<span class="change">(+20&#160;-16)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="23"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2013-10-11 19:21</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">23236</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Uncommenting the key translations, so that the default behavior is cross-platform. <br />
+
+    </p>
+    <p class="commitdetails"><strong>6</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>startup</strong>:
+        startup.bsh&#160;<span class="change">(+6&#160;-5)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="22"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2013-10-11 19:09</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">23235</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+arrow key translations for cross-platform usability. <br />
+
+    </p>
+    <p class="commitdetails"><strong>24</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>startup</strong>:
+        startup.bsh&#160;<span class="change">(+24)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="21"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2013-09-18 20:06</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">23182</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Got rid of alternative dispatcher garbage from startup.bsh. <br />
+
+    </p>
+    <p class="commitdetails"><strong>6</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>startup</strong>:
+        startup.bsh&#160;<span class="change">(+6&#160;-14)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="20"></a>
+    <a href="user_Vampire0.html" class="author">Vampire0</a>
+    <span class="date">2013-08-31 12:39</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">23162</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+reinstantiate trunk and branches
+    </p>
+    <p class="commitdetails"><strong>141</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>startup</strong>:
+        README.txt&#160;<span class="new">(new&#160;7)</span>,
+        startup.bsh&#160;<span class="new">(new&#160;134)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="19"></a>
+    <a href="user_Vampire0.html" class="author">Vampire0</a>
+    <span class="date">2013-08-27 22:41</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">23150</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+put tombstone in place, official repository for jEdit core is now in Git
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">6 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>startup</strong>:
+        README.txt&#160;<span class="del">(del)</span>,
+        changeUIFonts.bsh&#160;<span class="del">(del)</span>,
+        clipboardHangWorkaround.bsh&#160;<span class="del">(del)</span>,
+        getGraphicsEnvironment.bsh&#160;<span class="del">(del)</span>,
+        hiddenFeatures.bsh&#160;<span class="del">(del)</span>,
+        startup.bsh&#160;<span class="del">(del)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="18"></a>
+    <a href="user_shlomy.html" class="author">shlomy</a>
+    <span class="date">2009-04-16 21:57</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">14942</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Reverted my changes for fixing the macro recording. They are incomplete, and do not work in all cases.
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>startup</strong>:
+        startup.bsh&#160;<span class="change">(-21)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="17"></a>
+    <a href="user_shlomy.html" class="author">shlomy</a>
+    <span class="date">2009-04-13 21:20</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">14924</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fixed bug #2757833: recorder not completely accurate.<br />
+The fix ensures that the jEdit actions keep the predefined BeanShell variables (view, editPane, buffer, textArea, and wm) up-to-date when any of these changes by the action.
+    </p>
+    <p class="commitdetails"><strong>21</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>startup</strong>:
+        startup.bsh&#160;<span class="change">(+21)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="16"></a>
+    <a href="user_k_satoda.html" class="author">k_satoda</a>
+    <span class="date">2008-11-04 21:58</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">14005</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Removed the default accessibility to non-public members from BeanShell<br />
+codes. It was an unexpected side effect of class declaration introduced<br />
+in r5562, which was removed in r13869.<br />
+<br />
+See also the comment in ClassGeneratorImpl.generateClassImpl().<br />
+
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>startup</strong>:
+        startup.bsh&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="15"></a>
+    <a href="user_shlomy.html" class="author">shlomy</a>
+    <span class="date">2008-10-20 11:08</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">13909</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Set accessibility of BeanShell to non-public Java elements during startup. Previously, this was done implicitly by the getGraphicsEnvironment.bsh macro, which was meant to solve a completely different issue and was removed by me for a better solution of that other issue.
+    </p>
+    <p class="commitdetails"><strong>6</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>startup</strong>:
+        startup.bsh&#160;<span class="change">(+6)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="14"></a>
+    <a href="user_delvinj.html" class="author">delvinj</a>
+    <span class="date">2006-09-18 03:04</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">7061</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Reverting to ezust's version.  This is a tricky problem.
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>startup</strong>:
+        getGraphicsEnvironment.bsh&#160;<span class="change">(+1&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="13"></a>
+    <a href="user_delvinj.html" class="author">delvinj</a>
+    <span class="date">2006-09-16 22:28</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">7054</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Added log message
+    </p>
+    <p class="commitdetails"><strong>12</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>startup</strong>:
+        getGraphicsEnvironment.bsh&#160;<span class="change">(+12&#160;-18)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="12"></a>
+    <a href="user_delvinj.html" class="author">delvinj</a>
+    <span class="date">2006-09-14 09:43</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">7044</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Modified to run outside of the event dispatch thread.
+    </p>
+    <p class="commitdetails"><strong>18</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>startup</strong>:
+        getGraphicsEnvironment.bsh&#160;<span class="change">(+18&#160;-12)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="11"></a>
+    <a href="user_olearyni.html" class="author">olearyni</a>
+    <span class="date">2006-07-18 11:03</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">5598</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fixed s() method on startup.bsh<br />
+
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>startup</strong>:
+        startup.bsh&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="10"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2006-07-09 18:33</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">5563</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Better to invoke later...<br />
+
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>startup</strong>:
+        getGraphicsEnvironment.bsh&#160;<span class="change">(+2&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="9"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2006-07-09 18:06</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">5562</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fix for 1519565<br />
+
+    </p>
+    <p class="commitdetails"><strong>11</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>startup</strong>:
+        getGraphicsEnvironment.bsh&#160;<span class="new">(new&#160;11)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="8"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2005-01-09 01:33</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">5166</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+improved hypersearch results window<br />
+
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>startup</strong>:
+        startup.bsh&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="7"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-06-18 20:46</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4794</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+fix compile error<br />
+
+    </p>
+    <p class="commitdetails"><strong>37</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>startup</strong>:
+        startup.bsh&#160;<span class="change">(+37)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="6"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-06-18 20:36</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4792</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+keyboard tester now shows translated keys<br />
+
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>startup</strong>:
+        startup.bsh&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="5"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-06-16 06:02</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4787</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+various fixes<br />
+
+    </p>
+    <p class="commitdetails"><strong>3</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>startup</strong>:
+        startup.bsh&#160;<span class="change">(+3&#160;-12)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="4"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-06-16 04:20</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4786</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+added sample startup script<br />
+
+    </p>
+    <p class="commitdetails"><strong>100</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>startup</strong>:
+        startup.bsh&#160;<span class="new">(new&#160;100)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="3"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2002-01-28 12:40</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">3999</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+ObjectRexx mode, bug fixes, minor doc updates<br />
+
+    </p>
+    <p class="commitdetails"><strong>40</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>startup</strong>:
+        hiddenFeatures.bsh&#160;<span class="new">(new&#160;40)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="2"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2001-09-04 07:45</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">3798</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+More minor tweaking for 3.2.2<br />
+
+    </p>
+    <p class="commitdetails"><strong>11</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>startup</strong>:
+        clipboardHangWorkaround.bsh&#160;<span class="new">(new&#160;11)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="1"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2001-09-02 06:36</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">3791</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Initial revision<br />
+
+    </p>
+    <p class="commitdetails"><strong>7</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>startup</strong>:
+        README.txt&#160;<span class="new">(new&#160;7)</span>,
+        changeUIFonts.bsh&#160;<span class="new">(new)</span>
+      </li>
+    </ul>
+  </dd>
+
+</dl>
+
+</div><div id="generatedby">Generated by <a href="http://www.statsvn.org">StatSVN</a> 0.7.0</div>
+</body>
+</html>

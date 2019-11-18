@@ -1,0 +1,1029 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>StatSVN - Directory org/gjt/sp/jedit/syntax/</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+    <meta name="Generator" content="StatSVN 0.7.0"/>
+<link rel="stylesheet" href="objectlab-statcvs.css" type="text/css"/>
+<script type="text/javascript" charset="utf-8" src="http://bit.ly/javascript-api.js?version=latest&#38;login=statsvn&#38;apiKey=R_2c362b417d0517c27876cbaca1bb68cc"></script>
+<script type="text/javascript" charset="utf-8">
+   // wait until page is loaded to call API
+   var redir_url;
+   var short_url;
+   BitlyCB.myShortenCallback = function(data) {
+      // this is how to get a result of shortening a single url
+      var result;
+      short_url=null;
+      for (var r in data.results) {
+         result = data.results[r];
+         result['longUrl'] = r;
+         short_url = result['shortUrl'];
+         break;
+      }
+      if (short_url==null) // bit.ly failed
+      document.location=redir_url;
+      else
+      redirToTwitter();
+   };
+   function shortenTweet(url) {
+      if (short_url == null || redir_url!=url) {
+      redir_url = url;
+      BitlyClient.shorten(document.location, 'BitlyCB.myShortenCallback');
+      }
+      else
+      redirToTwitter();
+      return false;
+   }
+   function redirToTwitter() { 
+      // replace {0} which is visible as %7B0} in the link
+      document.location = redir_url.replace('%7B0}', short_url);
+   }
+</script>
+  </head>
+
+<body>
+
+<h1>Directory org/gjt/sp/jedit/syntax/</h1>
+<div id="parentlink">&#171; <a href="index.html">Development Statistics for /jEdit/trunk</a></div>
+<dl class="attributes">
+    <dt>Directory Created:</dt>
+    <dd><span class="date">2001-09-02 06:36</span></dd>
+    <dt>Total Files:</dt>
+    <dd>16</dd>
+    <dt>Deleted Files:</dt>
+    <dd>4</dd>
+    <dt>Lines of Code:</dt>
+    <dd>5644</dd>
+</dl>
+<p class="dirtree">
+<a href="dir.html">[root]</a>/<a href="dir_org.html">org</a>/<a href="dir_org_gjt.html">gjt</a>/<a href="dir_org_gjt_sp.html">sp</a>/<a href="dir_org_gjt_sp_jedit.html">jedit</a>/<strong>syntax</strong><br/>
+</p>
+
+<div class="section">
+<h2>Lines of Code</h2>
+<p class="chart"><img src="loc_module_org_gjt_sp_jedit_syntax.png" alt="org/gjt/sp/jedit/syntax/ Lines of Code" width="800" height="500" /></p></div>
+<div class="section">
+<h2>Developers</h2>
+  <table  rules="groups" summary="All authors and the number of their changes and lines of code in this directory">
+    <colgroup align="left"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <thead>
+      <tr>
+        <th>Author</th>
+        <th>Changes</th>
+        <th>Lines of Code</th>
+        <th>Lines per Change</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <th>Totals</th>
+        <td>536 (100.0%)</td>
+        <td>16333 (100.0%)</td>
+        <td>30.4</td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr  class="odd">
+        <th><a href="user_spestov.html" class="author">spestov</a></th>
+        <td>255 (47.6%)</td>
+        <td>6441 (39.4%)</td>
+        <td>25.2</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_Vampire0.html" class="author">Vampire0</a></th>
+        <td>55 (10.3%)</td>
+        <td>5924 (36.3%)</td>
+        <td>107.7</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_k_satoda.html" class="author">k_satoda</a></th>
+        <td>50 (9.3%)</td>
+        <td>1538 (9.4%)</td>
+        <td>30.7</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_vanza.html" class="author">vanza</a></th>
+        <td>34 (6.3%)</td>
+        <td>1078 (6.6%)</td>
+        <td>31.7</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_kpouer.html" class="author">kpouer</a></th>
+        <td>57 (10.6%)</td>
+        <td>644 (3.9%)</td>
+        <td>11.2</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_daleanson.html" class="author">daleanson</a></th>
+        <td>14 (2.6%)</td>
+        <td>343 (2.1%)</td>
+        <td>24.5</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_ezust.html" class="author">ezust</a></th>
+        <td>54 (10.1%)</td>
+        <td>179 (1.1%)</td>
+        <td>3.3</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_kerik-sf.html" class="author">kerik-sf</a></th>
+        <td>2 (0.4%)</td>
+        <td>90 (0.6%)</td>
+        <td>45.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_shlomy.html" class="author">shlomy</a></th>
+        <td>7 (1.3%)</td>
+        <td>66 (0.4%)</td>
+        <td>9.4</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_blueyed.html" class="author">blueyed</a></th>
+        <td>2 (0.4%)</td>
+        <td>24 (0.1%)</td>
+        <td>12.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_elberry.html" class="author">elberry</a></th>
+        <td>1 (0.2%)</td>
+        <td>2 (0.0%)</td>
+        <td>2.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_voituk.html" class="author">voituk</a></th>
+        <td>1 (0.2%)</td>
+        <td>1 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_thomasmey.html" class="author">thomasmey</a></th>
+        <td>2 (0.4%)</td>
+        <td>1 (0.0%)</td>
+        <td>0.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_makarius.html" class="author">makarius</a></th>
+        <td>1 (0.2%)</td>
+        <td>1 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_jarekczek.html" class="author">jarekczek</a></th>
+        <td>1 (0.2%)</td>
+        <td>1 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+<div class="section">
+<h2>Most Recent Commits</h2>
+<dl class="commitlist">
+  <dt><a name="40"></a>
+    <a href="user_daleanson.html" class="author">daleanson</a>
+    <span class="date">2018-04-11 00:06</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24859</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fixed all deprecation warnings produced when compiling with Java 9. Note there are still two deprecated items that are suppressed for Java 8 with comments on how to adjust when jEdit requires Java 9.
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/syntax</strong>:
+        ModeProvider.java&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="39"></a>
+    <a href="user_daleanson.html" class="author">daleanson</a>
+    <span class="date">2018-01-23 20:14</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24819</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+fix for patch #569, which broke the text area build.
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/syntax</strong>:
+        Chunk.java&#160;<span class="change">(+1&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="38"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2017-11-04 02:43</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24775</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Allow specification of fallback font sizes (Patch #569, Rafal Kolanski)<br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>80</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/syntax</strong>:
+        Chunk.java&#160;<span class="change">(+80&#160;-32)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="37"></a>
+    <a href="user_kerik-sf.html" class="author">kerik-sf</a>
+    <span class="date">2016-08-17 11:58</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24504</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+delete a user mode from the catalog even if the file is missing<br />
+<br />
+The user can then correct a runaway user mode from the GUI.
+    </p>
+    <p class="commitdetails"><strong>66</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/syntax</strong>:
+        ModeProvider.java&#160;<span class="change">(+66&#160;-65)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="36"></a>
+    <a href="user_daleanson.html" class="author">daleanson</a>
+    <span class="date">2016-08-14 23:07</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24496</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fixed some issues with printing.
+    </p>
+    <p class="commitdetails"><strong>5</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/syntax</strong>:
+        Chunk.java&#160;<span class="change">(+5&#160;-5)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="35"></a>
+    <a href="user_makarius.html" class="author">makarius</a>
+    <span class="date">2016-07-17 19:57</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24461</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+More robust treatment of token style array index: wrap around instead of throwing an exception.<br />
+This does not change the behavior of regular jEdit, but it helps ambitious plugins with their own token marker and extra styles (notably Isabelle).<br />
+
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/syntax</strong>:
+        Token.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="34"></a>
+    <a href="user_kerik-sf.html" class="author">kerik-sf</a>
+    <span class="date">2016-06-19 12:07</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24413</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+refactor duplicate code around IndentRule subclasses
+    </p>
+    <p class="commitdetails"><strong>24</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/syntax</strong>:
+        Token.java&#160;<span class="change">(+24)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="33"></a>
+    <a href="user_daleanson.html" class="author">daleanson</a>
+    <span class="date">2016-05-15 21:07</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24376</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Refactored editing options pane into several tabs, which makes this easier to use, plus adds the ability for the user to edit the modes lists as requested in feature request #515.
+    </p>
+    <p class="commitdetails"><strong>35</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/syntax</strong>:
+        ModeProvider.java&#160;<span class="change">(+35&#160;-10)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="32"></a>
+    <a href="user_daleanson.html" class="author">daleanson</a>
+    <span class="date">2015-09-24 00:50</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24089</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Better mode selection for files that match multiple modes, also fixes/applies patch #571.
+    </p>
+    <p class="commitdetails"><strong>24</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/syntax</strong>:
+        ModeProvider.java&#160;<span class="change">(+24&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="31"></a>
+    <a href="user_kpouer.html" class="author">kpouer</a>
+    <span class="date">2015-08-12 09:48</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24012</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fixed build of standalone textArea
+    </p>
+    <p class="commitdetails"><strong>11</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/syntax</strong>:
+        ModeProvider.java&#160;<span class="change">(+11&#160;-39)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="30"></a>
+    <a href="user_daleanson.html" class="author">daleanson</a>
+    <span class="date">2015-08-10 14:44</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">23980</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+UI update to allow adding new mode files by point and click, see FR #471.
+    </p>
+    <p class="commitdetails"><strong>155</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/syntax</strong>:
+        ModeProvider.java&#160;<span class="change">(+155)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="29"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2015-05-17 20:44</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">23912</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+More accurate wrap margin calculation (Patch#555 - Makarius)<br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/syntax</strong>:
+        DisplayTokenHandler.java&#160;<span class="change">(+1&#160;-7)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="28"></a>
+    <a href="user_kpouer.html" class="author">kpouer</a>
+    <span class="date">2013-12-09 13:43</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">23381</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+use of Objects.equals()
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/syntax</strong>:
+        TokenMarker.java&#160;<span class="change">(+2&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="27"></a>
+    <a href="user_shlomy.html" class="author">shlomy</a>
+    <span class="date">2013-09-29 21:03</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">23221</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Replaced many "for" loops with "for each" with IntelliJIDEA's code inspection tool.<br />
+Kept some where the index may be useful for debugging (and also some others where it doesn't, because the list is too long...).
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/syntax</strong>:
+        KeywordMap.java&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="26"></a>
+    <a href="user_shlomy.html" class="author">shlomy</a>
+    <span class="date">2013-09-29 19:46</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">23219</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Added corrections of tiny issues reported by IntelliJIDEA's code inspection tool.
+    </p>
+    <p class="commitdetails"><strong>14</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/syntax</strong>:
+        Chunk.java&#160;<span class="change">(+14&#160;-11)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="25"></a>
+    <a href="user_Vampire0.html" class="author">Vampire0</a>
+    <span class="date">2013-08-31 12:39</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">23162</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+reinstantiate trunk and branches
+    </p>
+    <p class="commitdetails"><strong>5403</strong> lines of code changed in <span class="files">16 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/syntax</strong>:
+        Chunk.java&#160;<span class="new">(new&#160;848)</span>,
+        DefaultTokenHandler.java&#160;<span class="new">(new&#160;140)</span>,
+        DisplayTokenHandler.java&#160;<span class="new">(new&#160;687)</span>,
+        DummyTokenHandler.java&#160;<span class="new">(new&#160;68)</span>,
+        KeywordMap.java&#160;<span class="new">(new&#160;247)</span>,
+        ModeProvider.java&#160;<span class="new">(new&#160;269)</span>,
+        ParserRule.java&#160;<span class="new">(new&#160;403)</span>,
+        ParserRuleSet.java&#160;<span class="new">(new&#160;379)</span>,
+        SyntaxStyle.java&#160;<span class="new">(new&#160;81)</span>,
+        SyntaxUtilities.java&#160;<span class="new">(new&#160;67)</span>,
+        Token.java&#160;<span class="new">(new&#160;164)</span>,
+        TokenHandler.java&#160;<span class="new">(new&#160;58)</span>,
+        TokenMarker.java&#160;<span class="new">(new&#160;1036)</span>,
+        XModeHandler.java&#160;<span class="new">(new&#160;776)</span>,
+        package.html&#160;<span class="new">(new&#160;13)</span>,
+        xmode.dtd&#160;<span class="new">(new&#160;167)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="24"></a>
+    <a href="user_Vampire0.html" class="author">Vampire0</a>
+    <span class="date">2013-08-27 22:41</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">23150</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+put tombstone in place, official repository for jEdit core is now in Git
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">20 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/syntax</strong>:
+        Chunk.java&#160;<span class="del">(del)</span>,
+        DefaultTokenHandler.java&#160;<span class="del">(del)</span>,
+        DisplayTokenHandler.java&#160;<span class="del">(del)</span>,
+        DummyTokenHandler.java&#160;<span class="del">(del)</span>,
+        KeywordMap.java&#160;<span class="del">(del)</span>,
+        ModeProvider.java&#160;<span class="del">(del)</span>,
+        NoWrapTokenHandler.java&#160;<span class="del">(del)</span>,
+        ParserRule.java&#160;<span class="del">(del)</span>,
+        ParserRuleFactory.java&#160;<span class="del">(del)</span>,
+        ParserRuleSet.java&#160;<span class="del">(del)</span>,
+        SoftWrapTokenHandler.java&#160;<span class="del">(del)</span>,
+        SyntaxCharacterIterator.java&#160;<span class="del">(del)</span>,
+        SyntaxStyle.java&#160;<span class="del">(del)</span>,
+        SyntaxUtilities.java&#160;<span class="del">(del)</span>,
+        Token.java&#160;<span class="del">(del)</span>,
+        TokenHandler.java&#160;<span class="del">(del)</span>,
+        TokenMarker.java&#160;<span class="del">(del)</span>,
+        XModeHandler.java&#160;<span class="del">(del)</span>,
+        package.html&#160;<span class="del">(del)</span>,
+        xmode.dtd&#160;<span class="del">(del)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="23"></a>
+    <a href="user_kpouer.html" class="author">kpouer</a>
+    <span class="date">2013-08-19 10:14</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">23133</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Removed redundant cast, enhanced initial map size
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/syntax</strong>:
+        ModeProvider.java&#160;<span class="change">(+2&#160;-4)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="22"></a>
+    <a href="user_thomasmey.html" class="author">thomasmey</a>
+    <span class="date">2013-04-23 19:53</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">22949</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fix mode loading for temporary buffers
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/syntax</strong>:
+        ModeProvider.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="21"></a>
+    <a href="user_thomasmey.html" class="author">thomasmey</a>
+    <span class="date">2013-03-23 18:58</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">22883</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+More clean ups
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/syntax</strong>:
+        ParserRuleSet.java&#160;<span class="change">(-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="20"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2013-02-12 07:30</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">22773</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Patch# 3600327: Mode files: Remove untrue claims from Users Guide and xmode. (Marc Hafner) <br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/syntax</strong>:
+        xmode.dtd&#160;<span class="change">(-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="19"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2012-10-13 05:58</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">22357</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+- Deprecated extra overloads of IOUtilities.closeQuietly() in favor of<br />
+  using Java5 closeQuietly(Closeable) instead.<br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>3</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/syntax</strong>:
+        ModeProvider.java&#160;<span class="change">(+3&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="18"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2012-06-18 23:54</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">21831</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Tabsize=4.<br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">14 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/syntax</strong>:
+        Chunk.java&#160;<span class="change">(changed)</span>,
+        DefaultTokenHandler.java&#160;<span class="change">(changed)</span>,
+        DisplayTokenHandler.java&#160;<span class="change">(changed)</span>,
+        DummyTokenHandler.java&#160;<span class="change">(changed)</span>,
+        KeywordMap.java&#160;<span class="change">(changed)</span>,
+        ModeProvider.java&#160;<span class="change">(changed)</span>,
+        ParserRule.java&#160;<span class="change">(changed)</span>,
+        ParserRuleSet.java&#160;<span class="change">(changed)</span>,
+        SyntaxStyle.java&#160;<span class="change">(changed)</span>,
+        SyntaxUtilities.java&#160;<span class="change">(changed)</span>,
+        Token.java&#160;<span class="change">(changed)</span>,
+        TokenHandler.java&#160;<span class="change">(changed)</span>,
+        TokenMarker.java&#160;<span class="change">(changed)</span>,
+        XModeHandler.java&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="17"></a>
+    <a href="user_k_satoda.html" class="author">k_satoda</a>
+    <span class="date">2012-05-19 20:44</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">21688</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fixed invalid splitting of Chunk which became possible after r21633.<br />
+
+    </p>
+    <p class="commitdetails"><strong>5</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/syntax</strong>:
+        DisplayTokenHandler.java&#160;<span class="change">(+5)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="16"></a>
+    <a href="user_k_satoda.html" class="author">k_satoda</a>
+    <span class="date">2012-05-05 17:11</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">21633</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fixed an unexpected change of behavior that break a line shorter than<br />
+before when a whitespace or a span of whitespaces strides over the wrap<br />
+margin. (Now any number of whitespaces go beyond the wrap margin as<br />
+before.)<br />
+
+    </p>
+    <p class="commitdetails"><strong>12</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/syntax</strong>:
+        DisplayTokenHandler.java&#160;<span class="change">(+12&#160;-10)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="15"></a>
+    <a href="user_k_satoda.html" class="author">k_satoda</a>
+    <span class="date">2012-04-30 21:24</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">21620</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Extended the workaround for unacceptable break inside quote for the case<br />
+where the quote mark is enclosed by something like a parenthesis.<br />
+(SF.net bug #3502384)<br />
+
+    </p>
+    <p class="commitdetails"><strong>28</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/syntax</strong>:
+        DisplayTokenHandler.java&#160;<span class="change">(+28&#160;-6)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="14"></a>
+    <a href="user_jarekczek.html" class="author">jarekczek</a>
+    <span class="date">2012-04-29 07:31</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">21614</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Added :encoding=utf-8: property to DisplayTokenHandler.java
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/syntax</strong>:
+        DisplayTokenHandler.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="13"></a>
+    <a href="user_k_satoda.html" class="author">k_satoda</a>
+    <span class="date">2012-04-28 17:49</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">21612</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fixed NPE which was shown in place of a proper error message for empty<br />
+keyword elements in mode XML.<br />
+
+    </p>
+    <p class="commitdetails"><strong>11</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/syntax</strong>:
+        XModeHandler.java&#160;<span class="change">(+11&#160;-7)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="12"></a>
+    <a href="user_k_satoda.html" class="author">k_satoda</a>
+    <span class="date">2012-03-09 16:46</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">21285</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fixed improper hashCode() implementation of LineContext which resulted<br />
+in almost linear comparisons with expensive equals(). A real slow down<br />
+was observed with jEdit build.xml with ant mode.<br />
+
+    </p>
+    <p class="commitdetails"><strong>7</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/syntax</strong>:
+        TokenMarker.java&#160;<span class="change">(+7&#160;-6)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="11"></a>
+    <a href="user_k_satoda.html" class="author">k_satoda</a>
+    <span class="date">2012-03-09 16:22</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">21284</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Made interned LineContext mortal to avoid memory leaks which was<br />
+observed as 4~5 MB with jEdit build.xml with ant mode.<br />
+
+    </p>
+    <p class="commitdetails"><strong>12</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/syntax</strong>:
+        TokenMarker.java&#160;<span class="change">(+12&#160;-7)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="10"></a>
+    <a href="user_k_satoda.html" class="author">k_satoda</a>
+    <span class="date">2012-03-07 18:01</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">21261</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Added another check not to cause unexpected soft wrap after punctuation<br />
+apostrophe U+2019 which forms contracted words. (SF.net bug #3497312)<br />
+
+    </p>
+    <p class="commitdetails"><strong>10</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/syntax</strong>:
+        DisplayTokenHandler.java&#160;<span class="change">(+10&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="9"></a>
+    <a href="user_k_satoda.html" class="author">k_satoda</a>
+    <span class="date">2012-03-06 18:34</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">21252</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fixed an inverted and always failing assertion.<br />
+<br />
+I had missed "-ea" in my testing command line.<br />
+
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/syntax</strong>:
+        DisplayTokenHandler.java&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="8"></a>
+    <a href="user_k_satoda.html" class="author">k_satoda</a>
+    <span class="date">2012-03-01 16:22</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">21236</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Added another check before rejecting line breaks at quotation marks not<br />
+to reject valid ones in CJK text.<br />
+
+    </p>
+    <p class="commitdetails"><strong>45</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/syntax</strong>:
+        DisplayTokenHandler.java&#160;<span class="change">(+45&#160;-8)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="7"></a>
+    <a href="user_k_satoda.html" class="author">k_satoda</a>
+    <span class="date">2012-02-27 18:33</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">21221</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Put hard coded workarounds not to cause unexpected soft wrap at<br />
+starts/ends of quotes with some non-ASCII quotation marks. The cause of<br />
+the problem seem to be in the implementation of BreakIterator, and seems<br />
+not to be fixed in near future. (originally reported as SF.net bug<br />
+#3488310, analyzed in a derived FR #3489523)<br />
+
+    </p>
+    <p class="commitdetails"><strong>19</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/syntax</strong>:
+        DisplayTokenHandler.java&#160;<span class="change">(+19&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="6"></a>
+    <a href="user_k_satoda.html" class="author">k_satoda</a>
+    <span class="date">2012-02-27 17:07</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">21220</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Gathered various ways of width accumulation into a simple loop after<br />
+getting GlyphVector[]. The complexity is anyway linear. Then, there is<br />
+no reason to have different ways in different places.<br />
+
+    </p>
+    <p class="commitdetails"><strong>13</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/syntax</strong>:
+        Chunk.java&#160;<span class="change">(+13&#160;-28)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="5"></a>
+    <a href="user_k_satoda.html" class="author">k_satoda</a>
+    <span class="date">2012-02-27 16:49</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">21219</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fixed wrong separation in composed character sequence which happened<br />
+when font substitution is used on that sequence. (SF.net bug #3495002;<br />
+the problem was introduced in r21213)<br />
+
+    </p>
+    <p class="commitdetails"><strong>5</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/syntax</strong>:
+        Chunk.java&#160;<span class="change">(+5)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="4"></a>
+    <a href="user_k_satoda.html" class="author">k_satoda</a>
+    <span class="date">2012-02-26 19:54</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">21215</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Added (prev &gt; 0x7f) as a condition to accept a line break to be<br />
+consistent with (next &gt; 0x7f).<br />
+<br />
+With a non-ASCII character "*", rejecting a break between "*a" is not<br />
+consistent while accepting a break between "a*".<br />
+
+    </p>
+    <p class="commitdetails"><strong>10</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/syntax</strong>:
+        DisplayTokenHandler.java&#160;<span class="change">(+10&#160;-4)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="3"></a>
+    <a href="user_k_satoda.html" class="author">k_satoda</a>
+    <span class="date">2012-02-26 16:14</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">21213</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Reduced the calls to layoutGlyphVector() in case of the font<br />
+substitution logic found a character which can't be displayed with the<br />
+main font, and also with substitution fonts. Before this change, it<br />
+could be called for every single character.<br />
+<br />
+A new private helper class Chunk.FontSubstitution was introduced to make<br />
+further tweaks easier without worry of this kind of problem.<br />
+
+    </p>
+    <p class="commitdetails"><strong>105</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/syntax</strong>:
+        Chunk.java&#160;<span class="change">(+105&#160;-50)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="2"></a>
+    <a href="user_k_satoda.html" class="author">k_satoda</a>
+    <span class="date">2012-02-26 15:16</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">21212</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Added a check if font substitution should switch back to the main font<br />
+to obey the desired behavior written in the comment for<br />
+Chunk.layoutGlyphs(); "All characters that can be rendered with the main<br />
+font will be".<br />
+<br />
+The problem was reported in SF.net patch #3488967, but the fix was<br />
+restructured by me to be fairly readable.<br />
+
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/syntax</strong>:
+        Chunk.java&#160;<span class="change">(+2&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="1"></a>
+    <a href="user_k_satoda.html" class="author">k_satoda</a>
+    <span class="date">2012-02-26 14:38</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">21210</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Avoid unnecessary use (including allocation) of ArrayList&lt;GlyphVector&gt;<br />
+in major cases where font substitution doesn't occur at all.<br />
+
+    </p>
+    <p class="commitdetails"><strong>72</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/syntax</strong>:
+        Chunk.java&#160;<span class="change">(+72&#160;-47)</span>
+      </li>
+    </ul>
+  </dd>
+
+</dl>
+
+<p>(232 more)</p>
+</div><div id="generatedby">Generated by <a href="http://www.statsvn.org">StatSVN</a> 0.7.0</div>
+</body>
+</html>

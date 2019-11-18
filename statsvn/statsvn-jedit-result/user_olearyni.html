@@ -1,0 +1,626 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>StatSVN - /jEdit/trunk Developers: olearyni</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+    <meta name="Generator" content="StatSVN 0.7.0"/>
+<link rel="stylesheet" href="objectlab-statcvs.css" type="text/css"/>
+<script type="text/javascript" charset="utf-8" src="http://bit.ly/javascript-api.js?version=latest&#38;login=statsvn&#38;apiKey=R_2c362b417d0517c27876cbaca1bb68cc"></script>
+<script type="text/javascript" charset="utf-8">
+   // wait until page is loaded to call API
+   var redir_url;
+   var short_url;
+   BitlyCB.myShortenCallback = function(data) {
+      // this is how to get a result of shortening a single url
+      var result;
+      short_url=null;
+      for (var r in data.results) {
+         result = data.results[r];
+         result['longUrl'] = r;
+         short_url = result['shortUrl'];
+         break;
+      }
+      if (short_url==null) // bit.ly failed
+      document.location=redir_url;
+      else
+      redirToTwitter();
+   };
+   function shortenTweet(url) {
+      if (short_url == null || redir_url!=url) {
+      redir_url = url;
+      BitlyClient.shorten(document.location, 'BitlyCB.myShortenCallback');
+      }
+      else
+      redirToTwitter();
+      return false;
+   }
+   function redirToTwitter() { 
+      // replace {0} which is visible as %7B0} in the link
+      document.location = redir_url.replace('%7B0}', short_url);
+   }
+</script>
+  </head>
+
+<body>
+
+<h1>/jEdit/trunk Developers: olearyni</h1>
+<div id="parentlink">&#171; <a href="index.html">Development Statistics for /jEdit/trunk</a> &#171; <a href="developers.html">Developers</a></div>
+<dl class="attributes">
+    <dt>Login name:</dt>
+    <dd>olearyni</dd>
+    <dt>Total Commits:</dt>
+    <dd>47 (0.2%)</dd>
+    <dt>Lines of Code:</dt>
+    <dd>814 (0.1%)</dd>
+    <dt>Most Recent Commit:</dt>
+    <dd><span class="date">2007-02-07 23:17</span></dd>
+    <dt>Tweet this:</dt>
+    <dd><a onclick="return shortenTweet(this.href);" href="http://twitter.com/home?status=olearyni%20contributed%20814%20(0.1%25)%20lines%20to%20%2FjEdit%2Ftrunk%20%7B0}%20most%20recent%20commit%202007-02-07%20stats%20by%20StatSVN%20http%3A%2F%2Fstatsvn.org"><img style="border:0px" alt="Tweet this" src="tweet-this.png"/></a></dd>
+</dl>
+
+<div class="section">
+<h2>Activity by Clock Time</h2>
+<p class="chart"><img src="activity_time_olearyni.png" alt="Activity by Hour of Day for olearyni" width="800" height="500" /></p><p class="chart"><img src="activity_day_olearyni.png" alt="Activity by Day of Week for olearyni" width="800" height="500" /></p></div>
+<div class="section">
+<h2>Activity in Directories</h2>
+  <table  rules="groups" summary="Overview of this author's activities in different directories">
+    <colgroup align="left"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <thead>
+      <tr>
+        <th>Directory</th>
+        <th>Changes</th>
+        <th>Lines of Code</th>
+        <th>Lines per Change</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <th>Totals</th>
+        <td>47 (100.0%)</td>
+        <td>814 (100.0%)</td>
+        <td>17.3</td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_help.html" class="directory">org/gjt/sp/jedit/help/</a></th>
+        <td>9 (19.1%)</td>
+        <td>437 (53.7%)</td>
+        <td>48.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_macros_Editing.html" class="directory">macros/Editing/</a></th>
+        <td>2 (4.3%)</td>
+        <td>145 (17.8%)</td>
+        <td>72.5</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_gui.html" class="directory">org/gjt/sp/jedit/gui/</a></th>
+        <td>2 (4.3%)</td>
+        <td>74 (9.1%)</td>
+        <td>37.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_doc.html" class="directory">doc/</a></th>
+        <td>15 (31.9%)</td>
+        <td>59 (7.2%)</td>
+        <td>3.9</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_textarea.html" class="directory">org/gjt/sp/jedit/textarea/</a></th>
+        <td>4 (8.5%)</td>
+        <td>50 (6.1%)</td>
+        <td>12.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit.html" class="directory">org/gjt/sp/jedit/</a></th>
+        <td>7 (14.9%)</td>
+        <td>16 (2.0%)</td>
+        <td>2.2</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_search.html" class="directory">org/gjt/sp/jedit/search/</a></th>
+        <td>1 (2.1%)</td>
+        <td>9 (1.1%)</td>
+        <td>9.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_print.html" class="directory">org/gjt/sp/jedit/print/</a></th>
+        <td>1 (2.1%)</td>
+        <td>9 (1.1%)</td>
+        <td>9.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_options.html" class="directory">org/gjt/sp/jedit/options/</a></th>
+        <td>1 (2.1%)</td>
+        <td>9 (1.1%)</td>
+        <td>9.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_pluginmgr.html" class="directory">org/gjt/sp/jedit/pluginmgr/</a></th>
+        <td>1 (2.1%)</td>
+        <td>2 (0.2%)</td>
+        <td>2.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_startup.html" class="directory">startup/</a></th>
+        <td>1 (2.1%)</td>
+        <td>1 (0.1%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_package-files_linux.html" class="directory">package-files/linux/</a></th>
+        <td>1 (2.1%)</td>
+        <td>1 (0.1%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_installer.html" class="directory">installer/</a></th>
+        <td>1 (2.1%)</td>
+        <td>1 (0.1%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_doc_users-guide.html" class="directory">doc/users-guide/</a></th>
+        <td>1 (2.1%)</td>
+        <td>1 (0.1%)</td>
+        <td>1.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+<p class="chart"><img src="directory_sizes_olearyni.png" alt="Activity of olearyni" width="800" height="500" /></p></div>
+<div class="section">
+<h2>Most Recent Commits</h2>
+<dl class="commitlist">
+  <dt><a name="20"></a>
+    <a href="user_olearyni.html" class="author">olearyni</a>
+    <span class="date">2007-02-07 23:17</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">8919</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+another fix for $@ -&gt; "$@"<br />
+
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>installer</strong>:
+        OperatingSystem.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="19"></a>
+    <a href="user_olearyni.html" class="author">olearyni</a>
+    <span class="date">2007-02-07 23:08</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">8918</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+[ 1649695 ] jedit shell script doesn't handle spaces in filenames<br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>5</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+4&#160;-1)</span>
+      </li>
+      <li>
+        <strong>package-files/linux</strong>:
+        jedit&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="18"></a>
+    <a href="user_olearyni.html" class="author">olearyni</a>
+    <span class="date">2007-01-01 23:19</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">8291</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Reload/ReloadAll ignores buffers with NEW_FILE set.<br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>11</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+5&#160;-1)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        Buffer.java&#160;<span class="change">(+3&#160;-2)</span>,
+        jEdit.java&#160;<span class="change">(+3&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="17"></a>
+    <a href="user_olearyni.html" class="author">olearyni</a>
+    <span class="date">2006-08-20 23:13</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">6711</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+fix for [ 1542029 ] Wrong annotation in Search and Replace dialog<br />
+
+    </p>
+    <p class="commitdetails"><strong>6</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+5&#160;-1)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        jedit_gui.props&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="16"></a>
+    <a href="user_olearyni.html" class="author">olearyni</a>
+    <span class="date">2006-07-24 10:27</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">5605</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Updated RegisterViewer<br />
+
+    </p>
+    <p class="commitdetails"><strong>49</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+4)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        jedit_gui.props&#160;<span class="change">(+1)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/gui</strong>:
+        RegisterViewer.java&#160;<span class="change">(+44&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="15"></a>
+    <a href="user_olearyni.html" class="author">olearyni</a>
+    <span class="date">2006-07-18 11:03</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">5598</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fixed s() method on startup.bsh<br />
+
+    </p>
+    <p class="commitdetails"><strong>4</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+3)</span>
+      </li>
+      <li>
+        <strong>startup</strong>:
+        startup.bsh&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="14"></a>
+    <a href="user_olearyni.html" class="author">olearyni</a>
+    <span class="date">2006-07-18 10:54</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">5597</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+*** empty log message ***<br />
+
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/textarea</strong>:
+        Gutter.java&#160;<span class="change">(+1&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="13"></a>
+    <a href="user_olearyni.html" class="author">olearyni</a>
+    <span class="date">2006-07-18 00:07</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">5594</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fix 1524155 - replace all in selection not giving feedback<br />
+
+    </p>
+    <p class="commitdetails"><strong>12</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+3)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/search</strong>:
+        SearchAndReplace.java&#160;<span class="change">(+9&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="12"></a>
+    <a href="user_olearyni.html" class="author">olearyni</a>
+    <span class="date">2006-07-17 23:42</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">5593</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Updated docs on printing<br />
+
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc/users-guide</strong>:
+        files.xml&#160;<span class="change">(+1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="11"></a>
+    <a href="user_olearyni.html" class="author">olearyni</a>
+    <span class="date">2006-07-17 23:22</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">5592</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Added support for folded regions to not appear in print output.<br />
+
+    </p>
+    <p class="commitdetails"><strong>21</strong> lines of code changed in <span class="files">4 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+2)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        jedit_gui.props&#160;<span class="change">(+1)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/options</strong>:
+        PrintOptionPane.java&#160;<span class="change">(+9)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/print</strong>:
+        BufferPrintable.java&#160;<span class="change">(+9&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="10"></a>
+    <a href="user_olearyni.html" class="author">olearyni</a>
+    <span class="date">2006-07-17 21:42</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">5591</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fix SF bug 1524032<br />
+
+    </p>
+    <p class="commitdetails"><strong>5</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+5&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="9"></a>
+    <a href="user_olearyni.html" class="author">olearyni</a>
+    <span class="date">2006-07-17 21:38</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">5590</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fix 1524032: Line number not highlighted when the line contains the sole selection<br />
+
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/textarea</strong>:
+        Gutter.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="8"></a>
+    <a href="user_olearyni.html" class="author">olearyni</a>
+    <span class="date">2006-06-21 13:50</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">5464</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fixed (again) beanshell error on invocation. Also gives input field focus.<br />
+
+    </p>
+    <p class="commitdetails"><strong>128</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>macros/Editing</strong>:
+        Mode_Switcher.bsh&#160;<span class="change">(+128&#160;-124)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="7"></a>
+    <a href="user_olearyni.html" class="author">olearyni</a>
+    <span class="date">2006-06-07 11:30</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">5435</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fixed Mode_Switcher macro<br />
+
+    </p>
+    <p class="commitdetails"><strong>23</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+6&#160;-1)</span>
+      </li>
+      <li>
+        <strong>macros/Editing</strong>:
+        Mode_Switcher.bsh&#160;<span class="change">(+17&#160;-14)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="6"></a>
+    <a href="user_olearyni.html" class="author">olearyni</a>
+    <span class="date">2005-08-05 09:00</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">5254</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+*** empty log message ***<br />
+
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="5"></a>
+    <a href="user_olearyni.html" class="author">olearyni</a>
+    <span class="date">2005-08-05 08:58</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">5253</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fixed some additional RegisterViewer issues<br />
+
+    </p>
+    <p class="commitdetails"><strong>35</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        Registers.java&#160;<span class="change">(+5&#160;-1)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/gui</strong>:
+        RegisterViewer.java&#160;<span class="change">(+30&#160;-15)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="4"></a>
+    <a href="user_olearyni.html" class="author">olearyni</a>
+    <span class="date">2005-08-03 23:22</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">5252</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+*** empty log message ***<br />
+
+    </p>
+    <p class="commitdetails"><strong>12</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/help</strong>:
+        HelpHistoryModel.java&#160;<span class="change">(+11&#160;-6)</span>,
+        HelpViewer.java&#160;<span class="change">(+1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="3"></a>
+    <a href="user_olearyni.html" class="author">olearyni</a>
+    <span class="date">2005-08-03 22:57</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">5251</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+*** empty log message ***<br />
+
+    </p>
+    <p class="commitdetails"><strong>20</strong> lines of code changed in <span class="files">4 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+3)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/help</strong>:
+        HelpHistoryModel.java&#160;<span class="change">(+5)</span>,
+        HelpHistoryModelListener.java&#160;<span class="change">(+5)</span>,
+        HistoryButton.java&#160;<span class="change">(+7&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="2"></a>
+    <a href="user_olearyni.html" class="author">olearyni</a>
+    <span class="date">2005-08-03 22:51</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">5250</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Added better history model for the Help browser<br />
+
+    </p>
+    <p class="commitdetails"><strong>408</strong> lines of code changed in <span class="files">4 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/help</strong>:
+        HelpHistoryModel.java&#160;<span class="new">(new&#160;177)</span>,
+        HelpHistoryModelListener.java&#160;<span class="new">(new&#160;27)</span>,
+        HelpViewer.java&#160;<span class="change">(+36&#160;-43)</span>,
+        HistoryButton.java&#160;<span class="new">(new&#160;168)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="1"></a>
+    <a href="user_olearyni.html" class="author">olearyni</a>
+    <span class="date">2005-08-02 22:12</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">5248</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+*** empty log message ***<br />
+
+    </p>
+    <p class="commitdetails"><strong>3</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+3)</span>
+      </li>
+    </ul>
+  </dd>
+
+</dl>
+
+<p>(6 more)</p>
+</div><div id="generatedby">Generated by <a href="http://www.statsvn.org">StatSVN</a> 0.7.0</div>
+</body>
+</html>

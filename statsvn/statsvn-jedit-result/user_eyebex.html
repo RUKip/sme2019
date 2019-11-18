@@ -1,0 +1,300 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>StatSVN - /jEdit/trunk Developers: eyebex</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+    <meta name="Generator" content="StatSVN 0.7.0"/>
+<link rel="stylesheet" href="objectlab-statcvs.css" type="text/css"/>
+<script type="text/javascript" charset="utf-8" src="http://bit.ly/javascript-api.js?version=latest&#38;login=statsvn&#38;apiKey=R_2c362b417d0517c27876cbaca1bb68cc"></script>
+<script type="text/javascript" charset="utf-8">
+   // wait until page is loaded to call API
+   var redir_url;
+   var short_url;
+   BitlyCB.myShortenCallback = function(data) {
+      // this is how to get a result of shortening a single url
+      var result;
+      short_url=null;
+      for (var r in data.results) {
+         result = data.results[r];
+         result['longUrl'] = r;
+         short_url = result['shortUrl'];
+         break;
+      }
+      if (short_url==null) // bit.ly failed
+      document.location=redir_url;
+      else
+      redirToTwitter();
+   };
+   function shortenTweet(url) {
+      if (short_url == null || redir_url!=url) {
+      redir_url = url;
+      BitlyClient.shorten(document.location, 'BitlyCB.myShortenCallback');
+      }
+      else
+      redirToTwitter();
+      return false;
+   }
+   function redirToTwitter() { 
+      // replace {0} which is visible as %7B0} in the link
+      document.location = redir_url.replace('%7B0}', short_url);
+   }
+</script>
+  </head>
+
+<body>
+
+<h1>/jEdit/trunk Developers: eyebex</h1>
+<div id="parentlink">&#171; <a href="index.html">Development Statistics for /jEdit/trunk</a> &#171; <a href="developers.html">Developers</a></div>
+<dl class="attributes">
+    <dt>Login name:</dt>
+    <dd>eyebex</dd>
+    <dt>Total Commits:</dt>
+    <dd>13 (0.0%)</dd>
+    <dt>Lines of Code:</dt>
+    <dd>37 (0.0%)</dd>
+    <dt>Most Recent Commit:</dt>
+    <dd><span class="date">2010-06-30 15:27</span></dd>
+    <dt>Tweet this:</dt>
+    <dd><a onclick="return shortenTweet(this.href);" href="http://twitter.com/home?status=eyebex%20contributed%2037%20(0.0%25)%20lines%20to%20%2FjEdit%2Ftrunk%20%7B0}%20most%20recent%20commit%202010-06-30%20stats%20by%20StatSVN%20http%3A%2F%2Fstatsvn.org"><img style="border:0px" alt="Tweet this" src="tweet-this.png"/></a></dd>
+</dl>
+
+<div class="section">
+<h2>Activity by Clock Time</h2>
+<p class="chart"><img src="activity_time_eyebex.png" alt="Activity by Hour of Day for eyebex" width="800" height="500" /></p><p class="chart"><img src="activity_day_eyebex.png" alt="Activity by Day of Week for eyebex" width="800" height="500" /></p></div>
+<div class="section">
+<h2>Activity in Directories</h2>
+  <table  rules="groups" summary="Overview of this author's activities in different directories">
+    <colgroup align="left"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <thead>
+      <tr>
+        <th>Directory</th>
+        <th>Changes</th>
+        <th>Lines of Code</th>
+        <th>Lines per Change</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <th>Totals</th>
+        <td>13 (100.0%)</td>
+        <td>37 (100.0%)</td>
+        <td>2.8</td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr  class="odd">
+        <th><a href="dir_package-files_windows.html" class="directory">package-files/windows/</a></th>
+        <td>6 (46.2%)</td>
+        <td>21 (56.8%)</td>
+        <td>3.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir.html" class="directory">/</a></th>
+        <td>5 (38.5%)</td>
+        <td>16 (43.2%)</td>
+        <td>3.2</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_icons.html" class="directory">icons/</a></th>
+        <td>2 (15.4%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+<p class="chart"><img src="directory_sizes_eyebex.png" alt="Activity of eyebex" width="800" height="500" /></p></div>
+<div class="section">
+<h2>Most Recent Commits</h2>
+<dl class="commitlist">
+  <dt><a name="10"></a>
+    <a href="user_eyebex.html" class="author">eyebex</a>
+    <span class="date">2010-06-30 15:27</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">18162</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Do not require the user to accept the license, it's just informational (fixes SF bug #1732278).
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>package-files/windows</strong>:
+        win32installer.iss&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="9"></a>
+    <a href="user_eyebex.html" class="author">eyebex</a>
+    <span class="date">2009-10-05 17:09</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">16271</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+In the installer, make the old small wizard image the new (large) wizard image (they only differed in the color gradient of the "jE" logo), and create a new small wizard image of a proper size that is not displayed distorted based on "jedit-icon48.png".
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>icons</strong>:
+        WindowsInstallerImage.bmp&#160;<span class="change">(changed)</span>,
+        WindowsInstallerSmallImage.bmp&#160;<span class="change">(changed)</span>
+      </li>
+      <li>
+        <strong>package-files/windows</strong>:
+        win32installer.iss&#160;<span class="change">(+1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="8"></a>
+    <a href="user_eyebex.html" class="author">eyebex</a>
+    <span class="date">2009-10-05 15:14</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">16270</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Do not make the installer fullscreen anymore. This is pretty much standard these days, and it does not obscure other windows / applications while installing jEdit.
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>package-files/windows</strong>:
+        win32installer.iss&#160;<span class="change">(-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="7"></a>
+    <a href="user_eyebex.html" class="author">eyebex</a>
+    <span class="date">2009-10-05 15:06</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">16269</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Remove a few setup directives which are default anyway.
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>package-files/windows</strong>:
+        win32installer.iss&#160;<span class="change">(+1&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="6"></a>
+    <a href="user_eyebex.html" class="author">eyebex</a>
+    <span class="date">2009-10-05 11:08</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">16268</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+On 64-bit Windows, all Registry accesses should go to the 64-bit branch (esp. the Explorer shell entries), so install in 64-bit mode on such systems. Also, first test for a 64-bit Java environment, then fall back to a 32-bit one. Fixes bugs #2356913, #2846022.
+    </p>
+    <p class="commitdetails"><strong>13</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>package-files/windows</strong>:
+        win32installer.iss&#160;<span class="change">(+13)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="5"></a>
+    <a href="user_eyebex.html" class="author">eyebex</a>
+    <span class="date">2009-09-30 20:28</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">16253</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Allow the script to be compiled with the new Unicode version of Inno Setup (and replace two deprecated function calls).
+    </p>
+    <p class="commitdetails"><strong>6</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>package-files/windows</strong>:
+        win32installer.iss&#160;<span class="change">(+6&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="4"></a>
+    <a href="user_eyebex.html" class="author">eyebex</a>
+    <span class="date">2009-09-05 21:12</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">16164</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Add a note that build.dir and dist.dir need to be specified relative.
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        build.properties.sample&#160;<span class="change">(+2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="3"></a>
+    <a href="user_eyebex.html" class="author">eyebex</a>
+    <span class="date">2009-08-21 18:19</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">16017</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Older versions of ISCC.exe did not ignore the /cc switch which is passed by build.xml, but only required with Compil32.exe. So, remove /cc and only support the ISCC.exe command line compiler as it is the better choice for this purpose, anyways.
+    </p>
+    <p class="commitdetails"><strong>3</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        build.properties.sample&#160;<span class="change">(+3&#160;-6)</span>,
+        build.xml&#160;<span class="change">(-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="2"></a>
+    <a href="user_eyebex.html" class="author">eyebex</a>
+    <span class="date">2009-08-18 13:52</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">15964</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Mention that both the GUI and command line versions of the Inno Setup compiler can be used. The latter is more convenient to use if you want compile errors to go to stdout / stderr.
+    </p>
+    <p class="commitdetails"><strong>4</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        build.properties.sample&#160;<span class="change">(+4&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="1"></a>
+    <a href="user_eyebex.html" class="author">eyebex</a>
+    <span class="date">2009-08-18 00:42</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">15959</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Mention which Cygwin packages contain the required tools.
+    </p>
+    <p class="commitdetails"><strong>7</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        build.properties.sample&#160;<span class="change">(+7&#160;-5)</span>
+      </li>
+    </ul>
+  </dd>
+
+</dl>
+
+</div><div id="generatedby">Generated by <a href="http://www.statsvn.org">StatSVN</a> 0.7.0</div>
+</body>
+</html>

@@ -1,0 +1,549 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>StatSVN - /jEdit/trunk Developers: blueyed</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+    <meta name="Generator" content="StatSVN 0.7.0"/>
+<link rel="stylesheet" href="objectlab-statcvs.css" type="text/css"/>
+<script type="text/javascript" charset="utf-8" src="http://bit.ly/javascript-api.js?version=latest&#38;login=statsvn&#38;apiKey=R_2c362b417d0517c27876cbaca1bb68cc"></script>
+<script type="text/javascript" charset="utf-8">
+   // wait until page is loaded to call API
+   var redir_url;
+   var short_url;
+   BitlyCB.myShortenCallback = function(data) {
+      // this is how to get a result of shortening a single url
+      var result;
+      short_url=null;
+      for (var r in data.results) {
+         result = data.results[r];
+         result['longUrl'] = r;
+         short_url = result['shortUrl'];
+         break;
+      }
+      if (short_url==null) // bit.ly failed
+      document.location=redir_url;
+      else
+      redirToTwitter();
+   };
+   function shortenTweet(url) {
+      if (short_url == null || redir_url!=url) {
+      redir_url = url;
+      BitlyClient.shorten(document.location, 'BitlyCB.myShortenCallback');
+      }
+      else
+      redirToTwitter();
+      return false;
+   }
+   function redirToTwitter() { 
+      // replace {0} which is visible as %7B0} in the link
+      document.location = redir_url.replace('%7B0}', short_url);
+   }
+</script>
+  </head>
+
+<body>
+
+<h1>/jEdit/trunk Developers: blueyed</h1>
+<div id="parentlink">&#171; <a href="index.html">Development Statistics for /jEdit/trunk</a> &#171; <a href="developers.html">Developers</a></div>
+<dl class="attributes">
+    <dt>Login name:</dt>
+    <dd>blueyed</dd>
+    <dt>Total Commits:</dt>
+    <dd>86 (0.3%)</dd>
+    <dt>Lines of Code:</dt>
+    <dd>2,507 (0.3%)</dd>
+    <dt>Most Recent Commit:</dt>
+    <dd><span class="date">2010-04-30 11:28</span></dd>
+    <dt>Tweet this:</dt>
+    <dd><a onclick="return shortenTweet(this.href);" href="http://twitter.com/home?status=blueyed%20contributed%202%2C507%20(0.3%25)%20lines%20to%20%2FjEdit%2Ftrunk%20%7B0}%20most%20recent%20commit%202010-04-30%20stats%20by%20StatSVN%20http%3A%2F%2Fstatsvn.org"><img style="border:0px" alt="Tweet this" src="tweet-this.png"/></a></dd>
+</dl>
+
+<div class="section">
+<h2>Activity by Clock Time</h2>
+<p class="chart"><img src="activity_time_blueyed.png" alt="Activity by Hour of Day for blueyed" width="800" height="500" /></p><p class="chart"><img src="activity_day_blueyed.png" alt="Activity by Day of Week for blueyed" width="800" height="500" /></p></div>
+<div class="section">
+<h2>Activity in Directories</h2>
+  <table  rules="groups" summary="Overview of this author's activities in different directories">
+    <colgroup align="left"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <thead>
+      <tr>
+        <th>Directory</th>
+        <th>Changes</th>
+        <th>Lines of Code</th>
+        <th>Lines per Change</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <th>Totals</th>
+        <td>86 (100.0%)</td>
+        <td>2507 (100.0%)</td>
+        <td>29.1</td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr  class="odd">
+        <th><a href="dir_modes.html" class="directory">modes/</a></th>
+        <td>45 (52.3%)</td>
+        <td>2325 (92.7%)</td>
+        <td>51.6</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_doc.html" class="directory">doc/</a></th>
+        <td>21 (24.4%)</td>
+        <td>101 (4.0%)</td>
+        <td>4.8</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_syntax.html" class="directory">org/gjt/sp/jedit/syntax/</a></th>
+        <td>2 (2.3%)</td>
+        <td>24 (1.0%)</td>
+        <td>12.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_pluginmgr.html" class="directory">org/gjt/sp/jedit/pluginmgr/</a></th>
+        <td>2 (2.3%)</td>
+        <td>16 (0.6%)</td>
+        <td>8.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_buffer.html" class="directory">org/gjt/sp/jedit/buffer/</a></th>
+        <td>2 (2.3%)</td>
+        <td>12 (0.5%)</td>
+        <td>6.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_package-files_linux_deb.html" class="directory">package-files/linux/deb/</a></th>
+        <td>3 (3.5%)</td>
+        <td>10 (0.4%)</td>
+        <td>3.3</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit.html" class="directory">org/gjt/sp/jedit/</a></th>
+        <td>5 (5.8%)</td>
+        <td>8 (0.3%)</td>
+        <td>1.6</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_textarea.html" class="directory">org/gjt/sp/jedit/textarea/</a></th>
+        <td>3 (3.5%)</td>
+        <td>5 (0.2%)</td>
+        <td>1.6</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_package-files_linux.html" class="directory">package-files/linux/</a></th>
+        <td>1 (1.2%)</td>
+        <td>3 (0.1%)</td>
+        <td>3.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_macros_C.html" class="directory">macros/C/</a></th>
+        <td>1 (1.2%)</td>
+        <td>2 (0.1%)</td>
+        <td>2.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_package-files_windows.html" class="directory">package-files/windows/</a></th>
+        <td>1 (1.2%)</td>
+        <td>1 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+<p class="chart"><img src="directory_sizes_blueyed.png" alt="Activity of blueyed" width="800" height="500" /></p></div>
+<div class="section">
+<h2>Most Recent Commits</h2>
+<dl class="commitlist">
+  <dt><a name="20"></a>
+    <a href="user_blueyed.html" class="author">blueyed</a>
+    <span class="date">2010-04-30 11:28</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">17715</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+php.xml: add memory_get_peak_usage to keyword list.
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modes</strong>:
+        php.xml&#160;<span class="change">(+1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="19"></a>
+    <a href="user_blueyed.html" class="author">blueyed</a>
+    <span class="date">2010-04-01 00:27</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">17564</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+php.xml: nowdoc support (PHP 5.3). Fix Heredoc some.
+    </p>
+    <p class="commitdetails"><strong>7</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modes</strong>:
+        php.xml&#160;<span class="change">(+7&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="18"></a>
+    <a href="user_blueyed.html" class="author">blueyed</a>
+    <span class="date">2009-11-05 12:59</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">16442</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Attempt to fix regression caused by r16420: when saving a new buffer, it is not the current buffer anymore. See #2887040
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        Buffer.java&#160;<span class="change">(-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="17"></a>
+    <a href="user_blueyed.html" class="author">blueyed</a>
+    <span class="date">2009-10-30 18:58</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">16424</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+php.xml: add xdebug_print_function_stack keyword
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modes</strong>:
+        php.xml&#160;<span class="change">(+1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="16"></a>
+    <a href="user_blueyed.html" class="author">blueyed</a>
+    <span class="date">2009-09-22 23:02</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">16233</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+patch #2844750: line height correction (disappearing underscores)
+    </p>
+    <p class="commitdetails"><strong>9</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+5&#160;-2)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/textarea</strong>:
+        InputMethodSupport.java&#160;<span class="change">(+2&#160;-2)</span>,
+        TextAreaPainter.java&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="15"></a>
+    <a href="user_blueyed.html" class="author">blueyed</a>
+    <span class="date">2009-06-22 16:30</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">15538</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+typoscript.xml: fix multi-line assignments (AT_WHITESPACE_END for closing bracket)
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modes</strong>:
+        typoscript.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="14"></a>
+    <a href="user_blueyed.html" class="author">blueyed</a>
+    <span class="date">2009-04-21 14:49</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">14970</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fix indent
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modes</strong>:
+        javascript.xml&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="13"></a>
+    <a href="user_blueyed.html" class="author">blueyed</a>
+    <span class="date">2009-04-02 16:33</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">14888</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fixed #1633393: TextArea painting corruption when saving
+    </p>
+    <p class="commitdetails"><strong>11</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+3)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/buffer</strong>:
+        JEditBuffer.java&#160;<span class="change">(+8&#160;-10)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="12"></a>
+    <a href="user_blueyed.html" class="author">blueyed</a>
+    <span class="date">2009-04-02 16:27</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">14887</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+package-files: Update email addresses: use devel ML instead of non-existing devel at j.o.
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>package-files/linux/deb</strong>:
+        control&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>package-files/windows</strong>:
+        win32installer.iss&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="11"></a>
+    <a href="user_blueyed.html" class="author">blueyed</a>
+    <span class="date">2009-04-02 16:25</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">14886</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+php.xml: minor fixes/improvements
+    </p>
+    <p class="commitdetails"><strong>12</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modes</strong>:
+        php.xml&#160;<span class="change">(+12&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="10"></a>
+    <a href="user_blueyed.html" class="author">blueyed</a>
+    <span class="date">2009-03-26 14:04</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">14852</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+php.xml: PHPDOC: Do no delegate HTML tags to xml::TAGS, which fails miserable when '&lt;' is used.<br />
+
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modes</strong>:
+        php.xml&#160;<span class="change">(-6)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="9"></a>
+    <a href="user_blueyed.html" class="author">blueyed</a>
+    <span class="date">2009-03-16 18:10</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">14785</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+s/Redo hypersearch/Redo HyperSearch/
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        jedit_gui.props&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="8"></a>
+    <a href="user_blueyed.html" class="author">blueyed</a>
+    <span class="date">2009-03-11 20:22</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">14758</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+VarCompressor: take '%' and '$' into account when checking if an env var is shorter. This fixes 'C:\Programme' being replaced by (the longer) %PROGRAMFILES%.
+    </p>
+    <p class="commitdetails"><strong>5</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        MiscUtilities.java&#160;<span class="change">(+5&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="7"></a>
+    <a href="user_blueyed.html" class="author">blueyed</a>
+    <span class="date">2009-01-19 15:47</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">14400</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fix doc (added the last entry to wrong section)
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+2&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="6"></a>
+    <a href="user_blueyed.html" class="author">blueyed</a>
+    <span class="date">2009-01-19 15:23</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">14399</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+html.xml: delegate on* attributes to Javascript mode
+    </p>
+    <p class="commitdetails"><strong>15</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+9&#160;-6)</span>
+      </li>
+      <li>
+        <strong>modes</strong>:
+        html.xml&#160;<span class="change">(+6)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="5"></a>
+    <a href="user_blueyed.html" class="author">blueyed</a>
+    <span class="date">2009-01-19 15:12</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">14398</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+html.xml: rule "TAGS": use AT_WORD_START for delegation of "style" attribute to css::PROPERTIES.
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modes</strong>:
+        html.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="4"></a>
+    <a href="user_blueyed.html" class="author">blueyed</a>
+    <span class="date">2008-12-15 23:44</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">14177</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+VarCompressor: ignore OLDPWD environment var
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        MiscUtilities.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="3"></a>
+    <a href="user_blueyed.html" class="author">blueyed</a>
+    <span class="date">2008-11-06 15:14</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">14016</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fix regression from r13987. A-B+C is not the same as A-(B+C)
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/textarea</strong>:
+        TextArea.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="2"></a>
+    <a href="user_blueyed.html" class="author">blueyed</a>
+    <span class="date">2008-09-15 10:36</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">13693</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+php mode: Add ESCAPE attribute to "LITERAL1+PHP" and "LITERAL2+PHP" (SF bug #2057968)
+    </p>
+    <p class="commitdetails"><strong>5</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modes</strong>:
+        php.xml&#160;<span class="change">(+5&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="1"></a>
+    <a href="user_blueyed.html" class="author">blueyed</a>
+    <span class="date">2008-06-11 15:52</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">12830</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fix word separators in LaTeX mode (SF #1982712)
+    </p>
+    <p class="commitdetails"><strong>3</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+2)</span>
+      </li>
+      <li>
+        <strong>modes</strong>:
+        latex.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+</dl>
+
+<p>(41 more)</p>
+</div><div id="generatedby">Generated by <a href="http://www.statsvn.org">StatSVN</a> 0.7.0</div>
+</body>
+</html>

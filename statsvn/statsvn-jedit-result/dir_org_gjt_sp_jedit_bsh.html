@@ -1,0 +1,1011 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>StatSVN - Directory org/gjt/sp/jedit/bsh/</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+    <meta name="Generator" content="StatSVN 0.7.0"/>
+<link rel="stylesheet" href="objectlab-statcvs.css" type="text/css"/>
+<script type="text/javascript" charset="utf-8" src="http://bit.ly/javascript-api.js?version=latest&#38;login=statsvn&#38;apiKey=R_2c362b417d0517c27876cbaca1bb68cc"></script>
+<script type="text/javascript" charset="utf-8">
+   // wait until page is loaded to call API
+   var redir_url;
+   var short_url;
+   BitlyCB.myShortenCallback = function(data) {
+      // this is how to get a result of shortening a single url
+      var result;
+      short_url=null;
+      for (var r in data.results) {
+         result = data.results[r];
+         result['longUrl'] = r;
+         short_url = result['shortUrl'];
+         break;
+      }
+      if (short_url==null) // bit.ly failed
+      document.location=redir_url;
+      else
+      redirToTwitter();
+   };
+   function shortenTweet(url) {
+      if (short_url == null || redir_url!=url) {
+      redir_url = url;
+      BitlyClient.shorten(document.location, 'BitlyCB.myShortenCallback');
+      }
+      else
+      redirToTwitter();
+      return false;
+   }
+   function redirToTwitter() { 
+      // replace {0} which is visible as %7B0} in the link
+      document.location = redir_url.replace('%7B0}', short_url);
+   }
+</script>
+  </head>
+
+<body>
+
+<h1>Directory org/gjt/sp/jedit/bsh/</h1>
+<div id="parentlink">&#171; <a href="index.html">Development Statistics for /jEdit/trunk</a></div>
+<dl class="attributes">
+    <dt>Total Files:</dt>
+    <dd>92</dd>
+    <dt>Deleted Files:</dt>
+    <dd>0</dd>
+    <dt>Lines of Code:</dt>
+    <dd>32431</dd>
+</dl>
+<p class="dirtree">
+<a href="dir.html">[root]</a>/<a href="dir_org.html">org</a>/<a href="dir_org_gjt.html">gjt</a>/<a href="dir_org_gjt_sp.html">sp</a>/<a href="dir_org_gjt_sp_jedit.html">jedit</a>/<strong>bsh</strong><br/>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_gjt_sp_jedit_bsh_classpath.html">classpath</a> 
+(5 files, 1789 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_gjt_sp_jedit_bsh_collection.html">collection</a> 
+(2 files, 162 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_gjt_sp_jedit_bsh_commands.html">commands</a> 
+(22 files, 1274 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_gjt_sp_jedit_bsh_org.html">org</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_gjt_sp_jedit_bsh_org_objectweb.html">objectweb</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_gjt_sp_jedit_bsh_org_objectweb_asm.html">asm</a> 
+(10 files, 4971 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_org_gjt_sp_jedit_bsh_reflect.html">reflect</a> 
+(1 files, 65 lines)<br />
+</p>
+
+<div class="section">
+<h2>Lines of Code</h2>
+<p class="chart"><img src="loc_module_org_gjt_sp_jedit_bsh.png" alt="org/gjt/sp/jedit/bsh/ Lines of Code" width="800" height="500" /></p></div>
+<div class="section">
+<h2>Developers</h2>
+  <table  rules="groups" summary="All authors and the number of their changes and lines of code in this directory">
+    <colgroup align="left"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <thead>
+      <tr>
+        <th>Author</th>
+        <th>Changes</th>
+        <th>Lines of Code</th>
+        <th>Lines per Change</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <th>Totals</th>
+        <td>608 (100.0%)</td>
+        <td>35122 (100.0%)</td>
+        <td>57.7</td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr  class="odd">
+        <th><a href="user_Vampire0.html" class="author">Vampire0</a></th>
+        <td>184 (30.3%)</td>
+        <td>32406 (92.3%)</td>
+        <td>176.1</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_daleanson.html" class="author">daleanson</a></th>
+        <td>50 (8.2%)</td>
+        <td>2564 (7.3%)</td>
+        <td>51.2</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_ezust.html" class="author">ezust</a></th>
+        <td>175 (28.8%)</td>
+        <td>99 (0.3%)</td>
+        <td>0.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_kerik-sf.html" class="author">kerik-sf</a></th>
+        <td>1 (0.2%)</td>
+        <td>27 (0.1%)</td>
+        <td>27.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_voituk.html" class="author">voituk</a></th>
+        <td>12 (2.0%)</td>
+        <td>20 (0.1%)</td>
+        <td>1.6</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_k_satoda.html" class="author">k_satoda</a></th>
+        <td>1 (0.2%)</td>
+        <td>4 (0.0%)</td>
+        <td>4.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_kpouer.html" class="author">kpouer</a></th>
+        <td>183 (30.1%)</td>
+        <td>2 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_shlomy.html" class="author">shlomy</a></th>
+        <td>2 (0.3%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+<div class="section">
+<h2>Most Recent Commits</h2>
+<dl class="commitlist">
+  <dt><a name="18"></a>
+    <a href="user_daleanson.html" class="author">daleanson</a>
+    <span class="date">2019-07-28 19:32</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24913</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Updates for Java 11: check for and require Java 11 on start up, require Java 11 in build.xml, fixed Java 11 compiler warnings (mostly deprecation annotations).
+    </p>
+    <p class="commitdetails"><strong>3</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/bsh</strong>:
+        JavaCharStream.java&#160;<span class="change">(+2&#160;-2)</span>,
+        NameSpace.java&#160;<span class="change">(+1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="17"></a>
+    <a href="user_daleanson.html" class="author">daleanson</a>
+    <span class="date">2018-04-11 00:06</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24859</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fixed all deprecation warnings produced when compiling with Java 9. Note there are still two deprecated items that are suppressed for Java 8 with comments on how to adjust when jEdit requires Java 9.
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">11 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/bsh</strong>:
+        BSHLiteral.java&#160;<span class="change">(changed)</span>,
+        BSHUnaryExpression.java&#160;<span class="change">(changed)</span>,
+        BshClassManager.java&#160;<span class="change">(changed)</span>,
+        ClassGenerator.java&#160;<span class="change">(changed)</span>,
+        CollectionManager.java&#160;<span class="change">(changed)</span>,
+        JJTParserState.java&#160;<span class="change">(changed)</span>,
+        Parser.java&#160;<span class="change">(changed)</span>,
+        Primitive.java&#160;<span class="change">(changed)</span>,
+        ReflectManager.java&#160;<span class="change">(changed)</span>,
+        This.java&#160;<span class="change">(changed)</span>,
+        XThis.java&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="16"></a>
+    <a href="user_daleanson.html" class="author">daleanson</a>
+    <span class="date">2016-06-23 03:49</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24428</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fixed the remaining unchecked warnings.
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/bsh</strong>:
+        BSHBinaryExpression.java&#160;<span class="change">(+1)</span>,
+        Remote.java&#160;<span class="change">(+1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="15"></a>
+    <a href="user_daleanson.html" class="author">daleanson</a>
+    <span class="date">2016-06-21 05:08</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24423</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Suppressing warnings from the beanshell code (which will probably never be fixed) so it's possible to see compiler warnings from the rest of the code (that will be fixed).
+    </p>
+    <p class="commitdetails"><strong>16</strong> lines of code changed in <span class="files">16 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/bsh</strong>:
+        BSHTryStatement.java&#160;<span class="change">(+1)</span>,
+        BshClassManager.java&#160;<span class="change">(+1)</span>,
+        Capabilities.java&#160;<span class="change">(+1)</span>,
+        ClassGeneratorImpl.java&#160;<span class="change">(+1)</span>,
+        ClassGeneratorUtil.java&#160;<span class="change">(+1)</span>,
+        CollectionManager.java&#160;<span class="change">(+1)</span>,
+        ExternalNameSpace.java&#160;<span class="change">(+1)</span>,
+        JJTParserState.java&#160;<span class="change">(+1)</span>,
+        Modifiers.java&#160;<span class="change">(+1)</span>,
+        NameSpace.java&#160;<span class="change">(+1)</span>,
+        Primitive.java&#160;<span class="change">(+1)</span>,
+        Reflect.java&#160;<span class="change">(+1)</span>,
+        Remote.java&#160;<span class="change">(+1)</span>,
+        StringUtil.java&#160;<span class="change">(+1)</span>,
+        Types.java&#160;<span class="change">(+1)</span>,
+        XThis.java&#160;<span class="change">(+1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="14"></a>
+    <a href="user_kerik-sf.html" class="author">kerik-sf</a>
+    <span class="date">2015-11-28 16:03</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24162</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+apply #572 Patch for bug #3913 (beanshell do-while loop bug)<br />
+<br />
+original code from beanshell2 (see ticket)<br />
+reformated to minimize diffs
+    </p>
+    <p class="commitdetails"><strong>27</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/bsh</strong>:
+        BSHWhileStatement.java&#160;<span class="change">(+27&#160;-20)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="13"></a>
+    <a href="user_daleanson.html" class="author">daleanson</a>
+    <span class="date">2015-08-10 15:56</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">23981</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Cleaned up all the javadoc errors and some of the warnings. There are a lot more warnings to fix.
+    </p>
+    <p class="commitdetails"><strong>23</strong> lines of code changed in <span class="files">10 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/bsh</strong>:
+        BSHBinaryExpression.java&#160;<span class="change">(-1)</span>,
+        BSHTernaryExpression.java&#160;<span class="change">(+1&#160;-1)</span>,
+        BshClassManager.java&#160;<span class="change">(+2&#160;-2)</span>,
+        BshMethod.java&#160;<span class="change">(+1&#160;-1)</span>,
+        ExternalNameSpace.java&#160;<span class="change">(+2&#160;-2)</span>,
+        Interpreter.java&#160;<span class="change">(+3&#160;-3)</span>,
+        NameSpace.java&#160;<span class="change">(+5&#160;-5)</span>,
+        ParseException.java&#160;<span class="change">(+1&#160;-1)</span>,
+        Parser.java&#160;<span class="change">(+5&#160;-5)</span>,
+        Primitive.java&#160;<span class="change">(+3&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="12"></a>
+    <a href="user_shlomy.html" class="author">shlomy</a>
+    <span class="date">2013-09-29 21:43</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">23222</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Some more enhancements suggested by IntelliJIDEA.
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/bsh</strong>:
+        StringUtil.java&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="11"></a>
+    <a href="user_shlomy.html" class="author">shlomy</a>
+    <span class="date">2013-09-29 20:19</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">23220</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Some more tiny fixes suggested by IntelliJIDEA's code inspection tool.
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/bsh</strong>:
+        package.html&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="10"></a>
+    <a href="user_Vampire0.html" class="author">Vampire0</a>
+    <span class="date">2013-08-31 12:39</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">23162</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+reinstantiate trunk and branches
+    </p>
+    <p class="commitdetails"><strong>32406</strong> lines of code changed in <span class="files">92 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/bsh</strong>:
+        BSHAllocationExpression.java&#160;<span class="new">(new&#160;312)</span>,
+        BSHAmbiguousName.java&#160;<span class="new">(new&#160;107)</span>,
+        BSHArguments.java&#160;<span class="new">(new&#160;74)</span>,
+        BSHArrayDimensions.java&#160;<span class="new">(new&#160;148)</span>,
+        BSHArrayInitializer.java&#160;<span class="new">(new&#160;147)</span>,
+        BSHAssignment.java&#160;<span class="new">(new&#160;184)</span>,
+        BSHBinaryExpression.java&#160;<span class="new">(new&#160;227)</span>,
+        BSHBlock.java&#160;<span class="new">(new&#160;149)</span>,
+        BSHCastExpression.java&#160;<span class="new">(new&#160;72)</span>,
+        BSHClassDeclaration.java&#160;<span class="new">(new&#160;104)</span>,
+        BSHEnhancedForStatement.java&#160;<span class="new">(new&#160;106)</span>,
+        BSHForStatement.java&#160;<span class="new">(new&#160;143)</span>,
+        BSHFormalComment.java&#160;<span class="new">(new&#160;13)</span>,
+        BSHFormalParameter.java&#160;<span class="new">(new&#160;74)</span>,
+        BSHFormalParameters.java&#160;<span class="new">(new&#160;115)</span>,
+        BSHIfStatement.java&#160;<span class="new">(new&#160;78)</span>,
+        BSHImportDeclaration.java&#160;<span class="new">(new&#160;81)</span>,
+        BSHLiteral.java&#160;<span class="new">(new&#160;139)</span>,
+        BSHMethodDeclaration.java&#160;<span class="new">(new&#160;179)</span>,
+        BSHMethodInvocation.java&#160;<span class="new">(new&#160;103)</span>,
+        BSHPackageDeclaration.java&#160;<span class="new">(new&#160;54)</span>,
+        BSHPrimaryExpression.java&#160;<span class="new">(new&#160;118)</span>,
+        BSHPrimarySuffix.java&#160;<span class="new">(new&#160;304)</span>,
+        BSHPrimitiveType.java&#160;<span class="new">(new&#160;44)</span>,
+        BSHReturnStatement.java&#160;<span class="new">(new&#160;55)</span>,
+        BSHReturnType.java&#160;<span class="new">(new&#160;66)</span>,
+        BSHStatementExpressionList.java&#160;<span class="new">(new&#160;53)</span>,
+        BSHSwitchLabel.java&#160;<span class="new">(new&#160;49)</span>,
+        BSHSwitchStatement.java&#160;<span class="new">(new&#160;136)</span>,
+        BSHTernaryExpression.java&#160;<span class="new">(new&#160;60)</span>,
+        BSHThrowStatement.java&#160;<span class="new">(new&#160;56)</span>,
+        BSHTryStatement.java&#160;<span class="new">(new&#160;190)</span>,
+        BSHType.java&#160;<span class="new">(new&#160;218)</span>,
+        BSHTypedVariableDeclaration.java&#160;<span class="new">(new&#160;106)</span>,
+        BSHUnaryExpression.java&#160;<span class="new">(new&#160;133)</span>,
+        BSHVariableDeclarator.java&#160;<span class="new">(new&#160;96)</span>,
+        BSHWhileStatement.java&#160;<span class="new">(new&#160;99)</span>,
+        BlockNameSpace.java&#160;<span class="new">(new&#160;192)</span>,
+        BshClass.scripted&#160;<span class="new">(new&#160;63)</span>,
+        BshClassManager.java&#160;<span class="new">(new&#160;648)</span>,
+        BshIterator.java&#160;<span class="new">(new&#160;57)</span>,
+        BshMethod.java&#160;<span class="new">(new&#160;428)</span>,
+        CallStack.java&#160;<span class="new">(new&#160;150)</span>,
+        Capabilities.java&#160;<span class="new">(new&#160;143)</span>,
+        ClassGenerator.java&#160;<span class="new">(new&#160;55)</span>,
+        ClassGeneratorImpl.java&#160;<span class="new">(new&#160;316)</span>,
+        ClassGeneratorUtil.java&#160;<span class="new">(new&#160;1138)</span>,
+        ClassIdentifier.java&#160;<span class="new">(new&#160;53)</span>,
+        ClassPathException.java&#160;<span class="new">(new&#160;39)</span>,
+        CollectionManager.java&#160;<span class="new">(new&#160;201)</span>,
+        CommandLineReader.java&#160;<span class="new">(new&#160;107)</span>,
+        ConsoleInterface.java&#160;<span class="new">(new&#160;54)</span>,
+        DelayedEvalBshMethod.java&#160;<span class="new">(new&#160;106)</span>,
+        EvalError.java&#160;<span class="new">(new&#160;173)</span>,
+        ExternalNameSpace.java&#160;<span class="new">(new&#160;234)</span>,
+        Interpreter.java&#160;<span class="new">(new&#160;1233)</span>,
+        InterpreterError.java&#160;<span class="new">(new&#160;47)</span>,
+        JJTParserState.java&#160;<span class="new">(new&#160;123)</span>,
+        JThis.java&#160;<span class="new">(new&#160;235)</span>,
+        JavaCharStream.java&#160;<span class="new">(new&#160;547)</span>,
+        LHS.java&#160;<span class="new">(new&#160;269)</span>,
+        Modifiers.java&#160;<span class="new">(new&#160;89)</span>,
+        Name.java&#160;<span class="new">(new&#160;1066)</span>,
+        NameSource.java&#160;<span class="new">(new&#160;64)</span>,
+        NameSpace.java&#160;<span class="new">(new&#160;1704)</span>,
+        Node.java&#160;<span class="new">(new&#160;82)</span>,
+        ParseException.java&#160;<span class="new">(new&#160;303)</span>,
+        Parser.java&#160;<span class="new">(new&#160;5815)</span>,
+        ParserConstants.java&#160;<span class="new">(new&#160;275)</span>,
+        ParserTokenManager.java&#160;<span class="new">(new&#160;2107)</span>,
+        ParserTreeConstants.java&#160;<span class="new">(new&#160;87)</span>,
+        Primitive.java&#160;<span class="new">(new&#160;1098)</span>,
+        Reflect.java&#160;<span class="new">(new&#160;967)</span>,
+        Reflect.last&#160;<span class="new">(new&#160;914)</span>,
+        ReflectError.java&#160;<span class="new">(new&#160;42)</span>,
+        ReflectManager.java&#160;<span class="new">(new&#160;89)</span>,
+        Remote.java&#160;<span class="new">(new&#160;215)</span>,
+        ReturnControl.java&#160;<span class="new">(new&#160;52)</span>,
+        SimpleNode.java&#160;<span class="new">(new&#160;224)</span>,
+        StringUtil.java&#160;<span class="new">(new&#160;122)</span>,
+        TargetError.java&#160;<span class="new">(new&#160;159)</span>,
+        This.java&#160;<span class="new">(new&#160;336)</span>,
+        Token.java&#160;<span class="new">(new&#160;90)</span>,
+        TokenMgrError.java&#160;<span class="new">(new&#160;133)</span>,
+        Types.java&#160;<span class="new">(new&#160;530)</span>,
+        UtilEvalError.java&#160;<span class="new">(new&#160;93)</span>,
+        UtilTargetError.java&#160;<span class="new">(new&#160;73)</span>,
+        Variable.java&#160;<span class="new">(new&#160;116)</span>,
+        XThis.java&#160;<span class="new">(new&#160;201)</span>,
+        bsh.jj&#160;<span class="new">(new&#160;2965)</span>,
+        bsh.jjt&#160;<span class="new">(new&#160;1380)</span>,
+        package.html&#160;<span class="new">(new&#160;12)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="9"></a>
+    <a href="user_Vampire0.html" class="author">Vampire0</a>
+    <span class="date">2013-08-27 22:41</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">23150</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+put tombstone in place, official repository for jEdit core is now in Git
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">92 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/bsh</strong>:
+        BSHAllocationExpression.java&#160;<span class="del">(del)</span>,
+        BSHAmbiguousName.java&#160;<span class="del">(del)</span>,
+        BSHArguments.java&#160;<span class="del">(del)</span>,
+        BSHArrayDimensions.java&#160;<span class="del">(del)</span>,
+        BSHArrayInitializer.java&#160;<span class="del">(del)</span>,
+        BSHAssignment.java&#160;<span class="del">(del)</span>,
+        BSHBinaryExpression.java&#160;<span class="del">(del)</span>,
+        BSHBlock.java&#160;<span class="del">(del)</span>,
+        BSHCastExpression.java&#160;<span class="del">(del)</span>,
+        BSHClassDeclaration.java&#160;<span class="del">(del)</span>,
+        BSHEnhancedForStatement.java&#160;<span class="del">(del)</span>,
+        BSHForStatement.java&#160;<span class="del">(del)</span>,
+        BSHFormalComment.java&#160;<span class="del">(del)</span>,
+        BSHFormalParameter.java&#160;<span class="del">(del)</span>,
+        BSHFormalParameters.java&#160;<span class="del">(del)</span>,
+        BSHIfStatement.java&#160;<span class="del">(del)</span>,
+        BSHImportDeclaration.java&#160;<span class="del">(del)</span>,
+        BSHLiteral.java&#160;<span class="del">(del)</span>,
+        BSHMethodDeclaration.java&#160;<span class="del">(del)</span>,
+        BSHMethodInvocation.java&#160;<span class="del">(del)</span>,
+        BSHPackageDeclaration.java&#160;<span class="del">(del)</span>,
+        BSHPrimaryExpression.java&#160;<span class="del">(del)</span>,
+        BSHPrimarySuffix.java&#160;<span class="del">(del)</span>,
+        BSHPrimitiveType.java&#160;<span class="del">(del)</span>,
+        BSHReturnStatement.java&#160;<span class="del">(del)</span>,
+        BSHReturnType.java&#160;<span class="del">(del)</span>,
+        BSHStatementExpressionList.java&#160;<span class="del">(del)</span>,
+        BSHSwitchLabel.java&#160;<span class="del">(del)</span>,
+        BSHSwitchStatement.java&#160;<span class="del">(del)</span>,
+        BSHTernaryExpression.java&#160;<span class="del">(del)</span>,
+        BSHThrowStatement.java&#160;<span class="del">(del)</span>,
+        BSHTryStatement.java&#160;<span class="del">(del)</span>,
+        BSHType.java&#160;<span class="del">(del)</span>,
+        BSHTypedVariableDeclaration.java&#160;<span class="del">(del)</span>,
+        BSHUnaryExpression.java&#160;<span class="del">(del)</span>,
+        BSHVariableDeclarator.java&#160;<span class="del">(del)</span>,
+        BSHWhileStatement.java&#160;<span class="del">(del)</span>,
+        BlockNameSpace.java&#160;<span class="del">(del)</span>,
+        BshClass.scripted&#160;<span class="del">(del)</span>,
+        BshClassManager.java&#160;<span class="del">(del)</span>,
+        BshIterator.java&#160;<span class="del">(del)</span>,
+        BshMethod.java&#160;<span class="del">(del)</span>,
+        CallStack.java&#160;<span class="del">(del)</span>,
+        Capabilities.java&#160;<span class="del">(del)</span>,
+        ClassGenerator.java&#160;<span class="del">(del)</span>,
+        ClassGeneratorImpl.java&#160;<span class="del">(del)</span>,
+        ClassGeneratorUtil.java&#160;<span class="del">(del)</span>,
+        ClassIdentifier.java&#160;<span class="del">(del)</span>,
+        ClassPathException.java&#160;<span class="del">(del)</span>,
+        CollectionManager.java&#160;<span class="del">(del)</span>,
+        CommandLineReader.java&#160;<span class="del">(del)</span>,
+        ConsoleInterface.java&#160;<span class="del">(del)</span>,
+        DelayedEvalBshMethod.java&#160;<span class="del">(del)</span>,
+        EvalError.java&#160;<span class="del">(del)</span>,
+        ExternalNameSpace.java&#160;<span class="del">(del)</span>,
+        Interpreter.java&#160;<span class="del">(del)</span>,
+        InterpreterError.java&#160;<span class="del">(del)</span>,
+        JJTParserState.java&#160;<span class="del">(del)</span>,
+        JThis.java&#160;<span class="del">(del)</span>,
+        JavaCharStream.java&#160;<span class="del">(del)</span>,
+        LHS.java&#160;<span class="del">(del)</span>,
+        Modifiers.java&#160;<span class="del">(del)</span>,
+        Name.java&#160;<span class="del">(del)</span>,
+        NameSource.java&#160;<span class="del">(del)</span>,
+        NameSpace.java&#160;<span class="del">(del)</span>,
+        Node.java&#160;<span class="del">(del)</span>,
+        ParseException.java&#160;<span class="del">(del)</span>,
+        Parser.java&#160;<span class="del">(del)</span>,
+        ParserConstants.java&#160;<span class="del">(del)</span>,
+        ParserTokenManager.java&#160;<span class="del">(del)</span>,
+        ParserTreeConstants.java&#160;<span class="del">(del)</span>,
+        Primitive.java&#160;<span class="del">(del)</span>,
+        Reflect.java&#160;<span class="del">(del)</span>,
+        Reflect.last&#160;<span class="del">(del)</span>,
+        ReflectError.java&#160;<span class="del">(del)</span>,
+        ReflectManager.java&#160;<span class="del">(del)</span>,
+        Remote.java&#160;<span class="del">(del)</span>,
+        ReturnControl.java&#160;<span class="del">(del)</span>,
+        SimpleNode.java&#160;<span class="del">(del)</span>,
+        StringUtil.java&#160;<span class="del">(del)</span>,
+        TargetError.java&#160;<span class="del">(del)</span>,
+        This.java&#160;<span class="del">(del)</span>,
+        Token.java&#160;<span class="del">(del)</span>,
+        TokenMgrError.java&#160;<span class="del">(del)</span>,
+        Types.java&#160;<span class="del">(del)</span>,
+        UtilEvalError.java&#160;<span class="del">(del)</span>,
+        UtilTargetError.java&#160;<span class="del">(del)</span>,
+        Variable.java&#160;<span class="del">(del)</span>,
+        XThis.java&#160;<span class="del">(del)</span>,
+        bsh.jj&#160;<span class="del">(del)</span>,
+        bsh.jjt&#160;<span class="del">(del)</span>,
+        package.html&#160;<span class="del">(del)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="8"></a>
+    <a href="user_kpouer.html" class="author">kpouer</a>
+    <span class="date">2012-03-23 23:42</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">21423</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+made toString() more readable
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/bsh</strong>:
+        EvalError.java&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="7"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2011-01-15 00:21</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">19196</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Added package.html files.<br />
+
+    </p>
+    <p class="commitdetails"><strong>12</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/bsh</strong>:
+        package.html&#160;<span class="new">(new&#160;12)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="6"></a>
+    <a href="user_voituk.html" class="author">voituk</a>
+    <span class="date">2009-06-30 08:07</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">15613</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Code cleanup performed: <br />
+	- Syncronized StringBuffer was replaced to non-locking StringBuilder (where it is possible)<br />
+	- Introduced Java5 generic types into collections usage (code become more easy to read)<br />
+	- Removed few compiler warnings<br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>20</strong> lines of code changed in <span class="files">12 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/bsh</strong>:
+        BSHLiteral.java&#160;<span class="change">(+1&#160;-1)</span>,
+        CallStack.java&#160;<span class="change">(+4&#160;-3)</span>,
+        ClassGeneratorUtil.java&#160;<span class="change">(+1&#160;-1)</span>,
+        CollectionManager.java&#160;<span class="change">(+4)</span>,
+        ParseException.java&#160;<span class="change">(+1&#160;-1)</span>,
+        Parser.java&#160;<span class="change">(+2&#160;-2)</span>,
+        Reflect.java&#160;<span class="change">(+1&#160;-1)</span>,
+        Remote.java&#160;<span class="change">(+2&#160;-2)</span>,
+        SimpleNode.java&#160;<span class="change">(+1&#160;-1)</span>,
+        StringUtil.java&#160;<span class="change">(+1&#160;-1)</span>,
+        TokenMgrError.java&#160;<span class="change">(+1&#160;-1)</span>,
+        XThis.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="5"></a>
+    <a href="user_daleanson.html" class="author">daleanson</a>
+    <span class="date">2008-05-10 17:46</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">12614</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fixed javadoc warnings.  There are still a number of warnings like this: <br />
+<br />
+[javadoc] javadoc: warning - Multiple sources of package comments found for package "org.gjt.sp.jedit.search"<br />
+<br />
+These are due to a bug in the javadoc tool, see <a href="http://bugs.sun.com/bugdatabase/view_bug.do">http://bugs.sun.com/bugdatabase/view_bug.do</a>?bug_id=5095714
+    </p>
+    <p class="commitdetails"><strong>2520</strong> lines of code changed in <span class="files">9 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/bsh</strong>:
+        BshClassManager.java&#160;<span class="change">(+531&#160;-532)</span>,
+        BshIterator.java&#160;<span class="change">(+19&#160;-19)</span>,
+        CollectionManager.java&#160;<span class="change">(+140&#160;-142)</span>,
+        ConsoleInterface.java&#160;<span class="change">(+11&#160;-12)</span>,
+        NameSource.java&#160;<span class="change">(+25&#160;-27)</span>,
+        NameSpace.java&#160;<span class="change">(+1351&#160;-1354)</span>,
+        This.java&#160;<span class="change">(+261&#160;-263)</span>,
+        UtilEvalError.java&#160;<span class="change">(+45&#160;-46)</span>,
+        XThis.java&#160;<span class="change">(+137&#160;-136)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="4"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2008-04-23 00:12</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">12504</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Property fixes. svn:eol-style native<br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">87 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/bsh</strong>:
+        BSHAllocationExpression.java&#160;<span class="change">(changed)</span>,
+        BSHAmbiguousName.java&#160;<span class="change">(changed)</span>,
+        BSHArguments.java&#160;<span class="change">(changed)</span>,
+        BSHArrayDimensions.java&#160;<span class="change">(changed)</span>,
+        BSHArrayInitializer.java&#160;<span class="change">(changed)</span>,
+        BSHAssignment.java&#160;<span class="change">(changed)</span>,
+        BSHBinaryExpression.java&#160;<span class="change">(changed)</span>,
+        BSHBlock.java&#160;<span class="change">(changed)</span>,
+        BSHCastExpression.java&#160;<span class="change">(changed)</span>,
+        BSHClassDeclaration.java&#160;<span class="change">(changed)</span>,
+        BSHEnhancedForStatement.java&#160;<span class="change">(changed)</span>,
+        BSHForStatement.java&#160;<span class="change">(changed)</span>,
+        BSHFormalComment.java&#160;<span class="change">(changed)</span>,
+        BSHFormalParameter.java&#160;<span class="change">(changed)</span>,
+        BSHFormalParameters.java&#160;<span class="change">(changed)</span>,
+        BSHIfStatement.java&#160;<span class="change">(changed)</span>,
+        BSHImportDeclaration.java&#160;<span class="change">(changed)</span>,
+        BSHLiteral.java&#160;<span class="change">(changed)</span>,
+        BSHMethodDeclaration.java&#160;<span class="change">(changed)</span>,
+        BSHMethodInvocation.java&#160;<span class="change">(changed)</span>,
+        BSHPackageDeclaration.java&#160;<span class="change">(changed)</span>,
+        BSHPrimaryExpression.java&#160;<span class="change">(changed)</span>,
+        BSHPrimarySuffix.java&#160;<span class="change">(changed)</span>,
+        BSHPrimitiveType.java&#160;<span class="change">(changed)</span>,
+        BSHReturnStatement.java&#160;<span class="change">(changed)</span>,
+        BSHReturnType.java&#160;<span class="change">(changed)</span>,
+        BSHStatementExpressionList.java&#160;<span class="change">(changed)</span>,
+        BSHSwitchLabel.java&#160;<span class="change">(changed)</span>,
+        BSHSwitchStatement.java&#160;<span class="change">(changed)</span>,
+        BSHTernaryExpression.java&#160;<span class="change">(changed)</span>,
+        BSHThrowStatement.java&#160;<span class="change">(changed)</span>,
+        BSHTryStatement.java&#160;<span class="change">(changed)</span>,
+        BSHType.java&#160;<span class="change">(changed)</span>,
+        BSHTypedVariableDeclaration.java&#160;<span class="change">(changed)</span>,
+        BSHUnaryExpression.java&#160;<span class="change">(changed)</span>,
+        BSHVariableDeclarator.java&#160;<span class="change">(changed)</span>,
+        BSHWhileStatement.java&#160;<span class="change">(changed)</span>,
+        BlockNameSpace.java&#160;<span class="change">(changed)</span>,
+        BshClassManager.java&#160;<span class="change">(changed)</span>,
+        BshIterator.java&#160;<span class="change">(changed)</span>,
+        BshMethod.java&#160;<span class="change">(changed)</span>,
+        CallStack.java&#160;<span class="change">(changed)</span>,
+        Capabilities.java&#160;<span class="change">(changed)</span>,
+        ClassGenerator.java&#160;<span class="change">(changed)</span>,
+        ClassGeneratorImpl.java&#160;<span class="change">(changed)</span>,
+        ClassGeneratorUtil.java&#160;<span class="change">(changed)</span>,
+        ClassIdentifier.java&#160;<span class="change">(changed)</span>,
+        ClassPathException.java&#160;<span class="change">(changed)</span>,
+        CollectionManager.java&#160;<span class="change">(changed)</span>,
+        CommandLineReader.java&#160;<span class="change">(changed)</span>,
+        ConsoleInterface.java&#160;<span class="change">(changed)</span>,
+        DelayedEvalBshMethod.java&#160;<span class="change">(changed)</span>,
+        EvalError.java&#160;<span class="change">(changed)</span>,
+        ExternalNameSpace.java&#160;<span class="change">(changed)</span>,
+        Interpreter.java&#160;<span class="change">(changed)</span>,
+        InterpreterError.java&#160;<span class="change">(changed)</span>,
+        JJTParserState.java&#160;<span class="change">(changed)</span>,
+        JThis.java&#160;<span class="change">(changed)</span>,
+        JavaCharStream.java&#160;<span class="change">(changed)</span>,
+        LHS.java&#160;<span class="change">(changed)</span>,
+        Modifiers.java&#160;<span class="change">(changed)</span>,
+        Name.java&#160;<span class="change">(changed)</span>,
+        NameSource.java&#160;<span class="change">(changed)</span>,
+        NameSpace.java&#160;<span class="change">(changed)</span>,
+        Node.java&#160;<span class="change">(changed)</span>,
+        ParseException.java&#160;<span class="change">(changed)</span>,
+        Parser.java&#160;<span class="change">(changed)</span>,
+        ParserConstants.java&#160;<span class="change">(changed)</span>,
+        ParserTokenManager.java&#160;<span class="change">(changed)</span>,
+        ParserTreeConstants.java&#160;<span class="change">(changed)</span>,
+        Primitive.java&#160;<span class="change">(changed)</span>,
+        Reflect.java&#160;<span class="change">(changed)</span>,
+        ReflectError.java&#160;<span class="change">(changed)</span>,
+        ReflectManager.java&#160;<span class="change">(changed)</span>,
+        Remote.java&#160;<span class="change">(changed)</span>,
+        ReturnControl.java&#160;<span class="change">(changed)</span>,
+        SimpleNode.java&#160;<span class="change">(changed)</span>,
+        StringUtil.java&#160;<span class="change">(changed)</span>,
+        TargetError.java&#160;<span class="change">(changed)</span>,
+        This.java&#160;<span class="change">(changed)</span>,
+        Token.java&#160;<span class="change">(changed)</span>,
+        TokenMgrError.java&#160;<span class="change">(changed)</span>,
+        Types.java&#160;<span class="change">(changed)</span>,
+        UtilEvalError.java&#160;<span class="change">(changed)</span>,
+        UtilTargetError.java&#160;<span class="change">(changed)</span>,
+        Variable.java&#160;<span class="change">(changed)</span>,
+        XThis.java&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="3"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2008-04-22 02:18</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">12502</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+find . -name \*.java | xargs svn propset eol-style native<br />
+as suggested by daniel hahler.<br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>87</strong> lines of code changed in <span class="files">87 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/bsh</strong>:
+        BSHAllocationExpression.java&#160;<span class="change">(+1)</span>,
+        BSHAmbiguousName.java&#160;<span class="change">(+1)</span>,
+        BSHArguments.java&#160;<span class="change">(+1)</span>,
+        BSHArrayDimensions.java&#160;<span class="change">(+1)</span>,
+        BSHArrayInitializer.java&#160;<span class="change">(+1)</span>,
+        BSHAssignment.java&#160;<span class="change">(+1)</span>,
+        BSHBinaryExpression.java&#160;<span class="change">(+1)</span>,
+        BSHBlock.java&#160;<span class="change">(+1)</span>,
+        BSHCastExpression.java&#160;<span class="change">(+1)</span>,
+        BSHClassDeclaration.java&#160;<span class="change">(+1)</span>,
+        BSHEnhancedForStatement.java&#160;<span class="change">(+1)</span>,
+        BSHForStatement.java&#160;<span class="change">(+1)</span>,
+        BSHFormalComment.java&#160;<span class="change">(+1)</span>,
+        BSHFormalParameter.java&#160;<span class="change">(+1)</span>,
+        BSHFormalParameters.java&#160;<span class="change">(+1)</span>,
+        BSHIfStatement.java&#160;<span class="change">(+1)</span>,
+        BSHImportDeclaration.java&#160;<span class="change">(+1)</span>,
+        BSHLiteral.java&#160;<span class="change">(+1)</span>,
+        BSHMethodDeclaration.java&#160;<span class="change">(+1)</span>,
+        BSHMethodInvocation.java&#160;<span class="change">(+1)</span>,
+        BSHPackageDeclaration.java&#160;<span class="change">(+1)</span>,
+        BSHPrimaryExpression.java&#160;<span class="change">(+1)</span>,
+        BSHPrimarySuffix.java&#160;<span class="change">(+1)</span>,
+        BSHPrimitiveType.java&#160;<span class="change">(+1)</span>,
+        BSHReturnStatement.java&#160;<span class="change">(+1)</span>,
+        BSHReturnType.java&#160;<span class="change">(+1)</span>,
+        BSHStatementExpressionList.java&#160;<span class="change">(+1)</span>,
+        BSHSwitchLabel.java&#160;<span class="change">(+1)</span>,
+        BSHSwitchStatement.java&#160;<span class="change">(+1)</span>,
+        BSHTernaryExpression.java&#160;<span class="change">(+1)</span>,
+        BSHThrowStatement.java&#160;<span class="change">(+1)</span>,
+        BSHTryStatement.java&#160;<span class="change">(+1)</span>,
+        BSHType.java&#160;<span class="change">(+1)</span>,
+        BSHTypedVariableDeclaration.java&#160;<span class="change">(+1)</span>,
+        BSHUnaryExpression.java&#160;<span class="change">(+1)</span>,
+        BSHVariableDeclarator.java&#160;<span class="change">(+1)</span>,
+        BSHWhileStatement.java&#160;<span class="change">(+1)</span>,
+        BlockNameSpace.java&#160;<span class="change">(+1)</span>,
+        BshClassManager.java&#160;<span class="change">(+1)</span>,
+        BshIterator.java&#160;<span class="change">(+1)</span>,
+        BshMethod.java&#160;<span class="change">(+1)</span>,
+        CallStack.java&#160;<span class="change">(+1)</span>,
+        Capabilities.java&#160;<span class="change">(+1)</span>,
+        ClassGenerator.java&#160;<span class="change">(+1)</span>,
+        ClassGeneratorImpl.java&#160;<span class="change">(+1)</span>,
+        ClassGeneratorUtil.java&#160;<span class="change">(+1)</span>,
+        ClassIdentifier.java&#160;<span class="change">(+1)</span>,
+        ClassPathException.java&#160;<span class="change">(+1)</span>,
+        CollectionManager.java&#160;<span class="change">(+1)</span>,
+        CommandLineReader.java&#160;<span class="change">(+1)</span>,
+        ConsoleInterface.java&#160;<span class="change">(+1)</span>,
+        DelayedEvalBshMethod.java&#160;<span class="change">(+1)</span>,
+        EvalError.java&#160;<span class="change">(+1)</span>,
+        ExternalNameSpace.java&#160;<span class="change">(+1)</span>,
+        Interpreter.java&#160;<span class="change">(+1)</span>,
+        InterpreterError.java&#160;<span class="change">(+1)</span>,
+        JJTParserState.java&#160;<span class="change">(+1)</span>,
+        JThis.java&#160;<span class="change">(+1)</span>,
+        JavaCharStream.java&#160;<span class="change">(+1)</span>,
+        LHS.java&#160;<span class="change">(+1)</span>,
+        Modifiers.java&#160;<span class="change">(+1)</span>,
+        Name.java&#160;<span class="change">(+1)</span>,
+        NameSource.java&#160;<span class="change">(+1)</span>,
+        NameSpace.java&#160;<span class="change">(+1)</span>,
+        Node.java&#160;<span class="change">(+1)</span>,
+        ParseException.java&#160;<span class="change">(+1)</span>,
+        Parser.java&#160;<span class="change">(+1)</span>,
+        ParserConstants.java&#160;<span class="change">(+1)</span>,
+        ParserTokenManager.java&#160;<span class="change">(+1)</span>,
+        ParserTreeConstants.java&#160;<span class="change">(+1)</span>,
+        Primitive.java&#160;<span class="change">(+1)</span>,
+        Reflect.java&#160;<span class="change">(+1)</span>,
+        ReflectError.java&#160;<span class="change">(+1)</span>,
+        ReflectManager.java&#160;<span class="change">(+1)</span>,
+        Remote.java&#160;<span class="change">(+1)</span>,
+        ReturnControl.java&#160;<span class="change">(+1)</span>,
+        SimpleNode.java&#160;<span class="change">(+1)</span>,
+        StringUtil.java&#160;<span class="change">(+1)</span>,
+        TargetError.java&#160;<span class="change">(+1)</span>,
+        This.java&#160;<span class="change">(+1)</span>,
+        Token.java&#160;<span class="change">(+1)</span>,
+        TokenMgrError.java&#160;<span class="change">(+1)</span>,
+        Types.java&#160;<span class="change">(+1)</span>,
+        UtilEvalError.java&#160;<span class="change">(+1)</span>,
+        UtilTargetError.java&#160;<span class="change">(+1)</span>,
+        Variable.java&#160;<span class="change">(+1)</span>,
+        XThis.java&#160;<span class="change">(+1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="2"></a>
+    <a href="user_k_satoda.html" class="author">k_satoda</a>
+    <span class="date">2007-10-06 11:44</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">10822</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fixed beanshell's default commands path "/bsh/commands" to<br />
+"/org/gjt/sp/jedit/bsh/commands". This is a follow-up to r10803.<br />
+
+    </p>
+    <p class="commitdetails"><strong>4</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/bsh</strong>:
+        NameSpace.java&#160;<span class="change">(+4&#160;-7)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="1"></a>
+    <a href="user_kpouer.html" class="author">kpouer</a>
+    <span class="date">2007-10-04 21:45</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">10803</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+beanshell package refactored (bug 893349)
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">182 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/bsh</strong>:
+        BSHAllocationExpression.java&#160;<span class="new">(new)</span>,
+        BSHAmbiguousName.java&#160;<span class="change">(changed)</span>,
+        BSHArguments.java&#160;<span class="new">(new)</span>,
+        BSHArrayDimensions.java&#160;<span class="new">(new)</span>,
+        BSHArrayInitializer.java&#160;<span class="change">(changed)</span>,
+        BSHAssignment.java&#160;<span class="new">(new)</span>,
+        BSHBinaryExpression.java&#160;<span class="change">(changed)</span>,
+        BSHBlock.java&#160;<span class="change">(changed)</span>,
+        BSHCastExpression.java&#160;<span class="change">(changed)</span>,
+        BSHClassDeclaration.java&#160;<span class="new">(new)</span>,
+        BSHEnhancedForStatement.java&#160;<span class="new">(new)</span>,
+        BSHForStatement.java&#160;<span class="change">(changed)</span>,
+        BSHFormalComment.java&#160;<span class="change">(changed)</span>,
+        BSHFormalParameter.java&#160;<span class="change">(changed)</span>,
+        BSHFormalParameters.java&#160;<span class="new">(new)</span>,
+        BSHIfStatement.java&#160;<span class="change">(changed)</span>,
+        BSHImportDeclaration.java&#160;<span class="change">(changed)</span>,
+        BSHLiteral.java&#160;<span class="change">(changed)</span>,
+        BSHMethodDeclaration.java&#160;<span class="new">(new)</span>,
+        BSHMethodInvocation.java&#160;<span class="new">(new)</span>,
+        BSHPackageDeclaration.java&#160;<span class="change">(changed)</span>,
+        BSHPrimaryExpression.java&#160;<span class="new">(new)</span>,
+        BSHPrimarySuffix.java&#160;<span class="new">(new)</span>,
+        BSHPrimitiveType.java&#160;<span class="change">(changed)</span>,
+        BSHReturnStatement.java&#160;<span class="new">(new)</span>,
+        BSHReturnType.java&#160;<span class="new">(new)</span>,
+        BSHStatementExpressionList.java&#160;<span class="change">(changed)</span>,
+        BSHSwitchLabel.java&#160;<span class="new">(new)</span>,
+        BSHSwitchStatement.java&#160;<span class="new">(new)</span>,
+        BSHTernaryExpression.java&#160;<span class="new">(new)</span>,
+        BSHThrowStatement.java&#160;<span class="new">(new)</span>,
+        BSHTryStatement.java&#160;<span class="new">(new)</span>,
+        BSHType.java&#160;<span class="change">(changed)</span>,
+        BSHTypedVariableDeclaration.java&#160;<span class="change">(changed)</span>,
+        BSHUnaryExpression.java&#160;<span class="change">(changed)</span>,
+        BSHVariableDeclarator.java&#160;<span class="change">(changed)</span>,
+        BSHWhileStatement.java&#160;<span class="change">(changed)</span>,
+        BlockNameSpace.java&#160;<span class="change">(changed)</span>,
+        BshClass.scripted&#160;<span class="new">(new)</span>,
+        BshClassManager.java&#160;<span class="new">(new)</span>,
+        BshIterator.java&#160;<span class="change">(changed)</span>,
+        BshMethod.java&#160;<span class="change">(changed)</span>,
+        CallStack.java&#160;<span class="change">(changed)</span>,
+        Capabilities.java&#160;<span class="change">(changed)</span>,
+        ClassGenerator.java&#160;<span class="new">(new)</span>,
+        ClassGeneratorImpl.java&#160;<span class="new">(new)</span>,
+        ClassGeneratorUtil.java&#160;<span class="change">(changed)</span>,
+        ClassIdentifier.java&#160;<span class="new">(new)</span>,
+        ClassPathException.java&#160;<span class="new">(new)</span>,
+        CollectionManager.java&#160;<span class="new">(new)</span>,
+        CommandLineReader.java&#160;<span class="new">(new)</span>,
+        ConsoleInterface.java&#160;<span class="new">(new)</span>,
+        DelayedEvalBshMethod.java&#160;<span class="new">(new)</span>,
+        EvalError.java&#160;<span class="new">(new)</span>,
+        ExternalNameSpace.java&#160;<span class="change">(changed)</span>,
+        Interpreter.java&#160;<span class="change">(changed)</span>,
+        InterpreterError.java&#160;<span class="change">(changed)</span>,
+        JJTParserState.java&#160;<span class="new">(new)</span>,
+        JThis.java&#160;<span class="new">(new)</span>,
+        JavaCharStream.java&#160;<span class="change">(changed)</span>,
+        LHS.java&#160;<span class="new">(new)</span>,
+        Modifiers.java&#160;<span class="new">(new)</span>,
+        Name.java&#160;<span class="new">(new)</span>,
+        NameSource.java&#160;<span class="change">(changed)</span>,
+        NameSpace.java&#160;<span class="change">(changed)</span>,
+        Node.java&#160;<span class="change">(changed)</span>,
+        ParseException.java&#160;<span class="new">(new)</span>,
+        Parser.java&#160;<span class="change">(changed)</span>,
+        ParserConstants.java&#160;<span class="change">(changed)</span>,
+        ParserTokenManager.java&#160;<span class="new">(new)</span>,
+        ParserTreeConstants.java&#160;<span class="new">(new)</span>,
+        Primitive.java&#160;<span class="change">(changed)</span>,
+        Reflect.java&#160;<span class="new">(new)</span>,
+        Reflect.last&#160;<span class="new">(new)</span>,
+        ReflectError.java&#160;<span class="change">(changed)</span>,
+        ReflectManager.java&#160;<span class="change">(changed)</span>,
+        Remote.java&#160;<span class="change">(changed)</span>,
+        ReturnControl.java&#160;<span class="change">(changed)</span>,
+        SimpleNode.java&#160;<span class="change">(changed)</span>,
+        StringUtil.java&#160;<span class="new">(new)</span>,
+        TargetError.java&#160;<span class="change">(changed)</span>,
+        This.java&#160;<span class="new">(new)</span>,
+        Token.java&#160;<span class="change">(changed)</span>,
+        TokenMgrError.java&#160;<span class="change">(changed)</span>,
+        Types.java&#160;<span class="new">(new)</span>,
+        UtilEvalError.java&#160;<span class="new">(new)</span>,
+        UtilTargetError.java&#160;<span class="change">(changed)</span>,
+        Variable.java&#160;<span class="change">(changed)</span>,
+        XThis.java&#160;<span class="new">(new)</span>,
+        bsh.jj&#160;<span class="new">(new)</span>,
+        bsh.jjt&#160;<span class="new">(new)</span>
+      </li>
+    </ul>
+  </dd>
+
+</dl>
+
+</div><div id="generatedby">Generated by <a href="http://www.statsvn.org">StatSVN</a> 0.7.0</div>
+</body>
+</html>

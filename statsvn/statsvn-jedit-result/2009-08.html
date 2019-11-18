@@ -1,0 +1,1223 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>StatSVN - August 2009 Commit Log</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+    <meta name="Generator" content="StatSVN 0.7.0"/>
+<link rel="stylesheet" href="objectlab-statcvs.css" type="text/css"/>
+<script type="text/javascript" charset="utf-8" src="http://bit.ly/javascript-api.js?version=latest&#38;login=statsvn&#38;apiKey=R_2c362b417d0517c27876cbaca1bb68cc"></script>
+<script type="text/javascript" charset="utf-8">
+   // wait until page is loaded to call API
+   var redir_url;
+   var short_url;
+   BitlyCB.myShortenCallback = function(data) {
+      // this is how to get a result of shortening a single url
+      var result;
+      short_url=null;
+      for (var r in data.results) {
+         result = data.results[r];
+         result['longUrl'] = r;
+         short_url = result['shortUrl'];
+         break;
+      }
+      if (short_url==null) // bit.ly failed
+      document.location=redir_url;
+      else
+      redirToTwitter();
+   };
+   function shortenTweet(url) {
+      if (short_url == null || redir_url!=url) {
+      redir_url = url;
+      BitlyClient.shorten(document.location, 'BitlyCB.myShortenCallback');
+      }
+      else
+      redirToTwitter();
+      return false;
+   }
+   function redirToTwitter() { 
+      // replace {0} which is visible as %7B0} in the link
+      document.location = redir_url.replace('%7B0}', short_url);
+   }
+</script>
+  </head>
+
+<body>
+
+<h1>August 2009 Commit Log</h1>
+<div id="parentlink">&#171; <a href="index.html">Development Statistics for /jEdit/trunk</a></div>
+
+<div id="nav" class="section">
+<h2>Commit Logs</h2>
+<ul>
+    <li><a href="commitlog.html">October 2019</a></li>
+    <li><a href="2019-09.html">September 2019</a></li>
+    <li><a href="2019-08.html">August 2019</a></li>
+    <li><a href="2019-07.html">July 2019</a></li>
+    <li><a href="2019-06.html">June 2019</a></li>
+    <li><a href="2019-05.html">May 2019</a></li>
+    <li><a href="2019-04.html">April 2019</a></li>
+    <li><a href="2019-03.html">March 2019</a></li>
+    <li><a href="2019-02.html">February 2019</a></li>
+    <li><a href="2019-01.html">January 2019</a></li>
+    <li><a href="2018-12.html">December 2018</a></li>
+    <li><a href="2018-11.html">November 2018</a></li>
+    <li><a href="2018-10.html">October 2018</a></li>
+    <li><a href="2018-09.html">September 2018</a></li>
+    <li><a href="2018-08.html">August 2018</a></li>
+    <li><a href="2018-07.html">July 2018</a></li>
+    <li><a href="2018-06.html">June 2018</a></li>
+    <li><a href="2018-05.html">May 2018</a></li>
+    <li><a href="2018-04.html">April 2018</a></li>
+    <li><a href="2018-03.html">March 2018</a></li>
+    <li><a href="2018-02.html">February 2018</a></li>
+    <li><a href="2018-01.html">January 2018</a></li>
+    <li><a href="2017-12.html">December 2017</a></li>
+    <li><a href="2017-11.html">November 2017</a></li>
+    <li><a href="2017-10.html">October 2017</a></li>
+    <li><a href="2017-09.html">September 2017</a></li>
+    <li><a href="2017-08.html">August 2017</a></li>
+    <li><a href="2017-07.html">July 2017</a></li>
+    <li><a href="2017-06.html">June 2017</a></li>
+    <li><a href="2017-05.html">May 2017</a></li>
+    <li><a href="2017-04.html">April 2017</a></li>
+    <li><a href="2017-03.html">March 2017</a></li>
+    <li><a href="2017-02.html">February 2017</a></li>
+    <li><a href="2017-01.html">January 2017</a></li>
+    <li><a href="2016-12.html">December 2016</a></li>
+    <li><a href="2016-11.html">November 2016</a></li>
+    <li><a href="2016-10.html">October 2016</a></li>
+    <li><a href="2016-09.html">September 2016</a></li>
+    <li><a href="2016-08.html">August 2016</a></li>
+    <li><a href="2016-07.html">July 2016</a></li>
+    <li><a href="2016-06.html">June 2016</a></li>
+    <li><a href="2016-05.html">May 2016</a></li>
+    <li><a href="2016-04.html">April 2016</a></li>
+    <li><a href="2016-03.html">March 2016</a></li>
+    <li><a href="2016-02.html">February 2016</a></li>
+    <li><a href="2016-01.html">January 2016</a></li>
+    <li><a href="2015-12.html">December 2015</a></li>
+    <li><a href="2015-11.html">November 2015</a></li>
+    <li><a href="2015-10.html">October 2015</a></li>
+    <li><a href="2015-09.html">September 2015</a></li>
+    <li><a href="2015-08.html">August 2015</a></li>
+    <li><a href="2015-07.html">July 2015</a></li>
+    <li><a href="2015-06.html">June 2015</a></li>
+    <li><a href="2015-05.html">May 2015</a></li>
+    <li><a href="2015-04.html">April 2015</a></li>
+    <li><a href="2015-03.html">March 2015</a></li>
+    <li><a href="2015-02.html">February 2015</a></li>
+    <li><a href="2015-01.html">January 2015</a></li>
+    <li><a href="2014-12.html">December 2014</a></li>
+    <li><a href="2014-11.html">November 2014</a></li>
+    <li><a href="2014-10.html">October 2014</a></li>
+    <li><a href="2014-09.html">September 2014</a></li>
+    <li><a href="2014-08.html">August 2014</a></li>
+    <li><a href="2014-07.html">July 2014</a></li>
+    <li><a href="2014-06.html">June 2014</a></li>
+    <li><a href="2014-05.html">May 2014</a></li>
+    <li><a href="2014-04.html">April 2014</a></li>
+    <li><a href="2014-03.html">March 2014</a></li>
+    <li><a href="2014-02.html">February 2014</a></li>
+    <li><a href="2014-01.html">January 2014</a></li>
+    <li><a href="2013-12.html">December 2013</a></li>
+    <li><a href="2013-11.html">November 2013</a></li>
+    <li><a href="2013-10.html">October 2013</a></li>
+    <li><a href="2013-09.html">September 2013</a></li>
+    <li><a href="2013-08.html">August 2013</a></li>
+    <li><a href="2013-07.html">July 2013</a></li>
+    <li><a href="2013-06.html">June 2013</a></li>
+    <li><a href="2013-05.html">May 2013</a></li>
+    <li><a href="2013-04.html">April 2013</a></li>
+    <li><a href="2013-03.html">March 2013</a></li>
+    <li><a href="2013-02.html">February 2013</a></li>
+    <li><a href="2013-01.html">January 2013</a></li>
+    <li><a href="2012-12.html">December 2012</a></li>
+    <li><a href="2012-11.html">November 2012</a></li>
+    <li><a href="2012-10.html">October 2012</a></li>
+    <li><a href="2012-09.html">September 2012</a></li>
+    <li><a href="2012-08.html">August 2012</a></li>
+    <li><a href="2012-07.html">July 2012</a></li>
+    <li><a href="2012-06.html">June 2012</a></li>
+    <li><a href="2012-05.html">May 2012</a></li>
+    <li><a href="2012-04.html">April 2012</a></li>
+    <li><a href="2012-03.html">March 2012</a></li>
+    <li><a href="2012-02.html">February 2012</a></li>
+    <li><a href="2012-01.html">January 2012</a></li>
+    <li><a href="2011-12.html">December 2011</a></li>
+    <li><a href="2011-11.html">November 2011</a></li>
+    <li><a href="2011-10.html">October 2011</a></li>
+    <li><a href="2011-09.html">September 2011</a></li>
+    <li><a href="2011-08.html">August 2011</a></li>
+    <li><a href="2011-07.html">July 2011</a></li>
+    <li><a href="2011-06.html">June 2011</a></li>
+    <li><a href="2011-05.html">May 2011</a></li>
+    <li><a href="2011-04.html">April 2011</a></li>
+    <li><a href="2011-03.html">March 2011</a></li>
+    <li><a href="2011-02.html">February 2011</a></li>
+    <li><a href="2011-01.html">January 2011</a></li>
+    <li><a href="2010-12.html">December 2010</a></li>
+    <li><a href="2010-11.html">November 2010</a></li>
+    <li><a href="2010-10.html">October 2010</a></li>
+    <li><a href="2010-09.html">September 2010</a></li>
+    <li><a href="2010-08.html">August 2010</a></li>
+    <li><a href="2010-07.html">July 2010</a></li>
+    <li><a href="2010-06.html">June 2010</a></li>
+    <li><a href="2010-05.html">May 2010</a></li>
+    <li><a href="2010-04.html">April 2010</a></li>
+    <li><a href="2010-03.html">March 2010</a></li>
+    <li><a href="2010-02.html">February 2010</a></li>
+    <li><a href="2010-01.html">January 2010</a></li>
+    <li><a href="2009-12.html">December 2009</a></li>
+    <li><a href="2009-11.html">November 2009</a></li>
+    <li><a href="2009-10.html">October 2009</a></li>
+    <li><a href="2009-09.html">September 2009</a></li>
+    <li><span class="here">August 2009</span></li>
+    <li><a href="2009-07.html">July 2009</a></li>
+    <li><a href="2009-06.html">June 2009</a></li>
+    <li><a href="2009-05.html">May 2009</a></li>
+    <li><a href="2009-04.html">April 2009</a></li>
+    <li><a href="2009-03.html">March 2009</a></li>
+    <li><a href="2009-02.html">February 2009</a></li>
+    <li><a href="2009-01.html">January 2009</a></li>
+    <li><a href="2008-12.html">December 2008</a></li>
+    <li><a href="2008-11.html">November 2008</a></li>
+    <li><a href="2008-10.html">October 2008</a></li>
+    <li><a href="2008-09.html">September 2008</a></li>
+    <li><a href="2008-08.html">August 2008</a></li>
+    <li><a href="2008-07.html">July 2008</a></li>
+    <li><a href="2008-06.html">June 2008</a></li>
+    <li><a href="2008-05.html">May 2008</a></li>
+    <li><a href="2008-04.html">April 2008</a></li>
+    <li><a href="2008-03.html">March 2008</a></li>
+    <li><a href="2008-02.html">February 2008</a></li>
+    <li><a href="2008-01.html">January 2008</a></li>
+    <li><a href="2007-12.html">December 2007</a></li>
+    <li><a href="2007-11.html">November 2007</a></li>
+    <li><a href="2007-10.html">October 2007</a></li>
+    <li><a href="2007-09.html">September 2007</a></li>
+    <li><a href="2007-08.html">August 2007</a></li>
+    <li><a href="2007-07.html">July 2007</a></li>
+    <li><a href="2007-06.html">June 2007</a></li>
+    <li><a href="2007-05.html">May 2007</a></li>
+    <li><a href="2007-04.html">April 2007</a></li>
+    <li><a href="2007-03.html">March 2007</a></li>
+    <li><a href="2007-02.html">February 2007</a></li>
+    <li><a href="2007-01.html">January 2007</a></li>
+    <li><a href="2006-12.html">December 2006</a></li>
+    <li><a href="2006-11.html">November 2006</a></li>
+    <li><a href="2006-10.html">October 2006</a></li>
+    <li><a href="2006-09.html">September 2006</a></li>
+    <li><a href="2006-08.html">August 2006</a></li>
+    <li><a href="2006-07.html">July 2006</a></li>
+    <li><a href="2006-06.html">June 2006</a></li>
+    <li><a href="2006-05.html">May 2006</a></li>
+    <li><a href="2006-04.html">April 2006</a></li>
+    <li><a href="2006-03.html">March 2006</a></li>
+    <li><a href="2006-02.html">February 2006</a></li>
+    <li><a href="2006-01.html">January 2006</a></li>
+    <li><a href="2005-12.html">December 2005</a></li>
+    <li><a href="2005-11.html">November 2005</a></li>
+    <li><a href="2005-10.html">October 2005</a></li>
+    <li><a href="2005-09.html">September 2005</a></li>
+    <li><a href="2005-08.html">August 2005</a></li>
+    <li><a href="2005-07.html">July 2005</a></li>
+    <li><a href="2005-06.html">June 2005</a></li>
+    <li><a href="2005-05.html">May 2005</a></li>
+    <li><a href="2005-04.html">April 2005</a></li>
+    <li><a href="2005-03.html">March 2005</a></li>
+    <li><a href="2005-02.html">February 2005</a></li>
+    <li><a href="2005-01.html">January 2005</a></li>
+    <li><a href="2004-12.html">December 2004</a></li>
+    <li><a href="2004-11.html">November 2004</a></li>
+    <li><a href="2004-10.html">October 2004</a></li>
+    <li><a href="2004-09.html">September 2004</a></li>
+    <li><a href="2004-08.html">August 2004</a></li>
+    <li><a href="2004-07.html">July 2004</a></li>
+    <li><a href="2004-06.html">June 2004</a></li>
+    <li><a href="2004-05.html">May 2004</a></li>
+    <li><a href="2004-04.html">April 2004</a></li>
+    <li><a href="2004-03.html">March 2004</a></li>
+    <li><a href="2004-02.html">February 2004</a></li>
+    <li><a href="2004-01.html">January 2004</a></li>
+    <li><a href="2003-12.html">December 2003</a></li>
+    <li><a href="2003-11.html">November 2003</a></li>
+    <li><a href="2003-10.html">October 2003</a></li>
+    <li><a href="2003-09.html">September 2003</a></li>
+    <li><a href="2003-08.html">August 2003</a></li>
+    <li><a href="2003-07.html">July 2003</a></li>
+    <li><a href="2003-06.html">June 2003</a></li>
+    <li><a href="2003-05.html">May 2003</a></li>
+    <li><a href="2003-04.html">April 2003</a></li>
+    <li><a href="2003-03.html">March 2003</a></li>
+    <li><a href="2003-02.html">February 2003</a></li>
+    <li><a href="2003-01.html">January 2003</a></li>
+    <li><a href="2002-12.html">December 2002</a></li>
+    <li><a href="2002-11.html">November 2002</a></li>
+    <li><a href="2002-10.html">October 2002</a></li>
+    <li><a href="2002-09.html">September 2002</a></li>
+    <li><a href="2002-08.html">August 2002</a></li>
+    <li><a href="2002-07.html">July 2002</a></li>
+    <li><a href="2002-06.html">June 2002</a></li>
+    <li><a href="2002-05.html">May 2002</a></li>
+    <li><a href="2002-04.html">April 2002</a></li>
+    <li><a href="2002-03.html">March 2002</a></li>
+    <li><a href="2002-02.html">February 2002</a></li>
+    <li><a href="2002-01.html">January 2002</a></li>
+    <li><a href="2001-12.html">December 2001</a></li>
+    <li><a href="2001-11.html">November 2001</a></li>
+    <li><a href="2001-10.html">October 2001</a></li>
+    <li><a href="2001-09.html">September 2001</a></li>
+</ul>
+</div><dl class="attributes">
+    <dt>Number of Commits:</dt>
+    <dd>41</dd>
+    <dt>Number of Active Developers:</dt>
+    <dd>7</dd>
+</dl>
+<dl class="commitlist">
+  <dt><a name="41"></a>
+    <a href="user_shlomy.html" class="author">shlomy</a>
+    <span class="date">2009-08-31 22:25</span>
+    <a class="permalink" title="Permalink to this commit" href="#41">#41</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">16134</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Documented recent changes.
+    </p>
+    <p class="commitdetails"><strong>17</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+17&#160;-5)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="40"></a>
+    <a href="user_shlomy.html" class="author">shlomy</a>
+    <span class="date">2009-08-31 22:07</span>
+    <a class="permalink" title="Permalink to this commit" href="#40">#40</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">16133</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fix for patch #2846169: IndentFoldHandler - allow blank lines after start of fold<br />
+The previous patch did not work correctly, because the folding code in jEdit assumed that a content change in a line cannot affect the fold levels of the preceding lines. Hence, it did not recalculate the fold levels of the preceding lines, and did not update the fold markers accordingly. The patch for the indent folding mode gives whitespace-only lines the same fold level as the first non-whitespace-only line following them, so it breaks this assumption, since a change to a line can affect the fold level of preceding whitespace-only lines.<br />
+This commit fixes the assumption by adding a new method to the fold handler for returning the fold levels of preceding lines. Whenever the fold level of a line is changed, this new method is called and the fold levels of the preceding lines get updated correctly. By default, this method does not return anything so no overhead (almost) is added.
+    </p>
+    <p class="commitdetails"><strong>104</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/buffer</strong>:
+        FoldHandler.java&#160;<span class="change">(+21)</span>,
+        IndentFoldHandler.java&#160;<span class="change">(+65&#160;-22)</span>,
+        JEditBuffer.java&#160;<span class="change">(+18&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="39"></a>
+    <a href="user_shlomy.html" class="author">shlomy</a>
+    <span class="date">2009-08-31 00:06</span>
+    <a class="permalink" title="Permalink to this commit" href="#39">#39</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">16129</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Applied a modified version of patch #2846169: IndentFoldHandler - allow blank lines after start of fold.<br />
+The change is to try to take the fold level of whitespace-only lines from the next non-whitespace line, so that empty lines at the beginning of a fold are considered part of the fold.<br />
+The modification from the patch is that the recursion has been replaced with an iterator.
+    </p>
+    <p class="commitdetails"><strong>33</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/buffer</strong>:
+        IndentFoldHandler.java&#160;<span class="change">(+33&#160;-29)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="38"></a>
+    <a href="user_kpouer.html" class="author">kpouer</a>
+    <span class="date">2009-08-30 11:28</span>
+    <a class="permalink" title="Permalink to this commit" href="#38">#38</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">16116</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+updated default size of modes list to fit reality
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/syntax</strong>:
+        ModeProvider.java&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="37"></a>
+    <a href="user_kpouer.html" class="author">kpouer</a>
+    <span class="date">2009-08-29 18:53</span>
+    <a class="permalink" title="Permalink to this commit" href="#37">#37</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">16114</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+fixed spelling
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/textarea</strong>:
+        DisplayManager.java&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="36"></a>
+    <a href="user_shlomy.html" class="author">shlomy</a>
+    <span class="date">2009-08-29 14:14</span>
+    <a class="permalink" title="Permalink to this commit" href="#36">#36</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">16109</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Applied patch #2842678: Gutter selection problems (by encorejane).<br />
+
+    </p>
+    <p class="commitdetails"><strong>28</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/textarea</strong>:
+        Gutter.java&#160;<span class="change">(+28&#160;-13)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="35"></a>
+    <a href="user_shlomy.html" class="author">shlomy</a>
+    <span class="date">2009-08-27 22:59</span>
+    <a class="permalink" title="Permalink to this commit" href="#35">#35</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">16098</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+List more undo support in core.
+    </p>
+    <p class="commitdetails"><strong>103</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/buffer</strong>:
+        BufferUndoListener.java&#160;<span class="change">(+22&#160;-6)</span>,
+        JEditBuffer.java&#160;<span class="change">(+69&#160;-10)</span>,
+        UndoManager.java&#160;<span class="change">(+12)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="34"></a>
+    <a href="user_vanza.html" class="author">vanza</a>
+    <span class="date">2009-08-27 06:19</span>
+    <a class="permalink" title="Permalink to this commit" href="#34">#34</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">16080</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Apply patch #2827234 (fix bug #2808363): fix perl syntax highlighting hanging in some cases.
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(changed)</span>
+      </li>
+      <li>
+        <strong>modes</strong>:
+        perl.xml&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="33"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2009-08-27 00:42</span>
+    <a class="permalink" title="Permalink to this commit" href="#33">#33</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">16079</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+2842676 "Toggle header source" doesn't find '*.cc' files<br />
+
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>macros/C</strong>:
+        Toggle_Header_Source.bsh&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="32"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2009-08-25 17:59</span>
+    <a class="permalink" title="Permalink to this commit" href="#32">#32</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">16059</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+fixed typo in docbook-xsl<br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        build.properties.sample&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="31"></a>
+    <a href="user_kpouer.html" class="author">kpouer</a>
+    <span class="date">2009-08-23 23:17</span>
+    <a class="permalink" title="Permalink to this commit" href="#31">#31</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">16048</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+When using the quick syntax edition, if the operation is cancelled, do not<br />
+  send a propertiesChanged event
+    </p>
+    <p class="commitdetails"><strong>9</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+4&#160;-2)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        Buffer.java&#160;<span class="change">(+5&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="30"></a>
+    <a href="user_kpouer.html" class="author">kpouer</a>
+    <span class="date">2009-08-23 22:57</span>
+    <a class="permalink" title="Permalink to this commit" href="#30">#30</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">16047</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fixed syntax highlight when a " appear in a javadoc comment in java mode<br />
+  (#2818095) (Denis Dzenskevich)
+    </p>
+    <p class="commitdetails"><strong>11</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+5&#160;-2)</span>
+      </li>
+      <li>
+        <strong>modes</strong>:
+        java.xml&#160;<span class="change">(+6)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="29"></a>
+    <a href="user_shlomy.html" class="author">shlomy</a>
+    <span class="date">2009-08-22 22:03</span>
+    <a class="permalink" title="Permalink to this commit" href="#29">#29</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">16031</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Extend the undoId to serve not only content changes being performed the first time but also undo/redo operations being performed.
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/buffer</strong>:
+        UndoManager.java&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="28"></a>
+    <a href="user_shlomy.html" class="author">shlomy</a>
+    <span class="date">2009-08-22 15:16</span>
+    <a class="permalink" title="Permalink to this commit" href="#28">#28</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">16027</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Added support for undo-aware plugins - patch #2842084.
+    </p>
+    <p class="commitdetails"><strong>175</strong> lines of code changed in <span class="files">4 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+12)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/buffer</strong>:
+        BufferUndoListener.java&#160;<span class="new">(new&#160;56)</span>,
+        JEditBuffer.java&#160;<span class="change">(+78)</span>,
+        UndoManager.java&#160;<span class="change">(+29)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="27"></a>
+    <a href="user_daleanson.html" class="author">daleanson</a>
+    <span class="date">2009-08-22 03:14</span>
+    <a class="permalink" title="Permalink to this commit" href="#27">#27</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">16022</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Applied Patch 2840055, added acceptFilename and acceptFirstLine to help improve performance for TaskList plugin.
+    </p>
+    <p class="commitdetails"><strong>30</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+6)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        Mode.java&#160;<span class="change">(+24&#160;-6)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="26"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2009-08-22 02:24</span>
+    <a class="permalink" title="Permalink to this commit" href="#26">#26</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">16021</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Made smart-end smarter (using end of code)<br />
+but also added dumb end and dumb home (for symetry) that always stay<br />
+on the same line, and now users will have their home/end mapped to the<br />
+dumb versions instead of the smart ones by default.<br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>79</strong> lines of code changed in <span class="files">4 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+7)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        actions.xml&#160;<span class="change">(+14&#160;-1)</span>,
+        jedit_gui.props&#160;<span class="change">(+4&#160;-2)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/textarea</strong>:
+        TextArea.java&#160;<span class="change">(+54&#160;-6)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="25"></a>
+    <a href="user_shlomy.html" class="author">shlomy</a>
+    <span class="date">2009-08-21 21:32</span>
+    <a class="permalink" title="Permalink to this commit" href="#25">#25</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">16019</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Documented fix for docking layout manager recursion.
+    </p>
+    <p class="commitdetails"><strong>3</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="24"></a>
+    <a href="user_shlomy.html" class="author">shlomy</a>
+    <span class="date">2009-08-21 21:17</span>
+    <a class="permalink" title="Permalink to this commit" href="#24">#24</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">16018</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Completed fixe for bug #2834900: DockingLayoutManager recursion when handling EditBus msgs.<br />
+Added a flag to the DockableWindowFactory to indicate whether the dockable is currently being created. If it is called to create the dockable while it is already being created, it returns null and avoids the recursion.
+    </p>
+    <p class="commitdetails"><strong>14</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/gui</strong>:
+        DockableWindowFactory.java&#160;<span class="change">(+14&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="23"></a>
+    <a href="user_eyebex.html" class="author">eyebex</a>
+    <span class="date">2009-08-21 18:19</span>
+    <a class="permalink" title="Permalink to this commit" href="#23">#23</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">16017</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Older versions of ISCC.exe did not ignore the /cc switch which is passed by build.xml, but only required with Compil32.exe. So, remove /cc and only support the ISCC.exe command line compiler as it is the better choice for this purpose, anyways.
+    </p>
+    <p class="commitdetails"><strong>3</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        build.properties.sample&#160;<span class="change">(+3&#160;-6)</span>,
+        build.xml&#160;<span class="change">(-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="22"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2009-08-19 22:49</span>
+    <a class="permalink" title="Permalink to this commit" href="#22">#22</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">15996</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Partially rolling back patch # 2646484 until it is an option one can switch off, and is debugged<br />
+properly.<br />
+Leaving in the API function in the API for now, since it looks like we'll be using it soon again.<br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>28</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(-3)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/textarea</strong>:
+        JEditTextArea.java&#160;<span class="change">(+3&#160;-9)</span>,
+        TextArea.java&#160;<span class="change">(+25&#160;-23)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="21"></a>
+    <a href="user_voituk.html" class="author">voituk</a>
+    <span class="date">2009-08-19 07:35</span>
+    <a class="permalink" title="Permalink to this commit" href="#21">#21</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">15981</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Added new Compose_Tag macro docbook xml description<br />
+
+    </p>
+    <p class="commitdetails"><strong>12</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>macros/Text</strong>:
+        Compose_Tag.bsh&#160;<span class="change">(+12)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="20"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2009-08-19 01:13</span>
+    <a class="permalink" title="Permalink to this commit" href="#20">#20</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">15975</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Doc fixes.<br />
+Also removed "install" target which is really not correct anyway. I was using<br />
+it for a short time on one platform and that's it.<br />
+<br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>8</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        build.xml&#160;<span class="change">(+1&#160;-6)</span>
+      </li>
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+6&#160;-4)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/textarea</strong>:
+        TextArea.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="19"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2009-08-18 16:14</span>
+    <a class="permalink" title="Permalink to this commit" href="#19">#19</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">15966</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+New Macro - "Text/Compose Tag". (Gordon Hollenbeck # 2644277)<br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>24</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+2)</span>
+      </li>
+      <li>
+        <strong>macros/Text</strong>:
+        Compose_Tag.bsh&#160;<span class="new">(new&#160;22)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="18"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2009-08-18 16:02</span>
+    <a class="permalink" title="Permalink to this commit" href="#18">#18</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">15965</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Smarter "smartEnd" - now advances to end of code (before comment<br />
+  delimiter). (Gordon Hollenbeck #2646484).    <br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>65</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+4&#160;-1)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/textarea</strong>:
+        JEditTextArea.java&#160;<span class="change">(+9&#160;-3)</span>,
+        TextArea.java&#160;<span class="change">(+52&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="17"></a>
+    <a href="user_eyebex.html" class="author">eyebex</a>
+    <span class="date">2009-08-18 13:52</span>
+    <a class="permalink" title="Permalink to this commit" href="#17">#17</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">15964</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Mention that both the GUI and command line versions of the Inno Setup compiler can be used. The latter is more convenient to use if you want compile errors to go to stdout / stderr.
+    </p>
+    <p class="commitdetails"><strong>4</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        build.properties.sample&#160;<span class="change">(+4&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="16"></a>
+    <a href="user_shlomy.html" class="author">shlomy</a>
+    <span class="date">2009-08-18 11:29</span>
+    <a class="permalink" title="Permalink to this commit" href="#16">#16</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">15962</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Partial fix for bug #2834900: DockingLayoutManager recursion when handling EditBus msgs.<br />
+Avoid checking for mode changes when handling edit bus messages that cannot change the edit mode.
+    </p>
+    <p class="commitdetails"><strong>31</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/gui</strong>:
+        DockingLayoutManager.java&#160;<span class="change">(+31&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="15"></a>
+    <a href="user_eyebex.html" class="author">eyebex</a>
+    <span class="date">2009-08-18 00:42</span>
+    <a class="permalink" title="Permalink to this commit" href="#15">#15</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">15959</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Mention which Cygwin packages contain the required tools.
+    </p>
+    <p class="commitdetails"><strong>7</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        build.properties.sample&#160;<span class="change">(+7&#160;-5)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="14"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2009-08-17 23:53</span>
+    <a class="permalink" title="Permalink to this commit" href="#14">#14</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">15958</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        build.properties.sample&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="13"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2009-08-17 23:48</span>
+    <a class="permalink" title="Permalink to this commit" href="#13">#13</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">15957</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+ # 2838679 - Support Cygwin xsltproc in build.xml for docs generation<br />
+  (Sebastian Schuberth).<br />
+
+    </p>
+    <p class="commitdetails"><strong>15</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        build.xml&#160;<span class="change">(+11)</span>
+      </li>
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+4)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="12"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2009-08-10 17:09</span>
+    <a class="permalink" title="Permalink to this commit" href="#12">#12</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">15889</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Wording fixes in the bufferset docs.<br />
+
+    </p>
+    <p class="commitdetails"><strong>6</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc/users-guide</strong>:
+        basics.xml&#160;<span class="change">(+6&#160;-7)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="11"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2009-08-08 20:31</span>
+    <a class="permalink" title="Permalink to this commit" href="#11">#11</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">15885</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+api docs and changelog fixes.<br />
+
+    </p>
+    <p class="commitdetails"><strong>6</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+3&#160;-1)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        EditPane.java&#160;<span class="change">(+3&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="10"></a>
+    <a href="user_shlomy.html" class="author">shlomy</a>
+    <span class="date">2009-08-08 16:27</span>
+    <a class="permalink" title="Permalink to this commit" href="#10">#10</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">15881</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Commented fix for 2833822 (selection area in gutter).
+    </p>
+    <p class="commitdetails"><strong>4</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+4)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="9"></a>
+    <a href="user_shlomy.html" class="author">shlomy</a>
+    <span class="date">2009-08-08 16:23</span>
+    <a class="permalink" title="Permalink to this commit" href="#9">#9</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">15880</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fixed #2833822:<br />
+- Disable the "line numbers" and "selection area" options in the Gutter option pane when the "show gutter" option is not checked.<br />
+- When "Toggle line numbers" menu is used, if the gutter is not shown, show it (otherwise the line numbers are not shown).<br />
+- Added options to specify the width and background color of the selection area in the gutter. <br />
+
+    </p>
+    <p class="commitdetails"><strong>108</strong> lines of code changed in <span class="files">6 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        EditPane.java&#160;<span class="change">(+6&#160;-2)</span>,
+        actions.xml&#160;<span class="change">(+5&#160;-2)</span>,
+        jedit.props&#160;<span class="change">(+2)</span>,
+        jedit_gui.props&#160;<span class="change">(+2)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/options</strong>:
+        GutterOptionPane.java&#160;<span class="change">(+50&#160;-10)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/textarea</strong>:
+        Gutter.java&#160;<span class="change">(+43&#160;-11)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="8"></a>
+    <a href="user_shlomy.html" class="author">shlomy</a>
+    <span class="date">2009-08-08 06:27</span>
+    <a class="permalink" title="Permalink to this commit" href="#8">#8</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">15878</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Part of the fix for #2833822.<br />
+What's left to be done is:<br />
+1. Additional action for View -&gt; Line numbers menu.<br />
+2. Option to configure the color of the gutter's selection area.
+    </p>
+    <p class="commitdetails"><strong>69</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        GUIUtilities.java&#160;<span class="change">(+19)</span>,
+        jedit_gui.props&#160;<span class="change">(+3&#160;-2)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/options</strong>:
+        GutterOptionPane.java&#160;<span class="change">(+47&#160;-4)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="7"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2009-08-04 19:47</span>
+    <a class="permalink" title="Permalink to this commit" href="#7">#7</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">15858</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Changing default bufferset scope to global. That makes it behave more consistently<br />
+with older versions of jEdit by default.<br />
+
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        jedit.props&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="6"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2009-08-04 06:51</span>
+    <a class="permalink" title="Permalink to this commit" href="#6">#6</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">15853</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Removed deprecated TextAreaUpdate EBMessage. Use EditPaneUpdate instead.<br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>6</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+6&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="5"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2009-08-04 06:28</span>
+    <a class="permalink" title="Permalink to this commit" href="#5">#5</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">15852</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Toggle BufferSwitcher will focus if it's toggling bufferswitcher on.<br />
+Made the focusBufferSwitcher invokeLater() so it works after the Toggle.<br />
+<br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>11</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        EditPane.java&#160;<span class="change">(+8&#160;-2)</span>,
+        actions.xml&#160;<span class="change">(+3&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="4"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2009-08-04 06:13</span>
+    <a class="permalink" title="Permalink to this commit" href="#4">#4</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">15851</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Enable/Disable instead of Show/Hide the "Focus Buffer Switcher" menu item. <br />
+Also some fixes to the accelerators.<br />
+
+    </p>
+    <p class="commitdetails"><strong>7</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        View.java&#160;<span class="change">(+3&#160;-3)</span>,
+        jedit_gui.props&#160;<span class="change">(+3&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="3"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2009-08-02 17:34</span>
+    <a class="permalink" title="Permalink to this commit" href="#3">#3</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">15843</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Toggle BufferSwitcher action goes through all views now.<br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>5</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        View.java&#160;<span class="change">(+5&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="2"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2009-08-02 02:49</span>
+    <a class="permalink" title="Permalink to this commit" href="#2">#2</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">15842</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+New action: toggle buffer switcher - toggles visibility of buffer switcher.<br />
+<br />
+Renamed action "show buffer switcher" to "focus buffer switcher"<br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>58</strong> lines of code changed in <span class="files">8 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+4&#160;-2)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        EditPane.java&#160;<span class="change">(+7&#160;-7)</span>,
+        MiscUtilities.java&#160;<span class="change">(+6&#160;-1)</span>,
+        View.java&#160;<span class="change">(+8&#160;-5)</span>,
+        actions.xml&#160;<span class="change">(+14&#160;-2)</span>,
+        jedit_gui.props&#160;<span class="change">(+13&#160;-7)</span>,
+        jedit_keys.props&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/options</strong>:
+        ViewOptionPane.java&#160;<span class="change">(+5&#160;-5)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="1"></a>
+    <a href="user_shlomy.html" class="author">shlomy</a>
+    <span class="date">2009-08-01 06:35</span>
+    <a class="permalink" title="Permalink to this commit" href="#1">#1</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">15834</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fixed bug #2819438: Filename filter is case sensitive on Windows<br />
+Use a case-insensitive file filter in "Search all buffers" just as in "Search directory".<br />
+<br />
+In VFS, only fixed some spelling mistakes...
+    </p>
+    <p class="commitdetails"><strong>4</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/io</strong>:
+        VFS.java&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/search</strong>:
+        AllBufferSet.java&#160;<span class="change">(+2&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+</dl>
+
+<p class="previous"><a href="2009-07.html">July 2009</a> &#187; </p>
+<div id="generatedby">Generated by <a href="http://www.statsvn.org">StatSVN</a> 0.7.0</div>
+</body>
+</html>

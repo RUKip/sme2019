@@ -1,0 +1,546 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>StatSVN - Directory org/jedit/keymap/</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+    <meta name="Generator" content="StatSVN 0.7.0"/>
+<link rel="stylesheet" href="objectlab-statcvs.css" type="text/css"/>
+<script type="text/javascript" charset="utf-8" src="http://bit.ly/javascript-api.js?version=latest&#38;login=statsvn&#38;apiKey=R_2c362b417d0517c27876cbaca1bb68cc"></script>
+<script type="text/javascript" charset="utf-8">
+   // wait until page is loaded to call API
+   var redir_url;
+   var short_url;
+   BitlyCB.myShortenCallback = function(data) {
+      // this is how to get a result of shortening a single url
+      var result;
+      short_url=null;
+      for (var r in data.results) {
+         result = data.results[r];
+         result['longUrl'] = r;
+         short_url = result['shortUrl'];
+         break;
+      }
+      if (short_url==null) // bit.ly failed
+      document.location=redir_url;
+      else
+      redirToTwitter();
+   };
+   function shortenTweet(url) {
+      if (short_url == null || redir_url!=url) {
+      redir_url = url;
+      BitlyClient.shorten(document.location, 'BitlyCB.myShortenCallback');
+      }
+      else
+      redirToTwitter();
+      return false;
+   }
+   function redirToTwitter() { 
+      // replace {0} which is visible as %7B0} in the link
+      document.location = redir_url.replace('%7B0}', short_url);
+   }
+</script>
+  </head>
+
+<body>
+
+<h1>Directory org/jedit/keymap/</h1>
+<div id="parentlink">&#171; <a href="index.html">Development Statistics for /jEdit/trunk</a></div>
+<dl class="attributes">
+    <dt>Total Files:</dt>
+    <dd>7</dd>
+    <dt>Deleted Files:</dt>
+    <dd>0</dd>
+    <dt>Lines of Code:</dt>
+    <dd>974</dd>
+</dl>
+<p class="dirtree">
+<a href="dir.html">[root]</a>/<a href="dir_org.html">org</a>/<a href="dir_org_jedit.html">jedit</a>/<strong>keymap</strong><br/>
+</p>
+
+<div class="section">
+<h2>Lines of Code</h2>
+<p class="chart"><img src="loc_module_org_jedit_keymap.png" alt="org/jedit/keymap/ Lines of Code" width="800" height="500" /></p></div>
+<div class="section">
+<h2>Developers</h2>
+  <table  rules="groups" summary="All authors and the number of their changes and lines of code in this directory">
+    <colgroup align="left"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <thead>
+      <tr>
+        <th>Author</th>
+        <th>Changes</th>
+        <th>Lines of Code</th>
+        <th>Lines per Change</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <th>Totals</th>
+        <td>50 (100.0%)</td>
+        <td>2028 (100.0%)</td>
+        <td>40.5</td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr  class="odd">
+        <th><a href="user_Vampire0.html" class="author">Vampire0</a></th>
+        <td>14 (28.0%)</td>
+        <td>982 (48.4%)</td>
+        <td>70.1</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_kpouer.html" class="author">kpouer</a></th>
+        <td>15 (30.0%)</td>
+        <td>627 (30.9%)</td>
+        <td>41.8</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_ezust.html" class="author">ezust</a></th>
+        <td>11 (22.0%)</td>
+        <td>410 (20.2%)</td>
+        <td>37.2</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_daleanson.html" class="author">daleanson</a></th>
+        <td>2 (4.0%)</td>
+        <td>6 (0.3%)</td>
+        <td>3.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_makarius.html" class="author">makarius</a></th>
+        <td>1 (2.0%)</td>
+        <td>2 (0.1%)</td>
+        <td>2.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_thomasmey.html" class="author">thomasmey</a></th>
+        <td>1 (2.0%)</td>
+        <td>1 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_shlomy.html" class="author">shlomy</a></th>
+        <td>1 (2.0%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_jarekczek.html" class="author">jarekczek</a></th>
+        <td>5 (10.0%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+<div class="section">
+<h2>Most Recent Commits</h2>
+<dl class="commitlist">
+  <dt><a name="20"></a>
+    <a href="user_daleanson.html" class="author">daleanson</a>
+    <span class="date">2016-06-22 20:29</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24425</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fixed unchecked and deprecation warnings, adjusted build.xml to also report finally and fallthrough warnings.
+    </p>
+    <p class="commitdetails"><strong>5</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/jedit/keymap</strong>:
+        EmacsUtil.java&#160;<span class="change">(+5&#160;-13)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="19"></a>
+    <a href="user_daleanson.html" class="author">daleanson</a>
+    <span class="date">2015-12-10 04:33</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24211</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Replaced all Toolkit.beep() calls with javax.swing.UIManager.getLookAndFeel().provideErrorFeedback(null);, which allows look and feels to provide their own implementation of error signals and Javassist the ability to turn off the beeps.
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/jedit/keymap</strong>:
+        EmacsUtil.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="18"></a>
+    <a href="user_makarius.html" class="author">makarius</a>
+    <span class="date">2015-10-27 14:46</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24116</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+More space in messages.<br />
+
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/jedit/keymap</strong>:
+        KeymapManagerImpl.java&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="17"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2014-10-27 05:01</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">23703</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+ Properties are sorted when saved (Patch #536 - Makarius)<br />
+
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/jedit/keymap</strong>:
+        KeymapImpl.java&#160;<span class="change">(+2&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="16"></a>
+    <a href="user_shlomy.html" class="author">shlomy</a>
+    <span class="date">2013-09-29 21:43</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">23222</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Some more enhancements suggested by IntelliJIDEA.
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/jedit/keymap</strong>:
+        EmacsUtil.java&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="15"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2013-09-01 02:58</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">23163</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fix an npe in emacs kill line. I hope I am not hiding another bug that is more serious...<br />
+But anyway, you see this bug if you try to invoke emacs kill line on the <br />
+last line of the buffer, and your caret appears before 1 or more whitespace. <br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>6</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/jedit/keymap</strong>:
+        EmacsUtil.java&#160;<span class="change">(+6&#160;-7)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="14"></a>
+    <a href="user_Vampire0.html" class="author">Vampire0</a>
+    <span class="date">2013-08-31 12:39</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">23162</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+reinstantiate trunk and branches
+    </p>
+    <p class="commitdetails"><strong>982</strong> lines of code changed in <span class="files">7 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/jedit/keymap</strong>:
+        EmacsUtil.java&#160;<span class="new">(new&#160;394)</span>,
+        Keymap.java&#160;<span class="new">(new&#160;49)</span>,
+        KeymapFileFilter.java&#160;<span class="new">(new&#160;40)</span>,
+        KeymapImpl.java&#160;<span class="new">(new&#160;166)</span>,
+        KeymapManager.java&#160;<span class="new">(new&#160;91)</span>,
+        KeymapManagerImpl.java&#160;<span class="new">(new&#160;241)</span>,
+        package.html&#160;<span class="new">(new&#160;1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="13"></a>
+    <a href="user_Vampire0.html" class="author">Vampire0</a>
+    <span class="date">2013-08-27 22:41</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">23150</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+put tombstone in place, official repository for jEdit core is now in Git
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">7 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/jedit/keymap</strong>:
+        EmacsUtil.java&#160;<span class="del">(del)</span>,
+        Keymap.java&#160;<span class="del">(del)</span>,
+        KeymapFileFilter.java&#160;<span class="del">(del)</span>,
+        KeymapImpl.java&#160;<span class="del">(del)</span>,
+        KeymapManager.java&#160;<span class="del">(del)</span>,
+        KeymapManagerImpl.java&#160;<span class="del">(del)</span>,
+        package.html&#160;<span class="del">(del)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="12"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2013-08-09 16:40</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">23106</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Rewrote Emacs_Kill_Line (and all of EmacsUtil) in java so I can debug it. <br />
+
+    </p>
+    <p class="commitdetails"><strong>394</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/jedit/keymap</strong>:
+        EmacsUtil.java&#160;<span class="new">(new&#160;394)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="11"></a>
+    <a href="user_thomasmey.html" class="author">thomasmey</a>
+    <span class="date">2013-03-23 18:58</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">22883</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+More clean ups
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/jedit/keymap</strong>:
+        KeymapManagerImpl.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="10"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2012-10-13 05:58</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">22357</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+- Deprecated extra overloads of IOUtilities.closeQuietly() in favor of<br />
+  using Java5 closeQuietly(Closeable) instead.<br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>7</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/jedit/keymap</strong>:
+        KeymapImpl.java&#160;<span class="change">(+3&#160;-2)</span>,
+        KeymapManagerImpl.java&#160;<span class="change">(+4&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="9"></a>
+    <a href="user_jarekczek.html" class="author">jarekczek</a>
+    <span class="date">2012-08-02 21:32</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">21971</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Set svn:eol-style to native in .java and .props files, which had not this<br />
+flag set, probably due to forgetting
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">5 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/jedit/keymap</strong>:
+        Keymap.java&#160;<span class="change">(changed)</span>,
+        KeymapFileFilter.java&#160;<span class="change">(changed)</span>,
+        KeymapImpl.java&#160;<span class="change">(changed)</span>,
+        KeymapManager.java&#160;<span class="change">(changed)</span>,
+        KeymapManagerImpl.java&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="8"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2012-06-18 23:54</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">21831</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Tabsize=4.<br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">5 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/jedit/keymap</strong>:
+        Keymap.java&#160;<span class="change">(changed)</span>,
+        KeymapFileFilter.java&#160;<span class="change">(changed)</span>,
+        KeymapImpl.java&#160;<span class="change">(changed)</span>,
+        KeymapManager.java&#160;<span class="change">(changed)</span>,
+        KeymapManagerImpl.java&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="7"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2012-03-19 22:59</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">21397</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+API Docs and reformatting. <br />
+
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/jedit/keymap</strong>:
+        package.html&#160;<span class="new">(new&#160;1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="6"></a>
+    <a href="user_kpouer.html" class="author">kpouer</a>
+    <span class="date">2012-03-13 11:51</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">21348</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+getKeymapsFromFolder(File folder) will never returns null
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/jedit/keymap</strong>:
+        KeymapManagerImpl.java&#160;<span class="change">(+2&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="5"></a>
+    <a href="user_kpouer.html" class="author">kpouer</a>
+    <span class="date">2012-01-30 22:20</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">21026</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+if keymaps folder do not exist, show an error dialog then quit jEdit instead of freezing
+    </p>
+    <p class="commitdetails"><strong>11</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/jedit/keymap</strong>:
+        KeymapManagerImpl.java&#160;<span class="change">(+11)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="4"></a>
+    <a href="user_kpouer.html" class="author">kpouer</a>
+    <span class="date">2012-01-22 11:15</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">20915</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+reduced visibility of KeymapImpl constructor to package since the class is also package
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/jedit/keymap</strong>:
+        KeymapImpl.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="3"></a>
+    <a href="user_kpouer.html" class="author">kpouer</a>
+    <span class="date">2012-01-21 20:03</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">20911</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+added logs to the copy keymap method
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/jedit/keymap</strong>:
+        KeymapManagerImpl.java&#160;<span class="change">(+2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="2"></a>
+    <a href="user_kpouer.html" class="author">kpouer</a>
+    <span class="date">2012-01-17 11:16</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">20833</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Removed dependency on jEdit class
+    </p>
+    <p class="commitdetails"><strong>22</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/jedit/keymap</strong>:
+        KeymapManagerImpl.java&#160;<span class="change">(+22&#160;-38)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="1"></a>
+    <a href="user_kpouer.html" class="author">kpouer</a>
+    <span class="date">2012-01-12 12:06</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">20759</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+refactored keymap package to org.jedit.keymap
+    </p>
+    <p class="commitdetails"><strong>589</strong> lines of code changed in <span class="files">10 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/jedit/keymap</strong>:
+        Keymap.java&#160;<span class="change">(+49)</span>,
+        KeymapFileFilter.java&#160;<span class="change">(+40)</span>,
+        KeymapImpl.java&#160;<span class="change">(+165)</span>,
+        KeymapManager.java&#160;<span class="new">(new)</span>,
+        KeymapManagerImpl.java&#160;<span class="change">(+244)</span>
+      </li>
+    </ul>
+  </dd>
+
+</dl>
+
+</div><div id="generatedby">Generated by <a href="http://www.statsvn.org">StatSVN</a> 0.7.0</div>
+</body>
+</html>

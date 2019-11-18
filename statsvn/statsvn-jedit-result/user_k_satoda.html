@@ -1,0 +1,758 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>StatSVN - /jEdit/trunk Developers: k_satoda</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+    <meta name="Generator" content="StatSVN 0.7.0"/>
+<link rel="stylesheet" href="objectlab-statcvs.css" type="text/css"/>
+<script type="text/javascript" charset="utf-8" src="http://bit.ly/javascript-api.js?version=latest&#38;login=statsvn&#38;apiKey=R_2c362b417d0517c27876cbaca1bb68cc"></script>
+<script type="text/javascript" charset="utf-8">
+   // wait until page is loaded to call API
+   var redir_url;
+   var short_url;
+   BitlyCB.myShortenCallback = function(data) {
+      // this is how to get a result of shortening a single url
+      var result;
+      short_url=null;
+      for (var r in data.results) {
+         result = data.results[r];
+         result['longUrl'] = r;
+         short_url = result['shortUrl'];
+         break;
+      }
+      if (short_url==null) // bit.ly failed
+      document.location=redir_url;
+      else
+      redirToTwitter();
+   };
+   function shortenTweet(url) {
+      if (short_url == null || redir_url!=url) {
+      redir_url = url;
+      BitlyClient.shorten(document.location, 'BitlyCB.myShortenCallback');
+      }
+      else
+      redirToTwitter();
+      return false;
+   }
+   function redirToTwitter() { 
+      // replace {0} which is visible as %7B0} in the link
+      document.location = redir_url.replace('%7B0}', short_url);
+   }
+</script>
+  </head>
+
+<body>
+
+<h1>/jEdit/trunk Developers: k_satoda</h1>
+<div id="parentlink">&#171; <a href="index.html">Development Statistics for /jEdit/trunk</a> &#171; <a href="developers.html">Developers</a></div>
+<dl class="attributes">
+    <dt>Login name:</dt>
+    <dd>k_satoda</dd>
+    <dt>Total Commits:</dt>
+    <dd>671 (2.3%)</dd>
+    <dt>Lines of Code:</dt>
+    <dd>18,131 (1.9%)</dd>
+    <dt>Most Recent Commit:</dt>
+    <dd><span class="date">2012-09-02 19:54</span></dd>
+    <dt>Tweet this:</dt>
+    <dd><a onclick="return shortenTweet(this.href);" href="http://twitter.com/home?status=k_satoda%20contributed%2018%2C131%20(1.9%25)%20lines%20to%20%2FjEdit%2Ftrunk%20%7B0}%20most%20recent%20commit%202012-09-02%20stats%20by%20StatSVN%20http%3A%2F%2Fstatsvn.org"><img style="border:0px" alt="Tweet this" src="tweet-this.png"/></a></dd>
+</dl>
+
+<div class="section">
+<h2>Activity by Clock Time</h2>
+<p class="chart"><img src="activity_time_k_satoda.png" alt="Activity by Hour of Day for k_satoda" width="800" height="500" /></p><p class="chart"><img src="activity_day_k_satoda.png" alt="Activity by Day of Week for k_satoda" width="800" height="500" /></p></div>
+<div class="section">
+<h2>Activity in Directories</h2>
+  <table  rules="groups" summary="Overview of this author's activities in different directories">
+    <colgroup align="left"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <thead>
+      <tr>
+        <th>Directory</th>
+        <th>Changes</th>
+        <th>Lines of Code</th>
+        <th>Lines per Change</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <th>Totals</th>
+        <td>671 (100.0%)</td>
+        <td>18131 (100.0%)</td>
+        <td>27.0</td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_textarea.html" class="directory">org/gjt/sp/jedit/textarea/</a></th>
+        <td>49 (7.3%)</td>
+        <td>7072 (39.0%)</td>
+        <td>144.3</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_gui.html" class="directory">org/gjt/sp/jedit/gui/</a></th>
+        <td>41 (6.1%)</td>
+        <td>2940 (16.2%)</td>
+        <td>71.7</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit.html" class="directory">org/gjt/sp/jedit/</a></th>
+        <td>136 (20.3%)</td>
+        <td>1709 (9.4%)</td>
+        <td>12.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_syntax.html" class="directory">org/gjt/sp/jedit/syntax/</a></th>
+        <td>50 (7.5%)</td>
+        <td>1538 (8.5%)</td>
+        <td>30.7</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_bufferio.html" class="directory">org/gjt/sp/jedit/bufferio/</a></th>
+        <td>15 (2.2%)</td>
+        <td>726 (4.0%)</td>
+        <td>48.4</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_io.html" class="directory">org/gjt/sp/jedit/io/</a></th>
+        <td>27 (4.0%)</td>
+        <td>701 (3.9%)</td>
+        <td>25.9</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_doc.html" class="directory">doc/</a></th>
+        <td>130 (19.4%)</td>
+        <td>606 (3.3%)</td>
+        <td>4.6</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_input.html" class="directory">org/gjt/sp/jedit/input/</a></th>
+        <td>7 (1.0%)</td>
+        <td>538 (3.0%)</td>
+        <td>76.8</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_buffer.html" class="directory">org/gjt/sp/jedit/buffer/</a></th>
+        <td>35 (5.2%)</td>
+        <td>510 (2.8%)</td>
+        <td>14.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_options.html" class="directory">org/gjt/sp/jedit/options/</a></th>
+        <td>11 (1.6%)</td>
+        <td>380 (2.1%)</td>
+        <td>34.5</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_indent.html" class="directory">org/gjt/sp/jedit/indent/</a></th>
+        <td>14 (2.1%)</td>
+        <td>300 (1.7%)</td>
+        <td>21.4</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_search.html" class="directory">org/gjt/sp/jedit/search/</a></th>
+        <td>26 (3.9%)</td>
+        <td>222 (1.2%)</td>
+        <td>8.5</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_util.html" class="directory">org/gjt/sp/util/</a></th>
+        <td>13 (1.9%)</td>
+        <td>145 (0.8%)</td>
+        <td>11.1</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_package-files_windows.html" class="directory">package-files/windows/</a></th>
+        <td>17 (2.5%)</td>
+        <td>110 (0.6%)</td>
+        <td>6.4</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_bufferset.html" class="directory">org/gjt/sp/jedit/bufferset/</a></th>
+        <td>16 (2.4%)</td>
+        <td>108 (0.6%)</td>
+        <td>6.7</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_de_masters_of_disaster_ant_tasks_calculatesize.html" class="directory">de/masters_of_disaster/ant/tasks/calculatesize/</a></th>
+        <td>1 (0.1%)</td>
+        <td>95 (0.5%)</td>
+        <td>95.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_menu.html" class="directory">org/gjt/sp/jedit/menu/</a></th>
+        <td>12 (1.8%)</td>
+        <td>86 (0.5%)</td>
+        <td>7.1</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir.html" class="directory">/</a></th>
+        <td>12 (1.8%)</td>
+        <td>86 (0.5%)</td>
+        <td>7.1</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_doc_users-guide.html" class="directory">doc/users-guide/</a></th>
+        <td>11 (1.6%)</td>
+        <td>70 (0.4%)</td>
+        <td>6.3</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_pluginmgr.html" class="directory">org/gjt/sp/jedit/pluginmgr/</a></th>
+        <td>1 (0.1%)</td>
+        <td>58 (0.3%)</td>
+        <td>58.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_modes.html" class="directory">modes/</a></th>
+        <td>11 (1.6%)</td>
+        <td>48 (0.3%)</td>
+        <td>4.3</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_macros_Properties.html" class="directory">macros/Properties/</a></th>
+        <td>1 (0.1%)</td>
+        <td>18 (0.1%)</td>
+        <td>18.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_browser.html" class="directory">org/gjt/sp/jedit/browser/</a></th>
+        <td>8 (1.2%)</td>
+        <td>15 (0.1%)</td>
+        <td>1.8</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_gui_statusbar.html" class="directory">org/gjt/sp/jedit/gui/statusbar/</a></th>
+        <td>4 (0.6%)</td>
+        <td>13 (0.1%)</td>
+        <td>3.2</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_installer.html" class="directory">installer/</a></th>
+        <td>3 (0.4%)</td>
+        <td>11 (0.1%)</td>
+        <td>3.6</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_jedit_localization.html" class="directory">org/jedit/localization/</a></th>
+        <td>9 (1.3%)</td>
+        <td>10 (0.1%)</td>
+        <td>1.1</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_macros_Java.html" class="directory">macros/Java/</a></th>
+        <td>1 (0.1%)</td>
+        <td>6 (0.0%)</td>
+        <td>6.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_macros_Files.html" class="directory">macros/Files/</a></th>
+        <td>2 (0.3%)</td>
+        <td>5 (0.0%)</td>
+        <td>2.5</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_bsh.html" class="directory">org/gjt/sp/jedit/bsh/</a></th>
+        <td>1 (0.1%)</td>
+        <td>4 (0.0%)</td>
+        <td>4.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_msg.html" class="directory">org/gjt/sp/jedit/msg/</a></th>
+        <td>1 (0.1%)</td>
+        <td>1 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_startup.html" class="directory">startup/</a></th>
+        <td>1 (0.1%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_package-files_os2.html" class="directory">package-files/os2/</a></th>
+        <td>1 (0.1%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_package-files_linux.html" class="directory">package-files/linux/</a></th>
+        <td>1 (0.1%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_jars_QuickNotepad.html" class="directory">jars/QuickNotepad/</a></th>
+        <td>1 (0.1%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_jars_MacOS_macos_menu.html" class="directory">jars/MacOS/macos/menu/</a></th>
+        <td>1 (0.1%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_jars_MacOS_macos.html" class="directory">jars/MacOS/macos/</a></th>
+        <td>1 (0.1%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+<p class="chart"><img src="directory_sizes_k_satoda.png" alt="Activity of k_satoda" width="800" height="500" /></p></div>
+<div class="section">
+<h2>Most Recent Commits</h2>
+<dl class="commitlist">
+  <dt><a name="20"></a>
+    <a href="user_k_satoda.html" class="author">k_satoda</a>
+    <span class="date">2012-09-02 19:54</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">22137</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Made the flagging of merged entries more clear and avoided use of<br />
+not-yet-released version.<br />
+
+    </p>
+    <p class="commitdetails"><strong>10</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+10&#160;-8)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="19"></a>
+    <a href="user_k_satoda.html" class="author">k_satoda</a>
+    <span class="date">2012-07-18 15:09</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">21939</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+In a CompoundEdit compact a sequence of Remove&amp;Insert Edits into a<br />
+Replace Edit; further compact consecutive Replace Edits into a<br />
+CompressedReplace Edit object. (Patch #3531515 by Thomas Meyer)<br />
+
+    </p>
+    <p class="commitdetails"><strong>212</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+3)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/buffer</strong>:
+        UndoManager.java&#160;<span class="change">(+209&#160;-4)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="18"></a>
+    <a href="user_k_satoda.html" class="author">k_satoda</a>
+    <span class="date">2012-06-30 18:47</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">21891</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Moved a premature call to getLastEdit() in getMergeEdit(). This is a<br />
+small cleanup beside the aim of patch #3531515.<br />
+
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/buffer</strong>:
+        UndoManager.java&#160;<span class="change">(+1&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="17"></a>
+    <a href="user_k_satoda.html" class="author">k_satoda</a>
+    <span class="date">2012-06-27 15:49</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">21887</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Moved reference to UndoManager in each Edit instance to parameters of<br />
+undo()/redo() method to lower memory consumption.<br />
+
+    </p>
+    <p class="commitdetails"><strong>16</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/buffer</strong>:
+        UndoManager.java&#160;<span class="change">(+16&#160;-20)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="16"></a>
+    <a href="user_k_satoda.html" class="author">k_satoda</a>
+    <span class="date">2012-06-27 15:36</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">21886</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+More restricted visibility of inner classes of UndoManager to make it<br />
+easy to understand the impact of further restructuring will be reasonably<br />
+limited.<br />
+
+    </p>
+    <p class="commitdetails"><strong>6</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/buffer</strong>:
+        UndoManager.java&#160;<span class="change">(+6&#160;-6)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="15"></a>
+    <a href="user_k_satoda.html" class="author">k_satoda</a>
+    <span class="date">2012-06-27 15:06</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">21885</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Dropped the artificial limitation to 1024 chars on expanding the gap<br />
+in ContentManager. Now it always use the complete remaining buffer which<br />
+is expanded in a geometric progression. This change greatly speeds up<br />
+big search&amp;replace-all operations in which case copying in moveGapEnd()<br />
+exhibited quadratic operation. Now it is amortized linear.<br />
+(Patch #3533838 by Thomas Meyer, tweaked by me)<br />
+
+    </p>
+    <p class="commitdetails"><strong>35</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+3)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/buffer</strong>:
+        ContentManager.java&#160;<span class="change">(+32&#160;-25)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="14"></a>
+    <a href="user_k_satoda.html" class="author">k_satoda</a>
+    <span class="date">2012-06-27 14:53</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">21884</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Avoided unreasonable memory consumption by duplicate String instances<br />
+that could be allocated for each occurrence in a big search&amp;replace-all.<br />
+(Patch #3528619 by Thomas Meyer)<br />
+
+    </p>
+    <p class="commitdetails"><strong>10</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+6&#160;-1)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/buffer</strong>:
+        UndoManager.java&#160;<span class="change">(+4&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="13"></a>
+    <a href="user_k_satoda.html" class="author">k_satoda</a>
+    <span class="date">2012-06-27 14:43</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">21883</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Removed unnecessary local variables. This is a minor code cleanup part<br />
+from patch #3528619 by Thomas Meyer.<br />
+
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/buffer</strong>:
+        UndoManager.java&#160;<span class="change">(+2&#160;-4)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="12"></a>
+    <a href="user_k_satoda.html" class="author">k_satoda</a>
+    <span class="date">2012-06-24 00:59</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">21871</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Added a post-release task that clean up doc/CHANGES.txt on trunk so that<br />
+it keep showing the fact.<br />
+<br />
+Previously, merged changes were removed from the list as a post-merge<br />
+task. But it meant getting out of the fact since the base version was<br />
+one not released yet.<br />
+
+    </p>
+    <p class="commitdetails"><strong>10</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+1&#160;-1)</span>,
+        releasing-jedit.txt&#160;<span class="change">(+9)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="11"></a>
+    <a href="user_k_satoda.html" class="author">k_satoda</a>
+    <span class="date">2012-06-17 08:10</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">21815</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Reduced code duplication in ContentManager. This is a preparation for<br />
+further changes proposed in patch #3533838.<br />
+
+    </p>
+    <p class="commitdetails"><strong>15</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/buffer</strong>:
+        ContentManager.java&#160;<span class="change">(+15&#160;-21)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="10"></a>
+    <a href="user_k_satoda.html" class="author">k_satoda</a>
+    <span class="date">2012-06-17 07:25</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">21814</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Replaced class UndoManager.RemovedContent with unwrapped String. The<br />
+class had became a large memory overhead since removal of its fields<br />
+done in r21810-21813. (SF.net patch #3531538)<br />
+
+    </p>
+    <p class="commitdetails"><strong>48</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/buffer</strong>:
+        KillRing.java&#160;<span class="change">(+35&#160;-63)</span>,
+        UndoManager.java&#160;<span class="change">(+13&#160;-28)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="9"></a>
+    <a href="user_k_satoda.html" class="author">k_satoda</a>
+    <span class="date">2012-06-17 07:14</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">21813</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Removed redundant inKillRing field from UndoManager.RemovedContent. It<br />
+seemed to be held for performance, but the time complexity is linear<br />
+with or without it. It was rather an overhead about memory and code<br />
+complexity. (SF.net patch #3531538)<br />
+
+    </p>
+    <p class="commitdetails"><strong>19</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/buffer</strong>:
+        KillRing.java&#160;<span class="change">(+19&#160;-21)</span>,
+        UndoManager.java&#160;<span class="change">(-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="8"></a>
+    <a href="user_k_satoda.html" class="author">k_satoda</a>
+    <span class="date">2012-06-17 06:56</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">21812</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+A small correction of r21811, which accidentally changed a behavior.<br />
+(SF.net patch #3531538)<br />
+
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/buffer</strong>:
+        KillRing.java&#160;<span class="change">(+2&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="7"></a>
+    <a href="user_k_satoda.html" class="author">k_satoda</a>
+    <span class="date">2012-06-17 06:47</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">21811</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Removed redundant hashCode field from UndoManager.RemovedContent. It<br />
+seemed a workaround for a performance problem in a very old JVM<br />
+implementation. Now, java.lang.String can cache its hash code in it, and<br />
+major JVM implementations do that since over a decade ago.<br />
+(SF.net patch #3531538)<br />
+
+    </p>
+    <p class="commitdetails"><strong>7</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/buffer</strong>:
+        KillRing.java&#160;<span class="change">(+7&#160;-13)</span>,
+        UndoManager.java&#160;<span class="change">(-4)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="6"></a>
+    <a href="user_k_satoda.html" class="author">k_satoda</a>
+    <span class="date">2012-06-17 06:32</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">21810</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Removed redundant length fields from UndoManager.Insert/Remove. They<br />
+were always equal to the length of the strings which are held as another<br />
+field. (SF.net patch #3531538)<br />
+
+    </p>
+    <p class="commitdetails"><strong>9</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/buffer</strong>:
+        UndoManager.java&#160;<span class="change">(+9&#160;-17)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="5"></a>
+    <a href="user_k_satoda.html" class="author">k_satoda</a>
+    <span class="date">2012-06-10 03:43</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">21782</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Bumped the trunk version to 5.1 since the release branch for 5.0.x had<br />
+been created.<br />
+
+    </p>
+    <p class="commitdetails"><strong>5</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+4&#160;-343)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        jEdit.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="4"></a>
+    <a href="user_k_satoda.html" class="author">k_satoda</a>
+    <span class="date">2012-06-10 03:02</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">21780</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Added missing quotes to show README and CHANGES from Windows installer.<br />
+
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>package-files/windows</strong>:
+        win32installer.iss&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="3"></a>
+    <a href="user_k_satoda.html" class="author">k_satoda</a>
+    <span class="date">2012-06-10 02:20</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">21779</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Moved locale specification for javadoc task to be set first so that it<br />
+works.<br />
+<br />
+There was a old bug which reported the problem like this and had been <br />
+fixed. But it seemed not working at this time.<br />
+<a href="https://issues.apache.org/bugzilla/show_bug.cgi">https://issues.apache.org/bugzilla/show_bug.cgi</a>?id=4984<br />
+
+    </p>
+    <p class="commitdetails"><strong>3</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        build.xml&#160;<span class="change">(+3&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="2"></a>
+    <a href="user_k_satoda.html" class="author">k_satoda</a>
+    <span class="date">2012-06-10 02:15</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">21778</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Moved a note for internal usage in javadoc not to expose internal things<br />
+as public API docs. Also fixed invalid links in it.<br />
+
+    </p>
+    <p class="commitdetails"><strong>7</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        Marker.java&#160;<span class="change">(+7&#160;-5)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="1"></a>
+    <a href="user_k_satoda.html" class="author">k_satoda</a>
+    <span class="date">2012-06-07 16:09</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">21769</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fixed a syntax error in Buffer_Switcher.bsh.<br />
+<br />
+This had been broken since r21353.<br />
+
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>macros/Files</strong>:
+        Buffer_Switcher.bsh&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+</dl>
+
+<p>(307 more)</p>
+</div><div id="generatedby">Generated by <a href="http://www.statsvn.org">StatSVN</a> 0.7.0</div>
+</body>
+</html>

@@ -1,0 +1,807 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>StatSVN - /jEdit/trunk Developers: scarlac</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+    <meta name="Generator" content="StatSVN 0.7.0"/>
+<link rel="stylesheet" href="objectlab-statcvs.css" type="text/css"/>
+<script type="text/javascript" charset="utf-8" src="http://bit.ly/javascript-api.js?version=latest&#38;login=statsvn&#38;apiKey=R_2c362b417d0517c27876cbaca1bb68cc"></script>
+<script type="text/javascript" charset="utf-8">
+   // wait until page is loaded to call API
+   var redir_url;
+   var short_url;
+   BitlyCB.myShortenCallback = function(data) {
+      // this is how to get a result of shortening a single url
+      var result;
+      short_url=null;
+      for (var r in data.results) {
+         result = data.results[r];
+         result['longUrl'] = r;
+         short_url = result['shortUrl'];
+         break;
+      }
+      if (short_url==null) // bit.ly failed
+      document.location=redir_url;
+      else
+      redirToTwitter();
+   };
+   function shortenTweet(url) {
+      if (short_url == null || redir_url!=url) {
+      redir_url = url;
+      BitlyClient.shorten(document.location, 'BitlyCB.myShortenCallback');
+      }
+      else
+      redirToTwitter();
+      return false;
+   }
+   function redirToTwitter() { 
+      // replace {0} which is visible as %7B0} in the link
+      document.location = redir_url.replace('%7B0}', short_url);
+   }
+</script>
+  </head>
+
+<body>
+
+<h1>/jEdit/trunk Developers: scarlac</h1>
+<div id="parentlink">&#171; <a href="index.html">Development Statistics for /jEdit/trunk</a> &#171; <a href="developers.html">Developers</a></div>
+<dl class="attributes">
+    <dt>Login name:</dt>
+    <dd>scarlac</dd>
+    <dt>Total Commits:</dt>
+    <dd>288 (1.0%)</dd>
+    <dt>Lines of Code:</dt>
+    <dd>581 (0.1%)</dd>
+    <dt>Most Recent Commit:</dt>
+    <dd><span class="date">2010-02-27 19:09</span></dd>
+    <dt>Tweet this:</dt>
+    <dd><a onclick="return shortenTweet(this.href);" href="http://twitter.com/home?status=scarlac%20contributed%20581%20(0.1%25)%20lines%20to%20%2FjEdit%2Ftrunk%20%7B0}%20most%20recent%20commit%202010-02-27%20stats%20by%20StatSVN%20http%3A%2F%2Fstatsvn.org"><img style="border:0px" alt="Tweet this" src="tweet-this.png"/></a></dd>
+</dl>
+
+<div class="section">
+<h2>Activity by Clock Time</h2>
+<p class="chart"><img src="activity_time_scarlac.png" alt="Activity by Hour of Day for scarlac" width="800" height="500" /></p><p class="chart"><img src="activity_day_scarlac.png" alt="Activity by Day of Week for scarlac" width="800" height="500" /></p></div>
+<div class="section">
+<h2>Activity in Directories</h2>
+  <table  rules="groups" summary="Overview of this author's activities in different directories">
+    <colgroup align="left"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <thead>
+      <tr>
+        <th>Directory</th>
+        <th>Changes</th>
+        <th>Lines of Code</th>
+        <th>Lines per Change</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <th>Totals</th>
+        <td>288 (100.0%)</td>
+        <td>581 (100.0%)</td>
+        <td>2.0</td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit.html" class="directory">org/gjt/sp/jedit/</a></th>
+        <td>15 (5.2%)</td>
+        <td>288 (49.6%)</td>
+        <td>19.2</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_gui.html" class="directory">org/gjt/sp/jedit/gui/</a></th>
+        <td>7 (2.4%)</td>
+        <td>100 (17.2%)</td>
+        <td>14.2</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_options.html" class="directory">org/gjt/sp/jedit/options/</a></th>
+        <td>2 (0.7%)</td>
+        <td>81 (13.9%)</td>
+        <td>40.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_textarea.html" class="directory">org/gjt/sp/jedit/textarea/</a></th>
+        <td>3 (1.0%)</td>
+        <td>46 (7.9%)</td>
+        <td>15.3</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_doc.html" class="directory">doc/</a></th>
+        <td>7 (2.4%)</td>
+        <td>29 (5.0%)</td>
+        <td>4.1</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_search.html" class="directory">org/gjt/sp/jedit/search/</a></th>
+        <td>2 (0.7%)</td>
+        <td>22 (3.8%)</td>
+        <td>11.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_browser.html" class="directory">org/gjt/sp/jedit/browser/</a></th>
+        <td>3 (1.0%)</td>
+        <td>15 (2.6%)</td>
+        <td>5.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_icons_themes_tango_32x32_apps.html" class="directory">org/gjt/sp/jedit/icons/themes/tango/32x32/apps/</a></th>
+        <td>2 (0.7%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_icons_themes_tango_22x22_status.html" class="directory">org/gjt/sp/jedit/icons/themes/tango/22x22/status/</a></th>
+        <td>8 (2.8%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_icons_themes_tango_22x22_places.html" class="directory">org/gjt/sp/jedit/icons/themes/tango/22x22/places/</a></th>
+        <td>4 (1.4%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_icons_themes_tango_22x22_mimetypes.html" class="directory">org/gjt/sp/jedit/icons/themes/tango/22x22/mimetypes/</a></th>
+        <td>5 (1.7%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_icons_themes_tango_22x22_emblems.html" class="directory">org/gjt/sp/jedit/icons/themes/tango/22x22/emblems/</a></th>
+        <td>5 (1.7%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_icons_themes_tango_22x22_devices.html" class="directory">org/gjt/sp/jedit/icons/themes/tango/22x22/devices/</a></th>
+        <td>3 (1.0%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_icons_themes_tango_22x22_categories.html" class="directory">org/gjt/sp/jedit/icons/themes/tango/22x22/categories/</a></th>
+        <td>3 (1.0%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_icons_themes_tango_22x22_apps.html" class="directory">org/gjt/sp/jedit/icons/themes/tango/22x22/apps/</a></th>
+        <td>5 (1.7%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_icons_themes_tango_22x22_animations.html" class="directory">org/gjt/sp/jedit/icons/themes/tango/22x22/animations/</a></th>
+        <td>1 (0.3%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_icons_themes_tango_22x22_actions.html" class="directory">org/gjt/sp/jedit/icons/themes/tango/22x22/actions/</a></th>
+        <td>65 (22.6%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_icons_themes_tango_16x16_status.html" class="directory">org/gjt/sp/jedit/icons/themes/tango/16x16/status/</a></th>
+        <td>10 (3.5%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_icons_themes_tango_16x16_places.html" class="directory">org/gjt/sp/jedit/icons/themes/tango/16x16/places/</a></th>
+        <td>1 (0.3%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_icons_themes_tango_16x16_mimetypes.html" class="directory">org/gjt/sp/jedit/icons/themes/tango/16x16/mimetypes/</a></th>
+        <td>2 (0.7%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_icons_themes_tango_16x16_emblem.html" class="directory">org/gjt/sp/jedit/icons/themes/tango/16x16/emblem/</a></th>
+        <td>7 (2.4%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_icons_themes_tango_16x16_devices.html" class="directory">org/gjt/sp/jedit/icons/themes/tango/16x16/devices/</a></th>
+        <td>1 (0.3%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_icons_themes_tango_16x16_categories.html" class="directory">org/gjt/sp/jedit/icons/themes/tango/16x16/categories/</a></th>
+        <td>2 (0.7%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_icons_themes_tango_16x16_apps.html" class="directory">org/gjt/sp/jedit/icons/themes/tango/16x16/apps/</a></th>
+        <td>2 (0.7%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_icons_themes_tango_16x16_animations.html" class="directory">org/gjt/sp/jedit/icons/themes/tango/16x16/animations/</a></th>
+        <td>1 (0.3%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_icons_themes_tango_16x16_actions.html" class="directory">org/gjt/sp/jedit/icons/themes/tango/16x16/actions/</a></th>
+        <td>28 (9.7%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_icons_themes_tango_10x10_status.html" class="directory">org/gjt/sp/jedit/icons/themes/tango/10x10/status/</a></th>
+        <td>3 (1.0%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_icons_themes_tango_10x10_emblem.html" class="directory">org/gjt/sp/jedit/icons/themes/tango/10x10/emblem/</a></th>
+        <td>1 (0.3%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_icons_themes_tango_10x10_actions.html" class="directory">org/gjt/sp/jedit/icons/themes/tango/10x10/actions/</a></th>
+        <td>1 (0.3%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_icons_themes_tango.html" class="directory">org/gjt/sp/jedit/icons/themes/tango/</a></th>
+        <td>4 (1.4%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_icons_themes_classic_32x32_apps.html" class="directory">org/gjt/sp/jedit/icons/themes/classic/32x32/apps/</a></th>
+        <td>1 (0.3%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_icons_themes_classic_22x22_status.html" class="directory">org/gjt/sp/jedit/icons/themes/classic/22x22/status/</a></th>
+        <td>2 (0.7%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_icons_themes_classic_22x22_places.html" class="directory">org/gjt/sp/jedit/icons/themes/classic/22x22/places/</a></th>
+        <td>1 (0.3%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_icons_themes_classic_22x22_devices.html" class="directory">org/gjt/sp/jedit/icons/themes/classic/22x22/devices/</a></th>
+        <td>3 (1.0%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_icons_themes_classic_22x22_categories.html" class="directory">org/gjt/sp/jedit/icons/themes/classic/22x22/categories/</a></th>
+        <td>1 (0.3%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_icons_themes_classic_22x22_apps.html" class="directory">org/gjt/sp/jedit/icons/themes/classic/22x22/apps/</a></th>
+        <td>2 (0.7%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_icons_themes_classic_22x22_actions.html" class="directory">org/gjt/sp/jedit/icons/themes/classic/22x22/actions/</a></th>
+        <td>48 (16.7%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_icons_themes_classic_16x16_status.html" class="directory">org/gjt/sp/jedit/icons/themes/classic/16x16/status/</a></th>
+        <td>1 (0.3%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_icons_themes_classic_16x16_places.html" class="directory">org/gjt/sp/jedit/icons/themes/classic/16x16/places/</a></th>
+        <td>1 (0.3%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_icons_themes_classic_16x16_mimetypes.html" class="directory">org/gjt/sp/jedit/icons/themes/classic/16x16/mimetypes/</a></th>
+        <td>1 (0.3%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_icons_themes_classic_16x16_devices.html" class="directory">org/gjt/sp/jedit/icons/themes/classic/16x16/devices/</a></th>
+        <td>1 (0.3%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_icons_themes_classic_16x16_actions.html" class="directory">org/gjt/sp/jedit/icons/themes/classic/16x16/actions/</a></th>
+        <td>4 (1.4%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_icons_themes_classic_10x10_status.html" class="directory">org/gjt/sp/jedit/icons/themes/classic/10x10/status/</a></th>
+        <td>3 (1.0%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_icons_themes_classic_10x10_emblem.html" class="directory">org/gjt/sp/jedit/icons/themes/classic/10x10/emblem/</a></th>
+        <td>1 (0.3%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_icons_themes_classic_10x10_actions.html" class="directory">org/gjt/sp/jedit/icons/themes/classic/10x10/actions/</a></th>
+        <td>1 (0.3%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_icons.html" class="directory">org/gjt/sp/jedit/icons/</a></th>
+        <td>2 (0.7%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_jars_MacOSX_macosx.html" class="directory">jars/MacOSX/macosx/</a></th>
+        <td>1 (0.3%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_icons.html" class="directory">icons/</a></th>
+        <td>10 (3.5%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir.html" class="directory">/</a></th>
+        <td>1 (0.3%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+<p class="chart"><img src="directory_sizes_scarlac.png" alt="Activity of scarlac" width="800" height="500" /></p></div>
+<div class="section">
+<h2>Most Recent Commits</h2>
+<dl class="commitlist">
+  <dt><a name="20"></a>
+    <a href="user_scarlac.html" class="author">scarlac</a>
+    <span class="date">2010-02-27 19:09</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">17395</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Key mappings was incorrect. Now uses correct detection. Fixes #2959723
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>jars/MacOSX/macosx</strong>:
+        MacOSXPlugin.java&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="19"></a>
+    <a href="user_scarlac.html" class="author">scarlac</a>
+    <span class="date">2009-03-22 02:39</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">14823</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+if anyone dislikes the change they should know who to blame
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="18"></a>
+    <a href="user_scarlac.html" class="author">scarlac</a>
+    <span class="date">2009-02-21 14:59</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">14688</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+scrolling should not occur beyond content (can happen with a track pad)
+    </p>
+    <p class="commitdetails"><strong>4</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/textarea</strong>:
+        TextArea.java&#160;<span class="change">(+4)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="17"></a>
+    <a href="user_scarlac.html" class="author">scarlac</a>
+    <span class="date">2009-02-19 17:49</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">14680</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+ * added changes to changelog and my name in the credits list
+    </p>
+    <p class="commitdetails"><strong>10</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+10&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="16"></a>
+    <a href="user_scarlac.html" class="author">scarlac</a>
+    <span class="date">2009-02-19 17:37</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">14679</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+ * Mac settings are now stored in $HOME/Library/jEdit. Old settings are migrated to new location automagicly.<br />
+ * Scrolling pages is now done with shift plus ctrl
+    </p>
+    <p class="commitdetails"><strong>45</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        jEdit.java&#160;<span class="change">(+38&#160;-1)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/textarea</strong>:
+        TextArea.java&#160;<span class="change">(+7)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="15"></a>
+    <a href="user_scarlac.html" class="author">scarlac</a>
+    <span class="date">2009-02-17 21:21</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">14665</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+* icon path should match, not just filename. fixes #2045733.<br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/options</strong>:
+        ToolBarOptionPane.java&#160;<span class="change">(+1&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="14"></a>
+    <a href="user_scarlac.html" class="author">scarlac</a>
+    <span class="date">2009-02-17 20:59</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">14664</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+ * enable support for horizontal scrolling through shift+scroll (#2308694)<br />
+ * dropped support for page-scrolling with shift key<br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>35</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/textarea</strong>:
+        TextArea.java&#160;<span class="change">(+35&#160;-9)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="13"></a>
+    <a href="user_scarlac.html" class="author">scarlac</a>
+    <span class="date">2008-11-19 00:37</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">14081</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Removed symlinking due to Apple update causing problems with symlinks. Fixes #2127295<br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        build.xml&#160;<span class="change">(-7)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="12"></a>
+    <a href="user_scarlac.html" class="author">scarlac</a>
+    <span class="date">2008-09-12 15:38</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">13653</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+OS X specific code. Should be placed in a plugin (which it is - the plugin will be available later on)<br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        View.java&#160;<span class="change">(-7)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="11"></a>
+    <a href="user_scarlac.html" class="author">scarlac</a>
+    <span class="date">2008-07-07 17:34</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">13022</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+* new splash screen<br />
+* new about screen<br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>31</strong> lines of code changed in <span class="files">4 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/gui</strong>:
+        AboutDialog.java&#160;<span class="change">(+2&#160;-2)</span>,
+        SplashScreen.java&#160;<span class="change">(+29&#160;-14)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/icons</strong>:
+        splash.png&#160;<span class="change">(changed)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/icons/themes/tango</strong>:
+        about.png&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="10"></a>
+    <a href="user_scarlac.html" class="author">scarlac</a>
+    <span class="date">2008-07-02 23:26</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">12998</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+* new icon in help as well<br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        jedit.png&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="9"></a>
+    <a href="user_scarlac.html" class="author">scarlac</a>
+    <span class="date">2008-06-28 12:12</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">12953</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
++ added entry about new image for splash screen and about dialog. changes may though still be made to the actual images as discussed on the dev list.<br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>3</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="8"></a>
+    <a href="user_scarlac.html" class="author">scarlac</a>
+    <span class="date">2008-06-26 10:18</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">12928</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
++ new splash screen<br />
++ new about dialog with<br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/gui</strong>:
+        AboutDialog.java&#160;<span class="change">(changed)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/icons</strong>:
+        splash.png&#160;<span class="change">(changed)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/icons/themes/tango</strong>:
+        about.png&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="7"></a>
+    <a href="user_scarlac.html" class="author">scarlac</a>
+    <span class="date">2008-06-18 11:12</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">12865</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+* new gradient on mac icon as well<br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>icons</strong>:
+        icon.icns&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="6"></a>
+    <a href="user_scarlac.html" class="author">scarlac</a>
+    <span class="date">2008-06-17 23:23</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">12864</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+app icon changed to new gradient style
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/icons/themes/tango/32x32/apps</strong>:
+        jedit.png&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="5"></a>
+    <a href="user_scarlac.html" class="author">scarlac</a>
+    <span class="date">2008-06-17 22:54</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">12863</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+changed logo gradient tint slighty
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">4 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>icons</strong>:
+        WindowsInstallerSmallImage.bmp&#160;<span class="change">(changed)</span>,
+        jedit-file48.png&#160;<span class="change">(changed)</span>,
+        jedit-icon48.png&#160;<span class="change">(changed)</span>,
+        jedit.ico&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="4"></a>
+    <a href="user_scarlac.html" class="author">scarlac</a>
+    <span class="date">2008-06-17 10:45</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">12860</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+global icon changes for win installer and main app icon
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">4 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>icons</strong>:
+        WindowsInstallerImage.bmp&#160;<span class="change">(changed)</span>,
+        WindowsInstallerSmallImage.bmp&#160;<span class="change">(changed)</span>,
+        jedit-icon48.png&#160;<span class="change">(changed)</span>,
+        jedit.ico&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="3"></a>
+    <a href="user_scarlac.html" class="author">scarlac</a>
+    <span class="date">2008-06-14 18:50</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">12855</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+properly sized close icon for document close action and view-close action as well
+    </p>
+    <p class="commitdetails"><strong>13</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        jedit_gui.props&#160;<span class="change">(+13&#160;-12)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/icons/themes/tango/16x16/actions</strong>:
+        document-close.png&#160;<span class="new">(new)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="2"></a>
+    <a href="user_scarlac.html" class="author">scarlac</a>
+    <span class="date">2008-06-04 23:06</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">12793</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+added myself to the credits list (seph soliman)
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        jedit_gui.props&#160;<span class="change">(+1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="1"></a>
+    <a href="user_scarlac.html" class="author">scarlac</a>
+    <span class="date">2008-06-03 16:23</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">12773</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+updated changelog with new icon
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+2)</span>
+      </li>
+    </ul>
+  </dd>
+
+</dl>
+
+<p>(16 more)</p>
+</div><div id="generatedby">Generated by <a href="http://www.statsvn.org">StatSVN</a> 0.7.0</div>
+</body>
+</html>

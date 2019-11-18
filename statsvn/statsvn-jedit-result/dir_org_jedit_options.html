@@ -1,0 +1,676 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>StatSVN - Directory org/jedit/options/</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+    <meta name="Generator" content="StatSVN 0.7.0"/>
+<link rel="stylesheet" href="objectlab-statcvs.css" type="text/css"/>
+<script type="text/javascript" charset="utf-8" src="http://bit.ly/javascript-api.js?version=latest&#38;login=statsvn&#38;apiKey=R_2c362b417d0517c27876cbaca1bb68cc"></script>
+<script type="text/javascript" charset="utf-8">
+   // wait until page is loaded to call API
+   var redir_url;
+   var short_url;
+   BitlyCB.myShortenCallback = function(data) {
+      // this is how to get a result of shortening a single url
+      var result;
+      short_url=null;
+      for (var r in data.results) {
+         result = data.results[r];
+         result['longUrl'] = r;
+         short_url = result['shortUrl'];
+         break;
+      }
+      if (short_url==null) // bit.ly failed
+      document.location=redir_url;
+      else
+      redirToTwitter();
+   };
+   function shortenTweet(url) {
+      if (short_url == null || redir_url!=url) {
+      redir_url = url;
+      BitlyClient.shorten(document.location, 'BitlyCB.myShortenCallback');
+      }
+      else
+      redirToTwitter();
+      return false;
+   }
+   function redirToTwitter() { 
+      // replace {0} which is visible as %7B0} in the link
+      document.location = redir_url.replace('%7B0}', short_url);
+   }
+</script>
+  </head>
+
+<body>
+
+<h1>Directory org/jedit/options/</h1>
+<div id="parentlink">&#171; <a href="index.html">Development Statistics for /jEdit/trunk</a></div>
+<dl class="attributes">
+    <dt>Directory Created:</dt>
+    <dd><span class="date">2012-01-12 20:02</span></dd>
+    <dt>Total Files:</dt>
+    <dd>7</dd>
+    <dt>Deleted Files:</dt>
+    <dd>0</dd>
+    <dt>Lines of Code:</dt>
+    <dd>1105</dd>
+</dl>
+<p class="dirtree">
+<a href="dir.html">[root]</a>/<a href="dir_org.html">org</a>/<a href="dir_org_jedit.html">jedit</a>/<strong>options</strong><br/>
+</p>
+
+<div class="section">
+<h2>Lines of Code</h2>
+<p class="chart"><img src="loc_module_org_jedit_options.png" alt="org/jedit/options/ Lines of Code" width="800" height="500" /></p></div>
+<div class="section">
+<h2>Developers</h2>
+  <table  rules="groups" summary="All authors and the number of their changes and lines of code in this directory">
+    <colgroup align="left"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <thead>
+      <tr>
+        <th>Author</th>
+        <th>Changes</th>
+        <th>Lines of Code</th>
+        <th>Lines per Change</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <th>Totals</th>
+        <td>55 (100.0%)</td>
+        <td>2705 (100.0%)</td>
+        <td>49.1</td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr  class="odd">
+        <th><a href="user_ezust.html" class="author">ezust</a></th>
+        <td>25 (45.5%)</td>
+        <td>1261 (46.6%)</td>
+        <td>50.4</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_Vampire0.html" class="author">Vampire0</a></th>
+        <td>12 (21.8%)</td>
+        <td>1218 (45.0%)</td>
+        <td>101.5</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_kerik-sf.html" class="author">kerik-sf</a></th>
+        <td>3 (5.5%)</td>
+        <td>203 (7.5%)</td>
+        <td>67.6</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_daleanson.html" class="author">daleanson</a></th>
+        <td>3 (5.5%)</td>
+        <td>15 (0.6%)</td>
+        <td>5.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_thomasmey.html" class="author">thomasmey</a></th>
+        <td>2 (3.6%)</td>
+        <td>4 (0.1%)</td>
+        <td>2.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_kpouer.html" class="author">kpouer</a></th>
+        <td>1 (1.8%)</td>
+        <td>3 (0.1%)</td>
+        <td>3.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_makarius.html" class="author">makarius</a></th>
+        <td>1 (1.8%)</td>
+        <td>1 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_shlomy.html" class="author">shlomy</a></th>
+        <td>3 (5.5%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_jarekczek.html" class="author">jarekczek</a></th>
+        <td>5 (9.1%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+<div class="section">
+<h2>Most Recent Commits</h2>
+<dl class="commitlist">
+  <dt><a name="26"></a>
+    <a href="user_kerik-sf.html" class="author">kerik-sf</a>
+    <span class="date">2016-06-19 14:22</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24418</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+refactor duplicate OptionTreeModel implementations<br />
+<br />
+binary compatibility is not broken in OptionsDialog subclasses,<br />
+such as sidekick.ModeOptionsDialog.
+    </p>
+    <p class="commitdetails"><strong>203</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/jedit/options</strong>:
+        OptionGroupPane.java&#160;<span class="change">(-156)</span>,
+        OptionTreeModel.java&#160;<span class="new">(new&#160;203)</span>,
+        PluginOptionGroup.java&#160;<span class="change">(-163)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="25"></a>
+    <a href="user_daleanson.html" class="author">daleanson</a>
+    <span class="date">2015-12-23 01:49</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24251</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Consistent buttons size and positioning.
+    </p>
+    <p class="commitdetails"><strong>11</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/jedit/options</strong>:
+        TabbedOptionDialog.java&#160;<span class="change">(+11&#160;-9)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="24"></a>
+    <a href="user_daleanson.html" class="author">daleanson</a>
+    <span class="date">2015-12-22 18:49</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24247</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Layout buttons like in plugin manager.
+    </p>
+    <p class="commitdetails"><strong>3</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/jedit/options</strong>:
+        TabbedOptionDialog.java&#160;<span class="change">(+3&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="23"></a>
+    <a href="user_makarius.html" class="author">makarius</a>
+    <span class="date">2015-08-25 15:41</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24028</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Proper comment.<br />
+
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/jedit/options</strong>:
+        TabbedOptionDialog.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="22"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2015-05-22 15:10</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">23923</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Patch #559 - continued. Proper row height default for JTree.<br />
+
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/jedit/options</strong>:
+        OptionGroupPane.java&#160;<span class="change">(+1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="21"></a>
+    <a href="user_shlomy.html" class="author">shlomy</a>
+    <span class="date">2013-09-30 21:51</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">23224</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Some more suggestions from IntelliJ...
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/jedit/options</strong>:
+        PluginOptionGroup.java&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="20"></a>
+    <a href="user_shlomy.html" class="author">shlomy</a>
+    <span class="date">2013-09-29 21:43</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">23222</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Some more enhancements suggested by IntelliJIDEA.
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/jedit/options</strong>:
+        OptionGroupPane.java&#160;<span class="change">(changed)</span>,
+        TabbedOptionDialog.java&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="19"></a>
+    <a href="user_Vampire0.html" class="author">Vampire0</a>
+    <span class="date">2013-08-31 12:39</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">23162</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+reinstantiate trunk and branches
+    </p>
+    <p class="commitdetails"><strong>1218</strong> lines of code changed in <span class="files">6 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/jedit/options</strong>:
+        CombinedOptions.java&#160;<span class="new">(new&#160;88)</span>,
+        GlobalOptionGroup.java&#160;<span class="new">(new&#160;92)</span>,
+        OptionGroupPane.java&#160;<span class="new">(new&#160;546)</span>,
+        PluginOptionGroup.java&#160;<span class="new">(new&#160;259)</span>,
+        TabbedOptionDialog.java&#160;<span class="new">(new&#160;232)</span>,
+        package.html&#160;<span class="new">(new&#160;1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="18"></a>
+    <a href="user_Vampire0.html" class="author">Vampire0</a>
+    <span class="date">2013-08-27 22:41</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">23150</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+put tombstone in place, official repository for jEdit core is now in Git
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">6 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/jedit/options</strong>:
+        CombinedOptions.java&#160;<span class="del">(del)</span>,
+        GlobalOptionGroup.java&#160;<span class="del">(del)</span>,
+        OptionGroupPane.java&#160;<span class="del">(del)</span>,
+        PluginOptionGroup.java&#160;<span class="del">(del)</span>,
+        TabbedOptionDialog.java&#160;<span class="del">(del)</span>,
+        package.html&#160;<span class="del">(del)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="17"></a>
+    <a href="user_kpouer.html" class="author">kpouer</a>
+    <span class="date">2013-06-06 12:00</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">23032</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Increased the scrolling speed in option pane
+    </p>
+    <p class="commitdetails"><strong>3</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/jedit/options</strong>:
+        OptionGroupPane.java&#160;<span class="change">(+3&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="16"></a>
+    <a href="user_thomasmey.html" class="author">thomasmey</a>
+    <span class="date">2013-03-23 18:58</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">22883</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+More clean ups
+    </p>
+    <p class="commitdetails"><strong>4</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/jedit/options</strong>:
+        OptionGroupPane.java&#160;<span class="change">(+4&#160;-4)</span>,
+        TabbedOptionDialog.java&#160;<span class="change">(-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="15"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2013-03-18 04:49</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">22855</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Got rid of regression from previous patch. Cleanup. <br />
+
+    </p>
+    <p class="commitdetails"><strong>6</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/jedit/options</strong>:
+        OptionGroupPane.java&#160;<span class="change">(+6&#160;-20)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="14"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2013-03-18 00:20</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">22854</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Remove empty root node in OptionGroupPane (#3608324, #3608327: Marco Hunsicker)<br />
+
+    </p>
+    <p class="commitdetails"><strong>13</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/jedit/options</strong>:
+        OptionGroupPane.java&#160;<span class="change">(+13&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="13"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2012-09-14 04:59</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">22198</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Make sure startingIndex is not invalid before showing combined options. <br />
+
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/jedit/options</strong>:
+        CombinedOptions.java&#160;<span class="change">(+1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="12"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2012-09-14 04:53</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">22197</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Undoing previous change, I thought I could fix a bug but it doesn't fix anything. <br />
+
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/jedit/options</strong>:
+        CombinedOptions.java&#160;<span class="change">(+1&#160;-1)</span>,
+        TabbedOptionDialog.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="11"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2012-09-14 04:43</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">22196</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Don't use same property as optional plugin. <br />
+
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/jedit/options</strong>:
+        CombinedOptions.java&#160;<span class="change">(+1&#160;-1)</span>,
+        TabbedOptionDialog.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="10"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2012-09-14 04:21</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">22192</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Made setSelectedIndex() public. <br />
+
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/jedit/options</strong>:
+        TabbedOptionDialog.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="9"></a>
+    <a href="user_jarekczek.html" class="author">jarekczek</a>
+    <span class="date">2012-08-02 21:32</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">21971</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Set svn:eol-style to native in .java and .props files, which had not this<br />
+flag set, probably due to forgetting
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">5 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/jedit/options</strong>:
+        CombinedOptions.java&#160;<span class="change">(changed)</span>,
+        GlobalOptionGroup.java&#160;<span class="change">(changed)</span>,
+        OptionGroupPane.java&#160;<span class="change">(changed)</span>,
+        PluginOptionGroup.java&#160;<span class="change">(changed)</span>,
+        TabbedOptionDialog.java&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="8"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2012-06-18 23:54</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">21831</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Tabsize=4.<br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">5 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/jedit/options</strong>:
+        CombinedOptions.java&#160;<span class="change">(changed)</span>,
+        GlobalOptionGroup.java&#160;<span class="change">(changed)</span>,
+        OptionGroupPane.java&#160;<span class="change">(changed)</span>,
+        PluginOptionGroup.java&#160;<span class="change">(changed)</span>,
+        TabbedOptionDialog.java&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="7"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2012-05-31 21:23</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">21743</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Remove backup on every save tooltip.<br />
+Also cleaned up some API docs. <br />
+
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/jedit/options</strong>:
+        CombinedOptions.java&#160;<span class="change">(-1)</span>,
+        TabbedOptionDialog.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="6"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2012-04-17 17:36</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">21586</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+#3501020: EncodingsOptionPane: can't dnd between pingponglists<br />
+
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/jedit/options</strong>:
+        OptionGroupPane.java&#160;<span class="change">(-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="5"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2012-03-19 22:59</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">21397</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+API Docs and reformatting. <br />
+
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/jedit/options</strong>:
+        package.html&#160;<span class="new">(new&#160;1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="4"></a>
+    <a href="user_daleanson.html" class="author">daleanson</a>
+    <span class="date">2012-02-01 19:34</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">21039</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fixed javadoc warnings.
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/jedit/options</strong>:
+        OptionGroupPane.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="3"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2012-01-19 09:25</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">20859</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Removing merged changes, and API docs.<br />
+
+    </p>
+    <p class="commitdetails"><strong>3</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/jedit/options</strong>:
+        PluginOptionGroup.java&#160;<span class="change">(+3&#160;-8)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="2"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2012-01-13 00:14</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">20766</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Removed deprecation warnings in PluginOptionGroup. <br />
+Removed 4.5.x merged bugfix from changelog.   <br />
+Keyboard Shortcuts bound to combined options instead of global options. <br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>9</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/jedit/options</strong>:
+        PluginOptionGroup.java&#160;<span class="change">(+9&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="1"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2012-01-12 20:02</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">20761</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Moved recently added classes to new org.jedit package. <br />
+
+    </p>
+    <p class="commitdetails"><strong>1221</strong> lines of code changed in <span class="files">5 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/jedit/options</strong>:
+        CombinedOptions.java&#160;<span class="new">(new&#160;88)</span>,
+        GlobalOptionGroup.java&#160;<span class="new">(new&#160;92)</span>,
+        OptionGroupPane.java&#160;<span class="new">(new&#160;551)</span>,
+        PluginOptionGroup.java&#160;<span class="new">(new&#160;256)</span>,
+        TabbedOptionDialog.java&#160;<span class="new">(new&#160;234)</span>
+      </li>
+    </ul>
+  </dd>
+
+</dl>
+
+</div><div id="generatedby">Generated by <a href="http://www.statsvn.org">StatSVN</a> 0.7.0</div>
+</body>
+</html>

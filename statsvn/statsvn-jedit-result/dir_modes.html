@@ -1,0 +1,986 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>StatSVN - Directory modes/</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+    <meta name="Generator" content="StatSVN 0.7.0"/>
+<link rel="stylesheet" href="objectlab-statcvs.css" type="text/css"/>
+<script type="text/javascript" charset="utf-8" src="http://bit.ly/javascript-api.js?version=latest&#38;login=statsvn&#38;apiKey=R_2c362b417d0517c27876cbaca1bb68cc"></script>
+<script type="text/javascript" charset="utf-8">
+   // wait until page is loaded to call API
+   var redir_url;
+   var short_url;
+   BitlyCB.myShortenCallback = function(data) {
+      // this is how to get a result of shortening a single url
+      var result;
+      short_url=null;
+      for (var r in data.results) {
+         result = data.results[r];
+         result['longUrl'] = r;
+         short_url = result['shortUrl'];
+         break;
+      }
+      if (short_url==null) // bit.ly failed
+      document.location=redir_url;
+      else
+      redirToTwitter();
+   };
+   function shortenTweet(url) {
+      if (short_url == null || redir_url!=url) {
+      redir_url = url;
+      BitlyClient.shorten(document.location, 'BitlyCB.myShortenCallback');
+      }
+      else
+      redirToTwitter();
+      return false;
+   }
+   function redirToTwitter() { 
+      // replace {0} which is visible as %7B0} in the link
+      document.location = redir_url.replace('%7B0}', short_url);
+   }
+</script>
+  </head>
+
+<body>
+
+<h1>Directory modes/</h1>
+<div id="parentlink">&#171; <a href="index.html">Development Statistics for /jEdit/trunk</a></div>
+<dl class="attributes">
+    <dt>Directory Created:</dt>
+    <dd><span class="date">2001-09-02 06:36</span></dd>
+    <dt>Total Files:</dt>
+    <dd>230</dd>
+    <dt>Deleted Files:</dt>
+    <dd>4</dd>
+    <dt>Lines of Code:</dt>
+    <dd>92250</dd>
+</dl>
+<p class="dirtree">
+<a href="dir.html">[root]</a>/<strong>modes</strong><br/>
+</p>
+
+<div class="section">
+<h2>Lines of Code</h2>
+<p class="chart"><img src="loc_module_modes.png" alt="modes/ Lines of Code" width="800" height="500" /></p></div>
+<div class="section">
+<h2>Developers</h2>
+  <table  rules="groups" summary="All authors and the number of their changes and lines of code in this directory">
+    <colgroup align="left"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <thead>
+      <tr>
+        <th>Author</th>
+        <th>Changes</th>
+        <th>Lines of Code</th>
+        <th>Lines per Change</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <th>Totals</th>
+        <td>2475 (100.0%)</td>
+        <td>216325 (100.0%)</td>
+        <td>87.4</td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr  class="odd">
+        <th><a href="user_Vampire0.html" class="author">Vampire0</a></th>
+        <td>489 (19.8%)</td>
+        <td>87903 (40.6%)</td>
+        <td>179.7</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_spestov.html" class="author">spestov</a></th>
+        <td>864 (34.9%)</td>
+        <td>68430 (31.6%)</td>
+        <td>79.2</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_ezust.html" class="author">ezust</a></th>
+        <td>515 (20.8%)</td>
+        <td>34808 (16.1%)</td>
+        <td>67.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_kpouer.html" class="author">kpouer</a></th>
+        <td>133 (5.4%)</td>
+        <td>7743 (3.6%)</td>
+        <td>58.2</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_daleanson.html" class="author">daleanson</a></th>
+        <td>62 (2.5%)</td>
+        <td>4600 (2.1%)</td>
+        <td>74.1</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_vanza.html" class="author">vanza</a></th>
+        <td>239 (9.7%)</td>
+        <td>2506 (1.2%)</td>
+        <td>10.4</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_orutherfurd.html" class="author">orutherfurd</a></th>
+        <td>50 (2.0%)</td>
+        <td>2360 (1.1%)</td>
+        <td>47.2</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_blueyed.html" class="author">blueyed</a></th>
+        <td>45 (1.8%)</td>
+        <td>2325 (1.1%)</td>
+        <td>51.6</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_fodber.html" class="author">fodber</a></th>
+        <td>4 (0.2%)</td>
+        <td>2062 (1.0%)</td>
+        <td>515.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_kerik-sf.html" class="author">kerik-sf</a></th>
+        <td>18 (0.7%)</td>
+        <td>1888 (0.9%)</td>
+        <td>104.8</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_hertzhaft.html" class="author">hertzhaft</a></th>
+        <td>6 (0.2%)</td>
+        <td>635 (0.3%)</td>
+        <td>105.8</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_jarekczek.html" class="author">jarekczek</a></th>
+        <td>10 (0.4%)</td>
+        <td>391 (0.2%)</td>
+        <td>39.1</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_tsourick.html" class="author">tsourick</a></th>
+        <td>5 (0.2%)</td>
+        <td>242 (0.1%)</td>
+        <td>48.4</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_oswaldcz.html" class="author">oswaldcz</a></th>
+        <td>2 (0.1%)</td>
+        <td>149 (0.1%)</td>
+        <td>74.5</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_grepppo.html" class="author">grepppo</a></th>
+        <td>2 (0.1%)</td>
+        <td>117 (0.1%)</td>
+        <td>58.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_elberry.html" class="author">elberry</a></th>
+        <td>8 (0.3%)</td>
+        <td>99 (0.0%)</td>
+        <td>12.3</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_k_satoda.html" class="author">k_satoda</a></th>
+        <td>11 (0.4%)</td>
+        <td>48 (0.0%)</td>
+        <td>4.3</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_voituk.html" class="author">voituk</a></th>
+        <td>6 (0.2%)</td>
+        <td>9 (0.0%)</td>
+        <td>1.5</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_kog13.html" class="author">kog13</a></th>
+        <td>3 (0.1%)</td>
+        <td>7 (0.0%)</td>
+        <td>2.3</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_shlomy.html" class="author">shlomy</a></th>
+        <td>2 (0.1%)</td>
+        <td>2 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_evanpw.html" class="author">evanpw</a></th>
+        <td>1 (0.0%)</td>
+        <td>1 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+<div class="section">
+<h2>Most Recent Commits</h2>
+<dl class="commitlist">
+  <dt><a name="40"></a>
+    <a href="user_daleanson.html" class="author">daleanson</a>
+    <span class="date">2019-06-12 20:27</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24908</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Feature request #545, HL7 mode.
+    </p>
+    <p class="commitdetails"><strong>97</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modes</strong>:
+        catalog&#160;<span class="change">(changed)</span>,
+        hl7v2.xml&#160;<span class="new">(new&#160;97)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="39"></a>
+    <a href="user_daleanson.html" class="author">daleanson</a>
+    <span class="date">2019-06-12 20:24</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24907</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Should have been committed with revision 24905.
+    </p>
+    <p class="commitdetails"><strong>421</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modes</strong>:
+        plantuml.xml&#160;<span class="new">(new&#160;421)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="38"></a>
+    <a href="user_daleanson.html" class="author">daleanson</a>
+    <span class="date">2019-06-12 19:58</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24905</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Feature request #528, PlantUML mode.
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modes</strong>:
+        catalog&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="37"></a>
+    <a href="user_daleanson.html" class="author">daleanson</a>
+    <span class="date">2019-01-17 21:10</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24893</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Updated Java mode to support Java 10 "var" type.
+    </p>
+    <p class="commitdetails"><strong>3</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modes</strong>:
+        java.xml&#160;<span class="change">(+3&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="36"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2018-02-10 19:38</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24823</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Patch #607 continued... <br />
+
+    </p>
+    <p class="commitdetails"><strong>7</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modes</strong>:
+        cplusplus.xml&#160;<span class="change">(+7&#160;-7)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="35"></a>
+    <a href="user_tsourick.html" class="author">tsourick</a>
+    <span class="date">2017-12-30 04:52</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24806</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Patch #611, fix #3249: assembler-x86 comment directive
+    </p>
+    <p class="commitdetails"><strong>6</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modes</strong>:
+        assembly-x86.xml&#160;<span class="change">(+6)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="34"></a>
+    <a href="user_tsourick.html" class="author">tsourick</a>
+    <span class="date">2017-12-30 04:42</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24805</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Patch #610, fix #4054: hash comment highlighting in mysql mode
+    </p>
+    <p class="commitdetails"><strong>3</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modes</strong>:
+        mysql.xml&#160;<span class="change">(+3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="33"></a>
+    <a href="user_tsourick.html" class="author">tsourick</a>
+    <span class="date">2017-12-30 04:28</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24804</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Patch #609, fix #2194: ASP Syntax highlight bug w/comment
+    </p>
+    <p class="commitdetails"><strong>37</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modes</strong>:
+        asp.xml&#160;<span class="change">(+37&#160;-11)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="32"></a>
+    <a href="user_tsourick.html" class="author">tsourick</a>
+    <span class="date">2017-12-30 04:17</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24803</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Patch 608, fix 2106: PHP mode "//" comment syntax highlighting is incorrect
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modes</strong>:
+        php.xml&#160;<span class="change">(+1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="31"></a>
+    <a href="user_tsourick.html" class="author">tsourick</a>
+    <span class="date">2017-12-30 04:01</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24802</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Patch #613: javascript mode update (up to ES 2017)
+    </p>
+    <p class="commitdetails"><strong>195</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modes</strong>:
+        javascript.xml&#160;<span class="change">(+195&#160;-71)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="30"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2017-12-03 17:01</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24791</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+C and C++ mode updates (Roman Tsourick - Patch #607)<br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>67</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modes</strong>:
+        c.xml&#160;<span class="change">(+8&#160;-19)</span>,
+        cplusplus.xml&#160;<span class="change">(+59&#160;-7)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="29"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2017-12-03 16:48</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24789</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+nsis2 mode updates (Uwe - Patch #606)<br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>6</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modes</strong>:
+        nsis2.xml&#160;<span class="change">(+6)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="28"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2017-12-03 16:35</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24788</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Draw2d mode updates (A.Vontobel - Patch #605)<br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>126</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modes</strong>:
+        drawj2d.xml&#160;<span class="change">(+126&#160;-78)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="27"></a>
+    <a href="user_kpouer.html" class="author">kpouer</a>
+    <span class="date">2017-10-13 09:56</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24756</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Add Gherkin mode (english) to support Cucumber feature files (Matthieu Casanova)
+    </p>
+    <p class="commitdetails"><strong>55</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modes</strong>:
+        catalog&#160;<span class="change">(+3)</span>,
+        gherkin.xml&#160;<span class="new">(new&#160;52)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="26"></a>
+    <a href="user_daleanson.html" class="author">daleanson</a>
+    <span class="date">2017-06-06 20:07</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24699</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+no comment
+    </p>
+    <p class="commitdetails"><strong>10</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modes</strong>:
+        java-module-info.xml&#160;<span class="change">(+10&#160;-6)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="25"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2017-03-26 15:33</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24669</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Patch #595 - New Assembly-arm32 edit mode (M. Cesar R. Lacruz)<br />
+
+    </p>
+    <p class="commitdetails"><strong>734</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modes</strong>:
+        assembly-arm32.xml&#160;<span class="new">(new&#160;730)</span>,
+        catalog&#160;<span class="change">(+4&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="24"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2017-03-19 19:37</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24658</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+#592 Patch for groovy mode (egor abramovich)<br />
+
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modes</strong>:
+        groovy.xml&#160;<span class="change">(+2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="23"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2017-03-19 19:20</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24655</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+#593 Various small patches to modes (AdamS)<br />
+
+    </p>
+    <p class="commitdetails"><strong>10</strong> lines of code changed in <span class="files">5 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modes</strong>:
+        css.xml&#160;<span class="change">(+2&#160;-1)</span>,
+        html.xml&#160;<span class="change">(+2)</span>,
+        javascript.xml&#160;<span class="change">(+1)</span>,
+        perl.xml&#160;<span class="change">(+3)</span>,
+        php.xml&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="22"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2017-03-15 22:38</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24636</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Batch mode updates (Patch #594 - Jean-Francois LARVOIRE)<br />
+
+    </p>
+    <p class="commitdetails"><strong>592</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modes</strong>:
+        batch.xml&#160;<span class="change">(+592&#160;-126)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="21"></a>
+    <a href="user_daleanson.html" class="author">daleanson</a>
+    <span class="date">2016-07-15 14:30</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24458</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Updated CSS mode from Adam S, ticket #4003.
+    </p>
+    <p class="commitdetails"><strong>149</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modes</strong>:
+        css.xml&#160;<span class="change">(+149&#160;-259)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="20"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2016-07-11 03:43</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24453</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Updates for objectrexx mode (Patch #585 - Jack J. Woehr)<br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>11</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modes</strong>:
+        objectrexx.xml&#160;<span class="change">(+11&#160;-4)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="19"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2016-07-11 03:40</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24452</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Mode for m4 macro processor language (Patch #586 - Jack J. Woehr)<br />
+
+    </p>
+    <p class="commitdetails"><strong>66</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modes</strong>:
+        catalog&#160;<span class="change">(+2)</span>,
+        m4.xml&#160;<span class="new">(new&#160;64)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="18"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2016-07-11 02:53</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24451</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Drawj2d edit mode (Patch #573 - A. Vontobel)<br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>424</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modes</strong>:
+        catalog&#160;<span class="change">(+3)</span>,
+        drawj2d.xml&#160;<span class="new">(new&#160;421)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="17"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2016-07-11 02:49</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24450</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+New mode for Mavscript 2.0 (Patch #574 - A. Vontobel)<br />
+
+    </p>
+    <p class="commitdetails"><strong>11</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modes</strong>:
+        mavscript.xml&#160;<span class="change">(+11&#160;-11)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="16"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2016-07-10 21:37</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24448</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Rust edit mode raw string fix (Patch #575 -  Jordan Miner)<br />
+
+    </p>
+    <p class="commitdetails"><strong>10</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modes</strong>:
+        rust.xml&#160;<span class="change">(+10&#160;-4)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="15"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2016-07-10 21:00</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24446</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+New mode for Mavscript (Patch #574 - A. Vontobel)<br />
+
+    </p>
+    <p class="commitdetails"><strong>309</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modes</strong>:
+        catalog&#160;<span class="change">(+3&#160;-1)</span>,
+        mavscript.xml&#160;<span class="new">(new&#160;306)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="14"></a>
+    <a href="user_daleanson.html" class="author">daleanson</a>
+    <span class="date">2016-06-26 17:31</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24439</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Added mode file for Java 9 module-info files.
+    </p>
+    <p class="commitdetails"><strong>339</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modes</strong>:
+        catalog&#160;<span class="change">(+4&#160;-1)</span>,
+        java-module-info.xml&#160;<span class="new">(new&#160;335)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="13"></a>
+    <a href="user_kpouer.html" class="author">kpouer</a>
+    <span class="date">2016-06-20 09:19</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24422</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+New mode for swift Patches #587
+    </p>
+    <p class="commitdetails"><strong>292</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modes</strong>:
+        catalog&#160;<span class="change">(+3)</span>,
+        swift.xml&#160;<span class="new">(new&#160;289)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="12"></a>
+    <a href="user_grepppo.html" class="author">grepppo</a>
+    <span class="date">2016-02-18 23:49</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24340</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+New Mode for Google Protocol Buffers
+    </p>
+    <p class="commitdetails"><strong>117</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modes</strong>:
+        catalog&#160;<span class="change">(+3)</span>,
+        proto.xml&#160;<span class="new">(new&#160;114)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="11"></a>
+    <a href="user_daleanson.html" class="author">daleanson</a>
+    <span class="date">2015-10-12 22:57</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24101</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Minor adjustment for literal in antlr4 mode.
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modes</strong>:
+        antlr4.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="10"></a>
+    <a href="user_daleanson.html" class="author">daleanson</a>
+    <span class="date">2015-09-24 00:53</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24090</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fixed the catalog for cmake and rfc modes.
+    </p>
+    <p class="commitdetails"><strong>4</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modes</strong>:
+        catalog&#160;<span class="change">(+4&#160;-4)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="9"></a>
+    <a href="user_daleanson.html" class="author">daleanson</a>
+    <span class="date">2015-09-24 00:50</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24089</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Better mode selection for files that match multiple modes, also fixes/applies patch #571.
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modes</strong>:
+        catalog&#160;<span class="change">(+1&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="8"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2015-08-30 02:58</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24032</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+ Updates to Clojure mode (Marc M. Adkins, patch #565)<br />
+
+    </p>
+    <p class="commitdetails"><strong>1013</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modes</strong>:
+        clojure.xml&#160;<span class="change">(+1013&#160;-382)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="7"></a>
+    <a href="user_daleanson.html" class="author">daleanson</a>
+    <span class="date">2015-08-11 00:55</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24010</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Minor update to handle the case where the single character value is the \ (continuation) character.
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modes</strong>:
+        props.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="6"></a>
+    <a href="user_daleanson.html" class="author">daleanson</a>
+    <span class="date">2015-08-10 16:41</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">23982</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Added Markdown mode, see FR # 495.
+    </p>
+    <p class="commitdetails"><strong>235</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modes</strong>:
+        catalog&#160;<span class="change">(+3)</span>,
+        markdown.xml&#160;<span class="new">(new&#160;232)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="5"></a>
+    <a href="user_daleanson.html" class="author">daleanson</a>
+    <span class="date">2015-08-08 15:35</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">23969</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Updated Go mode from feature request 496, this fixes bug 3921, Go mode auto indent problem.
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modes</strong>:
+        go.xml&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="4"></a>
+    <a href="user_daleanson.html" class="author">daleanson</a>
+    <span class="date">2015-08-03 19:53</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">23963</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fix for bug #2640, updates to properties mode.
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modes</strong>:
+        props.xml&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="3"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2015-05-20 23:45</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">23919</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+More conventional color scheme for diffs and changesets  (Patch #560 - Makarius)<br />
+
+    </p>
+    <p class="commitdetails"><strong>12</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modes</strong>:
+        patch.xml&#160;<span class="change">(+12&#160;-12)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="2"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2015-05-20 23:41</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">23918</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Patch # 556: Rust Edit Mode fixes.<br />
+
+    </p>
+    <p class="commitdetails"><strong>21</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modes</strong>:
+        rust.xml&#160;<span class="change">(+21&#160;-4)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="1"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2015-05-17 20:38</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">23911</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Updated scala mode (Patch # 554).<br />
+
+    </p>
+    <p class="commitdetails"><strong>382</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modes</strong>:
+        scala.xml&#160;<span class="change">(+382&#160;-306)</span>
+      </li>
+    </ul>
+  </dd>
+
+</dl>
+
+<p>(676 more)</p>
+</div><div id="generatedby">Generated by <a href="http://www.statsvn.org">StatSVN</a> 0.7.0</div>
+</body>
+</html>

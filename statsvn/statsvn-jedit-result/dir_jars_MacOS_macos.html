@@ -1,0 +1,657 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>StatSVN - Directory jars/MacOS/macos/</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+    <meta name="Generator" content="StatSVN 0.7.0"/>
+<link rel="stylesheet" href="objectlab-statcvs.css" type="text/css"/>
+<script type="text/javascript" charset="utf-8" src="http://bit.ly/javascript-api.js?version=latest&#38;login=statsvn&#38;apiKey=R_2c362b417d0517c27876cbaca1bb68cc"></script>
+<script type="text/javascript" charset="utf-8">
+   // wait until page is loaded to call API
+   var redir_url;
+   var short_url;
+   BitlyCB.myShortenCallback = function(data) {
+      // this is how to get a result of shortening a single url
+      var result;
+      short_url=null;
+      for (var r in data.results) {
+         result = data.results[r];
+         result['longUrl'] = r;
+         short_url = result['shortUrl'];
+         break;
+      }
+      if (short_url==null) // bit.ly failed
+      document.location=redir_url;
+      else
+      redirToTwitter();
+   };
+   function shortenTweet(url) {
+      if (short_url == null || redir_url!=url) {
+      redir_url = url;
+      BitlyClient.shorten(document.location, 'BitlyCB.myShortenCallback');
+      }
+      else
+      redirToTwitter();
+      return false;
+   }
+   function redirToTwitter() { 
+      // replace {0} which is visible as %7B0} in the link
+      document.location = redir_url.replace('%7B0}', short_url);
+   }
+</script>
+  </head>
+
+<body>
+
+<h1>Directory jars/MacOS/macos/</h1>
+<div id="parentlink">&#171; <a href="index.html">Development Statistics for /jEdit/trunk</a></div>
+<dl class="attributes">
+    <dt>Directory Created:</dt>
+    <dd><span class="date">2002-10-16 21:59</span></dd>
+    <dt>Directory Deleted:</dt>
+    <dd><span class="date">2013-08-27 22:41</span></dd>
+    <dt>Total Files:</dt>
+    <dd>0</dd>
+    <dt>Deleted Files:</dt>
+    <dd>6</dd>
+    <dt>Lines of Code:</dt>
+    <dd>0</dd>
+</dl>
+<p class="dirtree">
+<a href="dir.html">[root]</a>/<a href="dir_jars.html">jars</a>/<a href="dir_jars_MacOS.html">MacOS</a>/<strong>macos</strong><br/>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_jars_MacOS_macos_menu.html">menu</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_jars_MacOS_macos_script.html">script</a> 
+(0 files, 0 lines)<br />
+</p>
+
+<div class="section">
+<h2>Lines of Code</h2>
+<p class="chart"><img src="loc_module_jars_MacOS_macos.png" alt="jars/MacOS/macos/ Lines of Code" width="800" height="500" /></p></div>
+<div class="section">
+<h2>Developers</h2>
+  <table  rules="groups" summary="All authors and the number of their changes and lines of code in this directory">
+    <colgroup align="left"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <thead>
+      <tr>
+        <th>Author</th>
+        <th>Changes</th>
+        <th>Lines of Code</th>
+        <th>Lines per Change</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <th>Totals</th>
+        <td>54 (100.0%)</td>
+        <td>1522 (100.0%)</td>
+        <td>28.1</td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr  class="odd">
+        <th><a href="user_krisko.html" class="author">krisko</a></th>
+        <td>28 (51.9%)</td>
+        <td>855 (56.2%)</td>
+        <td>30.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_spestov.html" class="author">spestov</a></th>
+        <td>7 (13.0%)</td>
+        <td>530 (34.8%)</td>
+        <td>75.7</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_vanza.html" class="author">vanza</a></th>
+        <td>2 (3.7%)</td>
+        <td>110 (7.2%)</td>
+        <td>55.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_ian_davis.html" class="author">ian_davis</a></th>
+        <td>1 (1.9%)</td>
+        <td>23 (1.5%)</td>
+        <td>23.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_ezust.html" class="author">ezust</a></th>
+        <td>8 (14.8%)</td>
+        <td>4 (0.3%)</td>
+        <td>0.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_kpouer.html" class="author">kpouer</a></th>
+        <td>1 (1.9%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_k_satoda.html" class="author">k_satoda</a></th>
+        <td>1 (1.9%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_Vampire0.html" class="author">Vampire0</a></th>
+        <td>6 (11.1%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+<div class="section">
+<h2>Most Recent Commits</h2>
+<dl class="commitlist">
+  <dt><a name="24"></a>
+    <a href="user_Vampire0.html" class="author">Vampire0</a>
+    <span class="date">2013-08-27 22:41</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">23150</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+put tombstone in place, official repository for jEdit core is now in Git
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">6 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>jars/MacOS/macos</strong>:
+        Delegate.java&#160;<span class="del">(del)</span>,
+        Handler.java&#160;<span class="del">(del)</span>,
+        MacOSActions.java&#160;<span class="del">(del)</span>,
+        MacOSHandler.java&#160;<span class="del">(del)</span>,
+        MacOSOptionPane.java&#160;<span class="del">(del)</span>,
+        MacOSPlugin.java&#160;<span class="del">(del)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="23"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2008-04-23 00:12</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">12504</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Property fixes. svn:eol-style native<br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">4 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>jars/MacOS/macos</strong>:
+        Delegate.java&#160;<span class="change">(changed)</span>,
+        MacOSActions.java&#160;<span class="change">(changed)</span>,
+        MacOSOptionPane.java&#160;<span class="change">(changed)</span>,
+        MacOSPlugin.java&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="22"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2008-04-22 02:18</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">12502</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+find . -name \*.java | xargs svn propset eol-style native<br />
+as suggested by daniel hahler.<br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>4</strong> lines of code changed in <span class="files">4 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>jars/MacOS/macos</strong>:
+        Delegate.java&#160;<span class="change">(+1)</span>,
+        MacOSActions.java&#160;<span class="change">(+1)</span>,
+        MacOSOptionPane.java&#160;<span class="change">(+1)</span>,
+        MacOSPlugin.java&#160;<span class="change">(+1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="21"></a>
+    <a href="user_k_satoda.html" class="author">k_satoda</a>
+    <span class="date">2007-10-08 16:19</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">10843</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Better fix for concurrent modification in BufferHistory.<br />
+<br />
+- Made sure every lock()/unlock() pair is exception-safe.<br />
+- Minimized lock period as possible.<br />
+- Dropped manual locking from public API to avoid similar problems in<br />
+  user code.<br />
+
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>jars/MacOS/macos</strong>:
+        Delegate.java&#160;<span class="change">(-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="20"></a>
+    <a href="user_kpouer.html" class="author">kpouer</a>
+    <span class="date">2007-10-07 19:25</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">10834</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+concurrent modification in BufferHistory fixed (1808797)
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>jars/MacOS/macos</strong>:
+        Delegate.java&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="19"></a>
+    <a href="user_ian_davis.html" class="author">ian_davis</a>
+    <span class="date">2007-08-24 17:18</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">10438</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+SF patch #1780421:  Mac thread safety on file open<br />
+<br />
+Fixes a thread-safety issue that often hangs jEdit when opening files using<br />
+Mac machinery -- i.e. the Finder, drag-n-drop on the Dock icon, or the "open"<br />
+tool from the command line.<br />
+<br />
+The problem was that Delegate.applicationOpenFiles(NSApplication, NSArray)<br />
+tried to open files from AWT-AppKit thread instead of AWT-EventQueue.  The only<br />
+way to recover was to Force Quit jEdit and restart it.<br />
+
+    </p>
+    <p class="commitdetails"><strong>23</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>jars/MacOS/macos</strong>:
+        Delegate.java&#160;<span class="change">(+23&#160;-14)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="18"></a>
+    <a href="user_vanza.html" class="author">vanza</a>
+    <span class="date">2007-03-15 06:18</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">9142</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+SF Patch #1469586: Allow setting Mac OS type and creator to be optional<br />
+(Patch also contains a lot of whitespace cleanup.)
+    </p>
+    <p class="commitdetails"><strong>110</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>jars/MacOS/macos</strong>:
+        Delegate.java&#160;<span class="change">(+95&#160;-82)</span>,
+        MacOSOptionPane.java&#160;<span class="change">(+15&#160;-8)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="17"></a>
+    <a href="user_krisko.html" class="author">krisko</a>
+    <span class="date">2004-07-09 13:02</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">5074</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fixed broken Applescript support<br />
+
+    </p>
+    <p class="commitdetails"><strong>21</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>jars/MacOS/macos</strong>:
+        MacOSActions.java&#160;<span class="change">(+21&#160;-41)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="16"></a>
+    <a href="user_krisko.html" class="author">krisko</a>
+    <span class="date">2004-02-06 02:07</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4966</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fixed minor compile error<br />
+
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>jars/MacOS/macos</strong>:
+        MacOSPlugin.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="15"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2004-02-04 01:07</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4965</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+bug fixes<br />
+
+    </p>
+    <p class="commitdetails"><strong>4</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>jars/MacOS/macos</strong>:
+        Delegate.java&#160;<span class="change">(+2&#160;-1)</span>,
+        MacOSPlugin.java&#160;<span class="change">(+2&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="14"></a>
+    <a href="user_krisko.html" class="author">krisko</a>
+    <span class="date">2003-12-01 02:31</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4928</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Minor fixes<br />
+
+    </p>
+    <p class="commitdetails"><strong>10</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>jars/MacOS/macos</strong>:
+        Delegate.java&#160;<span class="change">(+9&#160;-1)</span>,
+        MacOSPlugin.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="13"></a>
+    <a href="user_krisko.html" class="author">krisko</a>
+    <span class="date">2003-11-17 22:56</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4917</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Bug fixes; Services implemented<br />
+
+    </p>
+    <p class="commitdetails"><strong>112</strong> lines of code changed in <span class="files">4 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>jars/MacOS/macos</strong>:
+        Delegate.java&#160;<span class="change">(+109&#160;-44)</span>,
+        MacOSActions.java&#160;<span class="change">(+2&#160;-1)</span>,
+        MacOSOptionPane.java&#160;<span class="change">(-10)</span>,
+        MacOSPlugin.java&#160;<span class="change">(+1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="12"></a>
+    <a href="user_krisko.html" class="author">krisko</a>
+    <span class="date">2003-06-27 15:30</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4814</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Opening a directory will display it<br />
+
+    </p>
+    <p class="commitdetails"><strong>10</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>jars/MacOS/macos</strong>:
+        Delegate.java&#160;<span class="change">(+9&#160;-2)</span>,
+        MacOSPlugin.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="11"></a>
+    <a href="user_krisko.html" class="author">krisko</a>
+    <span class="date">2003-06-03 09:20</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4752</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fixes missing options<br />
+
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>jars/MacOS/macos</strong>:
+        Delegate.java&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="10"></a>
+    <a href="user_krisko.html" class="author">krisko</a>
+    <span class="date">2003-05-02 03:17</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4677</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Bug fixes, changed to new plugin api<br />
+
+    </p>
+    <p class="commitdetails"><strong>3</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>jars/MacOS/macos</strong>:
+        Delegate.java&#160;<span class="change">(+3&#160;-4)</span>,
+        MacOSPlugin.java&#160;<span class="change">(-13)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="9"></a>
+    <a href="user_krisko.html" class="author">krisko</a>
+    <span class="date">2003-04-09 03:50</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4607</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+minor changes<br />
+
+    </p>
+    <p class="commitdetails"><strong>62</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>jars/MacOS/macos</strong>:
+        Delegate.java&#160;<span class="change">(+11&#160;-13)</span>,
+        MacOSActions.java&#160;<span class="change">(+51&#160;-3)</span>,
+        MacOSPlugin.java&#160;<span class="change">(-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="8"></a>
+    <a href="user_krisko.html" class="author">krisko</a>
+    <span class="date">2003-03-15 03:30</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4550</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+more additions to dock menu<br />
+
+    </p>
+    <p class="commitdetails"><strong>134</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>jars/MacOS/macos</strong>:
+        Delegate.java&#160;<span class="change">(+134&#160;-20)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="7"></a>
+    <a href="user_krisko.html" class="author">krisko</a>
+    <span class="date">2003-03-13 14:22</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4546</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+More fixes and features<br />
+
+    </p>
+    <p class="commitdetails"><strong>62</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>jars/MacOS/macos</strong>:
+        Delegate.java&#160;<span class="change">(+59&#160;-46)</span>,
+        MacOSPlugin.java&#160;<span class="change">(+3&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="6"></a>
+    <a href="user_krisko.html" class="author">krisko</a>
+    <span class="date">2003-03-11 15:09</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4539</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+A few bug fixes<br />
+
+    </p>
+    <p class="commitdetails"><strong>357</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>jars/MacOS/macos</strong>:
+        Delegate.java&#160;<span class="new">(new&#160;356)</span>,
+        MacOSPlugin.java&#160;<span class="change">(+1&#160;-16)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="5"></a>
+    <a href="user_krisko.html" class="author">krisko</a>
+    <span class="date">2003-03-10 02:04</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4531</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Import of Mac OS Plugin 3.0<br />
+
+    </p>
+    <p class="commitdetails"><strong>34</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>jars/MacOS/macos</strong>:
+        MacOSActions.java&#160;<span class="change">(+5&#160;-4)</span>,
+        MacOSPlugin.java&#160;<span class="change">(+29&#160;-10)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="4"></a>
+    <a href="user_krisko.html" class="author">krisko</a>
+    <span class="date">2003-02-23 06:08</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4510</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Mac OS 2.0.4; Fixed NPE and restore<br />
+
+    </p>
+    <p class="commitdetails"><strong>16</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>jars/MacOS/macos</strong>:
+        MacOSHandler.java&#160;<span class="change">(+15&#160;-9)</span>,
+        MacOSPlugin.java&#160;<span class="change">(+1&#160;-16)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="3"></a>
+    <a href="user_krisko.html" class="author">krisko</a>
+    <span class="date">2003-02-21 10:43</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4503</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Mac OS Plugin 2.0.3; Fixed issues with background mode<br />
+
+    </p>
+    <p class="commitdetails"><strong>10</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>jars/MacOS/macos</strong>:
+        MacOSHandler.java&#160;<span class="change">(+10&#160;-5)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="2"></a>
+    <a href="user_krisko.html" class="author">krisko</a>
+    <span class="date">2002-10-23 02:59</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4366</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Mac OS Plugin 2.0.2<br />
+
+    </p>
+    <p class="commitdetails"><strong>21</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>jars/MacOS/macos</strong>:
+        MacOSOptionPane.java&#160;<span class="change">(+7&#160;-8)</span>,
+        MacOSPlugin.java&#160;<span class="change">(+14&#160;-8)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="1"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2002-10-16 21:59</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4358</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+DIGIT_RE fix; new MacOS plugin from kris<br />
+
+    </p>
+    <p class="commitdetails"><strong>526</strong> lines of code changed in <span class="files">5 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>jars/MacOS/macos</strong>:
+        Handler.java&#160;<span class="new">(new&#160;53)</span>,
+        MacOSActions.java&#160;<span class="new">(new&#160;73)</span>,
+        MacOSHandler.java&#160;<span class="new">(new&#160;171)</span>,
+        MacOSOptionPane.java&#160;<span class="new">(new&#160;99)</span>,
+        MacOSPlugin.java&#160;<span class="new">(new&#160;130)</span>
+      </li>
+    </ul>
+  </dd>
+
+</dl>
+
+</div><div id="generatedby">Generated by <a href="http://www.statsvn.org">StatSVN</a> 0.7.0</div>
+</body>
+</html>

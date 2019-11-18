@@ -1,0 +1,1018 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>StatSVN - Directory org/gjt/sp/jedit/msg/</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+    <meta name="Generator" content="StatSVN 0.7.0"/>
+<link rel="stylesheet" href="objectlab-statcvs.css" type="text/css"/>
+<script type="text/javascript" charset="utf-8" src="http://bit.ly/javascript-api.js?version=latest&#38;login=statsvn&#38;apiKey=R_2c362b417d0517c27876cbaca1bb68cc"></script>
+<script type="text/javascript" charset="utf-8">
+   // wait until page is loaded to call API
+   var redir_url;
+   var short_url;
+   BitlyCB.myShortenCallback = function(data) {
+      // this is how to get a result of shortening a single url
+      var result;
+      short_url=null;
+      for (var r in data.results) {
+         result = data.results[r];
+         result['longUrl'] = r;
+         short_url = result['shortUrl'];
+         break;
+      }
+      if (short_url==null) // bit.ly failed
+      document.location=redir_url;
+      else
+      redirToTwitter();
+   };
+   function shortenTweet(url) {
+      if (short_url == null || redir_url!=url) {
+      redir_url = url;
+      BitlyClient.shorten(document.location, 'BitlyCB.myShortenCallback');
+      }
+      else
+      redirToTwitter();
+      return false;
+   }
+   function redirToTwitter() { 
+      // replace {0} which is visible as %7B0} in the link
+      document.location = redir_url.replace('%7B0}', short_url);
+   }
+</script>
+  </head>
+
+<body>
+
+<h1>Directory org/gjt/sp/jedit/msg/</h1>
+<div id="parentlink">&#171; <a href="index.html">Development Statistics for /jEdit/trunk</a></div>
+<dl class="attributes">
+    <dt>Directory Created:</dt>
+    <dd><span class="date">2001-09-02 06:36</span></dd>
+    <dt>Total Files:</dt>
+    <dd>18</dd>
+    <dt>Deleted Files:</dt>
+    <dd>6</dd>
+    <dt>Lines of Code:</dt>
+    <dd>1347</dd>
+</dl>
+<p class="dirtree">
+<a href="dir.html">[root]</a>/<a href="dir_org.html">org</a>/<a href="dir_org_gjt.html">gjt</a>/<a href="dir_org_gjt_sp.html">sp</a>/<a href="dir_org_gjt_sp_jedit.html">jedit</a>/<strong>msg</strong><br/>
+</p>
+
+<div class="section">
+<h2>Lines of Code</h2>
+<p class="chart"><img src="loc_module_org_gjt_sp_jedit_msg.png" alt="org/gjt/sp/jedit/msg/ Lines of Code" width="800" height="500" /></p></div>
+<div class="section">
+<h2>Developers</h2>
+  <table  rules="groups" summary="All authors and the number of their changes and lines of code in this directory">
+    <colgroup align="left"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <thead>
+      <tr>
+        <th>Author</th>
+        <th>Changes</th>
+        <th>Lines of Code</th>
+        <th>Lines per Change</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <th>Totals</th>
+        <td>195 (100.0%)</td>
+        <td>3218 (100.0%)</td>
+        <td>16.5</td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr  class="odd">
+        <th><a href="user_Vampire0.html" class="author">Vampire0</a></th>
+        <td>42 (21.5%)</td>
+        <td>1292 (40.1%)</td>
+        <td>30.7</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_spestov.html" class="author">spestov</a></th>
+        <td>49 (25.1%)</td>
+        <td>1138 (35.4%)</td>
+        <td>23.2</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_ezust.html" class="author">ezust</a></th>
+        <td>81 (41.5%)</td>
+        <td>382 (11.9%)</td>
+        <td>4.7</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_jchoyt.html" class="author">jchoyt</a></th>
+        <td>1 (0.5%)</td>
+        <td>118 (3.7%)</td>
+        <td>118.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_daleanson.html" class="author">daleanson</a></th>
+        <td>3 (1.5%)</td>
+        <td>108 (3.4%)</td>
+        <td>36.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_vanza.html" class="author">vanza</a></th>
+        <td>4 (2.1%)</td>
+        <td>86 (2.7%)</td>
+        <td>21.5</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_kpouer.html" class="author">kpouer</a></th>
+        <td>11 (5.6%)</td>
+        <td>79 (2.5%)</td>
+        <td>7.1</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_shlomy.html" class="author">shlomy</a></th>
+        <td>3 (1.5%)</td>
+        <td>14 (0.4%)</td>
+        <td>4.6</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_k_satoda.html" class="author">k_satoda</a></th>
+        <td>1 (0.5%)</td>
+        <td>1 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+<div class="section">
+<h2>Most Recent Commits</h2>
+<dl class="commitlist">
+  <dt><a name="40"></a>
+    <a href="user_daleanson.html" class="author">daleanson</a>
+    <span class="date">2014-11-02 02:29</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">23714</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+View now sends message when full screen mode is toggled.
+    </p>
+    <p class="commitdetails"><strong>7</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/msg</strong>:
+        ViewUpdate.java&#160;<span class="change">(+7)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="39"></a>
+    <a href="user_kpouer.html" class="author">kpouer</a>
+    <span class="date">2013-11-07 12:01</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">23320</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+added @Nullable annotation on getPluginJAR() function and a little doc
+    </p>
+    <p class="commitdetails"><strong>4</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/msg</strong>:
+        PluginUpdate.java&#160;<span class="change">(+4)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="38"></a>
+    <a href="user_daleanson.html" class="author">daleanson</a>
+    <span class="date">2013-09-13 23:20</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">23177</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Added new status "REMOVED" to PluginUpdate message, Roster sends this message when a plugin is deleted from disk.
+    </p>
+    <p class="commitdetails"><strong>46</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/msg</strong>:
+        PluginUpdate.java&#160;<span class="change">(+46&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="37"></a>
+    <a href="user_Vampire0.html" class="author">Vampire0</a>
+    <span class="date">2013-08-31 12:39</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">23162</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+reinstantiate trunk and branches
+    </p>
+    <p class="commitdetails"><strong>1292</strong> lines of code changed in <span class="files">18 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/msg</strong>:
+        BufferChanging.java&#160;<span class="new">(new&#160;66)</span>,
+        BufferUpdate.java&#160;<span class="new">(new&#160;147)</span>,
+        DockableWindowUpdate.java&#160;<span class="new">(new&#160;108)</span>,
+        DynamicMenuChanged.java&#160;<span class="new">(new&#160;69)</span>,
+        EditPaneUpdate.java&#160;<span class="new">(new&#160;101)</span>,
+        EditorExitRequested.java&#160;<span class="new">(new&#160;74)</span>,
+        EditorExiting.java&#160;<span class="new">(new&#160;42)</span>,
+        EditorStarted.java&#160;<span class="new">(new&#160;44)</span>,
+        PluginUpdate.java&#160;<span class="new">(new&#160;144)</span>,
+        PositionChanging.java&#160;<span class="new">(new&#160;67)</span>,
+        PropertiesChanged.java&#160;<span class="new">(new&#160;52)</span>,
+        PropertiesChanging.java&#160;<span class="new">(new&#160;62)</span>,
+        RegisterChanged.java&#160;<span class="new">(new&#160;61)</span>,
+        SearchSettingsChanged.java&#160;<span class="new">(new&#160;42)</span>,
+        VFSPathSelected.java&#160;<span class="new">(new&#160;49)</span>,
+        VFSUpdate.java&#160;<span class="new">(new&#160;62)</span>,
+        ViewUpdate.java&#160;<span class="new">(new&#160;101)</span>,
+        package.html&#160;<span class="new">(new&#160;1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="36"></a>
+    <a href="user_Vampire0.html" class="author">Vampire0</a>
+    <span class="date">2013-08-27 22:41</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">23150</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+put tombstone in place, official repository for jEdit core is now in Git
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">24 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/msg</strong>:
+        BufferChanging.java&#160;<span class="del">(del)</span>,
+        BufferUpdate.java&#160;<span class="del">(del)</span>,
+        CaretChanging.java&#160;<span class="del">(del)</span>,
+        CreateDockableWindow.java&#160;<span class="del">(del)</span>,
+        DockableWindowUpdate.java&#160;<span class="del">(del)</span>,
+        DynamicMenuChanged.java&#160;<span class="del">(del)</span>,
+        EditPaneUpdate.java&#160;<span class="del">(del)</span>,
+        EditorExitRequested.java&#160;<span class="del">(del)</span>,
+        EditorExiting.java&#160;<span class="del">(del)</span>,
+        EditorStarted.java&#160;<span class="del">(del)</span>,
+        MacrosChanged.java&#160;<span class="del">(del)</span>,
+        MultiSelectStatusChanged.java&#160;<span class="del">(del)</span>,
+        PluginUpdate.java&#160;<span class="del">(del)</span>,
+        PositionChanging.java&#160;<span class="del">(del)</span>,
+        PropertiesChanged.java&#160;<span class="del">(del)</span>,
+        PropertiesChanging.java&#160;<span class="del">(del)</span>,
+        RegisterChanged.java&#160;<span class="del">(del)</span>,
+        SearchSettingsChanged.java&#160;<span class="del">(del)</span>,
+        ShortcutPrefixActive.java&#160;<span class="del">(del)</span>,
+        TextAreaUpdate.java&#160;<span class="del">(del)</span>,
+        VFSPathSelected.java&#160;<span class="del">(del)</span>,
+        VFSUpdate.java&#160;<span class="del">(del)</span>,
+        ViewUpdate.java&#160;<span class="del">(del)</span>,
+        package.html&#160;<span class="del">(del)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="35"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2012-08-26 18:29</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">22074</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+License.<br />
+
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/msg</strong>:
+        PositionChanging.java&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="34"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2012-06-18 23:54</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">21831</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Tabsize=4.<br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">6 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/msg</strong>:
+        BufferChanging.java&#160;<span class="change">(changed)</span>,
+        BufferUpdate.java&#160;<span class="change">(changed)</span>,
+        DockableWindowUpdate.java&#160;<span class="change">(changed)</span>,
+        DynamicMenuChanged.java&#160;<span class="change">(changed)</span>,
+        PluginUpdate.java&#160;<span class="change">(changed)</span>,
+        ViewUpdate.java&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="33"></a>
+    <a href="user_kpouer.html" class="author">kpouer</a>
+    <span class="date">2010-02-17 23:32</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">17313</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+PluginUpdate bus message now have a method getPluginVersion() that returns<br />
+  the plugin version if there is one #2953163
+    </p>
+    <p class="commitdetails"><strong>20</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/msg</strong>:
+        PluginUpdate.java&#160;<span class="change">(+20&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="32"></a>
+    <a href="user_shlomy.html" class="author">shlomy</a>
+    <span class="date">2009-12-25 17:53</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">16730</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Added back the original constructor to eliminate binary compatibility.
+    </p>
+    <p class="commitdetails"><strong>10</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/msg</strong>:
+        PropertiesChanged.java&#160;<span class="change">(+10)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="31"></a>
+    <a href="user_shlomy.html" class="author">shlomy</a>
+    <span class="date">2009-12-25 15:12</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">16728</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+- Switched all edit bus handlers to use the new EBHandler API, except two which handle many (or all) types of messages uniformly so there is no advantage in using the new API in them.<br />
+- Fixed some minor issues reported by FindBugs. Some unused fields, unused imports in some files and a buggy null check in VFSBrowser.<br />
+
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/msg</strong>:
+        PropertiesChanged.java&#160;<span class="change">(+1&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="30"></a>
+    <a href="user_kpouer.html" class="author">kpouer</a>
+    <span class="date">2009-10-14 11:07</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">16342</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+fixed coding style
+    </p>
+    <p class="commitdetails"><strong>12</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/msg</strong>:
+        BufferChanging.java&#160;<span class="change">(+2&#160;-1)</span>,
+        PositionChanging.java&#160;<span class="change">(+8&#160;-4)</span>,
+        VFSPathSelected.java&#160;<span class="change">(+2&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="29"></a>
+    <a href="user_shlomy.html" class="author">shlomy</a>
+    <span class="date">2009-10-03 07:29</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">16264</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Started fixing issues reported by FindBugs.<br />
+EditServer &amp; TipOfTheDay: Random().nextInt() can return Integer.MIN_VALUE, in which case "Math.abs()" retains the negative value.<br />
+BufferChanging: getStackTrace().toString() returns the string representation of the stack trace object itself, which is not human-understandable (it is mostly a handle number). To get the string representation of the stack trace elements, need to use Arrays.toString(getStackTrace()).
+    </p>
+    <p class="commitdetails"><strong>3</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/msg</strong>:
+        BufferChanging.java&#160;<span class="change">(+3&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="28"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2009-06-25 01:38</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">15567</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Updates to API docs. <br />
+Improved error message from BufferChanging.<br />
+Defined some default shortcuts for global options and toggle docks.<br />
+
+    </p>
+    <p class="commitdetails"><strong>4</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/msg</strong>:
+        BufferChanging.java&#160;<span class="change">(+4&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="27"></a>
+    <a href="user_kpouer.html" class="author">kpouer</a>
+    <span class="date">2009-06-22 23:44</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">15546</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+coding style
+    </p>
+    <p class="commitdetails"><strong>6</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/msg</strong>:
+        BufferChanging.java&#160;<span class="change">(+6&#160;-5)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="26"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2009-04-12 16:49</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">14916</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Removed deprecated CaretChanging class. Use PositionChanging class instead.<br />
+Also improved some API docs in EditPaneUpdate.<br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/msg</strong>:
+        EditPaneUpdate.java&#160;<span class="change">(+2&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="25"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2008-06-08 03:17</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">12814</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Throw new PositionChanging EBMessage when going to the beginning or end of the buffer.<br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>5</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/msg</strong>:
+        EditPaneUpdate.java&#160;<span class="change">(-5)</span>,
+        PositionChanging.java&#160;<span class="change">(+5)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="24"></a>
+    <a href="user_kpouer.html" class="author">kpouer</a>
+    <span class="date">2008-05-31 10:41</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">12735</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+when changing the BufferSet of an EditPane, a new message EditPaneUpdate.BUFFERSET_CHANGED is sent on the bus instead of a propertyChanged event
+    </p>
+    <p class="commitdetails"><strong>6</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/msg</strong>:
+        EditPaneUpdate.java&#160;<span class="change">(+6)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="23"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2008-05-29 21:52</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">12729</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Added some docs for close all except active.<br />
+
+    </p>
+    <p class="commitdetails"><strong>3</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/msg</strong>:
+        PositionChanging.java&#160;<span class="change">(+3&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="22"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2008-05-19 17:43</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">12678</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+
+    </p>
+    <p class="commitdetails"><strong>5</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/msg</strong>:
+        BufferChanging.java&#160;<span class="change">(+1&#160;-2)</span>,
+        PositionChanging.java&#160;<span class="change">(+4&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="21"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2008-05-16 20:52</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">12674</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Updated API docs<br />
+Replaced hardcoded strings with properties<br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>11</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/msg</strong>:
+        BufferChanging.java&#160;<span class="change">(+3&#160;-8)</span>,
+        PositionChanging.java&#160;<span class="change">(+8&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="20"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2008-05-11 17:33</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">12628</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/msg</strong>:
+        CaretChanging.java&#160;<span class="change">(+2&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="19"></a>
+    <a href="user_daleanson.html" class="author">daleanson</a>
+    <span class="date">2008-05-10 22:28</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">12618</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+undeleted since it seems several plugins use this, Navigator and Sidekick for sure, there may be others.
+    </p>
+    <p class="commitdetails"><strong>55</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/msg</strong>:
+        CaretChanging.java&#160;<span class="new">(new&#160;55)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="18"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2008-05-08 22:27</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">12597</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+removed CaretChanging message<br />
+added PositionChanging message<br />
+made that the base class of BufferChanging.<br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>48</strong> lines of code changed in <span class="files">4 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/msg</strong>:
+        BufferChanging.java&#160;<span class="change">(changed)</span>,
+        CaretChanging.java&#160;<span class="del">(del)</span>,
+        EditPaneUpdate.java&#160;<span class="change">(changed)</span>,
+        PositionChanging.java&#160;<span class="new">(new&#160;48)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="17"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2008-04-23 00:12</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">12504</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Property fixes. svn:eol-style native<br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">18 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/msg</strong>:
+        BufferChanging.java&#160;<span class="change">(changed)</span>,
+        BufferUpdate.java&#160;<span class="change">(changed)</span>,
+        CaretChanging.java&#160;<span class="change">(changed)</span>,
+        DockableWindowUpdate.java&#160;<span class="change">(changed)</span>,
+        DynamicMenuChanged.java&#160;<span class="change">(changed)</span>,
+        EditPaneUpdate.java&#160;<span class="change">(changed)</span>,
+        EditorExitRequested.java&#160;<span class="change">(changed)</span>,
+        EditorExiting.java&#160;<span class="change">(changed)</span>,
+        EditorStarted.java&#160;<span class="change">(changed)</span>,
+        PluginUpdate.java&#160;<span class="change">(changed)</span>,
+        PropertiesChanged.java&#160;<span class="change">(changed)</span>,
+        PropertiesChanging.java&#160;<span class="change">(changed)</span>,
+        RegisterChanged.java&#160;<span class="change">(changed)</span>,
+        SearchSettingsChanged.java&#160;<span class="change">(changed)</span>,
+        TextAreaUpdate.java&#160;<span class="change">(changed)</span>,
+        VFSPathSelected.java&#160;<span class="change">(changed)</span>,
+        VFSUpdate.java&#160;<span class="change">(changed)</span>,
+        ViewUpdate.java&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="16"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2008-04-22 02:18</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">12502</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+find . -name \*.java | xargs svn propset eol-style native<br />
+as suggested by daniel hahler.<br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>18</strong> lines of code changed in <span class="files">18 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/msg</strong>:
+        BufferChanging.java&#160;<span class="change">(+1)</span>,
+        BufferUpdate.java&#160;<span class="change">(+1)</span>,
+        CaretChanging.java&#160;<span class="change">(+1)</span>,
+        DockableWindowUpdate.java&#160;<span class="change">(+1)</span>,
+        DynamicMenuChanged.java&#160;<span class="change">(+1)</span>,
+        EditPaneUpdate.java&#160;<span class="change">(+1)</span>,
+        EditorExitRequested.java&#160;<span class="change">(+1)</span>,
+        EditorExiting.java&#160;<span class="change">(+1)</span>,
+        EditorStarted.java&#160;<span class="change">(+1)</span>,
+        PluginUpdate.java&#160;<span class="change">(+1)</span>,
+        PropertiesChanged.java&#160;<span class="change">(+1)</span>,
+        PropertiesChanging.java&#160;<span class="change">(+1)</span>,
+        RegisterChanged.java&#160;<span class="change">(+1)</span>,
+        SearchSettingsChanged.java&#160;<span class="change">(+1)</span>,
+        TextAreaUpdate.java&#160;<span class="change">(+1)</span>,
+        VFSPathSelected.java&#160;<span class="change">(+1)</span>,
+        VFSUpdate.java&#160;<span class="change">(+1)</span>,
+        ViewUpdate.java&#160;<span class="change">(+1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="15"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2007-11-09 23:06</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">11009</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Added extra attribute: isDirectory() for VFSPathSelected EBMessage.<br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>12</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/msg</strong>:
+        VFSPathSelected.java&#160;<span class="change">(+12&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="14"></a>
+    <a href="user_kpouer.html" class="author">kpouer</a>
+    <span class="date">2007-10-04 10:13</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">10801</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+fixed indentation
+    </p>
+    <p class="commitdetails"><strong>12</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/msg</strong>:
+        CaretChanging.java&#160;<span class="change">(+2&#160;-2)</span>,
+        EditPaneUpdate.java&#160;<span class="change">(+3&#160;-3)</span>,
+        VFSPathSelected.java&#160;<span class="change">(+7&#160;-8)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="13"></a>
+    <a href="user_vanza.html" class="author">vanza</a>
+    <span class="date">2007-08-06 00:02</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">10326</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Clean up the VFSPathSelected API.
+    </p>
+    <p class="commitdetails"><strong>18</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/msg</strong>:
+        VFSPathSelected.java&#160;<span class="change">(+18&#160;-24)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="12"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2007-08-02 19:22</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">10288</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+VFSPathSelected requires a "view" as the source object.<br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>3</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/msg</strong>:
+        VFSPathSelected.java&#160;<span class="change">(+3&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="11"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2007-08-01 23:08</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">10275</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+New EBMessage: VFSPathSelected.<br />
+
+    </p>
+    <p class="commitdetails"><strong>43</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/msg</strong>:
+        VFSPathSelected.java&#160;<span class="new">(new&#160;43)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="10"></a>
+    <a href="user_kpouer.html" class="author">kpouer</a>
+    <span class="date">2007-07-03 22:14</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">9920</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+applied patch 1737563
+    </p>
+    <p class="commitdetails"><strong>19</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/msg</strong>:
+        EditorExitRequested.java&#160;<span class="change">(+19)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="9"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2007-07-01 21:25</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">9899</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Deprecated CaretChanging, since it is sufficient to have only one EBMessage,<br />
+BufferChanging, for savable caret position changes.<br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>27</strong> lines of code changed in <span class="files">4 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/msg</strong>:
+        BufferChanging.java&#160;<span class="change">(+15&#160;-2)</span>,
+        CaretChanging.java&#160;<span class="change">(+8&#160;-9)</span>,
+        EditPaneUpdate.java&#160;<span class="change">(+2&#160;-2)</span>,
+        TextAreaUpdate.java&#160;<span class="change">(+2&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="8"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2007-06-27 23:51</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">9863</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Clarified javadocs.<br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>6</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/msg</strong>:
+        EditPaneUpdate.java&#160;<span class="change">(+6&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="7"></a>
+    <a href="user_k_satoda.html" class="author">k_satoda</a>
+    <span class="date">2007-05-02 02:35</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">9483</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Set svn:eol-style=native for all java source files to avoid pssible EOL<br />
+problems.<br />
+
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/msg</strong>:
+        PropertiesChanging.java&#160;<span class="change">(+1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="6"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2007-04-02 18:17</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">9402</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+ Autoindenting copies exact whitespace from previous line (1593576<br />
+ patch 1687138, Stephen Co).<br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/msg</strong>:
+        PluginUpdate.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="5"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2007-01-23 17:54</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">8726</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Javadoc fixes.<br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/msg</strong>:
+        PropertiesChanging.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="4"></a>
+    <a href="user_vanza.html" class="author">vanza</a>
+    <span class="date">2007-01-17 08:38</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">8604</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+- add a couple of different states to the PropertiesChanging message and also send a message when the dialog is canceled.
+    </p>
+    <p class="commitdetails"><strong>19</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/msg</strong>:
+        PropertiesChanging.java&#160;<span class="change">(+19&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="3"></a>
+    <a href="user_vanza.html" class="author">vanza</a>
+    <span class="date">2007-01-17 08:20</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">8603</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+- add new edit bus message sent before the global options are show. this allows plugins to flush any data that might be used by the option panes.
+    </p>
+    <p class="commitdetails"><strong>43</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/msg</strong>:
+        PropertiesChanging.java&#160;<span class="new">(new&#160;43)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="2"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2006-10-04 04:02</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">7168</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Updated api docs...<br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>62</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/msg</strong>:
+        BufferChanging.java&#160;<span class="change">(+23&#160;-2)</span>,
+        CaretChanging.java&#160;<span class="change">(+39&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="1"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2006-08-03 16:52</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">6512</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+clear jars-cache/.summary files whenever plugins are unloaded.<br />
+
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/msg</strong>:
+        BufferChanging.java&#160;<span class="change">(+1)</span>
+      </li>
+    </ul>
+  </dd>
+
+</dl>
+
+<p>(31 more)</p>
+</div><div id="generatedby">Generated by <a href="http://www.statsvn.org">StatSVN</a> 0.7.0</div>
+</body>
+</html>

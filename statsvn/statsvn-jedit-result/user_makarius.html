@@ -1,0 +1,603 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>StatSVN - /jEdit/trunk Developers: makarius</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+    <meta name="Generator" content="StatSVN 0.7.0"/>
+<link rel="stylesheet" href="objectlab-statcvs.css" type="text/css"/>
+<script type="text/javascript" charset="utf-8" src="http://bit.ly/javascript-api.js?version=latest&#38;login=statsvn&#38;apiKey=R_2c362b417d0517c27876cbaca1bb68cc"></script>
+<script type="text/javascript" charset="utf-8">
+   // wait until page is loaded to call API
+   var redir_url;
+   var short_url;
+   BitlyCB.myShortenCallback = function(data) {
+      // this is how to get a result of shortening a single url
+      var result;
+      short_url=null;
+      for (var r in data.results) {
+         result = data.results[r];
+         result['longUrl'] = r;
+         short_url = result['shortUrl'];
+         break;
+      }
+      if (short_url==null) // bit.ly failed
+      document.location=redir_url;
+      else
+      redirToTwitter();
+   };
+   function shortenTweet(url) {
+      if (short_url == null || redir_url!=url) {
+      redir_url = url;
+      BitlyClient.shorten(document.location, 'BitlyCB.myShortenCallback');
+      }
+      else
+      redirToTwitter();
+      return false;
+   }
+   function redirToTwitter() { 
+      // replace {0} which is visible as %7B0} in the link
+      document.location = redir_url.replace('%7B0}', short_url);
+   }
+</script>
+  </head>
+
+<body>
+
+<h1>/jEdit/trunk Developers: makarius</h1>
+<div id="parentlink">&#171; <a href="index.html">Development Statistics for /jEdit/trunk</a> &#171; <a href="developers.html">Developers</a></div>
+<dl class="attributes">
+    <dt>Login name:</dt>
+    <dd>makarius</dd>
+    <dt>Total Commits:</dt>
+    <dd>40 (0.1%)</dd>
+    <dt>Lines of Code:</dt>
+    <dd>178 (0.0%)</dd>
+    <dt>Most Recent Commit:</dt>
+    <dd><span class="date">2017-12-07 16:09</span></dd>
+    <dt>Tweet this:</dt>
+    <dd><a onclick="return shortenTweet(this.href);" href="http://twitter.com/home?status=makarius%20contributed%20178%20(0.0%25)%20lines%20to%20%2FjEdit%2Ftrunk%20%7B0}%20most%20recent%20commit%202017-12-07%20stats%20by%20StatSVN%20http%3A%2F%2Fstatsvn.org"><img style="border:0px" alt="Tweet this" src="tweet-this.png"/></a></dd>
+</dl>
+
+<div class="section">
+<h2>Activity by Clock Time</h2>
+<p class="chart"><img src="activity_time_makarius.png" alt="Activity by Hour of Day for makarius" width="800" height="500" /></p><p class="chart"><img src="activity_day_makarius.png" alt="Activity by Day of Week for makarius" width="800" height="500" /></p></div>
+<div class="section">
+<h2>Activity in Directories</h2>
+  <table  rules="groups" summary="Overview of this author's activities in different directories">
+    <colgroup align="left"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <thead>
+      <tr>
+        <th>Directory</th>
+        <th>Changes</th>
+        <th>Lines of Code</th>
+        <th>Lines per Change</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <th>Totals</th>
+        <td>40 (100.0%)</td>
+        <td>178 (100.0%)</td>
+        <td>4.4</td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit.html" class="directory">org/gjt/sp/jedit/</a></th>
+        <td>5 (12.5%)</td>
+        <td>90 (50.6%)</td>
+        <td>18.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_gui.html" class="directory">org/gjt/sp/jedit/gui/</a></th>
+        <td>12 (30.0%)</td>
+        <td>27 (15.2%)</td>
+        <td>2.2</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_menu.html" class="directory">org/gjt/sp/jedit/menu/</a></th>
+        <td>6 (15.0%)</td>
+        <td>18 (10.1%)</td>
+        <td>3.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_buffer.html" class="directory">org/gjt/sp/jedit/buffer/</a></th>
+        <td>1 (2.5%)</td>
+        <td>14 (7.9%)</td>
+        <td>14.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_pluginmgr.html" class="directory">org/gjt/sp/jedit/pluginmgr/</a></th>
+        <td>3 (7.5%)</td>
+        <td>11 (6.2%)</td>
+        <td>3.6</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_doc.html" class="directory">doc/</a></th>
+        <td>2 (5.0%)</td>
+        <td>5 (2.8%)</td>
+        <td>2.5</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_jedit_migration.html" class="directory">org/jedit/migration/</a></th>
+        <td>1 (2.5%)</td>
+        <td>2 (1.1%)</td>
+        <td>2.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_jedit_keymap.html" class="directory">org/jedit/keymap/</a></th>
+        <td>1 (2.5%)</td>
+        <td>2 (1.1%)</td>
+        <td>2.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_textarea.html" class="directory">org/gjt/sp/jedit/textarea/</a></th>
+        <td>2 (5.0%)</td>
+        <td>2 (1.1%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_gui_statusbar.html" class="directory">org/gjt/sp/jedit/gui/statusbar/</a></th>
+        <td>1 (2.5%)</td>
+        <td>2 (1.1%)</td>
+        <td>2.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_jedit_options.html" class="directory">org/jedit/options/</a></th>
+        <td>1 (2.5%)</td>
+        <td>1 (0.6%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_syntax.html" class="directory">org/gjt/sp/jedit/syntax/</a></th>
+        <td>1 (2.5%)</td>
+        <td>1 (0.6%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_print.html" class="directory">org/gjt/sp/jedit/print/</a></th>
+        <td>1 (2.5%)</td>
+        <td>1 (0.6%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_browser.html" class="directory">org/gjt/sp/jedit/browser/</a></th>
+        <td>1 (2.5%)</td>
+        <td>1 (0.6%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir.html" class="directory">/</a></th>
+        <td>1 (2.5%)</td>
+        <td>1 (0.6%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_keymaps.html" class="directory">keymaps/</a></th>
+        <td>1 (2.5%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+<p class="chart"><img src="directory_sizes_makarius.png" alt="Activity of makarius" width="800" height="500" /></p></div>
+<div class="section">
+<h2>Most Recent Commits</h2>
+<dl class="commitlist">
+  <dt><a name="20"></a>
+    <a href="user_makarius.html" class="author">makarius</a>
+    <span class="date">2017-12-07 16:09</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24793</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Sorted storeProperties that works both for Java 8 and 9.0.1.<br />
+
+    </p>
+    <p class="commitdetails"><strong>7</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        MiscUtilities.java&#160;<span class="change">(+7&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="19"></a>
+    <a href="user_makarius.html" class="author">makarius</a>
+    <span class="date">2017-12-07 16:08</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24792</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Accept version "1.9" as produced by Oracle JDK 9.0.1 on Ubuntu 16.04.<br />
+
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        build.xml&#160;<span class="change">(+1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="18"></a>
+    <a href="user_makarius.html" class="author">makarius</a>
+    <span class="date">2017-12-03 16:00</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24787</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Proper scalable font for StyleEditor, according to Patch #558 and SVN version 23921.<br />
+
+    </p>
+    <p class="commitdetails"><strong>5</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/gui</strong>:
+        StyleEditor.java&#160;<span class="change">(+5&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="17"></a>
+    <a href="user_makarius.html" class="author">makarius</a>
+    <span class="date">2016-09-14 10:58</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24541</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Make double-sure that JEditorPane.HONOR_DISPLAY_PROPERTIES is enabled: this is important for proper font size provided by platform GUI framework (e.g. on HiDPI displays).<br />
+
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/pluginmgr</strong>:
+        InstallPanel.java&#160;<span class="change">(+1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="16"></a>
+    <a href="user_makarius.html" class="author">makarius</a>
+    <span class="date">2016-09-01 19:01</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24516</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Suppress "options.shortcuts.", which are not shortcuts but options for shortcuts.<br />
+
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>keymaps</strong>:
+        Alan_keys.props&#160;<span class="change">(-1)</span>
+      </li>
+      <li>
+        <strong>org/jedit/migration</strong>:
+        KeymapMigration.java&#160;<span class="change">(+2&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="15"></a>
+    <a href="user_makarius.html" class="author">makarius</a>
+    <span class="date">2016-08-31 18:48</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24515</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Make double-sure that JEditorPane.HONOR_DISPLAY_PROPERTIES is enabled: this is important for proper font size provided by platform GUI framework (e.g. on HiDPI displays).<br />
+
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/pluginmgr</strong>:
+        PluginDetailPanel.java&#160;<span class="change">(+2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="14"></a>
+    <a href="user_makarius.html" class="author">makarius</a>
+    <span class="date">2016-08-31 18:43</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24514</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+More uniform text for loaded vs. non-loaded state.<br />
+
+    </p>
+    <p class="commitdetails"><strong>8</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/pluginmgr</strong>:
+        PluginDetailPanel.java&#160;<span class="change">(+8&#160;-8)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="13"></a>
+    <a href="user_makarius.html" class="author">makarius</a>
+    <span class="date">2016-08-29 10:45</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24511</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Proper file name.<br />
+
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/print</strong>:
+        BufferPrinter1_7.java&#160;<span class="change">(+1&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="12"></a>
+    <a href="user_makarius.html" class="author">makarius</a>
+    <span class="date">2016-07-17 19:57</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24461</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+More robust treatment of token style array index: wrap around instead of throwing an exception.<br />
+This does not change the behavior of regular jEdit, but it helps ambitious plugins with their own token marker and extra styles (notably Isabelle).<br />
+
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/gui</strong>:
+        StyleEditor.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/syntax</strong>:
+        Token.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="11"></a>
+    <a href="user_makarius.html" class="author">makarius</a>
+    <span class="date">2016-07-17 19:16</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24460</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Removed junk stemming from my own patch #566.<br />
+
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/textarea</strong>:
+        TextArea.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="10"></a>
+    <a href="user_makarius.html" class="author">makarius</a>
+    <span class="date">2015-10-27 14:46</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24116</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+More space in messages.<br />
+
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/jedit/keymap</strong>:
+        KeymapManagerImpl.java&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="9"></a>
+    <a href="user_makarius.html" class="author">makarius</a>
+    <span class="date">2015-08-25 15:41</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24028</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Proper comment.<br />
+
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/jedit/options</strong>:
+        TabbedOptionDialog.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="8"></a>
+    <a href="user_makarius.html" class="author">makarius</a>
+    <span class="date">2015-08-25 15:21</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24027</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Public getLineContext() -- relevant for ambitious plugins with their own token marker, fold handler etc.<br />
+
+    </p>
+    <p class="commitdetails"><strong>14</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/buffer</strong>:
+        JEditBuffer.java&#160;<span class="change">(+14&#160;-4)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="7"></a>
+    <a href="user_makarius.html" class="author">makarius</a>
+    <span class="date">2015-08-25 15:03</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24026</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+More convenient saveAllBuffers: show list of affected files (may be changed by the user), no dialog for empty list.<br />
+
+    </p>
+    <p class="commitdetails"><strong>31</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        jEdit.java&#160;<span class="change">(+31&#160;-14)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="6"></a>
+    <a href="user_makarius.html" class="author">makarius</a>
+    <span class="date">2015-08-14 20:17</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24023</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+More accurate font metrics, without any special tricks.<br />
+
+    </p>
+    <p class="commitdetails"><strong>3</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/menu</strong>:
+        EnhancedCheckBoxMenuItem.java&#160;<span class="change">(+1&#160;-3)</span>,
+        EnhancedMenuItem.java&#160;<span class="change">(+1&#160;-3)</span>,
+        MarkersProvider.java&#160;<span class="change">(+1&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="5"></a>
+    <a href="user_makarius.html" class="author">makarius</a>
+    <span class="date">2015-08-14 19:45</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24022</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Menu accelerator font according to L&amp;F defaults, with workarounds.<br />
+Proper anti-aliasing for menu items.<br />
+Scalable distance of menu item shortcuts.<br />
+
+    </p>
+    <p class="commitdetails"><strong>43</strong> lines of code changed in <span class="files">4 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        GUIUtilities.java&#160;<span class="change">(+28)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/menu</strong>:
+        EnhancedCheckBoxMenuItem.java&#160;<span class="change">(+4&#160;-2)</span>,
+        EnhancedMenuItem.java&#160;<span class="change">(+6&#160;-17)</span>,
+        MarkersProvider.java&#160;<span class="change">(+5&#160;-6)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="4"></a>
+    <a href="user_makarius.html" class="author">makarius</a>
+    <span class="date">2015-08-14 19:36</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24021</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+More robust default FontRenderContext: as a blind guess, anti-aliasing is better enabled.<br />
+
+    </p>
+    <p class="commitdetails"><strong>4</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/browser</strong>:
+        VFSDirectoryEntryTable.java&#160;<span class="change">(+1&#160;-2)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/gui</strong>:
+        ColorWellButton.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/gui/statusbar</strong>:
+        MemoryStatusWidgetFactory.java&#160;<span class="change">(+2&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="3"></a>
+    <a href="user_makarius.html" class="author">makarius</a>
+    <span class="date">2015-08-14 15:36</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24020</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Updated contributors.<br />
+
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        jedit_gui.props&#160;<span class="change">(+1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="2"></a>
+    <a href="user_makarius.html" class="author">makarius</a>
+    <span class="date">2015-08-14 15:36</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24019</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Proper font metrics for bottom line, which is relevant for GUI scaling.  NB: the font size is *not* changed, since it needs to fit to the bitmap image.<br />
+
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/gui</strong>:
+        AboutDialog.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="1"></a>
+    <a href="user_makarius.html" class="author">makarius</a>
+    <span class="date">2015-08-13 16:16</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24017</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Re-use helpviewer.font for Tip-of-the-Day, which helps GUI scaling (for high resolution displays).<br />
+
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/gui</strong>:
+        TipOfTheDay.java&#160;<span class="change">(+1)</span>
+      </li>
+    </ul>
+  </dd>
+
+</dl>
+
+<p>(9 more)</p>
+</div><div id="generatedby">Generated by <a href="http://www.statsvn.org">StatSVN</a> 0.7.0</div>
+</body>
+</html>

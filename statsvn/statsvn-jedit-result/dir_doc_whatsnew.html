@@ -1,0 +1,738 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>StatSVN - Directory doc/whatsnew/</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+    <meta name="Generator" content="StatSVN 0.7.0"/>
+<link rel="stylesheet" href="objectlab-statcvs.css" type="text/css"/>
+<script type="text/javascript" charset="utf-8" src="http://bit.ly/javascript-api.js?version=latest&#38;login=statsvn&#38;apiKey=R_2c362b417d0517c27876cbaca1bb68cc"></script>
+<script type="text/javascript" charset="utf-8">
+   // wait until page is loaded to call API
+   var redir_url;
+   var short_url;
+   BitlyCB.myShortenCallback = function(data) {
+      // this is how to get a result of shortening a single url
+      var result;
+      short_url=null;
+      for (var r in data.results) {
+         result = data.results[r];
+         result['longUrl'] = r;
+         short_url = result['shortUrl'];
+         break;
+      }
+      if (short_url==null) // bit.ly failed
+      document.location=redir_url;
+      else
+      redirToTwitter();
+   };
+   function shortenTweet(url) {
+      if (short_url == null || redir_url!=url) {
+      redir_url = url;
+      BitlyClient.shorten(document.location, 'BitlyCB.myShortenCallback');
+      }
+      else
+      redirToTwitter();
+      return false;
+   }
+   function redirToTwitter() { 
+      // replace {0} which is visible as %7B0} in the link
+      document.location = redir_url.replace('%7B0}', short_url);
+   }
+</script>
+  </head>
+
+<body>
+
+<h1>Directory doc/whatsnew/</h1>
+<div id="parentlink">&#171; <a href="index.html">Development Statistics for /jEdit/trunk</a></div>
+<dl class="attributes">
+    <dt>Total Files:</dt>
+    <dd>1</dd>
+    <dt>Deleted Files:</dt>
+    <dd>0</dd>
+    <dt>Lines of Code:</dt>
+    <dd>25</dd>
+</dl>
+<p class="dirtree">
+<a href="dir.html">[root]</a>/<a href="dir_doc.html">doc</a>/<strong>whatsnew</strong><br/>
+</p>
+
+<div class="section">
+<h2>Lines of Code</h2>
+<p class="chart"><img src="loc_module_doc_whatsnew.png" alt="doc/whatsnew/ Lines of Code" width="800" height="500" /></p></div>
+<div class="section">
+<h2>Developers</h2>
+  <table  rules="groups" summary="All authors and the number of their changes and lines of code in this directory">
+    <colgroup align="left"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <thead>
+      <tr>
+        <th>Author</th>
+        <th>Changes</th>
+        <th>Lines of Code</th>
+        <th>Lines per Change</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <th>Totals</th>
+        <td>34 (100.0%)</td>
+        <td>132 (100.0%)</td>
+        <td>3.8</td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr  class="odd">
+        <th><a href="user_ezust.html" class="author">ezust</a></th>
+        <td>31 (91.2%)</td>
+        <td>113 (85.6%)</td>
+        <td>3.6</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_Vampire0.html" class="author">Vampire0</a></th>
+        <td>3 (8.8%)</td>
+        <td>19 (14.4%)</td>
+        <td>6.3</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+<div class="section">
+<h2>Most Recent Commits</h2>
+<dl class="commitlist">
+  <dt><a name="33"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2018-06-07 21:56</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24861</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+jEdit 5.6<br />
+
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc/whatsnew</strong>:
+        news.xml&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="32"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2018-05-02 17:48</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24860</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+whatsnew for 5.6<br />
+
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc/whatsnew</strong>:
+        news.xml&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="31"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2018-03-20 20:32</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24844</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+https<br />
+
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc/whatsnew</strong>:
+        news.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="30"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2018-03-04 21:08</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24840</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+FR#506: Option for global autosave directory for existing files (not backup) <br />
+
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc/whatsnew</strong>:
+        news.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="29"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2018-02-16 21:11</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24825</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+small changes.<br />
+
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc/whatsnew</strong>:
+        news.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="28"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2018-02-16 21:10</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24824</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Whatsnew.<br />
+
+    </p>
+    <p class="commitdetails"><strong>4</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc/whatsnew</strong>:
+        news.xml&#160;<span class="change">(+4)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="27"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2017-07-16 21:38</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24726</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+improving labels, adding tooltips, fixing whitespace. <br />
+
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc/whatsnew</strong>:
+        news.xml&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="26"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2017-03-19 19:31</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24657</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Version bump. 5.5pre1.<br />
+
+    </p>
+    <p class="commitdetails"><strong>3</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc/whatsnew</strong>:
+        news.xml&#160;<span class="change">(+3&#160;-12)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="25"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2017-01-22 18:37</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24596</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Whats new in jEdit 5.4<br />
+
+    </p>
+    <p class="commitdetails"><strong>11</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc/whatsnew</strong>:
+        news.xml&#160;<span class="change">(+11)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="24"></a>
+    <a href="user_Vampire0.html" class="author">Vampire0</a>
+    <span class="date">2017-01-20 10:57</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24593</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+increase version to 5.4.0
+    </p>
+    <p class="commitdetails"><strong>4</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc/whatsnew</strong>:
+        news.xml&#160;<span class="change">(+4&#160;-5)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="23"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2015-02-05 19:51</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">23854</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+s/2014/2015<br />
+
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc/whatsnew</strong>:
+        news.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="22"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2014-05-17 19:42</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">23548</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Bumping version to 5.3pre1<br />
+
+    </p>
+    <p class="commitdetails"><strong>3</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc/whatsnew</strong>:
+        news.xml&#160;<span class="change">(+3&#160;-6)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="21"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2014-04-08 17:49</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">23465</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+whatsnew.<br />
+
+    </p>
+    <p class="commitdetails"><strong>15</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc/whatsnew</strong>:
+        news.xml&#160;<span class="change">(+15&#160;-7)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="20"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2013-11-15 01:19</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">23334</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+fixing up some buffer-local properties. <br />
+
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc/whatsnew</strong>:
+        news.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="19"></a>
+    <a href="user_Vampire0.html" class="author">Vampire0</a>
+    <span class="date">2013-08-31 12:39</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">23162</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+reinstantiate trunk and branches
+    </p>
+    <p class="commitdetails"><strong>15</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc/whatsnew</strong>:
+        news.xml&#160;<span class="new">(new&#160;15)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="18"></a>
+    <a href="user_Vampire0.html" class="author">Vampire0</a>
+    <span class="date">2013-08-27 22:41</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">23150</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+put tombstone in place, official repository for jEdit core is now in Git
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc/whatsnew</strong>:
+        news.xml&#160;<span class="del">(del)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="17"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2013-06-01 06:39</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">23025</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+What's new in 5.2.<br />
+
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc/whatsnew</strong>:
+        news.xml&#160;<span class="change">(+2&#160;-17)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="16"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2012-10-13 23:25</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">22367</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+marked merged changelog entry. <br />
+
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc/whatsnew</strong>:
+        news.xml&#160;<span class="change">(+1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="15"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2012-09-27 22:03</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">22261</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Updated FAQ. <br />
+
+    </p>
+    <p class="commitdetails"><strong>4</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc/whatsnew</strong>:
+        news.xml&#160;<span class="change">(+4&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="14"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2012-09-08 16:34</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">22178</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Docs.<br />
+
+    </p>
+    <p class="commitdetails"><strong>6</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc/whatsnew</strong>:
+        news.xml&#160;<span class="change">(+6)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="13"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2012-07-31 17:47</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">21963</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+changelog <br />
+
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc/whatsnew</strong>:
+        news.xml&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="12"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2012-06-10 15:50</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">21789</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Docs only. <br />
+
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc/whatsnew</strong>:
+        news.xml&#160;<span class="change">(+1&#160;-26)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="11"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2012-05-08 20:59</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">21650</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+mention czech localization. <br />
+
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc/whatsnew</strong>:
+        news.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="10"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2012-03-31 06:21</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">21514</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Docs only.<br />
+
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc/whatsnew</strong>:
+        news.xml&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="9"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2012-03-19 22:59</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">21397</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+API Docs and reformatting. <br />
+
+    </p>
+    <p class="commitdetails"><strong>4</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc/whatsnew</strong>:
+        news.xml&#160;<span class="change">(+4&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="8"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2012-03-12 20:07</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">21341</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Added japanese to the whatsnew article.<br />
+Added TODO notes for API docs of this strangely named class.<br />
+
+    </p>
+    <p class="commitdetails"><strong>7</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc/whatsnew</strong>:
+        news.xml&#160;<span class="change">(+7&#160;-5)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="7"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2012-03-11 01:48</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">21312</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Added mention of html5.<br />
+
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc/whatsnew</strong>:
+        news.xml&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="6"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2012-02-22 20:14</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">21182</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+mention localization in whatsnew.<br />
+
+    </p>
+    <p class="commitdetails"><strong>7</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc/whatsnew</strong>:
+        news.xml&#160;<span class="change">(+7&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="5"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2012-02-22 17:13</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">21175</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Docs.<br />
+
+    </p>
+    <p class="commitdetails"><strong>9</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc/whatsnew</strong>:
+        news.xml&#160;<span class="change">(+9&#160;-8)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="4"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2011-11-13 20:33</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">20338</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Got rid of EnhancedDialog's keylistener, as well as the ComboKeyListener, since the two of them were basically<br />
+cancelling each other out. <br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc/whatsnew</strong>:
+        news.xml&#160;<span class="change">(+2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="3"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2011-11-13 17:13</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">20334</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Documentation.<br />
+
+    </p>
+    <p class="commitdetails"><strong>8</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc/whatsnew</strong>:
+        news.xml&#160;<span class="change">(+8)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="2"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2011-10-19 17:32</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">20129</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Bumping version to 5.0pre1.<br />
+
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc/whatsnew</strong>:
+        news.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="1"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2011-10-18 22:11</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">20119</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Bumping version to 4.6pre1<br />
+
+    </p>
+    <p class="commitdetails"><strong>19</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc/whatsnew</strong>:
+        news.xml&#160;<span class="change">(+19)</span>
+      </li>
+    </ul>
+  </dd>
+
+</dl>
+
+</div><div id="generatedby">Generated by <a href="http://www.statsvn.org">StatSVN</a> 0.7.0</div>
+</body>
+</html>

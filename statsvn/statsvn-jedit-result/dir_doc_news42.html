@@ -1,0 +1,483 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>StatSVN - Directory doc/news42/</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+    <meta name="Generator" content="StatSVN 0.7.0"/>
+<link rel="stylesheet" href="objectlab-statcvs.css" type="text/css"/>
+<script type="text/javascript" charset="utf-8" src="http://bit.ly/javascript-api.js?version=latest&#38;login=statsvn&#38;apiKey=R_2c362b417d0517c27876cbaca1bb68cc"></script>
+<script type="text/javascript" charset="utf-8">
+   // wait until page is loaded to call API
+   var redir_url;
+   var short_url;
+   BitlyCB.myShortenCallback = function(data) {
+      // this is how to get a result of shortening a single url
+      var result;
+      short_url=null;
+      for (var r in data.results) {
+         result = data.results[r];
+         result['longUrl'] = r;
+         short_url = result['shortUrl'];
+         break;
+      }
+      if (short_url==null) // bit.ly failed
+      document.location=redir_url;
+      else
+      redirToTwitter();
+   };
+   function shortenTweet(url) {
+      if (short_url == null || redir_url!=url) {
+      redir_url = url;
+      BitlyClient.shorten(document.location, 'BitlyCB.myShortenCallback');
+      }
+      else
+      redirToTwitter();
+      return false;
+   }
+   function redirToTwitter() { 
+      // replace {0} which is visible as %7B0} in the link
+      document.location = redir_url.replace('%7B0}', short_url);
+   }
+</script>
+  </head>
+
+<body>
+
+<h1>Directory doc/news42/</h1>
+<div id="parentlink">&#171; <a href="index.html">Development Statistics for /jEdit/trunk</a></div>
+<dl class="attributes">
+    <dt>Directory Created:</dt>
+    <dd><span class="date">2003-05-01 05:17</span></dd>
+    <dt>Directory Deleted:</dt>
+    <dd><span class="date">2013-08-27 22:41</span></dd>
+    <dt>Total Files:</dt>
+    <dd>0</dd>
+    <dt>Deleted Files:</dt>
+    <dd>2</dd>
+    <dt>Lines of Code:</dt>
+    <dd>0</dd>
+</dl>
+<p class="dirtree">
+<a href="dir.html">[root]</a>/<a href="dir_doc.html">doc</a>/<strong>news42</strong><br/>
+</p>
+
+<div class="section">
+<h2>Lines of Code</h2>
+<p class="chart"><img src="loc_module_doc_news42.png" alt="doc/news42/ Lines of Code" width="800" height="500" /></p></div>
+<div class="section">
+<h2>Developers</h2>
+  <table  rules="groups" summary="All authors and the number of their changes and lines of code in this directory">
+    <colgroup align="left"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <thead>
+      <tr>
+        <th>Author</th>
+        <th>Changes</th>
+        <th>Lines of Code</th>
+        <th>Lines per Change</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <th>Totals</th>
+        <td>20 (100.0%)</td>
+        <td>1778 (100.0%)</td>
+        <td>88.9</td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr  class="odd">
+        <th><a href="user_spestov.html" class="author">spestov</a></th>
+        <td>16 (80.0%)</td>
+        <td>1038 (58.4%)</td>
+        <td>64.8</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_Vampire0.html" class="author">Vampire0</a></th>
+        <td>3 (15.0%)</td>
+        <td>737 (41.5%)</td>
+        <td>245.6</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_ezust.html" class="author">ezust</a></th>
+        <td>1 (5.0%)</td>
+        <td>3 (0.2%)</td>
+        <td>3.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+<div class="section">
+<h2>Most Recent Commits</h2>
+<dl class="commitlist">
+  <dt><a name="19"></a>
+    <a href="user_Vampire0.html" class="author">Vampire0</a>
+    <span class="date">2013-08-27 22:41</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">23150</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+put tombstone in place, official repository for jEdit core is now in Git
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc/news42</strong>:
+        .cvsignore&#160;<span class="del">(del)</span>,
+        news.xml&#160;<span class="del">(del)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="18"></a>
+    <a href="user_Vampire0.html" class="author">Vampire0</a>
+    <span class="date">2007-07-11 00:22</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">9995</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fixing lots of small things
+    </p>
+    <p class="commitdetails"><strong>737</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc/news42</strong>:
+        news.xml&#160;<span class="change">(+737&#160;-688)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="17"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2005-12-21 08:44</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">5312</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Bug # 1386702 (dockablewindowmanager)<br />
+api docs in HelpViewerInterface<br />
+cosmetic changes to IncludeGuard<br />
+
+    </p>
+    <p class="commitdetails"><strong>3</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc/news42</strong>:
+        .cvsignore&#160;<span class="new">(new&#160;3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="16"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2004-08-28 09:12</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">5109</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+fix obscure display manager bug<br />
+
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc/news42</strong>:
+        news.xml&#160;<span class="change">(+1&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="15"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2004-06-17 05:26</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">5064</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+build.xml file update from brian<br />
+
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc/news42</strong>:
+        news.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="14"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2004-06-15 06:01</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">5063</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+updated news42 and php mode<br />
+
+    </p>
+    <p class="commitdetails"><strong>64</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc/news42</strong>:
+        news.xml&#160;<span class="change">(+64&#160;-17)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="13"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2004-03-17 05:23</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4991</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+updating mode docs<br />
+
+    </p>
+    <p class="commitdetails"><strong>3</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc/news42</strong>:
+        news.xml&#160;<span class="change">(+3&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="12"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-12-27 20:44</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4948</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+fix array out of bounds in save as<br />
+
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc/news42</strong>:
+        news.xml&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="11"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-12-27 06:13</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4946</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+imported beanshell 2.0b1<br />
+
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc/news42</strong>:
+        news.xml&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="10"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-12-25 03:56</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4942</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+various doc fixes<br />
+
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc/news42</strong>:
+        news.xml&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="9"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-12-01 01:00</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4926</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+4.2pre7 ready for release<br />
+
+    </p>
+    <p class="commitdetails"><strong>131</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc/news42</strong>:
+        news.xml&#160;<span class="change">(+131&#160;-108)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="8"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-11-16 04:51</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4914</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+added option to disable encoding auto-detect; fixed gzip auto-detect<br />
+
+    </p>
+    <p class="commitdetails"><strong>62</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc/news42</strong>:
+        news.xml&#160;<span class="change">(+62&#160;-20)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="7"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-11-15 22:09</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4912</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+bug fixes, powerdynamo mode<br />
+
+    </p>
+    <p class="commitdetails"><strong>32</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc/news42</strong>:
+        news.xml&#160;<span class="change">(+32&#160;-9)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="6"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-11-06 04:38</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4909</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+bug fixes<br />
+
+    </p>
+    <p class="commitdetails"><strong>51</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc/news42</strong>:
+        news.xml&#160;<span class="change">(+51&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="5"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-10-26 06:50</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4901</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+auto detect xml encoding<br />
+
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc/news42</strong>:
+        news.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="4"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-05-22 19:48</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4718</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+plugins providing fold handlers were not unloaded properly<br />
+
+    </p>
+    <p class="commitdetails"><strong>124</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc/news42</strong>:
+        news.xml&#160;<span class="change">(+124&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="3"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-05-02 02:00</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4675</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+fixed news42.xml. my name is Slava Pestov not Slava Slava<br />
+
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc/news42</strong>:
+        news.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="2"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-05-02 01:38</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4674</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+4.2pre1 ready<br />
+
+    </p>
+    <p class="commitdetails"><strong>266</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc/news42</strong>:
+        news.xml&#160;<span class="change">(+266&#160;-31)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="1"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-05-01 05:17</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4670</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+started 4.1 to 4.2 plugin porting guide<br />
+
+    </p>
+    <p class="commitdetails"><strong>301</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc/news42</strong>:
+        news.xml&#160;<span class="new">(new&#160;301)</span>
+      </li>
+    </ul>
+  </dd>
+
+</dl>
+
+</div><div id="generatedby">Generated by <a href="http://www.statsvn.org">StatSVN</a> 0.7.0</div>
+</body>
+</html>

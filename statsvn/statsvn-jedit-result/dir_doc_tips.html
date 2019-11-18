@@ -1,0 +1,1242 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>StatSVN - Directory doc/tips/</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+    <meta name="Generator" content="StatSVN 0.7.0"/>
+<link rel="stylesheet" href="objectlab-statcvs.css" type="text/css"/>
+<script type="text/javascript" charset="utf-8" src="http://bit.ly/javascript-api.js?version=latest&#38;login=statsvn&#38;apiKey=R_2c362b417d0517c27876cbaca1bb68cc"></script>
+<script type="text/javascript" charset="utf-8">
+   // wait until page is loaded to call API
+   var redir_url;
+   var short_url;
+   BitlyCB.myShortenCallback = function(data) {
+      // this is how to get a result of shortening a single url
+      var result;
+      short_url=null;
+      for (var r in data.results) {
+         result = data.results[r];
+         result['longUrl'] = r;
+         short_url = result['shortUrl'];
+         break;
+      }
+      if (short_url==null) // bit.ly failed
+      document.location=redir_url;
+      else
+      redirToTwitter();
+   };
+   function shortenTweet(url) {
+      if (short_url == null || redir_url!=url) {
+      redir_url = url;
+      BitlyClient.shorten(document.location, 'BitlyCB.myShortenCallback');
+      }
+      else
+      redirToTwitter();
+      return false;
+   }
+   function redirToTwitter() { 
+      // replace {0} which is visible as %7B0} in the link
+      document.location = redir_url.replace('%7B0}', short_url);
+   }
+</script>
+  </head>
+
+<body>
+
+<h1>Directory doc/tips/</h1>
+<div id="parentlink">&#171; <a href="index.html">Development Statistics for /jEdit/trunk</a></div>
+<dl class="attributes">
+    <dt>Directory Created:</dt>
+    <dd><span class="date">2002-01-20 09:10</span></dd>
+    <dt>Total Files:</dt>
+    <dd>99</dd>
+    <dt>Deleted Files:</dt>
+    <dd>1</dd>
+    <dt>Lines of Code:</dt>
+    <dd>669</dd>
+</dl>
+<p class="dirtree">
+<a href="dir.html">[root]</a>/<a href="dir_doc.html">doc</a>/<strong>tips</strong><br/>
+</p>
+
+<div class="section">
+<h2>Lines of Code</h2>
+<p class="chart"><img src="loc_module_doc_tips.png" alt="doc/tips/ Lines of Code" width="800" height="500" /></p></div>
+<div class="section">
+<h2>Developers</h2>
+  <table  rules="groups" summary="All authors and the number of their changes and lines of code in this directory">
+    <colgroup align="left"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <thead>
+      <tr>
+        <th>Author</th>
+        <th>Changes</th>
+        <th>Lines of Code</th>
+        <th>Lines per Change</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <th>Totals</th>
+        <td>396 (100.0%)</td>
+        <td>1549 (100.0%)</td>
+        <td>3.9</td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr  class="odd">
+        <th><a href="user_spestov.html" class="author">spestov</a></th>
+        <td>173 (43.7%)</td>
+        <td>857 (55.3%)</td>
+        <td>4.9</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_Vampire0.html" class="author">Vampire0</a></th>
+        <td>199 (50.3%)</td>
+        <td>669 (43.2%)</td>
+        <td>3.3</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_ezust.html" class="author">ezust</a></th>
+        <td>21 (5.3%)</td>
+        <td>21 (1.4%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_kpouer.html" class="author">kpouer</a></th>
+        <td>2 (0.5%)</td>
+        <td>2 (0.1%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_shlomy.html" class="author">shlomy</a></th>
+        <td>1 (0.3%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+<div class="section">
+<h2>Most Recent Commits</h2>
+<dl class="commitlist">
+  <dt><a name="40"></a>
+    <a href="user_shlomy.html" class="author">shlomy</a>
+    <span class="date">2013-09-29 20:19</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">23220</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Some more tiny fixes suggested by IntelliJIDEA's code inspection tool.
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc/tips</strong>:
+        tip17.html&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="39"></a>
+    <a href="user_Vampire0.html" class="author">Vampire0</a>
+    <span class="date">2013-08-31 12:39</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">23162</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+reinstantiate trunk and branches
+    </p>
+    <p class="commitdetails"><strong>669</strong> lines of code changed in <span class="files">99 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc/tips</strong>:
+        tip0.html&#160;<span class="new">(new&#160;6)</span>,
+        tip1.html&#160;<span class="new">(new&#160;1)</span>,
+        tip10.html&#160;<span class="new">(new&#160;4)</span>,
+        tip11.html&#160;<span class="new">(new&#160;2)</span>,
+        tip12.html&#160;<span class="new">(new&#160;2)</span>,
+        tip13.html&#160;<span class="new">(new&#160;2)</span>,
+        tip14.html&#160;<span class="new">(new&#160;1)</span>,
+        tip15.html&#160;<span class="new">(new&#160;12)</span>,
+        tip16.html&#160;<span class="new">(new&#160;1)</span>,
+        tip17.html&#160;<span class="new">(new&#160;14)</span>,
+        tip18.html&#160;<span class="new">(new&#160;3)</span>,
+        tip19.html&#160;<span class="new">(new&#160;4)</span>,
+        tip2.html&#160;<span class="new">(new&#160;17)</span>,
+        tip20.html&#160;<span class="new">(new&#160;2)</span>,
+        tip21.html&#160;<span class="new">(new&#160;3)</span>,
+        tip22.html&#160;<span class="new">(new&#160;8)</span>,
+        tip23.html&#160;<span class="new">(new&#160;2)</span>,
+        tip24.html&#160;<span class="new">(new&#160;4)</span>,
+        tip25.html&#160;<span class="new">(new&#160;3)</span>,
+        tip26.html&#160;<span class="new">(new&#160;5)</span>,
+        tip27.html&#160;<span class="new">(new&#160;4)</span>,
+        tip28.html&#160;<span class="new">(new&#160;4)</span>,
+        tip29.html&#160;<span class="new">(new&#160;13)</span>,
+        tip3.html&#160;<span class="new">(new&#160;2)</span>,
+        tip30.html&#160;<span class="new">(new&#160;13)</span>,
+        tip31.html&#160;<span class="new">(new&#160;12)</span>,
+        tip32.html&#160;<span class="new">(new&#160;4)</span>,
+        tip33.html&#160;<span class="new">(new&#160;4)</span>,
+        tip34.html&#160;<span class="new">(new&#160;23)</span>,
+        tip35.html&#160;<span class="new">(new&#160;6)</span>,
+        tip36.html&#160;<span class="new">(new&#160;6)</span>,
+        tip37.html&#160;<span class="new">(new&#160;3)</span>,
+        tip38.html&#160;<span class="new">(new&#160;3)</span>,
+        tip39.html&#160;<span class="new">(new&#160;4)</span>,
+        tip4.html&#160;<span class="new">(new&#160;5)</span>,
+        tip40.html&#160;<span class="new">(new&#160;4)</span>,
+        tip41.html&#160;<span class="new">(new&#160;3)</span>,
+        tip42.html&#160;<span class="new">(new&#160;1)</span>,
+        tip43.html&#160;<span class="new">(new&#160;1)</span>,
+        tip44.html&#160;<span class="new">(new&#160;3)</span>,
+        tip45.html&#160;<span class="new">(new&#160;10)</span>,
+        tip46.html&#160;<span class="new">(new&#160;4)</span>,
+        tip47.html&#160;<span class="new">(new&#160;4)</span>,
+        tip48.html&#160;<span class="new">(new&#160;4)</span>,
+        tip49.html&#160;<span class="new">(new&#160;4)</span>,
+        tip5.html&#160;<span class="new">(new&#160;2)</span>,
+        tip50.html&#160;<span class="new">(new&#160;4)</span>,
+        tip51.html&#160;<span class="new">(new&#160;1)</span>,
+        tip52.html&#160;<span class="new">(new&#160;5)</span>,
+        tip53.html&#160;<span class="new">(new&#160;4)</span>,
+        tip54.html&#160;<span class="new">(new&#160;3)</span>,
+        tip55.html&#160;<span class="new">(new&#160;17)</span>,
+        tip56.html&#160;<span class="new">(new&#160;17)</span>,
+        tip57.html&#160;<span class="new">(new&#160;5)</span>,
+        tip58.html&#160;<span class="new">(new&#160;6)</span>,
+        tip59.html&#160;<span class="new">(new&#160;19)</span>,
+        tip6.html&#160;<span class="new">(new&#160;2)</span>,
+        tip60.html&#160;<span class="new">(new&#160;8)</span>,
+        tip61.html&#160;<span class="new">(new&#160;6)</span>,
+        tip62.html&#160;<span class="new">(new&#160;5)</span>,
+        tip63.html&#160;<span class="new">(new&#160;5)</span>,
+        tip64.html&#160;<span class="new">(new&#160;2)</span>,
+        tip65.html&#160;<span class="new">(new&#160;8)</span>,
+        tip66.html&#160;<span class="new">(new&#160;3)</span>,
+        tip67.html&#160;<span class="new">(new&#160;5)</span>,
+        tip68.html&#160;<span class="new">(new&#160;3)</span>,
+        tip69.html&#160;<span class="new">(new&#160;22)</span>,
+        tip7.html&#160;<span class="new">(new&#160;2)</span>,
+        tip70.html&#160;<span class="new">(new&#160;4)</span>,
+        tip71.html&#160;<span class="new">(new&#160;3)</span>,
+        tip72.html&#160;<span class="new">(new&#160;8)</span>,
+        tip73.html&#160;<span class="new">(new&#160;6)</span>,
+        tip74.html&#160;<span class="new">(new&#160;7)</span>,
+        tip75.html&#160;<span class="new">(new&#160;19)</span>,
+        tip76.html&#160;<span class="new">(new&#160;5)</span>,
+        tip77.html&#160;<span class="new">(new&#160;3)</span>,
+        tip78.html&#160;<span class="new">(new&#160;2)</span>,
+        tip79.html&#160;<span class="new">(new&#160;6)</span>,
+        tip8.html&#160;<span class="new">(new&#160;15)</span>,
+        tip80.html&#160;<span class="new">(new&#160;8)</span>,
+        tip81.html&#160;<span class="new">(new&#160;7)</span>,
+        tip82.html&#160;<span class="new">(new&#160;7)</span>,
+        tip83.html&#160;<span class="new">(new&#160;5)</span>,
+        tip84.html&#160;<span class="new">(new&#160;8)</span>,
+        tip85.html&#160;<span class="new">(new&#160;10)</span>,
+        tip86.html&#160;<span class="new">(new&#160;5)</span>,
+        tip87.html&#160;<span class="new">(new&#160;12)</span>,
+        tip88.html&#160;<span class="new">(new&#160;9)</span>,
+        tip89.html&#160;<span class="new">(new&#160;26)</span>,
+        tip9.html&#160;<span class="new">(new&#160;5)</span>,
+        tip90.html&#160;<span class="new">(new&#160;27)</span>,
+        tip91.html&#160;<span class="new">(new&#160;10)</span>,
+        tip92.html&#160;<span class="new">(new&#160;3)</span>,
+        tip93.html&#160;<span class="new">(new&#160;20)</span>,
+        tip94.html&#160;<span class="new">(new&#160;19)</span>,
+        tip95.html&#160;<span class="new">(new&#160;1)</span>,
+        tip96.html&#160;<span class="new">(new&#160;1)</span>,
+        tip97.html&#160;<span class="new">(new&#160;10)</span>,
+        tip98.html&#160;<span class="new">(new&#160;4)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="38"></a>
+    <a href="user_Vampire0.html" class="author">Vampire0</a>
+    <span class="date">2013-08-27 22:41</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">23150</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+put tombstone in place, official repository for jEdit core is now in Git
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">100 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc/tips</strong>:
+        tip0.html&#160;<span class="del">(del)</span>,
+        tip1.html&#160;<span class="del">(del)</span>,
+        tip10.html&#160;<span class="del">(del)</span>,
+        tip11.html&#160;<span class="del">(del)</span>,
+        tip12.html&#160;<span class="del">(del)</span>,
+        tip13.html&#160;<span class="del">(del)</span>,
+        tip14.html&#160;<span class="del">(del)</span>,
+        tip15.html&#160;<span class="del">(del)</span>,
+        tip16.html&#160;<span class="del">(del)</span>,
+        tip17.html&#160;<span class="del">(del)</span>,
+        tip18.html&#160;<span class="del">(del)</span>,
+        tip19.html&#160;<span class="del">(del)</span>,
+        tip2.html&#160;<span class="del">(del)</span>,
+        tip20.html&#160;<span class="del">(del)</span>,
+        tip21.html&#160;<span class="del">(del)</span>,
+        tip22.html&#160;<span class="del">(del)</span>,
+        tip23.html&#160;<span class="del">(del)</span>,
+        tip24.html&#160;<span class="del">(del)</span>,
+        tip25.html&#160;<span class="del">(del)</span>,
+        tip26.html&#160;<span class="del">(del)</span>,
+        tip27.html&#160;<span class="del">(del)</span>,
+        tip28.html&#160;<span class="del">(del)</span>,
+        tip29.html&#160;<span class="del">(del)</span>,
+        tip3.html&#160;<span class="del">(del)</span>,
+        tip30.html&#160;<span class="del">(del)</span>,
+        tip31.html&#160;<span class="del">(del)</span>,
+        tip32.html&#160;<span class="del">(del)</span>,
+        tip33.html&#160;<span class="del">(del)</span>,
+        tip34.html&#160;<span class="del">(del)</span>,
+        tip35.html&#160;<span class="del">(del)</span>,
+        tip36.html&#160;<span class="del">(del)</span>,
+        tip37.html&#160;<span class="del">(del)</span>,
+        tip38.html&#160;<span class="del">(del)</span>,
+        tip39.html&#160;<span class="del">(del)</span>,
+        tip4.html&#160;<span class="del">(del)</span>,
+        tip40.html&#160;<span class="del">(del)</span>,
+        tip41.html&#160;<span class="del">(del)</span>,
+        tip42.html&#160;<span class="del">(del)</span>,
+        tip43.html&#160;<span class="del">(del)</span>,
+        tip44.html&#160;<span class="del">(del)</span>,
+        tip45.html&#160;<span class="del">(del)</span>,
+        tip46.html&#160;<span class="del">(del)</span>,
+        tip47.html&#160;<span class="del">(del)</span>,
+        tip48.html&#160;<span class="del">(del)</span>,
+        tip49.html&#160;<span class="del">(del)</span>,
+        tip5.html&#160;<span class="del">(del)</span>,
+        tip50.html&#160;<span class="del">(del)</span>,
+        tip51.html&#160;<span class="del">(del)</span>,
+        tip52.html&#160;<span class="del">(del)</span>,
+        tip53.html&#160;<span class="del">(del)</span>,
+        tip54.html&#160;<span class="del">(del)</span>,
+        tip55.html&#160;<span class="del">(del)</span>,
+        tip56.html&#160;<span class="del">(del)</span>,
+        tip57.html&#160;<span class="del">(del)</span>,
+        tip58.html&#160;<span class="del">(del)</span>,
+        tip59.html&#160;<span class="del">(del)</span>,
+        tip6.html&#160;<span class="del">(del)</span>,
+        tip60.html&#160;<span class="del">(del)</span>,
+        tip61.html&#160;<span class="del">(del)</span>,
+        tip62.html&#160;<span class="del">(del)</span>,
+        tip63.html&#160;<span class="del">(del)</span>,
+        tip64.html&#160;<span class="del">(del)</span>,
+        tip65.html&#160;<span class="del">(del)</span>,
+        tip66.html&#160;<span class="del">(del)</span>,
+        tip67.html&#160;<span class="del">(del)</span>,
+        tip68.html&#160;<span class="del">(del)</span>,
+        tip69.html&#160;<span class="del">(del)</span>,
+        tip7.html&#160;<span class="del">(del)</span>,
+        tip70.html&#160;<span class="del">(del)</span>,
+        tip71.html&#160;<span class="del">(del)</span>,
+        tip72.html&#160;<span class="del">(del)</span>,
+        tip73.html&#160;<span class="del">(del)</span>,
+        tip74.html&#160;<span class="del">(del)</span>,
+        tip75.html&#160;<span class="del">(del)</span>,
+        tip76.html&#160;<span class="del">(del)</span>,
+        tip77.html&#160;<span class="del">(del)</span>,
+        tip78.html&#160;<span class="del">(del)</span>,
+        tip79.html&#160;<span class="del">(del)</span>,
+        tip8.html&#160;<span class="del">(del)</span>,
+        tip80.html&#160;<span class="del">(del)</span>,
+        tip81.html&#160;<span class="del">(del)</span>,
+        tip82.html&#160;<span class="del">(del)</span>,
+        tip83.html&#160;<span class="del">(del)</span>,
+        tip84.html&#160;<span class="del">(del)</span>,
+        tip85.html&#160;<span class="del">(del)</span>,
+        tip86.html&#160;<span class="del">(del)</span>,
+        tip87.html&#160;<span class="del">(del)</span>,
+        tip88.html&#160;<span class="del">(del)</span>,
+        tip89.html&#160;<span class="del">(del)</span>,
+        tip9.html&#160;<span class="del">(del)</span>,
+        tip90.html&#160;<span class="del">(del)</span>,
+        tip91.html&#160;<span class="del">(del)</span>,
+        tip92.html&#160;<span class="del">(del)</span>,
+        tip93.html&#160;<span class="del">(del)</span>,
+        tip94.html&#160;<span class="del">(del)</span>,
+        tip95.html&#160;<span class="del">(del)</span>,
+        tip96.html&#160;<span class="del">(del)</span>,
+        tip97.html&#160;<span class="del">(del)</span>,
+        tip98.html&#160;<span class="del">(del)</span>,
+        tip99.html&#160;<span class="del">(del)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="37"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2012-11-06 08:46</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">22451</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Updated more tips. <br />
+
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">10 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc/tips</strong>:
+        tip1.html&#160;<span class="change">(changed)</span>,
+        tip2.html&#160;<span class="change">(changed)</span>,
+        tip22.html&#160;<span class="change">(changed)</span>,
+        tip26.html&#160;<span class="change">(changed)</span>,
+        tip3.html&#160;<span class="change">(changed)</span>,
+        tip32.html&#160;<span class="change">(changed)</span>,
+        tip34.html&#160;<span class="change">(changed)</span>,
+        tip43.html&#160;<span class="change">(changed)</span>,
+        tip66.html&#160;<span class="change">(changed)</span>,
+        tip81.html&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="36"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2012-11-05 09:15</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">22447</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Documentation updates.<br />
+
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc/tips</strong>:
+        tip66.html&#160;<span class="change">(+2&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="35"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2012-11-05 08:37</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">22444</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Updated some tips.<br />
+
+    </p>
+    <p class="commitdetails"><strong>10</strong> lines of code changed in <span class="files">4 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc/tips</strong>:
+        tip1.html&#160;<span class="change">(+1&#160;-2)</span>,
+        tip14.html&#160;<span class="change">(+1&#160;-2)</span>,
+        tip16.html&#160;<span class="change">(+1&#160;-9)</span>,
+        tip88.html&#160;<span class="change">(+7&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="34"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2012-11-05 07:56</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">22443</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Updated tip88.<br />
+
+    </p>
+    <p class="commitdetails"><strong>3</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc/tips</strong>:
+        tip88.html&#160;<span class="change">(+3&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="33"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2011-12-10 19:08</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">20604</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Updated tips. <br />
+
+    </p>
+    <p class="commitdetails"><strong>6</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc/tips</strong>:
+        tip48.html&#160;<span class="change">(+1&#160;-1)</span>,
+        tip49.html&#160;<span class="change">(+3&#160;-4)</span>,
+        tip85.html&#160;<span class="change">(+2&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="32"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2011-11-29 23:49</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">20470</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Faq/tips related to source code control plugins.<br />
+
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc/tips</strong>:
+        tip84.html&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="31"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2011-03-26 22:50</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">19491</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fixed tip reference to wrong option pane.<br />
+
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc/tips</strong>:
+        tip35.html&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="30"></a>
+    <a href="user_kpouer.html" class="author">kpouer</a>
+    <span class="date">2007-09-27 09:59</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">10763</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+this option is in Mouse option panel not Textarea #1802957
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc/tips</strong>:
+        tip75.html&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="29"></a>
+    <a href="user_kpouer.html" class="author">kpouer</a>
+    <span class="date">2007-09-21 09:33</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">10701</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+java 1.4 references removed
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc/tips</strong>:
+        tip87.html&#160;<span class="change">(+1&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="28"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2004-05-06 21:37</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">5034</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+fix 'only 1 line visible after loading' problem<br />
+
+    </p>
+    <p class="commitdetails"><strong>15</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc/tips</strong>:
+        tip8.html&#160;<span class="change">(+15&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="27"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-06-27 21:02</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4815</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+select to bracket works<br />
+
+    </p>
+    <p class="commitdetails"><strong>19</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc/tips</strong>:
+        tip99.html&#160;<span class="new">(new&#160;19)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="26"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-05-29 22:57</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4744</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+more efficient structure for compound edits<br />
+
+    </p>
+    <p class="commitdetails"><strong>57</strong> lines of code changed in <span class="files">25 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc/tips</strong>:
+        tip16.html&#160;<span class="change">(+6&#160;-1)</span>,
+        tip17.html&#160;<span class="change">(+13&#160;-2)</span>,
+        tip19.html&#160;<span class="change">(+2&#160;-1)</span>,
+        tip2.html&#160;<span class="change">(+1&#160;-1)</span>,
+        tip25.html&#160;<span class="change">(+1&#160;-1)</span>,
+        tip37.html&#160;<span class="change">(+3&#160;-4)</span>,
+        tip49.html&#160;<span class="change">(+2&#160;-1)</span>,
+        tip51.html&#160;<span class="change">(+1&#160;-7)</span>,
+        tip53.html&#160;<span class="change">(+2&#160;-3)</span>,
+        tip59.html&#160;<span class="change">(+2&#160;-1)</span>,
+        tip67.html&#160;<span class="change">(+1&#160;-1)</span>,
+        tip68.html&#160;<span class="change">(+3&#160;-2)</span>,
+        tip69.html&#160;<span class="change">(+1&#160;-1)</span>,
+        tip7.html&#160;<span class="change">(+1&#160;-4)</span>,
+        tip75.html&#160;<span class="change">(+2&#160;-1)</span>,
+        tip76.html&#160;<span class="change">(+1&#160;-1)</span>,
+        tip79.html&#160;<span class="change">(+1&#160;-1)</span>,
+        tip82.html&#160;<span class="change">(+3&#160;-3)</span>,
+        tip84.html&#160;<span class="change">(+3&#160;-4)</span>,
+        tip85.html&#160;<span class="change">(+4&#160;-1)</span>,
+        tip88.html&#160;<span class="change">(+1&#160;-1)</span>,
+        tip89.html&#160;<span class="change">(+1&#160;-1)</span>,
+        tip9.html&#160;<span class="change">(+1&#160;-1)</span>,
+        tip90.html&#160;<span class="change">(+1&#160;-1)</span>,
+        tip99.html&#160;<span class="del">(del)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="25"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-05-28 23:37</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4737</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+various bug fixes<br />
+
+    </p>
+    <p class="commitdetails"><strong>43</strong> lines of code changed in <span class="files">8 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc/tips</strong>:
+        tip22.html&#160;<span class="change">(+3&#160;-2)</span>,
+        tip35.html&#160;<span class="change">(+3&#160;-3)</span>,
+        tip75.html&#160;<span class="change">(+6&#160;-5)</span>,
+        tip95.html&#160;<span class="new">(new&#160;1)</span>,
+        tip96.html&#160;<span class="new">(new&#160;1)</span>,
+        tip97.html&#160;<span class="new">(new&#160;10)</span>,
+        tip98.html&#160;<span class="new">(new&#160;4)</span>,
+        tip99.html&#160;<span class="new">(new&#160;15)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="24"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-02-15 00:09</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4478</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+4.1pre10 ready<br />
+
+    </p>
+    <p class="commitdetails"><strong>33</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc/tips</strong>:
+        tip2.html&#160;<span class="change">(+14&#160;-7)</span>,
+        tip94.html&#160;<span class="new">(new&#160;19)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="23"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-01-11 20:46</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4426</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+fix 'save a copy as' bug<br />
+
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc/tips</strong>:
+        tip81.html&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="22"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-01-08 04:50</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4420</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+minor bug fixes, some doc updates<br />
+
+    </p>
+    <p class="commitdetails"><strong>20</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc/tips</strong>:
+        tip93.html&#160;<span class="new">(new&#160;20)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="21"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-01-06 01:57</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4417</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+more updates to freemaker syntax highlighting, documentation updates<br />
+
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc/tips</strong>:
+        tip87.html&#160;<span class="change">(+2&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="20"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2002-12-31 03:48</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4407</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+OS X fsb popup fix<br />
+
+    </p>
+    <p class="commitdetails"><strong>3</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc/tips</strong>:
+        tip92.html&#160;<span class="new">(new&#160;3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="19"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2002-12-30 01:26</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4406</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+format-paragraph code rewritten<br />
+
+    </p>
+    <p class="commitdetails"><strong>10</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc/tips</strong>:
+        tip91.html&#160;<span class="new">(new&#160;10)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="18"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2002-12-29 22:23</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4405</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+more tips of the day<br />
+
+    </p>
+    <p class="commitdetails"><strong>55</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc/tips</strong>:
+        tip88.html&#160;<span class="new">(new&#160;2)</span>,
+        tip89.html&#160;<span class="new">(new&#160;26)</span>,
+        tip90.html&#160;<span class="new">(new&#160;27)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="17"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2002-12-24 18:46</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4394</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+adding and removing a few files<br />
+
+    </p>
+    <p class="commitdetails"><strong>37</strong> lines of code changed in <span class="files">5 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc/tips</strong>:
+        tip83.html&#160;<span class="new">(new&#160;5)</span>,
+        tip84.html&#160;<span class="new">(new&#160;9)</span>,
+        tip85.html&#160;<span class="new">(new&#160;6)</span>,
+        tip86.html&#160;<span class="new">(new&#160;5)</span>,
+        tip87.html&#160;<span class="new">(new&#160;12)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="16"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2002-12-24 18:35</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4393</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+various stuff<br />
+
+    </p>
+    <p class="commitdetails"><strong>71</strong> lines of code changed in <span class="files">23 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc/tips</strong>:
+        tip20.html&#160;<span class="change">(+1&#160;-1)</span>,
+        tip27.html&#160;<span class="change">(+1&#160;-1)</span>,
+        tip31.html&#160;<span class="change">(+8&#160;-3)</span>,
+        tip33.html&#160;<span class="change">(-1)</span>,
+        tip34.html&#160;<span class="change">(+10&#160;-7)</span>,
+        tip37.html&#160;<span class="change">(+3&#160;-1)</span>,
+        tip38.html&#160;<span class="change">(+3&#160;-2)</span>,
+        tip39.html&#160;<span class="change">(+4&#160;-5)</span>,
+        tip41.html&#160;<span class="change">(+3&#160;-4)</span>,
+        tip44.html&#160;<span class="change">(+1&#160;-1)</span>,
+        tip45.html&#160;<span class="change">(+7&#160;-2)</span>,
+        tip49.html&#160;<span class="change">(+1&#160;-1)</span>,
+        tip5.html&#160;<span class="change">(+1&#160;-1)</span>,
+        tip51.html&#160;<span class="change">(+3&#160;-3)</span>,
+        tip56.html&#160;<span class="change">(+4)</span>,
+        tip58.html&#160;<span class="change">(+1&#160;-1)</span>,
+        tip6.html&#160;<span class="change">(+1&#160;-2)</span>,
+        tip68.html&#160;<span class="change">(+2&#160;-2)</span>,
+        tip69.html&#160;<span class="change">(+6&#160;-6)</span>,
+        tip73.html&#160;<span class="change">(+2&#160;-2)</span>,
+        tip74.html&#160;<span class="change">(+2&#160;-1)</span>,
+        tip75.html&#160;<span class="change">(+3&#160;-3)</span>,
+        tip9.html&#160;<span class="change">(+4&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="15"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2002-09-18 20:09</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4340</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+tip of the day typo fix; updated perl.xml<br />
+
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc/tips</strong>:
+        tip38.html&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="14"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2002-08-10 22:28</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4295</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+added easy way to open new floating instances of dockables<br />
+
+    </p>
+    <p class="commitdetails"><strong>7</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc/tips</strong>:
+        tip82.html&#160;<span class="new">(new&#160;7)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="13"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2002-08-10 22:13</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4294</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+added option for jEdit 4.0-style tool bar layout<br />
+
+    </p>
+    <p class="commitdetails"><strong>23</strong> lines of code changed in <span class="files">5 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc/tips</strong>:
+        tip10.html&#160;<span class="change">(+1&#160;-1)</span>,
+        tip55.html&#160;<span class="change">(+1&#160;-1)</span>,
+        tip79.html&#160;<span class="new">(new&#160;6)</span>,
+        tip80.html&#160;<span class="new">(new&#160;8)</span>,
+        tip81.html&#160;<span class="new">(new&#160;7)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="12"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2002-06-23 06:49</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4280</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+encoding menu in file system browser<br />
+
+    </p>
+    <p class="commitdetails"><strong>7</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc/tips</strong>:
+        tip27.html&#160;<span class="change">(+2&#160;-1)</span>,
+        tip77.html&#160;<span class="new">(new&#160;3)</span>,
+        tip78.html&#160;<span class="new">(new&#160;2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="11"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2002-06-18 07:56</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4265</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+improved popup menu positioning code; broken image icon shown for tool bar buttons whose icons cannot be loaded<br />
+
+    </p>
+    <p class="commitdetails"><strong>4</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc/tips</strong>:
+        tip67.html&#160;<span class="change">(+4&#160;-5)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="10"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2002-06-13 13:43</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4248</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+search bar tweak, better splash from krisk<br />
+
+    </p>
+    <p class="commitdetails"><strong>36</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc/tips</strong>:
+        tip33.html&#160;<span class="change">(+2&#160;-1)</span>,
+        tip69.html&#160;<span class="change">(+21&#160;-3)</span>,
+        tip75.html&#160;<span class="change">(+13&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="9"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2002-06-01 03:32</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4218</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+MacOS X roots: filesystem and new tool bar iocns from Kris Kopicki (old icons still remain for a little while)<br />
+
+    </p>
+    <p class="commitdetails"><strong>10</strong> lines of code changed in <span class="files">4 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc/tips</strong>:
+        tip10.html&#160;<span class="change">(+1&#160;-1)</span>,
+        tip51.html&#160;<span class="change">(+6&#160;-4)</span>,
+        tip55.html&#160;<span class="change">(+1&#160;-1)</span>,
+        tip56.html&#160;<span class="change">(+2&#160;-5)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="8"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2002-05-31 07:23</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4214</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+gap-based offset manager<br />
+
+    </p>
+    <p class="commitdetails"><strong>5</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc/tips</strong>:
+        tip76.html&#160;<span class="new">(new&#160;5)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="7"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2002-05-14 08:34</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4151</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+added ViewUpdate.EDIT_PANE_CHANGED message<br />
+
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc/tips</strong>:
+        tip52.html&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="6"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2002-03-28 10:13</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4118</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+fixed stylesheet bug, updated wheel mouse tip<br />
+
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc/tips</strong>:
+        tip51.html&#160;<span class="change">(+1&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="5"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2002-03-13 09:06</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4085</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+scrolling bug fixes<br />
+
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc/tips</strong>:
+        tip24.html&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="4"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2002-02-12 05:13</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4024</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+performance improvements and bug fixes<br />
+
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc/tips</strong>:
+        tip75.html&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="3"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2002-02-11 10:25</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4023</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+More bug fixes; Control-drag funkyness in text area; assorted tweaks<br />
+
+    </p>
+    <p class="commitdetails"><strong>6</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc/tips</strong>:
+        tip75.html&#160;<span class="new">(new&#160;6)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="2"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2002-01-30 09:06</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4000</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+minor bug fixes and doco updates<br />
+
+    </p>
+    <p class="commitdetails"><strong>12</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc/tips</strong>:
+        tip72.html&#160;<span class="change">(changed)</span>,
+        tip73.html&#160;<span class="new">(new&#160;6)</span>,
+        tip74.html&#160;<span class="new">(new&#160;6)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="1"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2002-01-20 09:10</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">3980</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+users guide and faq use a common stylesheet<br />
+
+    </p>
+    <p class="commitdetails"><strong>375</strong> lines of code changed in <span class="files">73 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc/tips</strong>:
+        tip0.html&#160;<span class="new">(new&#160;6)</span>,
+        tip1.html&#160;<span class="new">(new&#160;2)</span>,
+        tip10.html&#160;<span class="new">(new&#160;4)</span>,
+        tip11.html&#160;<span class="new">(new&#160;2)</span>,
+        tip12.html&#160;<span class="new">(new&#160;2)</span>,
+        tip13.html&#160;<span class="new">(new&#160;2)</span>,
+        tip14.html&#160;<span class="new">(new&#160;2)</span>,
+        tip15.html&#160;<span class="new">(new&#160;12)</span>,
+        tip16.html&#160;<span class="new">(new&#160;4)</span>,
+        tip17.html&#160;<span class="new">(new&#160;3)</span>,
+        tip18.html&#160;<span class="new">(new&#160;3)</span>,
+        tip19.html&#160;<span class="new">(new&#160;3)</span>,
+        tip2.html&#160;<span class="new">(new&#160;10)</span>,
+        tip20.html&#160;<span class="new">(new&#160;2)</span>,
+        tip21.html&#160;<span class="new">(new&#160;3)</span>,
+        tip22.html&#160;<span class="new">(new&#160;7)</span>,
+        tip23.html&#160;<span class="new">(new&#160;2)</span>,
+        tip24.html&#160;<span class="new">(new&#160;4)</span>,
+        tip25.html&#160;<span class="new">(new&#160;3)</span>,
+        tip26.html&#160;<span class="new">(new&#160;5)</span>,
+        tip27.html&#160;<span class="new">(new&#160;3)</span>,
+        tip28.html&#160;<span class="new">(new&#160;4)</span>,
+        tip29.html&#160;<span class="new">(new&#160;13)</span>,
+        tip3.html&#160;<span class="new">(new&#160;2)</span>,
+        tip30.html&#160;<span class="new">(new&#160;13)</span>,
+        tip31.html&#160;<span class="new">(new&#160;7)</span>,
+        tip32.html&#160;<span class="new">(new&#160;4)</span>,
+        tip33.html&#160;<span class="new">(new&#160;4)</span>,
+        tip34.html&#160;<span class="new">(new&#160;20)</span>,
+        tip35.html&#160;<span class="new">(new&#160;6)</span>,
+        tip36.html&#160;<span class="new">(new&#160;6)</span>,
+        tip37.html&#160;<span class="new">(new&#160;2)</span>,
+        tip38.html&#160;<span class="new">(new&#160;2)</span>,
+        tip39.html&#160;<span class="new">(new&#160;5)</span>,
+        tip4.html&#160;<span class="new">(new&#160;5)</span>,
+        tip40.html&#160;<span class="new">(new&#160;4)</span>,
+        tip41.html&#160;<span class="new">(new&#160;4)</span>,
+        tip42.html&#160;<span class="new">(new&#160;1)</span>,
+        tip43.html&#160;<span class="new">(new&#160;1)</span>,
+        tip44.html&#160;<span class="new">(new&#160;3)</span>,
+        tip45.html&#160;<span class="new">(new&#160;5)</span>,
+        tip46.html&#160;<span class="new">(new&#160;4)</span>,
+        tip47.html&#160;<span class="new">(new&#160;4)</span>,
+        tip48.html&#160;<span class="new">(new&#160;4)</span>,
+        tip49.html&#160;<span class="new">(new&#160;4)</span>,
+        tip5.html&#160;<span class="new">(new&#160;2)</span>,
+        tip50.html&#160;<span class="new">(new&#160;4)</span>,
+        tip51.html&#160;<span class="new">(new&#160;6)</span>,
+        tip52.html&#160;<span class="new">(new&#160;5)</span>,
+        tip53.html&#160;<span class="new">(new&#160;5)</span>,
+        tip54.html&#160;<span class="new">(new&#160;3)</span>,
+        tip55.html&#160;<span class="new">(new&#160;17)</span>,
+        tip56.html&#160;<span class="new">(new&#160;16)</span>,
+        tip57.html&#160;<span class="new">(new&#160;5)</span>,
+        tip58.html&#160;<span class="new">(new&#160;6)</span>,
+        tip59.html&#160;<span class="new">(new&#160;18)</span>,
+        tip6.html&#160;<span class="new">(new&#160;3)</span>,
+        tip60.html&#160;<span class="new">(new&#160;8)</span>,
+        tip61.html&#160;<span class="new">(new&#160;6)</span>,
+        tip62.html&#160;<span class="new">(new&#160;5)</span>,
+        tip63.html&#160;<span class="new">(new&#160;5)</span>,
+        tip64.html&#160;<span class="new">(new&#160;2)</span>,
+        tip65.html&#160;<span class="new">(new&#160;8)</span>,
+        tip66.html&#160;<span class="new">(new&#160;2)</span>,
+        tip67.html&#160;<span class="new">(new&#160;6)</span>,
+        tip68.html&#160;<span class="new">(new&#160;2)</span>,
+        tip69.html&#160;<span class="new">(new&#160;4)</span>,
+        tip7.html&#160;<span class="new">(new&#160;5)</span>,
+        tip70.html&#160;<span class="new">(new&#160;4)</span>,
+        tip71.html&#160;<span class="new">(new&#160;3)</span>,
+        tip72.html&#160;<span class="new">(new&#160;8)</span>,
+        tip8.html&#160;<span class="new">(new&#160;3)</span>,
+        tip9.html&#160;<span class="new">(new&#160;3)</span>
+      </li>
+    </ul>
+  </dd>
+
+</dl>
+
+</div><div id="generatedby">Generated by <a href="http://www.statsvn.org">StatSVN</a> 0.7.0</div>
+</body>
+</html>

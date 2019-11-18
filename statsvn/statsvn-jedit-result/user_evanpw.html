@@ -1,0 +1,658 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>StatSVN - /jEdit/trunk Developers: evanpw</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+    <meta name="Generator" content="StatSVN 0.7.0"/>
+<link rel="stylesheet" href="objectlab-statcvs.css" type="text/css"/>
+<script type="text/javascript" charset="utf-8" src="http://bit.ly/javascript-api.js?version=latest&#38;login=statsvn&#38;apiKey=R_2c362b417d0517c27876cbaca1bb68cc"></script>
+<script type="text/javascript" charset="utf-8">
+   // wait until page is loaded to call API
+   var redir_url;
+   var short_url;
+   BitlyCB.myShortenCallback = function(data) {
+      // this is how to get a result of shortening a single url
+      var result;
+      short_url=null;
+      for (var r in data.results) {
+         result = data.results[r];
+         result['longUrl'] = r;
+         short_url = result['shortUrl'];
+         break;
+      }
+      if (short_url==null) // bit.ly failed
+      document.location=redir_url;
+      else
+      redirToTwitter();
+   };
+   function shortenTweet(url) {
+      if (short_url == null || redir_url!=url) {
+      redir_url = url;
+      BitlyClient.shorten(document.location, 'BitlyCB.myShortenCallback');
+      }
+      else
+      redirToTwitter();
+      return false;
+   }
+   function redirToTwitter() { 
+      // replace {0} which is visible as %7B0} in the link
+      document.location = redir_url.replace('%7B0}', short_url);
+   }
+</script>
+  </head>
+
+<body>
+
+<h1>/jEdit/trunk Developers: evanpw</h1>
+<div id="parentlink">&#171; <a href="index.html">Development Statistics for /jEdit/trunk</a> &#171; <a href="developers.html">Developers</a></div>
+<dl class="attributes">
+    <dt>Login name:</dt>
+    <dd>evanpw</dd>
+    <dt>Total Commits:</dt>
+    <dd>89 (0.3%)</dd>
+    <dt>Lines of Code:</dt>
+    <dd>1,609 (0.2%)</dd>
+    <dt>Most Recent Commit:</dt>
+    <dd><span class="date">2012-12-03 15:47</span></dd>
+    <dt>Tweet this:</dt>
+    <dd><a onclick="return shortenTweet(this.href);" href="http://twitter.com/home?status=evanpw%20contributed%201%2C609%20(0.2%25)%20lines%20to%20%2FjEdit%2Ftrunk%20%7B0}%20most%20recent%20commit%202012-12-03%20stats%20by%20StatSVN%20http%3A%2F%2Fstatsvn.org"><img style="border:0px" alt="Tweet this" src="tweet-this.png"/></a></dd>
+</dl>
+
+<div class="section">
+<h2>Activity by Clock Time</h2>
+<p class="chart"><img src="activity_time_evanpw.png" alt="Activity by Hour of Day for evanpw" width="800" height="500" /></p><p class="chart"><img src="activity_day_evanpw.png" alt="Activity by Day of Week for evanpw" width="800" height="500" /></p></div>
+<div class="section">
+<h2>Activity in Directories</h2>
+  <table  rules="groups" summary="Overview of this author's activities in different directories">
+    <colgroup align="left"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <thead>
+      <tr>
+        <th>Directory</th>
+        <th>Changes</th>
+        <th>Lines of Code</th>
+        <th>Lines per Change</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <th>Totals</th>
+        <td>89 (100.0%)</td>
+        <td>1609 (100.0%)</td>
+        <td>18.0</td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr  class="odd">
+        <th><a href="dir_keymaps.html" class="directory">keymaps/</a></th>
+        <td>3 (3.4%)</td>
+        <td>346 (21.5%)</td>
+        <td>115.3</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_textarea.html" class="directory">org/gjt/sp/jedit/textarea/</a></th>
+        <td>11 (12.4%)</td>
+        <td>278 (17.3%)</td>
+        <td>25.2</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit.html" class="directory">org/gjt/sp/jedit/</a></th>
+        <td>25 (28.1%)</td>
+        <td>233 (14.5%)</td>
+        <td>9.3</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_gui.html" class="directory">org/gjt/sp/jedit/gui/</a></th>
+        <td>8 (9.0%)</td>
+        <td>154 (9.6%)</td>
+        <td>19.2</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_search.html" class="directory">org/gjt/sp/jedit/search/</a></th>
+        <td>5 (5.6%)</td>
+        <td>148 (9.2%)</td>
+        <td>29.6</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_doc_users-guide.html" class="directory">doc/users-guide/</a></th>
+        <td>3 (3.4%)</td>
+        <td>128 (8.0%)</td>
+        <td>42.6</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_gui_statusbar.html" class="directory">org/gjt/sp/jedit/gui/statusbar/</a></th>
+        <td>3 (3.4%)</td>
+        <td>112 (7.0%)</td>
+        <td>37.3</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_options.html" class="directory">org/gjt/sp/jedit/options/</a></th>
+        <td>8 (9.0%)</td>
+        <td>99 (6.2%)</td>
+        <td>12.3</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_menu.html" class="directory">org/gjt/sp/jedit/menu/</a></th>
+        <td>4 (4.5%)</td>
+        <td>38 (2.4%)</td>
+        <td>9.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_buffer.html" class="directory">org/gjt/sp/jedit/buffer/</a></th>
+        <td>2 (2.2%)</td>
+        <td>33 (2.1%)</td>
+        <td>16.5</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_doc.html" class="directory">doc/</a></th>
+        <td>9 (10.1%)</td>
+        <td>27 (1.7%)</td>
+        <td>3.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_indent.html" class="directory">org/gjt/sp/jedit/indent/</a></th>
+        <td>1 (1.1%)</td>
+        <td>5 (0.3%)</td>
+        <td>5.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_io.html" class="directory">org/gjt/sp/jedit/io/</a></th>
+        <td>1 (1.1%)</td>
+        <td>3 (0.2%)</td>
+        <td>3.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_gui_tray.html" class="directory">org/gjt/sp/jedit/gui/tray/</a></th>
+        <td>2 (2.2%)</td>
+        <td>2 (0.1%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_util.html" class="directory">org/gjt/sp/util/</a></th>
+        <td>2 (2.2%)</td>
+        <td>1 (0.1%)</td>
+        <td>0.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_browser.html" class="directory">org/gjt/sp/jedit/browser/</a></th>
+        <td>1 (1.1%)</td>
+        <td>1 (0.1%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_modes.html" class="directory">modes/</a></th>
+        <td>1 (1.1%)</td>
+        <td>1 (0.1%)</td>
+        <td>1.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+<p class="chart"><img src="directory_sizes_evanpw.png" alt="Activity of evanpw" width="800" height="500" /></p></div>
+<div class="section">
+<h2>Most Recent Commits</h2>
+<dl class="commitlist">
+  <dt><a name="20"></a>
+    <a href="user_evanpw.html" class="author">evanpw</a>
+    <span class="date">2012-12-03 15:47</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">22528</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Added applicable shortcuts from the list at <a href="http://support.apple.com/kb/HT1343">http://support.apple.com/kb/HT1343</a> to the OS X keymap
+    </p>
+    <p class="commitdetails"><strong>15</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>keymaps</strong>:
+        Mac_OS_X_keys.props&#160;<span class="change">(+15&#160;-10)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="19"></a>
+    <a href="user_evanpw.html" class="author">evanpw</a>
+    <span class="date">2012-08-21 20:59</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">22041</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Correctly detect OS X (see Patch #3558572)
+    </p>
+    <p class="commitdetails"><strong>22</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        OperatingSystem.java&#160;<span class="change">(+22&#160;-25)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="18"></a>
+    <a href="user_evanpw.html" class="author">evanpw</a>
+    <span class="date">2012-08-21 20:27</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">22039</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Send ViewUpdate.CREATED message _after_ peer is created. Needed to support OS X native full screen mode.
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        jEdit.java&#160;<span class="change">(+2&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="17"></a>
+    <a href="user_evanpw.html" class="author">evanpw</a>
+    <span class="date">2012-06-09 23:39</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">21777</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Show a preview of the window rather than a low-resolution icon when minimizing on Mac OS X (#3529980)
+    </p>
+    <p class="commitdetails"><strong>7</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+3)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        View.java&#160;<span class="change">(+4&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="16"></a>
+    <a href="user_evanpw.html" class="author">evanpw</a>
+    <span class="date">2012-05-01 19:21</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">21621</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Sorted the OSX keymap, and made some of the shortcuts more standard
+    </p>
+    <p class="commitdetails"><strong>165</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>keymaps</strong>:
+        Mac OS X_keys.props&#160;<span class="change">(+165&#160;-166)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="15"></a>
+    <a href="user_evanpw.html" class="author">evanpw</a>
+    <span class="date">2011-12-11 16:46</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">20610</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Added support for find previous when searching in multiple files
+    </p>
+    <p class="commitdetails"><strong>132</strong> lines of code changed in <span class="files">5 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+2)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/search</strong>:
+        BufferListSet.java&#160;<span class="change">(+87&#160;-38)</span>,
+        CurrentBufferSet.java&#160;<span class="change">(+15)</span>,
+        SearchAndReplace.java&#160;<span class="change">(+14&#160;-10)</span>,
+        SearchFileSet.java&#160;<span class="change">(+14)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="14"></a>
+    <a href="user_evanpw.html" class="author">evanpw</a>
+    <span class="date">2011-12-09 04:16</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">20588</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Added a first approximation to an Mac-standard keymap
+    </p>
+    <p class="commitdetails"><strong>166</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>keymaps</strong>:
+        Mac OS X_keys.props&#160;<span class="new">(new&#160;166)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="13"></a>
+    <a href="user_evanpw.html" class="author">evanpw</a>
+    <span class="date">2011-12-09 03:53</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">20586</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Added an option to use ordinary accelerator labels on screen menu bar (on OS X) rather than ugly drawn-in shortcut labels
+    </p>
+    <p class="commitdetails"><strong>164</strong> lines of code changed in <span class="files">4 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        jedit.props&#160;<span class="change">(+3)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/gui</strong>:
+        KeyEventTranslator.java&#160;<span class="change">(+125&#160;-46)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/menu</strong>:
+        EnhancedCheckBoxMenuItem.java&#160;<span class="change">(+18&#160;-2)</span>,
+        EnhancedMenuItem.java&#160;<span class="change">(+18&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="12"></a>
+    <a href="user_evanpw.html" class="author">evanpw</a>
+    <span class="date">2011-12-09 03:04</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">20585</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Moved Quartz rendering option to OS X plugin option pane
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        jedit_gui.props&#160;<span class="change">(-1)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/options</strong>:
+        AppearanceOptionPane.java&#160;<span class="change">(+2&#160;-14)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="11"></a>
+    <a href="user_evanpw.html" class="author">evanpw</a>
+    <span class="date">2011-12-09 03:00</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">20584</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Show shortcut modifier symbols in standard order on OS X
+    </p>
+    <p class="commitdetails"><strong>14</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        GUIUtilities.java&#160;<span class="change">(+14&#160;-12)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="10"></a>
+    <a href="user_evanpw.html" class="author">evanpw</a>
+    <span class="date">2011-12-05 23:01</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">20545</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Early initialization of FileSystemView in FileVFS broke Quartz rendering on OS X
+    </p>
+    <p class="commitdetails"><strong>3</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/io</strong>:
+        FileVFS.java&#160;<span class="change">(+3&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="9"></a>
+    <a href="user_evanpw.html" class="author">evanpw</a>
+    <span class="date">2011-11-28 21:24</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">20453</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Don't create multiple copies of the search dialog when Debug.DISABLE_SEARCH_DIALOG_POOL is true
+    </p>
+    <p class="commitdetails"><strong>18</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/search</strong>:
+        SearchDialog.java&#160;<span class="change">(+18&#160;-12)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="8"></a>
+    <a href="user_evanpw.html" class="author">evanpw</a>
+    <span class="date">2011-11-12 21:50</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">20315</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Added a simplified auto indentation scheme and documented this and the previous indentation change
+    </p>
+    <p class="commitdetails"><strong>214</strong> lines of code changed in <span class="files">10 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc/users-guide</strong>:
+        customizing.xml&#160;<span class="change">(+14)</span>,
+        source-edit.xml&#160;<span class="change">(+108&#160;-63)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        Buffer.java&#160;<span class="change">(+9&#160;-3)</span>,
+        jedit.props&#160;<span class="change">(+1&#160;-1)</span>,
+        jedit_gui.props&#160;<span class="change">(+4&#160;-4)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/buffer</strong>:
+        JEditBuffer.java&#160;<span class="change">(+33)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/gui/statusbar</strong>:
+        IndentWidgetFactory.java&#160;<span class="change">(+9&#160;-4)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/options</strong>:
+        BufferOptionPane.java&#160;<span class="change">(+9&#160;-9)</span>,
+        EditingOptionPane.java&#160;<span class="change">(+15&#160;-10)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/textarea</strong>:
+        TextArea.java&#160;<span class="change">(+12&#160;-8)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="7"></a>
+    <a href="user_evanpw.html" class="author">evanpw</a>
+    <span class="date">2011-11-12 15:25</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">20308</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fix for #3434527 - Still focus on wrong line with folded target
+    </p>
+    <p class="commitdetails"><strong>67</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/textarea</strong>:
+        DisplayManager.java&#160;<span class="change">(+59&#160;-9)</span>,
+        TextArea.java&#160;<span class="change">(+8&#160;-5)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="6"></a>
+    <a href="user_evanpw.html" class="author">evanpw</a>
+    <span class="date">2011-11-02 23:36</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">20192</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Forgot a file on the last commit
+    </p>
+    <p class="commitdetails"><strong>102</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/gui/statusbar</strong>:
+        IndentWidgetFactory.java&#160;<span class="new">(new&#160;102)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="5"></a>
+    <a href="user_evanpw.html" class="author">evanpw</a>
+    <span class="date">2011-11-02 20:43</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">20191</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Created an option to disable automatic indentation, and an accompanying status bar widget
+    </p>
+    <p class="commitdetails"><strong>70</strong> lines of code changed in <span class="files">9 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+2&#160;-1)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        Buffer.java&#160;<span class="change">(+17)</span>,
+        jedit.props&#160;<span class="change">(+3)</span>,
+        jedit_gui.props&#160;<span class="change">(+5)</span>,
+        services.xml&#160;<span class="change">(+5)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/gui</strong>:
+        StatusBar.java&#160;<span class="change">(+5)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/options</strong>:
+        BufferOptionPane.java&#160;<span class="change">(+9)</span>,
+        EditingOptionPane.java&#160;<span class="change">(+12)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/textarea</strong>:
+        TextArea.java&#160;<span class="change">(+12&#160;-5)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="4"></a>
+    <a href="user_evanpw.html" class="author">evanpw</a>
+    <span class="date">2011-10-31 20:54</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">20182</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Added an option to use the native Quartz renderer on Mac OS X
+    </p>
+    <p class="commitdetails"><strong>61</strong> lines of code changed in <span class="files">4 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+5&#160;-2)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        jEdit.java&#160;<span class="change">(+8)</span>,
+        jedit_gui.props&#160;<span class="change">(+1)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/options</strong>:
+        AppearanceOptionPane.java&#160;<span class="change">(+47&#160;-25)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="3"></a>
+    <a href="user_evanpw.html" class="author">evanpw</a>
+    <span class="date">2011-10-30 21:19</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">20179</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fixed a bug introduced by r20146
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/gui</strong>:
+        GrabKeyDialog.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="2"></a>
+    <a href="user_evanpw.html" class="author">evanpw</a>
+    <span class="date">2011-10-26 16:30</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">20146</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+SF Patch #1950147 (modified): Changed menus to use Mac-specific symbols for accelerator keys when using OS X and the native look &amp; feel
+    </p>
+    <p class="commitdetails"><strong>143</strong> lines of code changed in <span class="files">6 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+4&#160;-2)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        GUIUtilities.java&#160;<span class="change">(+115)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/gui</strong>:
+        GrabKeyDialog.java&#160;<span class="change">(+18&#160;-3)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/menu</strong>:
+        EnhancedCheckBoxMenuItem.java&#160;<span class="change">(+1&#160;-1)</span>,
+        EnhancedMenuItem.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/options</strong>:
+        ShortcutsOptionPane.java&#160;<span class="change">(+4&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="1"></a>
+    <a href="user_evanpw.html" class="author">evanpw</a>
+    <span class="date">2011-10-18 13:25</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">20109</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fixed a potential bug (actual bug in a forthcoming plugin) causing inconsistent syntax highlighting
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/textarea</strong>:
+        TextAreaPainter.java&#160;<span class="change">(+2)</span>
+      </li>
+    </ul>
+  </dd>
+
+</dl>
+
+<p>(9 more)</p>
+</div><div id="generatedby">Generated by <a href="http://www.statsvn.org">StatSVN</a> 0.7.0</div>
+</body>
+</html>

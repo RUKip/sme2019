@@ -1,0 +1,558 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>StatSVN - Directory build-support/</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+    <meta name="Generator" content="StatSVN 0.7.0"/>
+<link rel="stylesheet" href="objectlab-statcvs.css" type="text/css"/>
+<script type="text/javascript" charset="utf-8" src="http://bit.ly/javascript-api.js?version=latest&#38;login=statsvn&#38;apiKey=R_2c362b417d0517c27876cbaca1bb68cc"></script>
+<script type="text/javascript" charset="utf-8">
+   // wait until page is loaded to call API
+   var redir_url;
+   var short_url;
+   BitlyCB.myShortenCallback = function(data) {
+      // this is how to get a result of shortening a single url
+      var result;
+      short_url=null;
+      for (var r in data.results) {
+         result = data.results[r];
+         result['longUrl'] = r;
+         short_url = result['shortUrl'];
+         break;
+      }
+      if (short_url==null) // bit.ly failed
+      document.location=redir_url;
+      else
+      redirToTwitter();
+   };
+   function shortenTweet(url) {
+      if (short_url == null || redir_url!=url) {
+      redir_url = url;
+      BitlyClient.shorten(document.location, 'BitlyCB.myShortenCallback');
+      }
+      else
+      redirToTwitter();
+      return false;
+   }
+   function redirToTwitter() { 
+      // replace {0} which is visible as %7B0} in the link
+      document.location = redir_url.replace('%7B0}', short_url);
+   }
+</script>
+  </head>
+
+<body>
+
+<h1>Directory build-support/</h1>
+<div id="parentlink">&#171; <a href="index.html">Development Statistics for /jEdit/trunk</a></div>
+<dl class="attributes">
+    <dt>Directory Created:</dt>
+    <dd><span class="date">2006-07-03 18:44</span></dd>
+    <dt>Directory Deleted:</dt>
+    <dd><span class="date">2009-06-30 22:47</span></dd>
+    <dt>Total Files:</dt>
+    <dd>0</dd>
+    <dt>Deleted Files:</dt>
+    <dd>4</dd>
+    <dt>Lines of Code:</dt>
+    <dd>0</dd>
+</dl>
+<p class="dirtree">
+<a href="dir.html">[root]</a>/<strong>build-support</strong><br/>
+</p>
+
+<div class="section">
+<h2>Lines of Code</h2>
+<p class="chart"><img src="loc_module_build-support.png" alt="build-support/ Lines of Code" width="800" height="500" /></p></div>
+<div class="section">
+<h2>Developers</h2>
+  <table  rules="groups" summary="All authors and the number of their changes and lines of code in this directory">
+    <colgroup align="left"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <thead>
+      <tr>
+        <th>Author</th>
+        <th>Changes</th>
+        <th>Lines of Code</th>
+        <th>Lines per Change</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <th>Totals</th>
+        <td>35 (100.0%)</td>
+        <td>2029 (100.0%)</td>
+        <td>57.9</td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr  class="odd">
+        <th><a href="user_ezust.html" class="author">ezust</a></th>
+        <td>24 (68.6%)</td>
+        <td>1199 (59.1%)</td>
+        <td>49.9</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_Vampire0.html" class="author">Vampire0</a></th>
+        <td>9 (25.7%)</td>
+        <td>817 (40.3%)</td>
+        <td>90.7</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_daleanson.html" class="author">daleanson</a></th>
+        <td>2 (5.7%)</td>
+        <td>13 (0.6%)</td>
+        <td>6.5</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+<div class="section">
+<h2>Most Recent Commits</h2>
+<dl class="commitlist">
+  <dt><a name="22"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2009-06-30 22:47</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">15622</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Moving back where it was...<br />
+
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">4 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>build-support</strong>:
+        README.txt&#160;<span class="del">(del)</span>,
+        build.properties.sample&#160;<span class="del">(del)</span>,
+        plugin-build.xml&#160;<span class="del">(del)</span>,
+        users-guide.xsl&#160;<span class="del">(del)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="21"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2009-06-29 22:08</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">15607</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Moving build-support into main jEdit source tree.<br />
+Now we won't have to check it out separately. The plugins<br />
+under jars/ depend on it anyway, so we need it to be here now.<br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>999</strong> lines of code changed in <span class="files">4 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>build-support</strong>:
+        README.txt&#160;<span class="new">(new&#160;5)</span>,
+        build.properties.sample&#160;<span class="new">(new&#160;161)</span>,
+        plugin-build.xml&#160;<span class="new">(new&#160;611)</span>,
+        users-guide.xsl&#160;<span class="new">(new&#160;222)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="20"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2007-07-09 01:14</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">9977</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+moving build-support to the top of the SVN hierarchy<br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">4 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>build-support</strong>:
+        README.txt&#160;<span class="del">(del)</span>,
+        build.properties.sample&#160;<span class="del">(del)</span>,
+        plugin-build.xml&#160;<span class="del">(del)</span>,
+        users-guide.xsl&#160;<span class="del">(del)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="19"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2007-07-07 07:22</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">9938</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+[ 1748509 ] Persistent Plugin Install Lists<br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>build-support</strong>:
+        plugin-build.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="18"></a>
+    <a href="user_Vampire0.html" class="author">Vampire0</a>
+    <span class="date">2007-03-01 15:48</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">9054</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+new method SearchAndReplace.replaceAll(View,boolean), some JavaDoc fixes, bugfixes and improvements to ExtendedGridLayout, Fixed that files were shown in VFSBrowser in choose directory mode, fixed my name in about dialog
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>build-support</strong>:
+        build.properties.sample&#160;<span class="change">(+2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="17"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2007-02-07 21:58</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">8916</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Added "Vars" to debuglevel.<br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>build-support</strong>:
+        plugin-build.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="16"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2007-01-16 17:25</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">8598</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+
+    </p>
+    <p class="commitdetails"><strong>3</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>build-support</strong>:
+        plugin-build.xml&#160;<span class="change">(+3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="15"></a>
+    <a href="user_Vampire0.html" class="author">Vampire0</a>
+    <span class="date">2006-12-18 23:31</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">8243</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GUIUtilities has a new method makeCompactGrid() to help building nice GUIs with SpringLayout.
+    </p>
+    <p class="commitdetails"><strong>7</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>build-support</strong>:
+        build.properties.sample&#160;<span class="change">(+1)</span>,
+        plugin-build.xml&#160;<span class="change">(+6&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="14"></a>
+    <a href="user_daleanson.html" class="author">daleanson</a>
+    <span class="date">2006-09-14 06:25</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">7041</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+apparently, I can't type...<br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>build-support</strong>:
+        plugin-build.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="13"></a>
+    <a href="user_daleanson.html" class="author">daleanson</a>
+    <span class="date">2006-09-14 05:56</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">7040</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+fix for recursive creation of directory structure in build/extras.<br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>12</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>build-support</strong>:
+        plugin-build.xml&#160;<span class="change">(+12&#160;-9)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="12"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2006-09-06 05:32</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">6888</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>build-support</strong>:
+        users-guide.xsl&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="11"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2006-08-24 22:42</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">6784</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Added a message when docbook.catalog is not set<br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>9</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>build-support</strong>:
+        build.properties.sample&#160;<span class="change">(+3&#160;-1)</span>,
+        plugin-build.xml&#160;<span class="change">(+6)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="10"></a>
+    <a href="user_Vampire0.html" class="author">Vampire0</a>
+    <span class="date">2006-08-02 17:20</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">6485</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+commented out the newly added properties from the properties.sample
+    </p>
+    <p class="commitdetails"><strong>3</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>build-support</strong>:
+        build.properties.sample&#160;<span class="change">(+3&#160;-6)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="9"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2006-07-25 20:09</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">5614</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+*** empty log message ***<br />
+
+    </p>
+    <p class="commitdetails"><strong>12</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>build-support</strong>:
+        build.properties.sample&#160;<span class="change">(+12)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="8"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2006-07-24 21:20</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">5607</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Added generate toc code from jedit's stylesheet.<br />
+
+    </p>
+    <p class="commitdetails"><strong>155</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>build-support</strong>:
+        users-guide.xsl&#160;<span class="change">(+155)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="7"></a>
+    <a href="user_Vampire0.html" class="author">Vampire0</a>
+    <span class="date">2006-07-18 13:13</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">5599</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Changed the way the docs are xslt-processed because of bugs in xsltproc for windows and spaces in filenames<br />
+
+    </p>
+    <p class="commitdetails"><strong>23</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>build-support</strong>:
+        plugin-build.xml&#160;<span class="change">(+23&#160;-4)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="6"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2006-07-18 05:32</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">5596</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+added a dependency of javadoc for upload.docs...<br />
+
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>build-support</strong>:
+        plugin-build.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="5"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2006-07-18 02:44</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">5595</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Added a docs.upload task for uploading documentation to plugins.jedit.org<br />
+
+    </p>
+    <p class="commitdetails"><strong>11</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>build-support</strong>:
+        plugin-build.xml&#160;<span class="change">(+11)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="4"></a>
+    <a href="user_Vampire0.html" class="author">Vampire0</a>
+    <span class="date">2006-07-07 10:55</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">5553</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Moved some properties from build.properties to build.xml for default plugins<br />
+
+    </p>
+    <p class="commitdetails"><strong>3</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>build-support</strong>:
+        build.properties.sample&#160;<span class="change">(+3&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="3"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2006-07-06 16:24</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">5549</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+*** empty log message ***<br />
+
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>build-support</strong>:
+        plugin-build.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="2"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2006-07-04 01:39</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">5522</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+*** empty log message ***<br />
+
+    </p>
+    <p class="commitdetails"><strong>5</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>build-support</strong>:
+        README.txt&#160;<span class="new">(new&#160;5)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="1"></a>
+    <a href="user_Vampire0.html" class="author">Vampire0</a>
+    <span class="date">2006-07-03 18:44</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">5520</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+- Great rewrite of build.xml with many additions like automated building of various distribution files<br />
+- moved build-support to core<br />
+- made the standard plugins use build-support<br />
+
+    </p>
+    <p class="commitdetails"><strong>779</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>build-support</strong>:
+        build.properties.sample&#160;<span class="new">(new&#160;147)</span>,
+        plugin-build.xml&#160;<span class="new">(new&#160;565)</span>,
+        users-guide.xsl&#160;<span class="new">(new&#160;67)</span>
+      </li>
+    </ul>
+  </dd>
+
+</dl>
+
+</div><div id="generatedby">Generated by <a href="http://www.statsvn.org">StatSVN</a> 0.7.0</div>
+</body>
+</html>

@@ -1,0 +1,714 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>StatSVN - Directory org/gjt/sp/jedit/input/</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+    <meta name="Generator" content="StatSVN 0.7.0"/>
+<link rel="stylesheet" href="objectlab-statcvs.css" type="text/css"/>
+<script type="text/javascript" charset="utf-8" src="http://bit.ly/javascript-api.js?version=latest&#38;login=statsvn&#38;apiKey=R_2c362b417d0517c27876cbaca1bb68cc"></script>
+<script type="text/javascript" charset="utf-8">
+   // wait until page is loaded to call API
+   var redir_url;
+   var short_url;
+   BitlyCB.myShortenCallback = function(data) {
+      // this is how to get a result of shortening a single url
+      var result;
+      short_url=null;
+      for (var r in data.results) {
+         result = data.results[r];
+         result['longUrl'] = r;
+         short_url = result['shortUrl'];
+         break;
+      }
+      if (short_url==null) // bit.ly failed
+      document.location=redir_url;
+      else
+      redirToTwitter();
+   };
+   function shortenTweet(url) {
+      if (short_url == null || redir_url!=url) {
+      redir_url = url;
+      BitlyClient.shorten(document.location, 'BitlyCB.myShortenCallback');
+      }
+      else
+      redirToTwitter();
+      return false;
+   }
+   function redirToTwitter() { 
+      // replace {0} which is visible as %7B0} in the link
+      document.location = redir_url.replace('%7B0}', short_url);
+   }
+</script>
+  </head>
+
+<body>
+
+<h1>Directory org/gjt/sp/jedit/input/</h1>
+<div id="parentlink">&#171; <a href="index.html">Development Statistics for /jEdit/trunk</a></div>
+<dl class="attributes">
+    <dt>Directory Created:</dt>
+    <dd><span class="date">2006-10-02 22:33</span></dd>
+    <dt>Total Files:</dt>
+    <dd>5</dd>
+    <dt>Deleted Files:</dt>
+    <dd>0</dd>
+    <dt>Lines of Code:</dt>
+    <dd>867</dd>
+</dl>
+<p class="dirtree">
+<a href="dir.html">[root]</a>/<a href="dir_org.html">org</a>/<a href="dir_org_gjt.html">gjt</a>/<a href="dir_org_gjt_sp.html">sp</a>/<a href="dir_org_gjt_sp_jedit.html">jedit</a>/<strong>input</strong><br/>
+</p>
+
+<div class="section">
+<h2>Lines of Code</h2>
+<p class="chart"><img src="loc_module_org_gjt_sp_jedit_input.png" alt="org/gjt/sp/jedit/input/ Lines of Code" width="800" height="500" /></p></div>
+<div class="section">
+<h2>Developers</h2>
+  <table  rules="groups" summary="All authors and the number of their changes and lines of code in this directory">
+    <colgroup align="left"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <thead>
+      <tr>
+        <th>Author</th>
+        <th>Changes</th>
+        <th>Lines of Code</th>
+        <th>Lines per Change</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <th>Totals</th>
+        <td>60 (100.0%)</td>
+        <td>2507 (100.0%)</td>
+        <td>41.7</td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr  class="odd">
+        <th><a href="user_kpouer.html" class="author">kpouer</a></th>
+        <td>23 (38.3%)</td>
+        <td>1061 (42.3%)</td>
+        <td>46.1</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_Vampire0.html" class="author">Vampire0</a></th>
+        <td>12 (20.0%)</td>
+        <td>889 (35.5%)</td>
+        <td>74.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_k_satoda.html" class="author">k_satoda</a></th>
+        <td>7 (11.7%)</td>
+        <td>538 (21.5%)</td>
+        <td>76.8</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_daleanson.html" class="author">daleanson</a></th>
+        <td>4 (6.7%)</td>
+        <td>14 (0.6%)</td>
+        <td>3.5</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_ezust.html" class="author">ezust</a></th>
+        <td>14 (23.3%)</td>
+        <td>5 (0.2%)</td>
+        <td>0.3</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+<div class="section">
+<h2>Most Recent Commits</h2>
+<dl class="commitlist">
+  <dt><a name="30"></a>
+    <a href="user_daleanson.html" class="author">daleanson</a>
+    <span class="date">2018-04-11 00:06</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24859</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fixed all deprecation warnings produced when compiling with Java 9. Note there are still two deprecated items that are suppressed for Java 8 with comments on how to adjust when jEdit requires Java 9.
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/input</strong>:
+        AbstractInputHandler.java&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="29"></a>
+    <a href="user_daleanson.html" class="author">daleanson</a>
+    <span class="date">2016-06-22 23:29</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24427</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fixed unchecked and deprecation warnings.
+    </p>
+    <p class="commitdetails"><strong>8</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/input</strong>:
+        AbstractInputHandler.java&#160;<span class="change">(+8&#160;-6)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="28"></a>
+    <a href="user_daleanson.html" class="author">daleanson</a>
+    <span class="date">2015-12-10 04:33</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24211</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Replaced all Toolkit.beep() calls with javax.swing.UIManager.getLookAndFeel().provideErrorFeedback(null);, which allows look and feels to provide their own implementation of error signals and Javassist the ability to turn off the beeps.
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/input</strong>:
+        TextAreaInputHandler.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="27"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2015-09-24 03:36</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24092</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Handling of NUMPAD keys cleanup (Patch #567 - Makarius)<br />
+
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/input</strong>:
+        TextAreaInputHandler.java&#160;<span class="change">(-7)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="26"></a>
+    <a href="user_Vampire0.html" class="author">Vampire0</a>
+    <span class="date">2013-08-31 12:39</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">23162</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+reinstantiate trunk and branches
+    </p>
+    <p class="commitdetails"><strong>872</strong> lines of code changed in <span class="files">5 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/input</strong>:
+        AbstractInputHandler.java&#160;<span class="new">(new&#160;428)</span>,
+        DefaultInputHandlerProvider.java&#160;<span class="new">(new&#160;43)</span>,
+        InputHandlerProvider.java&#160;<span class="new">(new&#160;31)</span>,
+        TextAreaInputHandler.java&#160;<span class="new">(new&#160;369)</span>,
+        package.html&#160;<span class="new">(new&#160;1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="25"></a>
+    <a href="user_Vampire0.html" class="author">Vampire0</a>
+    <span class="date">2013-08-27 22:41</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">23150</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+put tombstone in place, official repository for jEdit core is now in Git
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">5 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/input</strong>:
+        AbstractInputHandler.java&#160;<span class="del">(del)</span>,
+        DefaultInputHandlerProvider.java&#160;<span class="del">(del)</span>,
+        InputHandlerProvider.java&#160;<span class="del">(del)</span>,
+        TextAreaInputHandler.java&#160;<span class="del">(del)</span>,
+        package.html&#160;<span class="del">(del)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="24"></a>
+    <a href="user_Vampire0.html" class="author">Vampire0</a>
+    <span class="date">2012-10-14 20:55</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">22375</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Disable menu bar mnemonics if they are mapped as otherwise defined shortcuts so that they are not shown visually to the user when they actually do not work and make sure that no conflict can arise with the default keymap and any localization
+    </p>
+    <p class="commitdetails"><strong>5</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/input</strong>:
+        AbstractInputHandler.java&#160;<span class="change">(+5&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="23"></a>
+    <a href="user_Vampire0.html" class="author">Vampire0</a>
+    <span class="date">2012-09-28 18:07</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">22268</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+fix wrong JavaDoc comment
+    </p>
+    <p class="commitdetails"><strong>12</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/input</strong>:
+        AbstractInputHandler.java&#160;<span class="change">(+12&#160;-12)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="22"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2012-06-18 23:54</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">21831</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Tabsize=4.<br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">4 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/input</strong>:
+        AbstractInputHandler.java&#160;<span class="change">(changed)</span>,
+        DefaultInputHandlerProvider.java&#160;<span class="change">(changed)</span>,
+        InputHandlerProvider.java&#160;<span class="change">(changed)</span>,
+        TextAreaInputHandler.java&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="21"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2012-03-20 05:32</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">21398</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+API Docs. <br />
+
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/input</strong>:
+        package.html&#160;<span class="new">(new&#160;1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="20"></a>
+    <a href="user_kpouer.html" class="author">kpouer</a>
+    <span class="date">2011-12-13 22:52</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">20637</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+inlined code from _preprocessKeyEvent(KeyEvent evt)
+    </p>
+    <p class="commitdetails"><strong>10</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/input</strong>:
+        TextAreaInputHandler.java&#160;<span class="change">(+10&#160;-23)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="19"></a>
+    <a href="user_kpouer.html" class="author">kpouer</a>
+    <span class="date">2010-06-23 12:48</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">18132</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+removed use of a deprecated api and replaced keyStroke.isPhantom() by false since it is now always false
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/input</strong>:
+        AbstractInputHandler.java&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="18"></a>
+    <a href="user_k_satoda.html" class="author">k_satoda</a>
+    <span class="date">2009-12-26 11:52</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">16740</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fixed some broken parts in comments, which were introduced in r11402.<br />
+
+    </p>
+    <p class="commitdetails"><strong>3</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/input</strong>:
+        AbstractInputHandler.java&#160;<span class="change">(+3&#160;-7)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="17"></a>
+    <a href="user_kpouer.html" class="author">kpouer</a>
+    <span class="date">2008-06-23 20:59</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">12888</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GrabKeyDialog.toString(KeyEvent) moved to AbstractInputHandler class
+    </p>
+    <p class="commitdetails"><strong>45</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/input</strong>:
+        AbstractInputHandler.java&#160;<span class="change">(+42&#160;-1)</span>,
+        TextAreaInputHandler.java&#160;<span class="change">(+3&#160;-4)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="16"></a>
+    <a href="user_kpouer.html" class="author">kpouer</a>
+    <span class="date">2008-06-23 20:40</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">12886</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+removed a dependency on MiscUtilities
+    </p>
+    <p class="commitdetails"><strong>7</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/input</strong>:
+        TextAreaInputHandler.java&#160;<span class="change">(+7&#160;-4)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="15"></a>
+    <a href="user_daleanson.html" class="author">daleanson</a>
+    <span class="date">2008-05-10 22:13</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">12617</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Removed simplified key handling.
+    </p>
+    <p class="commitdetails"><strong>5</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/input</strong>:
+        TextAreaInputHandler.java&#160;<span class="change">(+5&#160;-109)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="14"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2008-04-23 00:12</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">12504</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Property fixes. svn:eol-style native<br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">4 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/input</strong>:
+        AbstractInputHandler.java&#160;<span class="change">(changed)</span>,
+        DefaultInputHandlerProvider.java&#160;<span class="change">(changed)</span>,
+        InputHandlerProvider.java&#160;<span class="change">(changed)</span>,
+        TextAreaInputHandler.java&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="13"></a>
+    <a href="user_ezust.html" class="author">ezust</a>
+    <span class="date">2008-04-22 02:18</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">12502</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+find . -name \*.java | xargs svn propset eol-style native<br />
+as suggested by daniel hahler.<br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>4</strong> lines of code changed in <span class="files">4 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/input</strong>:
+        AbstractInputHandler.java&#160;<span class="change">(+1)</span>,
+        DefaultInputHandlerProvider.java&#160;<span class="change">(+1)</span>,
+        InputHandlerProvider.java&#160;<span class="change">(+1)</span>,
+        TextAreaInputHandler.java&#160;<span class="change">(+1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="12"></a>
+    <a href="user_kpouer.html" class="author">kpouer</a>
+    <span class="date">2007-12-19 22:43</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">11430</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+fixed a wrong "instanceof" test
+    </p>
+    <p class="commitdetails"><strong>6</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/input</strong>:
+        TextAreaInputHandler.java&#160;<span class="change">(+6&#160;-4)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="11"></a>
+    <a href="user_kpouer.html" class="author">kpouer</a>
+    <span class="date">2007-12-12 20:41</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">11402</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+big changes in InputHandling to allow the standalone TextArea to use beanshell actions.<br />
+The most incompatibility that can happens is when calling jEdit.getActionSets() that was returning ActionSet[] and now returns JEditActionSet[]
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/input</strong>:
+        AbstractInputHandler.java&#160;<span class="change">(changed)</span>,
+        TextAreaInputHandler.java&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="10"></a>
+    <a href="user_kpouer.html" class="author">kpouer</a>
+    <span class="date">2007-12-04 00:01</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">11184</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Registers is now part of standalone textarea, and cut/copy/paste are now handled in standalone textarea. I need to refactor that though
+    </p>
+    <p class="commitdetails"><strong>44</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/input</strong>:
+        TextAreaInputHandler.java&#160;<span class="change">(+44&#160;-7)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="9"></a>
+    <a href="user_kpouer.html" class="author">kpouer</a>
+    <span class="date">2007-11-12 21:43</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">11038</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+added some comments
+    </p>
+    <p class="commitdetails"><strong>40</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/input</strong>:
+        AbstractInputHandler.java&#160;<span class="change">(+28&#160;-2)</span>,
+        TextAreaInputHandler.java&#160;<span class="change">(+12&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="8"></a>
+    <a href="user_kpouer.html" class="author">kpouer</a>
+    <span class="date">2007-11-12 20:53</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">11036</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+added a little comment
+    </p>
+    <p class="commitdetails"><strong>15</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/input</strong>:
+        TextAreaInputHandler.java&#160;<span class="change">(+15&#160;-6)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="7"></a>
+    <a href="user_kpouer.html" class="author">kpouer</a>
+    <span class="date">2007-11-12 20:14</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">11034</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+documentation fixed
+    </p>
+    <p class="commitdetails"><strong>4</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/input</strong>:
+        DefaultInputHandlerProvider.java&#160;<span class="change">(+3&#160;-1)</span>,
+        InputHandlerProvider.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="6"></a>
+    <a href="user_kpouer.html" class="author">kpouer</a>
+    <span class="date">2007-10-09 10:54</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">10862</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+added missing delete and backspace key handling
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/input</strong>:
+        TextAreaInputHandler.java&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="5"></a>
+    <a href="user_kpouer.html" class="author">kpouer</a>
+    <span class="date">2007-09-30 22:01</span>
+  </dt>
+  <dd>
+    <p class="comment">
+added some explicit folds
+    </p>
+    <p class="commitdetails"><strong>22</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/input</strong>:
+        AbstractInputHandler.java&#160;<span class="change">(+18&#160;-5)</span>,
+        TextAreaInputHandler.java&#160;<span class="change">(+4&#160;-5)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="4"></a>
+    <a href="user_k_satoda.html" class="author">k_satoda</a>
+    <span class="date">2007-05-02 02:35</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">9483</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Set svn:eol-style=native for all java source files to avoid pssible EOL<br />
+problems.<br />
+
+    </p>
+    <p class="commitdetails"><strong>532</strong> lines of code changed in <span class="files">4 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/input</strong>:
+        AbstractInputHandler.java&#160;<span class="change">(+128&#160;-127)</span>,
+        DefaultInputHandlerProvider.java&#160;<span class="change">(+42&#160;-41)</span>,
+        InputHandlerProvider.java&#160;<span class="change">(+32&#160;-31)</span>,
+        TextAreaInputHandler.java&#160;<span class="change">(+330&#160;-329)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="3"></a>
+    <a href="user_k_satoda.html" class="author">k_satoda</a>
+    <span class="date">2007-05-02 01:34</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">9481</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fixed some unbalanced or incorrect explicit folding in source comments.<br />
+
+    </p>
+    <p class="commitdetails"><strong>3</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/input</strong>:
+        AbstractInputHandler.java&#160;<span class="change">(+1&#160;-1)</span>,
+        TextAreaInputHandler.java&#160;<span class="change">(+2&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="2"></a>
+    <a href="user_kpouer.html" class="author">kpouer</a>
+    <span class="date">2006-10-10 09:31</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">7378</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+method processKeyEventKeyStrokeHandling() moved to AbstractInputHandler, dependency to view completely removed from TextArea
+    </p>
+    <p class="commitdetails"><strong>28</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/input</strong>:
+        AbstractInputHandler.java&#160;<span class="change">(+28&#160;-3)</span>,
+        TextAreaInputHandler.java&#160;<span class="change">(-25)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="1"></a>
+    <a href="user_kpouer.html" class="author">kpouer</a>
+    <span class="date">2006-10-02 22:33</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">7156</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+a lot of changes for independant textarea
+    </p>
+    <p class="commitdetails"><strong>838</strong> lines of code changed in <span class="files">4 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/input</strong>:
+        AbstractInputHandler.java&#160;<span class="new">(new&#160;321)</span>,
+        DefaultInputHandlerProvider.java&#160;<span class="new">(new&#160;39)</span>,
+        InputHandlerProvider.java&#160;<span class="new">(new&#160;29)</span>,
+        TextAreaInputHandler.java&#160;<span class="new">(new&#160;449)</span>
+      </li>
+    </ul>
+  </dd>
+
+</dl>
+
+</div><div id="generatedby">Generated by <a href="http://www.statsvn.org">StatSVN</a> 0.7.0</div>
+</body>
+</html>

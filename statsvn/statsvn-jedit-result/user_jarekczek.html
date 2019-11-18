@@ -1,0 +1,912 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>StatSVN - /jEdit/trunk Developers: jarekczek</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+    <meta name="Generator" content="StatSVN 0.7.0"/>
+<link rel="stylesheet" href="objectlab-statcvs.css" type="text/css"/>
+<script type="text/javascript" charset="utf-8" src="http://bit.ly/javascript-api.js?version=latest&#38;login=statsvn&#38;apiKey=R_2c362b417d0517c27876cbaca1bb68cc"></script>
+<script type="text/javascript" charset="utf-8">
+   // wait until page is loaded to call API
+   var redir_url;
+   var short_url;
+   BitlyCB.myShortenCallback = function(data) {
+      // this is how to get a result of shortening a single url
+      var result;
+      short_url=null;
+      for (var r in data.results) {
+         result = data.results[r];
+         result['longUrl'] = r;
+         short_url = result['shortUrl'];
+         break;
+      }
+      if (short_url==null) // bit.ly failed
+      document.location=redir_url;
+      else
+      redirToTwitter();
+   };
+   function shortenTweet(url) {
+      if (short_url == null || redir_url!=url) {
+      redir_url = url;
+      BitlyClient.shorten(document.location, 'BitlyCB.myShortenCallback');
+      }
+      else
+      redirToTwitter();
+      return false;
+   }
+   function redirToTwitter() { 
+      // replace {0} which is visible as %7B0} in the link
+      document.location = redir_url.replace('%7B0}', short_url);
+   }
+</script>
+  </head>
+
+<body>
+
+<h1>/jEdit/trunk Developers: jarekczek</h1>
+<div id="parentlink">&#171; <a href="index.html">Development Statistics for /jEdit/trunk</a> &#171; <a href="developers.html">Developers</a></div>
+<dl class="attributes">
+    <dt>Login name:</dt>
+    <dd>jarekczek</dd>
+    <dt>Total Commits:</dt>
+    <dd>314 (1.1%)</dd>
+    <dt>Lines of Code:</dt>
+    <dd>2,820 (0.3%)</dd>
+    <dt>Most Recent Commit:</dt>
+    <dd><span class="date">2012-10-29 21:36</span></dd>
+    <dt>Tweet this:</dt>
+    <dd><a onclick="return shortenTweet(this.href);" href="http://twitter.com/home?status=jarekczek%20contributed%202%2C820%20(0.3%25)%20lines%20to%20%2FjEdit%2Ftrunk%20%7B0}%20most%20recent%20commit%202012-10-29%20stats%20by%20StatSVN%20http%3A%2F%2Fstatsvn.org"><img style="border:0px" alt="Tweet this" src="tweet-this.png"/></a></dd>
+</dl>
+
+<div class="section">
+<h2>Activity by Clock Time</h2>
+<p class="chart"><img src="activity_time_jarekczek.png" alt="Activity by Hour of Day for jarekczek" width="800" height="500" /></p><p class="chart"><img src="activity_day_jarekczek.png" alt="Activity by Day of Week for jarekczek" width="800" height="500" /></p></div>
+<div class="section">
+<h2>Activity in Directories</h2>
+  <table  rules="groups" summary="Overview of this author's activities in different directories">
+    <colgroup align="left"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <thead>
+      <tr>
+        <th>Directory</th>
+        <th>Changes</th>
+        <th>Lines of Code</th>
+        <th>Lines per Change</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <th>Totals</th>
+        <td>314 (100.0%)</td>
+        <td>2820 (100.0%)</td>
+        <td>8.9</td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit.html" class="directory">org/gjt/sp/jedit/</a></th>
+        <td>31 (9.9%)</td>
+        <td>478 (17.0%)</td>
+        <td>15.4</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_modes.html" class="directory">modes/</a></th>
+        <td>10 (3.2%)</td>
+        <td>391 (13.9%)</td>
+        <td>39.1</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_buffer.html" class="directory">org/gjt/sp/jedit/buffer/</a></th>
+        <td>20 (6.4%)</td>
+        <td>340 (12.1%)</td>
+        <td>17.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_io.html" class="directory">org/gjt/sp/jedit/io/</a></th>
+        <td>16 (5.1%)</td>
+        <td>317 (11.2%)</td>
+        <td>19.8</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_macros_Files.html" class="directory">macros/Files/</a></th>
+        <td>6 (1.9%)</td>
+        <td>240 (8.5%)</td>
+        <td>40.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_doc_users-guide.html" class="directory">doc/users-guide/</a></th>
+        <td>20 (6.4%)</td>
+        <td>210 (7.4%)</td>
+        <td>10.5</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_doc.html" class="directory">doc/</a></th>
+        <td>44 (14.0%)</td>
+        <td>146 (5.2%)</td>
+        <td>3.3</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_util.html" class="directory">org/gjt/sp/util/</a></th>
+        <td>14 (4.5%)</td>
+        <td>130 (4.6%)</td>
+        <td>9.2</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_misc_debug.html" class="directory">misc/debug/</a></th>
+        <td>4 (1.3%)</td>
+        <td>124 (4.4%)</td>
+        <td>31.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_indent.html" class="directory">org/gjt/sp/jedit/indent/</a></th>
+        <td>12 (3.8%)</td>
+        <td>96 (3.4%)</td>
+        <td>8.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_gui.html" class="directory">org/gjt/sp/jedit/gui/</a></th>
+        <td>23 (7.3%)</td>
+        <td>92 (3.3%)</td>
+        <td>4.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_misc_indentation_problems.html" class="directory">misc/indentation_problems/</a></th>
+        <td>8 (2.5%)</td>
+        <td>73 (2.6%)</td>
+        <td>9.1</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_options.html" class="directory">org/gjt/sp/jedit/options/</a></th>
+        <td>7 (2.2%)</td>
+        <td>37 (1.3%)</td>
+        <td>5.2</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_textarea.html" class="directory">org/gjt/sp/jedit/textarea/</a></th>
+        <td>22 (7.0%)</td>
+        <td>36 (1.3%)</td>
+        <td>1.6</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_browser.html" class="directory">org/gjt/sp/jedit/browser/</a></th>
+        <td>7 (2.2%)</td>
+        <td>33 (1.2%)</td>
+        <td>4.7</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_search.html" class="directory">org/gjt/sp/jedit/search/</a></th>
+        <td>7 (2.2%)</td>
+        <td>24 (0.9%)</td>
+        <td>3.4</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_bufferio.html" class="directory">org/gjt/sp/jedit/bufferio/</a></th>
+        <td>2 (0.6%)</td>
+        <td>21 (0.7%)</td>
+        <td>10.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_jedit_localization.html" class="directory">org/jedit/localization/</a></th>
+        <td>15 (4.8%)</td>
+        <td>16 (0.6%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_pluginmgr.html" class="directory">org/gjt/sp/jedit/pluginmgr/</a></th>
+        <td>2 (0.6%)</td>
+        <td>9 (0.3%)</td>
+        <td>4.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_menu.html" class="directory">org/gjt/sp/jedit/menu/</a></th>
+        <td>2 (0.6%)</td>
+        <td>2 (0.1%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_misc.html" class="directory">misc/</a></th>
+        <td>1 (0.3%)</td>
+        <td>2 (0.1%)</td>
+        <td>2.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir.html" class="directory">/</a></th>
+        <td>1 (0.3%)</td>
+        <td>2 (0.1%)</td>
+        <td>2.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_syntax.html" class="directory">org/gjt/sp/jedit/syntax/</a></th>
+        <td>1 (0.3%)</td>
+        <td>1 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_jedit_options.html" class="directory">org/jedit/options/</a></th>
+        <td>5 (1.6%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_jedit_migration.html" class="directory">org/jedit/migration/</a></th>
+        <td>1 (0.3%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_jedit_keymap.html" class="directory">org/jedit/keymap/</a></th>
+        <td>5 (1.6%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_jedit_core.html" class="directory">org/jedit/core/</a></th>
+        <td>2 (0.6%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_gui_tray.html" class="directory">org/gjt/sp/jedit/gui/tray/</a></th>
+        <td>4 (1.3%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_gui_statusbar.html" class="directory">org/gjt/sp/jedit/gui/statusbar/</a></th>
+        <td>5 (1.6%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_datatransfer.html" class="directory">org/gjt/sp/jedit/datatransfer/</a></th>
+        <td>9 (2.9%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_bufferset.html" class="directory">org/gjt/sp/jedit/bufferset/</a></th>
+        <td>4 (1.3%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_keymaps.html" class="directory">keymaps/</a></th>
+        <td>4 (1.3%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+<p class="chart"><img src="directory_sizes_jarekczek.png" alt="Activity of jarekczek" width="800" height="500" /></p></div>
+<div class="section">
+<h2>Most Recent Commits</h2>
+<dl class="commitlist">
+  <dt><a name="20"></a>
+    <a href="user_jarekczek.html" class="author">jarekczek</a>
+    <span class="date">2012-10-29 21:36</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">22411</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fixed #3579788, not doing backups on windows when no backup directory given
+    </p>
+    <p class="commitdetails"><strong>62</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        MiscUtilities.java&#160;<span class="change">(+54&#160;-11)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/io</strong>:
+        VFS.java&#160;<span class="change">(+8&#160;-16)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="19"></a>
+    <a href="user_jarekczek.html" class="author">jarekczek</a>
+    <span class="date">2012-10-07 08:15</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">22326</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fixed #3574500, I/O error on first save attempt (when backup settings<br />
+  incorrect).
+    </p>
+    <p class="commitdetails"><strong>42</strong> lines of code changed in <span class="files">4 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        MiscUtilities.java&#160;<span class="change">(+12&#160;-1)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/bufferio</strong>:
+        BufferSaveRequest.java&#160;<span class="change">(+20&#160;-7)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/io</strong>:
+        VFS.java&#160;<span class="change">(+7)</span>
+      </li>
+      <li>
+        <strong>org/jedit/localization</strong>:
+        jedit_en.props&#160;<span class="change">(+3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="18"></a>
+    <a href="user_jarekczek.html" class="author">jarekczek</a>
+    <span class="date">2012-10-05 12:24</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">22311</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Added macro: Open Selection In Desktop (File section)
+    </p>
+    <p class="commitdetails"><strong>119</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+2)</span>
+      </li>
+      <li>
+        <strong>doc/users-guide</strong>:
+        macro-index.xml&#160;<span class="change">(+11)</span>
+      </li>
+      <li>
+        <strong>macros/Files</strong>:
+        Open_Selection_In_Desktop.bsh&#160;<span class="new">(new&#160;106)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="17"></a>
+    <a href="user_jarekczek.html" class="author">jarekczek</a>
+    <span class="date">2012-10-04 12:43</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">22299</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Open Selection macro: fixed missing comment slash
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>macros/Files</strong>:
+        Open_Selection.bsh&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="16"></a>
+    <a href="user_jarekczek.html" class="author">jarekczek</a>
+    <span class="date">2012-10-04 12:41</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">22298</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Open Selection macro: explicit folds
+    </p>
+    <p class="commitdetails"><strong>10</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>macros/Files</strong>:
+        Open_Selection.bsh&#160;<span class="change">(+10&#160;-7)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="15"></a>
+    <a href="user_jarekczek.html" class="author">jarekczek</a>
+    <span class="date">2012-10-04 11:56</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">22297</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Open_Selection macro: the path under caret is used in case of no selection.
+    </p>
+    <p class="commitdetails"><strong>77</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+3&#160;-2)</span>
+      </li>
+      <li>
+        <strong>macros/Files</strong>:
+        Open_Selection.bsh&#160;<span class="change">(+74&#160;-17)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="14"></a>
+    <a href="user_jarekczek.html" class="author">jarekczek</a>
+    <span class="date">2012-09-05 07:14</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">22163</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fixed $Plugins appearing in VFS browser context menu, now mnemonic is assigned
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/browser</strong>:
+        BrowserCommandsMenu.java&#160;<span class="change">(+1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="13"></a>
+    <a href="user_jarekczek.html" class="author">jarekczek</a>
+    <span class="date">2012-09-01 07:18</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">22108</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fixed threading api comments (#3563789 Jarek Czekalski)
+    </p>
+    <p class="commitdetails"><strong>9</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/io</strong>:
+        VFSManager.java&#160;<span class="change">(+4&#160;-3)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/util</strong>:
+        WorkThreadPool.java&#160;<span class="change">(+5&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="12"></a>
+    <a href="user_jarekczek.html" class="author">jarekczek</a>
+    <span class="date">2012-08-31 10:52</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">22100</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+New api VFSBrowser.getLastVisitedPath() that may be handy for use in macros.
+    </p>
+    <p class="commitdetails"><strong>20</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+2)</span>
+      </li>
+      <li>
+        <strong>macros/Files</strong>:
+        Open_Selection.bsh&#160;<span class="change">(+1)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/browser</strong>:
+        VFSBrowser.java&#160;<span class="change">(+17&#160;-4)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="11"></a>
+    <a href="user_jarekczek.html" class="author">jarekczek</a>
+    <span class="date">2012-08-30 19:57</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">22096</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Open_Selection macro: Added possibility to join current browser directory<br />
+  and highlighted path to obtain a valid filename and open it.<br />
+  Attention was paid to extend the functionality without changing current<br />
+  behaviour.
+    </p>
+    <p class="commitdetails"><strong>53</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+3)</span>
+      </li>
+      <li>
+        <strong>doc/users-guide</strong>:
+        macro-index.xml&#160;<span class="change">(+2&#160;-1)</span>
+      </li>
+      <li>
+        <strong>macros/Files</strong>:
+        Open_Selection.bsh&#160;<span class="change">(+48&#160;-4)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="10"></a>
+    <a href="user_jarekczek.html" class="author">jarekczek</a>
+    <span class="date">2012-08-25 14:58</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">22057</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+patch mode: recognize typical mercurial and git headers
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modes</strong>:
+        catalog&#160;<span class="change">(+2&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="9"></a>
+    <a href="user_jarekczek.html" class="author">jarekczek</a>
+    <span class="date">2012-08-18 10:39</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">22027</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Undo restores selection state in simple cases (deletions, replaces<br />
+  on simple range selections). (patch #1570553 Maik Nijhuis, Thomas Meyer,<br />
+  Jarek Czekalski)
+    </p>
+    <p class="commitdetails"><strong>90</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+6&#160;-1)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/buffer</strong>:
+        JEditBuffer.java&#160;<span class="change">(+13&#160;-7)</span>,
+        UndoManager.java&#160;<span class="change">(+71&#160;-34)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="8"></a>
+    <a href="user_jarekczek.html" class="author">jarekczek</a>
+    <span class="date">2012-08-08 13:21</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">21989</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+New debugging option "Beep on output", request #3551931.
+    </p>
+    <p class="commitdetails"><strong>70</strong> lines of code changed in <span class="files">7 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+3)</span>
+      </li>
+      <li>
+        <strong>doc/users-guide</strong>:
+        activity-log.xml&#160;<span class="change">(+11&#160;-1)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        jEdit.java&#160;<span class="change">(+1)</span>,
+        jedit.props&#160;<span class="change">(+3)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/gui</strong>:
+        LogViewer.java&#160;<span class="change">(+13)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/util</strong>:
+        Log.java&#160;<span class="change">(+36)</span>
+      </li>
+      <li>
+        <strong>org/jedit/localization</strong>:
+        jedit_en.props&#160;<span class="change">(+3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="7"></a>
+    <a href="user_jarekczek.html" class="author">jarekczek</a>
+    <span class="date">2012-08-06 20:19</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">21981</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Tom Power fixed problems with his patch #3530786 - new option appearing<br />
+  in all context menu option panes, for example in VFS Browser.
+    </p>
+    <p class="commitdetails"><strong>21</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/gui</strong>:
+        AbstractContextOptionPane.java&#160;<span class="change">(+2&#160;-6)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/options</strong>:
+        ContextOptionPane.java&#160;<span class="change">(+19)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="6"></a>
+    <a href="user_jarekczek.html" class="author">jarekczek</a>
+    <span class="date">2012-08-04 17:26</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">21973</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Optimized reading elasticTabstops property in TextArea<br />
+  (patch #3533830 Thomas Meyer) plus my comments on<br />
+  JEditBuffer.elasticTabstopsOn field.
+    </p>
+    <p class="commitdetails"><strong>7</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/buffer</strong>:
+        JEditBuffer.java&#160;<span class="change">(+3)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/textarea</strong>:
+        ElasticTabStopBufferListener.java&#160;<span class="change">(+4&#160;-4)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="5"></a>
+    <a href="user_jarekczek.html" class="author">jarekczek</a>
+    <span class="date">2012-08-03 07:46</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">21972</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+javadoc for Log: details about standard output interception
+    </p>
+    <p class="commitdetails"><strong>8</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/util</strong>:
+        Log.java&#160;<span class="change">(+8&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="4"></a>
+    <a href="user_jarekczek.html" class="author">jarekczek</a>
+    <span class="date">2012-08-02 21:32</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">21971</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Set svn:eol-style to native in .java and .props files, which had not this<br />
+flag set, probably due to forgetting
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">88 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>keymaps</strong>:
+        Emacs_keys.props&#160;<span class="change">(changed)</span>,
+        IntelliJ_keys.props&#160;<span class="change">(changed)</span>,
+        Mac OS X_keys.props&#160;<span class="change">(changed)</span>,
+        jEdit_keys.props&#160;<span class="change">(changed)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        SplitConfigParser.java&#160;<span class="change">(changed)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/browser</strong>:
+        DeleteBrowserTask.java&#160;<span class="change">(changed)</span>,
+        MkDirBrowserTask.java&#160;<span class="change">(changed)</span>,
+        RenameBrowserTask.java&#160;<span class="change">(changed)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/buffer</strong>:
+        BufferSegment.java&#160;<span class="change">(changed)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/bufferset</strong>:
+        BufferSet.java&#160;<span class="change">(changed)</span>,
+        BufferSetAdapter.java&#160;<span class="change">(changed)</span>,
+        BufferSetListener.java&#160;<span class="change">(changed)</span>,
+        BufferSetManager.java&#160;<span class="change">(changed)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/datatransfer</strong>:
+        JEditDataFlavor.java&#160;<span class="change">(changed)</span>,
+        JEditRichText.java&#160;<span class="change">(changed)</span>,
+        JEditTransferable.java&#160;<span class="change">(changed)</span>,
+        JEditTransferableService.java&#160;<span class="change">(changed)</span>,
+        ListVFSFileTransferable.java&#160;<span class="change">(changed)</span>,
+        RichJEditTextTransferableService.java&#160;<span class="change">(changed)</span>,
+        RichTextTransferable.java&#160;<span class="change">(changed)</span>,
+        StringTransferableService.java&#160;<span class="change">(changed)</span>,
+        TransferHandler.java&#160;<span class="change">(changed)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/gui</strong>:
+        ContextAddDialog.java&#160;<span class="change">(changed)</span>,
+        DockableWindowManagerImpl.java&#160;<span class="change">(changed)</span>,
+        DockableWindowManagerProvider.java&#160;<span class="change">(changed)</span>,
+        DockingFrameworkProvider.java&#160;<span class="change">(changed)</span>,
+        DockingLayoutManager.java&#160;<span class="change">(changed)</span>,
+        DynamicContextMenuService.java&#160;<span class="change">(changed)</span>,
+        FilePropertiesDialog.java&#160;<span class="change">(changed)</span>,
+        FontSelectorDialog.java&#160;<span class="change">(changed)</span>,
+        ListModelEditor.java&#160;<span class="change">(changed)</span>,
+        NumericTextField.java&#160;<span class="change">(changed)</span>,
+        PasteSpecialDialog.java&#160;<span class="change">(changed)</span>,
+        PingPongList.java&#160;<span class="change">(changed)</span>,
+        TaskMonitor.java&#160;<span class="change">(changed)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/gui/statusbar</strong>:
+        ErrorsWidgetFactory.java&#160;<span class="change">(changed)</span>,
+        IndentWidgetFactory.java&#160;<span class="change">(changed)</span>,
+        LastModifiedWidgetFactory.java&#160;<span class="change">(changed)</span>,
+        SelectionLengthWidgetFactory.java&#160;<span class="change">(changed)</span>,
+        TaskMonitorWidgetFactory.java&#160;<span class="change">(changed)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/gui/tray</strong>:
+        JEditSwingTrayIcon.java&#160;<span class="change">(changed)</span>,
+        JEditTrayIcon.java&#160;<span class="change">(changed)</span>,
+        JTrayIcon.java&#160;<span class="change">(changed)</span>,
+        JTrayIconManager.java&#160;<span class="change">(changed)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/io</strong>:
+        LocalFileSaveTask.java&#160;<span class="change">(changed)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/menu</strong>:
+        MenuItemTextComparator.java&#160;<span class="change">(changed)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/options</strong>:
+        BrowserContextOptionPane.java&#160;<span class="change">(changed)</span>,
+        IntegerInputVerifier.java&#160;<span class="change">(changed)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/pluginmgr</strong>:
+        KeyboardCommand.java&#160;<span class="change">(changed)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/textarea</strong>:
+        CircleFoldPainter.java&#160;<span class="change">(changed)</span>,
+        ColumnBlock.java&#160;<span class="change">(changed)</span>,
+        ColumnBlockLine.java&#160;<span class="change">(changed)</span>,
+        ElasticTabStopBufferListener.java&#160;<span class="change">(changed)</span>,
+        ElasticTabstopsTabExpander.java&#160;<span class="change">(changed)</span>,
+        FoldPainter.java&#160;<span class="change">(changed)</span>,
+        GutterPopupHandler.java&#160;<span class="change">(changed)</span>,
+        JEditEmbeddedTextArea.java&#160;<span class="change">(changed)</span>,
+        Node.java&#160;<span class="change">(changed)</span>,
+        ShapedFoldPainter.java&#160;<span class="change">(changed)</span>,
+        SquareFoldPainter.java&#160;<span class="change">(changed)</span>,
+        StandaloneTextArea.java&#160;<span class="change">(changed)</span>,
+        TriangleFoldPainter.java&#160;<span class="change">(changed)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/util</strong>:
+        EnhancedTreeCellRenderer.java&#160;<span class="change">(changed)</span>,
+        HtmlUtilities.java&#160;<span class="change">(changed)</span>,
+        StringModel.java&#160;<span class="change">(changed)</span>,
+        Task.java&#160;<span class="change">(changed)</span>,
+        TaskAdapter.java&#160;<span class="change">(changed)</span>,
+        TaskListener.java&#160;<span class="change">(changed)</span>,
+        TaskManager.java&#160;<span class="change">(changed)</span>,
+        ThreadUtilities.java&#160;<span class="change">(changed)</span>
+      </li>
+      <li>
+        <strong>org/jedit/core</strong>:
+        FileOpenerService.java&#160;<span class="change">(changed)</span>,
+        MigrationService.java&#160;<span class="change">(changed)</span>
+      </li>
+      <li>
+        <strong>org/jedit/keymap</strong>:
+        Keymap.java&#160;<span class="change">(changed)</span>,
+        KeymapFileFilter.java&#160;<span class="change">(changed)</span>,
+        KeymapImpl.java&#160;<span class="change">(changed)</span>,
+        KeymapManager.java&#160;<span class="change">(changed)</span>,
+        KeymapManagerImpl.java&#160;<span class="change">(changed)</span>
+      </li>
+      <li>
+        <strong>org/jedit/localization</strong>:
+        jedit_cs.props&#160;<span class="change">(changed)</span>,
+        jedit_de.props&#160;<span class="change">(changed)</span>,
+        jedit_en.props&#160;<span class="change">(changed)</span>,
+        jedit_fr.props&#160;<span class="change">(changed)</span>,
+        jedit_ja.props&#160;<span class="change">(changed)</span>
+      </li>
+      <li>
+        <strong>org/jedit/migration</strong>:
+        KeymapMigration.java&#160;<span class="change">(changed)</span>
+      </li>
+      <li>
+        <strong>org/jedit/options</strong>:
+        CombinedOptions.java&#160;<span class="change">(changed)</span>,
+        GlobalOptionGroup.java&#160;<span class="change">(changed)</span>,
+        OptionGroupPane.java&#160;<span class="change">(changed)</span>,
+        PluginOptionGroup.java&#160;<span class="change">(changed)</span>,
+        TabbedOptionDialog.java&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="3"></a>
+    <a href="user_jarekczek.html" class="author">jarekczek</a>
+    <span class="date">2012-08-02 21:12</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">21970</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Simplified SearchDialog and DirectoryListSet code as discussed<br />
+  in patch #3549670 by Eric Le Lay. Shortly speaking:<br />
+  - SearchAndReplace.setSearchFileSet(fileset) sends the edit bus message<br />
+    so the one here was redundant<br />
+  - skip... members of DirectoryListSet were actually used only in one<br />
+    function body, so it's more logical for them to be local variables
+    </p>
+    <p class="commitdetails"><strong>7</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/search</strong>:
+        DirectoryListSet.java&#160;<span class="change">(+1&#160;-4)</span>,
+        SearchDialog.java&#160;<span class="change">(+6&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="2"></a>
+    <a href="user_jarekczek.html" class="author">jarekczek</a>
+    <span class="date">2012-08-01 20:19</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">21969</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Created a setting allowing to suppress synchronizing filter in search dialog.<br />
+  Some users prefer to have a constant filter and<br />
+  they would like to synchronize only the directory. These users should<br />
+  set search.dontSyncFilter to true. I introduced it as a hidden setting<br />
+  (no gui), but I hope there will be an agreement for the gui also.
+    </p>
+    <p class="commitdetails"><strong>11</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+4)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        jedit.props&#160;<span class="change">(+1)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/search</strong>:
+        SearchDialog.java&#160;<span class="change">(+6&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="1"></a>
+    <a href="user_jarekczek.html" class="author">jarekczek</a>
+    <span class="date">2012-08-01 20:06</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">21968</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fixed bug #1646584, filter not synchronizing in search dialog when<br />
+  "All buffers" is selected. (patch #3549905 Eric Le Lay)
+    </p>
+    <p class="commitdetails"><strong>12</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+5&#160;-2)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/search</strong>:
+        SearchDialog.java&#160;<span class="change">(+7&#160;-13)</span>
+      </li>
+    </ul>
+  </dd>
+
+</dl>
+
+<p>(80 more)</p>
+</div><div id="generatedby">Generated by <a href="http://www.statsvn.org">StatSVN</a> 0.7.0</div>
+</body>
+</html>

@@ -1,0 +1,366 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>StatSVN - /jEdit/trunk Developers: tanakahisateru</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+    <meta name="Generator" content="StatSVN 0.7.0"/>
+<link rel="stylesheet" href="objectlab-statcvs.css" type="text/css"/>
+<script type="text/javascript" charset="utf-8" src="http://bit.ly/javascript-api.js?version=latest&#38;login=statsvn&#38;apiKey=R_2c362b417d0517c27876cbaca1bb68cc"></script>
+<script type="text/javascript" charset="utf-8">
+   // wait until page is loaded to call API
+   var redir_url;
+   var short_url;
+   BitlyCB.myShortenCallback = function(data) {
+      // this is how to get a result of shortening a single url
+      var result;
+      short_url=null;
+      for (var r in data.results) {
+         result = data.results[r];
+         result['longUrl'] = r;
+         short_url = result['shortUrl'];
+         break;
+      }
+      if (short_url==null) // bit.ly failed
+      document.location=redir_url;
+      else
+      redirToTwitter();
+   };
+   function shortenTweet(url) {
+      if (short_url == null || redir_url!=url) {
+      redir_url = url;
+      BitlyClient.shorten(document.location, 'BitlyCB.myShortenCallback');
+      }
+      else
+      redirToTwitter();
+      return false;
+   }
+   function redirToTwitter() { 
+      // replace {0} which is visible as %7B0} in the link
+      document.location = redir_url.replace('%7B0}', short_url);
+   }
+</script>
+  </head>
+
+<body>
+
+<h1>/jEdit/trunk Developers: tanakahisateru</h1>
+<div id="parentlink">&#171; <a href="index.html">Development Statistics for /jEdit/trunk</a> &#171; <a href="developers.html">Developers</a></div>
+<dl class="attributes">
+    <dt>Login name:</dt>
+    <dd>tanakahisateru</dd>
+    <dt>Total Commits:</dt>
+    <dd>21 (0.1%)</dd>
+    <dt>Lines of Code:</dt>
+    <dd>2,727 (0.3%)</dd>
+    <dt>Most Recent Commit:</dt>
+    <dd><span class="date">2012-10-20 17:47</span></dd>
+    <dt>Tweet this:</dt>
+    <dd><a onclick="return shortenTweet(this.href);" href="http://twitter.com/home?status=tanakahisateru%20contributed%202%2C727%20(0.3%25)%20lines%20to%20%2FjEdit%2Ftrunk%20%7B0}%20most%20recent%20commit%202012-10-20%20stats%20by%20StatSVN%20http%3A%2F%2Fstatsvn.org"><img style="border:0px" alt="Tweet this" src="tweet-this.png"/></a></dd>
+</dl>
+
+<div class="section">
+<h2>Activity by Clock Time</h2>
+<p class="chart"><img src="activity_time_tanakahisateru.png" alt="Activity by Hour of Day for tanakahisateru" width="800" height="500" /></p><p class="chart"><img src="activity_day_tanakahisateru.png" alt="Activity by Day of Week for tanakahisateru" width="800" height="500" /></p></div>
+<div class="section">
+<h2>Activity in Directories</h2>
+  <table  rules="groups" summary="Overview of this author's activities in different directories">
+    <colgroup align="left"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <thead>
+      <tr>
+        <th>Directory</th>
+        <th>Changes</th>
+        <th>Lines of Code</th>
+        <th>Lines per Change</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <th>Totals</th>
+        <td>21 (100.0%)</td>
+        <td>2727 (100.0%)</td>
+        <td>129.8</td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr  class="odd">
+        <th><a href="dir_org_jedit_localization.html" class="directory">org/jedit/localization/</a></th>
+        <td>11 (52.4%)</td>
+        <td>2669 (97.9%)</td>
+        <td>242.6</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit.html" class="directory">org/gjt/sp/jedit/</a></th>
+        <td>8 (38.1%)</td>
+        <td>56 (2.1%)</td>
+        <td>7.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_gui_statusbar.html" class="directory">org/gjt/sp/jedit/gui/statusbar/</a></th>
+        <td>2 (9.5%)</td>
+        <td>2 (0.1%)</td>
+        <td>1.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+<p class="chart"><img src="directory_sizes_tanakahisateru.png" alt="Activity of tanakahisateru" width="800" height="500" /></p></div>
+<div class="section">
+<h2>Most Recent Commits</h2>
+<dl class="commitlist">
+  <dt><a name="12"></a>
+    <a href="user_tanakahisateru.html" class="author">tanakahisateru</a>
+    <span class="date">2012-10-20 17:47</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">22397</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Sync Japanese localization to jedit_en.<br />
+
+    </p>
+    <p class="commitdetails"><strong>14</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/jedit/localization</strong>:
+        jedit_ja.props&#160;<span class="change">(+14&#160;-7)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="11"></a>
+    <a href="user_tanakahisateru.html" class="author">tanakahisateru</a>
+    <span class="date">2012-07-03 14:43</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">21919</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Japanese translation for recent changes below.<br />
+r21916: Use of a scrollable list for delete dialog confirmation #2911520<br />
+r21896, r21897: Implemented Feature request #2931321 - Disable obsolete plugins
+    </p>
+    <p class="commitdetails"><strong>3</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/jedit/localization</strong>:
+        jedit_ja.props&#160;<span class="change">(+3&#160;-4)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="10"></a>
+    <a href="user_tanakahisateru.html" class="author">tanakahisateru</a>
+    <span class="date">2012-06-19 08:40</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">21834</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Follow up for r21818: Calling removePluginLocalizationProps() was missing when plugin unloaded.
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        PluginJAR.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="9"></a>
+    <a href="user_tanakahisateru.html" class="author">tanakahisateru</a>
+    <span class="date">2012-06-18 10:17</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">21818</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Implementation proposal for #3535945 to fix property priority order.<br />
+PropertyManager: added pluginLocalizations list.<br />
+PluginJAR: modified to use separated PropertyManager's prop list.
+    </p>
+    <p class="commitdetails"><strong>46</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        PluginJAR.java&#160;<span class="change">(+2&#160;-2)</span>,
+        PropertyManager.java&#160;<span class="change">(+32)</span>,
+        jEdit.java&#160;<span class="change">(+12)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="8"></a>
+    <a href="user_tanakahisateru.html" class="author">tanakahisateru</a>
+    <span class="date">2012-06-14 10:33</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">21800</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fixed #3534917 Plugin translations not read as UTF-8
+    </p>
+    <p class="commitdetails"><strong>5</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        PluginJAR.java&#160;<span class="change">(+5&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="7"></a>
+    <a href="user_tanakahisateru.html" class="author">tanakahisateru</a>
+    <span class="date">2012-06-14 05:28</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">21799</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fix for rev 21796: Separate message entry to keep "Remove Current" in error dialog.
+    </p>
+    <p class="commitdetails"><strong>9</strong> lines of code changed in <span class="files">6 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/gui/statusbar</strong>:
+        ErrorsWidgetFactory.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>org/jedit/localization</strong>:
+        jedit_cs.props&#160;<span class="change">(+1)</span>,
+        jedit_de.props&#160;<span class="change">(+1)</span>,
+        jedit_en.props&#160;<span class="change">(+1)</span>,
+        jedit_fr.props&#160;<span class="change">(+1)</span>,
+        jedit_ja.props&#160;<span class="change">(+4&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="6"></a>
+    <a href="user_tanakahisateru.html" class="author">tanakahisateru</a>
+    <span class="date">2012-06-11 17:47</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">21796</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fix message reference in error dialog.<br />
+A button caption of error dialog was for shortcut key setting originally.<br />
+
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/gui/statusbar</strong>:
+        ErrorsWidgetFactory.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="5"></a>
+    <a href="user_tanakahisateru.html" class="author">tanakahisateru</a>
+    <span class="date">2012-06-11 04:30</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">21794</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Japanese translation maintenance:<br />
+  All of OK and Cancel are simplified.<br />
+  Better Japanese message for r21772.
+    </p>
+    <p class="commitdetails"><strong>5</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/jedit/localization</strong>:
+        jedit_ja.props&#160;<span class="change">(+5&#160;-5)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="4"></a>
+    <a href="user_tanakahisateru.html" class="author">tanakahisateru</a>
+    <span class="date">2012-06-04 07:22</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">21760</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Japanese traslation completed based on r21759.<br />
+
+    </p>
+    <p class="commitdetails"><strong>110</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/jedit/localization</strong>:
+        jedit_ja.props&#160;<span class="change">(+110&#160;-110)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="3"></a>
+    <a href="user_tanakahisateru.html" class="author">tanakahisateru</a>
+    <span class="date">2012-06-03 05:32</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">21758</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Sync Japanese localization to jedit_en. (but work in progress)<br />
+
+    </p>
+    <p class="commitdetails"><strong>286</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/jedit/localization</strong>:
+        jedit_ja.props&#160;<span class="change">(+286&#160;-5)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="2"></a>
+    <a href="user_tanakahisateru.html" class="author">tanakahisateru</a>
+    <span class="date">2012-03-11 18:06</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">21331</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+The previous commit had a wrong comment in jedit_gui.props.<br />
+
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        jedit_gui.props&#160;<span class="change">(+2&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="1"></a>
+    <a href="user_tanakahisateru.html" class="author">tanakahisateru</a>
+    <span class="date">2012-03-11 17:58</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">21330</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Japanese localization completed.<br />
+- "ja" added to available.lang in jedit.props.<br />
+- A label (displayed by Kanji gryph) was added as<br />
+  options.appearance.lang.ja to jedit_gui.props.<br />
+- UTF-8 encoded jedit_ja.props added.<br />
+
+    </p>
+    <p class="commitdetails"><strong>2245</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        jedit.props&#160;<span class="change">(+1&#160;-1)</span>,
+        jedit_gui.props&#160;<span class="change">(+1)</span>
+      </li>
+      <li>
+        <strong>org/jedit/localization</strong>:
+        jedit_ja.props&#160;<span class="new">(new&#160;2243)</span>
+      </li>
+    </ul>
+  </dd>
+
+</dl>
+
+</div><div id="generatedby">Generated by <a href="http://www.statsvn.org">StatSVN</a> 0.7.0</div>
+</body>
+</html>

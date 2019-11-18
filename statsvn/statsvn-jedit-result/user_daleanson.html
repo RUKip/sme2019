@@ -1,0 +1,783 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>StatSVN - /jEdit/trunk Developers: daleanson</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+    <meta name="Generator" content="StatSVN 0.7.0"/>
+<link rel="stylesheet" href="objectlab-statcvs.css" type="text/css"/>
+<script type="text/javascript" charset="utf-8" src="http://bit.ly/javascript-api.js?version=latest&#38;login=statsvn&#38;apiKey=R_2c362b417d0517c27876cbaca1bb68cc"></script>
+<script type="text/javascript" charset="utf-8">
+   // wait until page is loaded to call API
+   var redir_url;
+   var short_url;
+   BitlyCB.myShortenCallback = function(data) {
+      // this is how to get a result of shortening a single url
+      var result;
+      short_url=null;
+      for (var r in data.results) {
+         result = data.results[r];
+         result['longUrl'] = r;
+         short_url = result['shortUrl'];
+         break;
+      }
+      if (short_url==null) // bit.ly failed
+      document.location=redir_url;
+      else
+      redirToTwitter();
+   };
+   function shortenTweet(url) {
+      if (short_url == null || redir_url!=url) {
+      redir_url = url;
+      BitlyClient.shorten(document.location, 'BitlyCB.myShortenCallback');
+      }
+      else
+      redirToTwitter();
+      return false;
+   }
+   function redirToTwitter() { 
+      // replace {0} which is visible as %7B0} in the link
+      document.location = redir_url.replace('%7B0}', short_url);
+   }
+</script>
+  </head>
+
+<body>
+
+<h1>/jEdit/trunk Developers: daleanson</h1>
+<div id="parentlink">&#171; <a href="index.html">Development Statistics for /jEdit/trunk</a> &#171; <a href="developers.html">Developers</a></div>
+<dl class="attributes">
+    <dt>Login name:</dt>
+    <dd>daleanson</dd>
+    <dt>Total Commits:</dt>
+    <dd>938 (3.1%)</dd>
+    <dt>Lines of Code:</dt>
+    <dd>28,418 (2.9%)</dd>
+    <dt>Most Recent Commit:</dt>
+    <dd><span class="date">2019-10-14 21:30</span></dd>
+    <dt>Tweet this:</dt>
+    <dd><a onclick="return shortenTweet(this.href);" href="http://twitter.com/home?status=daleanson%20contributed%2028%2C418%20(2.9%25)%20lines%20to%20%2FjEdit%2Ftrunk%20%7B0}%20most%20recent%20commit%202019-10-14%20stats%20by%20StatSVN%20http%3A%2F%2Fstatsvn.org"><img style="border:0px" alt="Tweet this" src="tweet-this.png"/></a></dd>
+</dl>
+
+<div class="section">
+<h2>Activity by Clock Time</h2>
+<p class="chart"><img src="activity_time_daleanson.png" alt="Activity by Hour of Day for daleanson" width="800" height="500" /></p><p class="chart"><img src="activity_day_daleanson.png" alt="Activity by Day of Week for daleanson" width="800" height="500" /></p></div>
+<div class="section">
+<h2>Activity in Directories</h2>
+  <table  rules="groups" summary="Overview of this author's activities in different directories">
+    <colgroup align="left"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <thead>
+      <tr>
+        <th>Directory</th>
+        <th>Changes</th>
+        <th>Lines of Code</th>
+        <th>Lines per Change</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <th>Totals</th>
+        <td>938 (100.0%)</td>
+        <td>28418 (100.0%)</td>
+        <td>30.2</td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_print.html" class="directory">org/gjt/sp/jedit/print/</a></th>
+        <td>136 (14.5%)</td>
+        <td>7543 (26.5%)</td>
+        <td>55.4</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_modes.html" class="directory">modes/</a></th>
+        <td>62 (6.6%)</td>
+        <td>4600 (16.2%)</td>
+        <td>74.1</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_gui.html" class="directory">org/gjt/sp/jedit/gui/</a></th>
+        <td>123 (13.1%)</td>
+        <td>3090 (10.9%)</td>
+        <td>25.1</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_jedit_localization.html" class="directory">org/jedit/localization/</a></th>
+        <td>25 (2.7%)</td>
+        <td>2948 (10.4%)</td>
+        <td>117.9</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_bsh.html" class="directory">org/gjt/sp/jedit/bsh/</a></th>
+        <td>50 (5.3%)</td>
+        <td>2564 (9.0%)</td>
+        <td>51.2</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit.html" class="directory">org/gjt/sp/jedit/</a></th>
+        <td>155 (16.5%)</td>
+        <td>2292 (8.1%)</td>
+        <td>14.7</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_options.html" class="directory">org/gjt/sp/jedit/options/</a></th>
+        <td>53 (5.7%)</td>
+        <td>1700 (6.0%)</td>
+        <td>32.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_textarea.html" class="directory">org/gjt/sp/jedit/textarea/</a></th>
+        <td>47 (5.0%)</td>
+        <td>683 (2.4%)</td>
+        <td>14.5</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_macros_Java.html" class="directory">macros/Java/</a></th>
+        <td>8 (0.9%)</td>
+        <td>484 (1.7%)</td>
+        <td>60.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_doc_users-guide.html" class="directory">doc/users-guide/</a></th>
+        <td>16 (1.7%)</td>
+        <td>373 (1.3%)</td>
+        <td>23.3</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_syntax.html" class="directory">org/gjt/sp/jedit/syntax/</a></th>
+        <td>14 (1.5%)</td>
+        <td>343 (1.2%)</td>
+        <td>24.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_search.html" class="directory">org/gjt/sp/jedit/search/</a></th>
+        <td>14 (1.5%)</td>
+        <td>288 (1.0%)</td>
+        <td>20.5</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_doc.html" class="directory">doc/</a></th>
+        <td>91 (9.7%)</td>
+        <td>279 (1.0%)</td>
+        <td>3.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_pluginmgr.html" class="directory">org/gjt/sp/jedit/pluginmgr/</a></th>
+        <td>22 (2.3%)</td>
+        <td>223 (0.8%)</td>
+        <td>10.1</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_macros_Editing.html" class="directory">macros/Editing/</a></th>
+        <td>16 (1.7%)</td>
+        <td>150 (0.5%)</td>
+        <td>9.3</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_bsh_classpath.html" class="directory">org/gjt/sp/jedit/bsh/classpath/</a></th>
+        <td>6 (0.6%)</td>
+        <td>120 (0.4%)</td>
+        <td>20.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_util.html" class="directory">org/gjt/sp/util/</a></th>
+        <td>12 (1.3%)</td>
+        <td>114 (0.4%)</td>
+        <td>9.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_msg.html" class="directory">org/gjt/sp/jedit/msg/</a></th>
+        <td>3 (0.3%)</td>
+        <td>108 (0.4%)</td>
+        <td>36.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_gui_statusbar.html" class="directory">org/gjt/sp/jedit/gui/statusbar/</a></th>
+        <td>3 (0.3%)</td>
+        <td>108 (0.4%)</td>
+        <td>36.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_bufferset.html" class="directory">org/gjt/sp/jedit/bufferset/</a></th>
+        <td>5 (0.5%)</td>
+        <td>89 (0.3%)</td>
+        <td>17.8</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_buffer.html" class="directory">org/gjt/sp/jedit/buffer/</a></th>
+        <td>9 (1.0%)</td>
+        <td>85 (0.3%)</td>
+        <td>9.4</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_bsh_collection.html" class="directory">org/gjt/sp/jedit/bsh/collection/</a></th>
+        <td>2 (0.2%)</td>
+        <td>63 (0.2%)</td>
+        <td>31.5</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_browser.html" class="directory">org/gjt/sp/jedit/browser/</a></th>
+        <td>16 (1.7%)</td>
+        <td>43 (0.2%)</td>
+        <td>2.6</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_help.html" class="directory">org/gjt/sp/jedit/help/</a></th>
+        <td>5 (0.5%)</td>
+        <td>22 (0.1%)</td>
+        <td>4.4</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_io.html" class="directory">org/gjt/sp/jedit/io/</a></th>
+        <td>3 (0.3%)</td>
+        <td>16 (0.1%)</td>
+        <td>5.3</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_jedit_options.html" class="directory">org/jedit/options/</a></th>
+        <td>3 (0.3%)</td>
+        <td>15 (0.1%)</td>
+        <td>5.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_input.html" class="directory">org/gjt/sp/jedit/input/</a></th>
+        <td>4 (0.4%)</td>
+        <td>14 (0.0%)</td>
+        <td>3.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir.html" class="directory">/</a></th>
+        <td>6 (0.6%)</td>
+        <td>14 (0.0%)</td>
+        <td>2.3</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_build-support.html" class="directory">build-support/</a></th>
+        <td>2 (0.2%)</td>
+        <td>13 (0.0%)</td>
+        <td>6.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_menu.html" class="directory">org/gjt/sp/jedit/menu/</a></th>
+        <td>5 (0.5%)</td>
+        <td>12 (0.0%)</td>
+        <td>2.4</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_bufferio.html" class="directory">org/gjt/sp/jedit/bufferio/</a></th>
+        <td>2 (0.2%)</td>
+        <td>8 (0.0%)</td>
+        <td>4.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_jedit_keymap.html" class="directory">org/jedit/keymap/</a></th>
+        <td>2 (0.2%)</td>
+        <td>6 (0.0%)</td>
+        <td>3.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_jedit_core.html" class="directory">org/jedit/core/</a></th>
+        <td>1 (0.1%)</td>
+        <td>4 (0.0%)</td>
+        <td>4.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_bsh_org_objectweb_asm.html" class="directory">org/gjt/sp/jedit/bsh/org/objectweb/asm/</a></th>
+        <td>1 (0.1%)</td>
+        <td>3 (0.0%)</td>
+        <td>3.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_macros_Misc.html" class="directory">macros/Misc/</a></th>
+        <td>1 (0.1%)</td>
+        <td>1 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_icons_themes_tango_22x22_actions.html" class="directory">org/gjt/sp/jedit/icons/themes/tango/22x22/actions/</a></th>
+        <td>1 (0.1%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_icons_themes_classic_22x22_actions.html" class="directory">org/gjt/sp/jedit/icons/themes/classic/22x22/actions/</a></th>
+        <td>1 (0.1%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_macros_Text.html" class="directory">macros/Text/</a></th>
+        <td>8 (0.9%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_macros_Properties.html" class="directory">macros/Properties/</a></th>
+        <td>1 (0.1%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_macros_Files.html" class="directory">macros/Files/</a></th>
+        <td>1 (0.1%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_macros_Clipboard.html" class="directory">macros/Clipboard/</a></th>
+        <td>2 (0.2%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_macros_C.html" class="directory">macros/C/</a></th>
+        <td>1 (0.1%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+<p class="chart"><img src="directory_sizes_daleanson.png" alt="Activity of daleanson" width="800" height="500" /></p></div>
+<div class="section">
+<h2>Most Recent Commits</h2>
+<dl class="commitlist">
+  <dt><a name="20"></a>
+    <a href="user_daleanson.html" class="author">daleanson</a>
+    <span class="date">2019-10-14 21:30</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24950</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fixed issue where print system would show an error if the last used printer no longer exists.
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/print</strong>:
+        PrinterDialog.java&#160;<span class="change">(+1&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="19"></a>
+    <a href="user_daleanson.html" class="author">daleanson</a>
+    <span class="date">2019-07-28 19:32</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24913</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Updates for Java 11: check for and require Java 11 on start up, require Java 11 in build.xml, fixed Java 11 compiler warnings (mostly deprecation annotations).
+    </p>
+    <p class="commitdetails"><strong>33</strong> lines of code changed in <span class="files">9 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        build.xml&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        GUIUtilities.java&#160;<span class="change">(+20)</span>,
+        JARClassLoader.java&#160;<span class="change">(+1&#160;-3)</span>,
+        jEdit.java&#160;<span class="change">(+3&#160;-3)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/bsh</strong>:
+        JavaCharStream.java&#160;<span class="change">(+2&#160;-2)</span>,
+        NameSpace.java&#160;<span class="change">(+1)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/help</strong>:
+        HelpViewer.java&#160;<span class="change">(+1&#160;-3)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/search</strong>:
+        SearchDialog.java&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/textarea</strong>:
+        TextArea.java&#160;<span class="change">(+1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="18"></a>
+    <a href="user_daleanson.html" class="author">daleanson</a>
+    <span class="date">2019-06-12 20:27</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24908</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Feature request #545, HL7 mode.
+    </p>
+    <p class="commitdetails"><strong>97</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(changed)</span>
+      </li>
+      <li>
+        <strong>modes</strong>:
+        catalog&#160;<span class="change">(changed)</span>,
+        hl7v2.xml&#160;<span class="new">(new&#160;97)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="17"></a>
+    <a href="user_daleanson.html" class="author">daleanson</a>
+    <span class="date">2019-06-12 20:24</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24907</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Should have been committed with revision 24905.
+    </p>
+    <p class="commitdetails"><strong>421</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modes</strong>:
+        plantuml.xml&#160;<span class="new">(new&#160;421)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="16"></a>
+    <a href="user_daleanson.html" class="author">daleanson</a>
+    <span class="date">2019-06-12 20:23</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24906</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Reverting inadvertent checkin.
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        build.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="15"></a>
+    <a href="user_daleanson.html" class="author">daleanson</a>
+    <span class="date">2019-06-12 19:58</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24905</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Feature request #528, PlantUML mode.
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        build.xml&#160;<span class="change">(changed)</span>
+      </li>
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(changed)</span>
+      </li>
+      <li>
+        <strong>modes</strong>:
+        catalog&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="14"></a>
+    <a href="user_daleanson.html" class="author">daleanson</a>
+    <span class="date">2019-06-04 17:41</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24904</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fix for bug # 4081, file browser splitter buttons not working
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(changed)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/browser</strong>:
+        BrowserView.java&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="13"></a>
+    <a href="user_daleanson.html" class="author">daleanson</a>
+    <span class="date">2019-04-23 22:45</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24903</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fix for bug # 4073, corrected location of context menu popup.
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(changed)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/util</strong>:
+        GenericGUIUtilities.java&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="12"></a>
+    <a href="user_daleanson.html" class="author">daleanson</a>
+    <span class="date">2019-04-21 15:18</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24900</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Added a check suggested by Marcelo so that no file is a backup file if the number of backups is 0.
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        MiscUtilities.java&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="11"></a>
+    <a href="user_daleanson.html" class="author">daleanson</a>
+    <span class="date">2019-03-26 23:43</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24899</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fixed a bug introduced in revision 24874 that gave false positives when determining backup files.
+    </p>
+    <p class="commitdetails"><strong>18</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        MiscUtilities.java&#160;<span class="change">(+18&#160;-4)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="10"></a>
+    <a href="user_daleanson.html" class="author">daleanson</a>
+    <span class="date">2019-01-17 21:10</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24893</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Updated Java mode to support Java 10 "var" type.
+    </p>
+    <p class="commitdetails"><strong>4</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+1)</span>
+      </li>
+      <li>
+        <strong>modes</strong>:
+        java.xml&#160;<span class="change">(+3&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="9"></a>
+    <a href="user_daleanson.html" class="author">daleanson</a>
+    <span class="date">2018-08-30 19:29</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24885</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Updated Appearance option pane to allow setting "primary" and "secondary" fonts for all look and feels.
+    </p>
+    <p class="commitdetails"><strong>62</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+3)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/options</strong>:
+        AppearanceOptionPane.java&#160;<span class="change">(+59&#160;-49)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="8"></a>
+    <a href="user_daleanson.html" class="author">daleanson</a>
+    <span class="date">2018-08-18 21:40</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24884</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Updated gui props for Taiwan Chinese.
+    </p>
+    <p class="commitdetails"><strong>3</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        jedit_gui.props&#160;<span class="change">(+3&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="7"></a>
+    <a href="user_daleanson.html" class="author">daleanson</a>
+    <span class="date">2018-08-18 19:53</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24883</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Patch # 620, Chinese Taiwan localization from David Day.
+    </p>
+    <p class="commitdetails"><strong>2710</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+2)</span>
+      </li>
+      <li>
+        <strong>org/jedit/localization</strong>:
+        jedit_zh-tw.props&#160;<span class="new">(new&#160;2708)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="6"></a>
+    <a href="user_daleanson.html" class="author">daleanson</a>
+    <span class="date">2018-08-07 16:23</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24880</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Added property to turn on use of the RolloverToggleButton, set use.rolloverToggleButtons to true to use them instead of regular JToggleButtons.
+    </p>
+    <p class="commitdetails"><strong>10</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/gui</strong>:
+        PanelWindowContainer.java&#160;<span class="change">(+10&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="5"></a>
+    <a href="user_daleanson.html" class="author">daleanson</a>
+    <span class="date">2018-08-07 02:21</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24879</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Possible fix for bug # 2722, dockable buttons don't highlight on mouseover.
+    </p>
+    <p class="commitdetails"><strong>165</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/gui</strong>:
+        PanelWindowContainer.java&#160;<span class="change">(+2&#160;-2)</span>,
+        RolloverToggleButton.java&#160;<span class="new">(new&#160;163)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="4"></a>
+    <a href="user_daleanson.html" class="author">daleanson</a>
+    <span class="date">2018-08-06 19:25</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24878</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fix for bug # 2719, electric scroll not working with page up/down.
+    </p>
+    <p class="commitdetails"><strong>5</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+3&#160;-1)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/textarea</strong>:
+        TextArea.java&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="3"></a>
+    <a href="user_daleanson.html" class="author">daleanson</a>
+    <span class="date">2018-08-06 18:44</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24877</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fix for bug # 2626, dockable buttons don't wrap correctly
+    </p>
+    <p class="commitdetails"><strong>10</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+2)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/gui</strong>:
+        DockableLayout.java&#160;<span class="change">(+8&#160;-8)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="2"></a>
+    <a href="user_daleanson.html" class="author">daleanson</a>
+    <span class="date">2018-08-06 15:22</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24876</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fix for Bug # 2412, preview javadoc macro npe.
+    </p>
+    <p class="commitdetails"><strong>8</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+2)</span>
+      </li>
+      <li>
+        <strong>macros/Java</strong>:
+        Preview_JavaDoc_Of_Current_Buffer.bsh&#160;<span class="change">(+6&#160;-7)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="1"></a>
+    <a href="user_daleanson.html" class="author">daleanson</a>
+    <span class="date">2018-08-06 00:08</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24875</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fix for bug # 4055, use default text area background and foreground colors rather than view bg and fg colors.
+    </p>
+    <p class="commitdetails"><strong>5</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+2)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/gui</strong>:
+        StyleEditor.java&#160;<span class="change">(+3&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+</dl>
+
+<p>(282 more)</p>
+</div><div id="generatedby">Generated by <a href="http://www.statsvn.org">StatSVN</a> 0.7.0</div>
+</body>
+</html>

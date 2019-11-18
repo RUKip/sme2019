@@ -1,0 +1,565 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>StatSVN - /jEdit/trunk Developers: hertzhaft</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+    <meta name="Generator" content="StatSVN 0.7.0"/>
+<link rel="stylesheet" href="objectlab-statcvs.css" type="text/css"/>
+<script type="text/javascript" charset="utf-8" src="http://bit.ly/javascript-api.js?version=latest&#38;login=statsvn&#38;apiKey=R_2c362b417d0517c27876cbaca1bb68cc"></script>
+<script type="text/javascript" charset="utf-8">
+   // wait until page is loaded to call API
+   var redir_url;
+   var short_url;
+   BitlyCB.myShortenCallback = function(data) {
+      // this is how to get a result of shortening a single url
+      var result;
+      short_url=null;
+      for (var r in data.results) {
+         result = data.results[r];
+         result['longUrl'] = r;
+         short_url = result['shortUrl'];
+         break;
+      }
+      if (short_url==null) // bit.ly failed
+      document.location=redir_url;
+      else
+      redirToTwitter();
+   };
+   function shortenTweet(url) {
+      if (short_url == null || redir_url!=url) {
+      redir_url = url;
+      BitlyClient.shorten(document.location, 'BitlyCB.myShortenCallback');
+      }
+      else
+      redirToTwitter();
+      return false;
+   }
+   function redirToTwitter() { 
+      // replace {0} which is visible as %7B0} in the link
+      document.location = redir_url.replace('%7B0}', short_url);
+   }
+</script>
+  </head>
+
+<body>
+
+<h1>/jEdit/trunk Developers: hertzhaft</h1>
+<div id="parentlink">&#171; <a href="index.html">Development Statistics for /jEdit/trunk</a> &#171; <a href="developers.html">Developers</a></div>
+<dl class="attributes">
+    <dt>Login name:</dt>
+    <dd>hertzhaft</dd>
+    <dt>Total Commits:</dt>
+    <dd>48 (0.2%)</dd>
+    <dt>Lines of Code:</dt>
+    <dd>1,732 (0.2%)</dd>
+    <dt>Most Recent Commit:</dt>
+    <dd><span class="date">2012-01-21 15:40</span></dd>
+    <dt>Tweet this:</dt>
+    <dd><a onclick="return shortenTweet(this.href);" href="http://twitter.com/home?status=hertzhaft%20contributed%201%2C732%20(0.2%25)%20lines%20to%20%2FjEdit%2Ftrunk%20%7B0}%20most%20recent%20commit%202012-01-21%20stats%20by%20StatSVN%20http%3A%2F%2Fstatsvn.org"><img style="border:0px" alt="Tweet this" src="tweet-this.png"/></a></dd>
+</dl>
+
+<div class="section">
+<h2>Activity by Clock Time</h2>
+<p class="chart"><img src="activity_time_hertzhaft.png" alt="Activity by Hour of Day for hertzhaft" width="800" height="500" /></p><p class="chart"><img src="activity_day_hertzhaft.png" alt="Activity by Day of Week for hertzhaft" width="800" height="500" /></p></div>
+<div class="section">
+<h2>Activity in Directories</h2>
+  <table  rules="groups" summary="Overview of this author's activities in different directories">
+    <colgroup align="left"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <thead>
+      <tr>
+        <th>Directory</th>
+        <th>Changes</th>
+        <th>Lines of Code</th>
+        <th>Lines per Change</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <th>Totals</th>
+        <td>48 (100.0%)</td>
+        <td>1732 (100.0%)</td>
+        <td>36.0</td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr  class="odd">
+        <th><a href="dir_modes.html" class="directory">modes/</a></th>
+        <td>6 (12.5%)</td>
+        <td>635 (36.7%)</td>
+        <td>105.8</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_options.html" class="directory">org/gjt/sp/jedit/options/</a></th>
+        <td>3 (6.3%)</td>
+        <td>349 (20.2%)</td>
+        <td>116.3</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_browser.html" class="directory">org/gjt/sp/jedit/browser/</a></th>
+        <td>8 (16.7%)</td>
+        <td>256 (14.8%)</td>
+        <td>32.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_buffer.html" class="directory">org/gjt/sp/jedit/buffer/</a></th>
+        <td>5 (10.4%)</td>
+        <td>183 (10.6%)</td>
+        <td>36.6</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit.html" class="directory">org/gjt/sp/jedit/</a></th>
+        <td>14 (29.2%)</td>
+        <td>177 (10.2%)</td>
+        <td>12.6</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_gui.html" class="directory">org/gjt/sp/jedit/gui/</a></th>
+        <td>3 (6.3%)</td>
+        <td>83 (4.8%)</td>
+        <td>27.6</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_doc.html" class="directory">doc/</a></th>
+        <td>6 (12.5%)</td>
+        <td>48 (2.8%)</td>
+        <td>8.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_io.html" class="directory">org/gjt/sp/jedit/io/</a></th>
+        <td>1 (2.1%)</td>
+        <td>1 (0.1%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_icons.html" class="directory">org/gjt/sp/jedit/icons/</a></th>
+        <td>2 (4.2%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+<p class="chart"><img src="directory_sizes_hertzhaft.png" alt="Activity of hertzhaft" width="800" height="500" /></p></div>
+<div class="section">
+<h2>Most Recent Commits</h2>
+<dl class="commitlist">
+  <dt><a name="20"></a>
+    <a href="user_hertzhaft.html" class="author">hertzhaft</a>
+    <span class="date">2012-01-21 15:40</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">20903</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+replaced requestFocus() with requestFocusInWindow() for registerList (thanks Jarek)
+    </p>
+    <p class="commitdetails"><strong>10</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+6&#160;-2)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/gui</strong>:
+        RegisterViewer.java&#160;<span class="change">(+4&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="19"></a>
+    <a href="user_hertzhaft.html" class="author">hertzhaft</a>
+    <span class="date">2012-01-20 23:18</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">20886</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Feature request# 3437779: added key bindings to RegisterViewer; set inital focus to registerList
+    </p>
+    <p class="commitdetails"><strong>75</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/gui</strong>:
+        RegisterViewer.java&#160;<span class="change">(+75&#160;-35)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="18"></a>
+    <a href="user_hertzhaft.html" class="author">hertzhaft</a>
+    <span class="date">2007-05-04 15:44</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">9496</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+1st attempt would return a wrong extension when there's a dot in the path and no file extension, thx Matthieu
+    </p>
+    <p class="commitdetails"><strong>3</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        MiscUtilities.java&#160;<span class="change">(+3&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="17"></a>
+    <a href="user_hertzhaft.html" class="author">hertzhaft</a>
+    <span class="date">2007-05-03 19:50</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">9490</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fix for feature request 1708881 (File Browser in 4.3 pre: reset the column width when resort)
+    </p>
+    <p class="commitdetails"><strong>5</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/browser</strong>:
+        VFSDirectoryEntryTable.java&#160;<span class="change">(+5&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="16"></a>
+    <a href="user_hertzhaft.html" class="author">hertzhaft</a>
+    <span class="date">2007-05-03 18:17</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">9488</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fix for feature request 1708876 (file browser 4.3 pre wrong file type parsing)
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        MiscUtilities.java&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="15"></a>
+    <a href="user_hertzhaft.html" class="author">hertzhaft</a>
+    <span class="date">2006-11-28 10:31</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">8137</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+support for fully qualified variable names like $Some::Module::test
+    </p>
+    <p class="commitdetails"><strong>15</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+6&#160;-2)</span>
+      </li>
+      <li>
+        <strong>modes</strong>:
+        perl.xml&#160;<span class="change">(+9&#160;-10)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="14"></a>
+    <a href="user_hertzhaft.html" class="author">hertzhaft</a>
+    <span class="date">2006-11-13 17:35</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">8024</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+simplified regexes for regex highlighting to avoid heavy CPU load
+    </p>
+    <p class="commitdetails"><strong>4</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modes</strong>:
+        perl.xml&#160;<span class="change">(+4&#160;-4)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="13"></a>
+    <a href="user_hertzhaft.html" class="author">hertzhaft</a>
+    <span class="date">2006-11-08 19:07</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">7994</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Applied patch #1592784 by Kazutoshi Satoda.
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/options</strong>:
+        BufferOptionPane.java&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="12"></a>
+    <a href="user_hertzhaft.html" class="author">hertzhaft</a>
+    <span class="date">2006-10-21 16:34</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">7629</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Store buffer autoreload settings in perspective.xml (#1578785); corrected perspective.dtd
+    </p>
+    <p class="commitdetails"><strong>33</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+11&#160;-1)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        PerspectiveManager.java&#160;<span class="change">(+20&#160;-2)</span>,
+        perspective.dtd&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="11"></a>
+    <a href="user_hertzhaft.html" class="author">hertzhaft</a>
+    <span class="date">2006-10-20 18:13</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">7627</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Automatic reload of a changed buffer without prompting (feature request #1578785), not persistent yet. Autoreload settings configurable per buffer. Factored out options/BufferOptionPane.
+    </p>
+    <p class="commitdetails"><strong>426</strong> lines of code changed in <span class="files">8 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        Buffer.java&#160;<span class="change">(+47)</span>,
+        jEdit.java&#160;<span class="change">(+16&#160;-13)</span>,
+        jedit.props&#160;<span class="change">(+5&#160;-2)</span>,
+        jedit_gui.props&#160;<span class="change">(+2&#160;-1)</span>,
+        perspective.dtd&#160;<span class="change">(+3)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/gui</strong>:
+        BufferOptions.java&#160;<span class="change">(+4&#160;-480)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/options</strong>:
+        BufferOptionPane.java&#160;<span class="new">(new&#160;329)</span>,
+        GeneralOptionPane.java&#160;<span class="change">(+20&#160;-7)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="10"></a>
+    <a href="user_hertzhaft.html" class="author">hertzhaft</a>
+    <span class="date">2006-10-13 12:34</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">7505</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Attempt to fix #1571629
+    </p>
+    <p class="commitdetails"><strong>24</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/browser</strong>:
+        VFSBrowser.java&#160;<span class="change">(+24&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="9"></a>
+    <a href="user_hertzhaft.html" class="author">hertzhaft</a>
+    <span class="date">2006-10-13 12:24</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">7504</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+get rid of 1 deprecation warning
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/browser</strong>:
+        VFSDirectoryEntryTable.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="8"></a>
+    <a href="user_hertzhaft.html" class="author">hertzhaft</a>
+    <span class="date">2006-10-13 12:22</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">7503</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+VFS browser: sort columns by extension when clicking on column "Type"
+    </p>
+    <p class="commitdetails"><strong>21</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+8)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/browser</strong>:
+        VFSDirectoryEntryTableModel.java&#160;<span class="change">(+13&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="7"></a>
+    <a href="user_hertzhaft.html" class="author">hertzhaft</a>
+    <span class="date">2006-10-05 11:00</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">7173</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+VFS browser: keep current sort parameters throughout session; bug fix in FileVFS
+    </p>
+    <p class="commitdetails"><strong>33</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/browser</strong>:
+        VFSDirectoryEntryTableModel.java&#160;<span class="change">(+32&#160;-11)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/io</strong>:
+        FileVFS.java&#160;<span class="change">(+1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="6"></a>
+    <a href="user_hertzhaft.html" class="author">hertzhaft</a>
+    <span class="date">2006-10-04 12:10</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">7170</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+VFS Broswer: Added icons to indicate the sorted column and the sorting direction
+    </p>
+    <p class="commitdetails"><strong>32</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/browser</strong>:
+        VFSDirectoryEntryTable.java&#160;<span class="change">(+32)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/icons</strong>:
+        arrow-asc.png&#160;<span class="new">(new)</span>,
+        arrow-desc.png&#160;<span class="new">(new)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="5"></a>
+    <a href="user_hertzhaft.html" class="author">hertzhaft</a>
+    <span class="date">2006-09-29 14:13</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">7146</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Added column sorting for VFS browser
+    </p>
+    <p class="commitdetails"><strong>153</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+4)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/browser</strong>:
+        VFSDirectoryEntryTable.java&#160;<span class="change">(+27&#160;-1)</span>,
+        VFSDirectoryEntryTableModel.java&#160;<span class="change">(+122&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="4"></a>
+    <a href="user_hertzhaft.html" class="author">hertzhaft</a>
+    <span class="date">2006-09-21 17:05</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">7106</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+reorganized the saving of markers, reducing the use of WorkThreads when saving markers and when deleting left-over markers files
+    </p>
+    <p class="commitdetails"><strong>39</strong> lines of code changed in <span class="files">4 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        Buffer.java&#160;<span class="change">(+16&#160;-2)</span>,
+        jEdit.java&#160;<span class="change">(+4&#160;-2)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/buffer</strong>:
+        BufferSaveRequest.java&#160;<span class="change">(+3)</span>,
+        MarkersSaveRequest.java&#160;<span class="change">(+16&#160;-24)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="3"></a>
+    <a href="user_hertzhaft.html" class="author">hertzhaft</a>
+    <span class="date">2006-09-19 13:17</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">7068</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+added myself to about.text
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        jedit_gui.props&#160;<span class="change">(+1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="2"></a>
+    <a href="user_hertzhaft.html" class="author">hertzhaft</a>
+    <span class="date">2006-09-19 12:59</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">7067</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+documented recent fixes by hertzhaft
+    </p>
+    <p class="commitdetails"><strong>13</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+13&#160;-4)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="1"></a>
+    <a href="user_hertzhaft.html" class="author">hertzhaft</a>
+    <span class="date">2006-09-19 12:48</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">7066</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+fixed infinite loops in transliteration and regex highlighting, added complex operators, perl special variables, references, dereferencing expressions, implicit literals (in hash expressions), labels, file globs
+    </p>
+    <p class="commitdetails"><strong>150</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modes</strong>:
+        perl.xml&#160;<span class="change">(+150&#160;-55)</span>
+      </li>
+    </ul>
+  </dd>
+
+</dl>
+
+<p>(4 more)</p>
+</div><div id="generatedby">Generated by <a href="http://www.statsvn.org">StatSVN</a> 0.7.0</div>
+</body>
+</html>

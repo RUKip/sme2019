@@ -1,0 +1,917 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>StatSVN - /jEdit/trunk Developers: kpouer</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+    <meta name="Generator" content="StatSVN 0.7.0"/>
+<link rel="stylesheet" href="objectlab-statcvs.css" type="text/css"/>
+<script type="text/javascript" charset="utf-8" src="http://bit.ly/javascript-api.js?version=latest&#38;login=statsvn&#38;apiKey=R_2c362b417d0517c27876cbaca1bb68cc"></script>
+<script type="text/javascript" charset="utf-8">
+   // wait until page is loaded to call API
+   var redir_url;
+   var short_url;
+   BitlyCB.myShortenCallback = function(data) {
+      // this is how to get a result of shortening a single url
+      var result;
+      short_url=null;
+      for (var r in data.results) {
+         result = data.results[r];
+         result['longUrl'] = r;
+         short_url = result['shortUrl'];
+         break;
+      }
+      if (short_url==null) // bit.ly failed
+      document.location=redir_url;
+      else
+      redirToTwitter();
+   };
+   function shortenTweet(url) {
+      if (short_url == null || redir_url!=url) {
+      redir_url = url;
+      BitlyClient.shorten(document.location, 'BitlyCB.myShortenCallback');
+      }
+      else
+      redirToTwitter();
+      return false;
+   }
+   function redirToTwitter() { 
+      // replace {0} which is visible as %7B0} in the link
+      document.location = redir_url.replace('%7B0}', short_url);
+   }
+</script>
+  </head>
+
+<body>
+
+<h1>/jEdit/trunk Developers: kpouer</h1>
+<div id="parentlink">&#171; <a href="index.html">Development Statistics for /jEdit/trunk</a> &#171; <a href="developers.html">Developers</a></div>
+<dl class="attributes">
+    <dt>Login name:</dt>
+    <dd>kpouer</dd>
+    <dt>Total Commits:</dt>
+    <dd>3,331 (11.2%)</dd>
+    <dt>Lines of Code:</dt>
+    <dd>75,074 (7.7%)</dd>
+    <dt>Most Recent Commit:</dt>
+    <dd><span class="date">2018-06-18 10:35</span></dd>
+    <dt>Tweet this:</dt>
+    <dd><a onclick="return shortenTweet(this.href);" href="http://twitter.com/home?status=kpouer%20contributed%2075%2C074%20(7.7%25)%20lines%20to%20%2FjEdit%2Ftrunk%20%7B0}%20most%20recent%20commit%202018-06-18%20stats%20by%20StatSVN%20http%3A%2F%2Fstatsvn.org"><img style="border:0px" alt="Tweet this" src="tweet-this.png"/></a></dd>
+</dl>
+
+<div class="section">
+<h2>Activity by Clock Time</h2>
+<p class="chart"><img src="activity_time_kpouer.png" alt="Activity by Hour of Day for kpouer" width="800" height="500" /></p><p class="chart"><img src="activity_day_kpouer.png" alt="Activity by Day of Week for kpouer" width="800" height="500" /></p></div>
+<div class="section">
+<h2>Activity in Directories</h2>
+  <table  rules="groups" summary="Overview of this author's activities in different directories">
+    <colgroup align="left"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <thead>
+      <tr>
+        <th>Directory</th>
+        <th>Changes</th>
+        <th>Lines of Code</th>
+        <th>Lines per Change</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <th>Totals</th>
+        <td>3331 (100.0%)</td>
+        <td>75074 (100.0%)</td>
+        <td>22.5</td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_textarea.html" class="directory">org/gjt/sp/jedit/textarea/</a></th>
+        <td>273 (8.2%)</td>
+        <td>11574 (15.4%)</td>
+        <td>42.3</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit.html" class="directory">org/gjt/sp/jedit/</a></th>
+        <td>670 (20.1%)</td>
+        <td>8619 (11.5%)</td>
+        <td>12.8</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_modes.html" class="directory">modes/</a></th>
+        <td>133 (4.0%)</td>
+        <td>7743 (10.3%)</td>
+        <td>58.2</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_jedit_localization.html" class="directory">org/jedit/localization/</a></th>
+        <td>23 (0.7%)</td>
+        <td>7636 (10.2%)</td>
+        <td>332.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_gui.html" class="directory">org/gjt/sp/jedit/gui/</a></th>
+        <td>193 (5.8%)</td>
+        <td>5983 (8.0%)</td>
+        <td>31.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_jedit_i18n.html" class="directory">org/jedit/i18n/</a></th>
+        <td>3 (0.1%)</td>
+        <td>5303 (7.1%)</td>
+        <td>1767.6</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir.html" class="directory">/</a></th>
+        <td>30 (0.9%)</td>
+        <td>3277 (4.4%)</td>
+        <td>109.2</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_gui_statusbar.html" class="directory">org/gjt/sp/jedit/gui/statusbar/</a></th>
+        <td>57 (1.7%)</td>
+        <td>2614 (3.5%)</td>
+        <td>45.8</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_options.html" class="directory">org/gjt/sp/jedit/options/</a></th>
+        <td>135 (4.1%)</td>
+        <td>2185 (2.9%)</td>
+        <td>16.1</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_util.html" class="directory">org/gjt/sp/util/</a></th>
+        <td>80 (2.4%)</td>
+        <td>2033 (2.7%)</td>
+        <td>25.4</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_doc.html" class="directory">doc/</a></th>
+        <td>471 (14.1%)</td>
+        <td>2002 (2.7%)</td>
+        <td>4.2</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_bufferset.html" class="directory">org/gjt/sp/jedit/bufferset/</a></th>
+        <td>50 (1.5%)</td>
+        <td>1836 (2.4%)</td>
+        <td>36.7</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_pluginmgr.html" class="directory">org/gjt/sp/jedit/pluginmgr/</a></th>
+        <td>96 (2.9%)</td>
+        <td>1735 (2.3%)</td>
+        <td>18.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_browser.html" class="directory">org/gjt/sp/jedit/browser/</a></th>
+        <td>77 (2.3%)</td>
+        <td>1560 (2.1%)</td>
+        <td>20.2</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_bufferio.html" class="directory">org/gjt/sp/jedit/bufferio/</a></th>
+        <td>33 (1.0%)</td>
+        <td>1475 (2.0%)</td>
+        <td>44.6</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_search.html" class="directory">org/gjt/sp/jedit/search/</a></th>
+        <td>94 (2.8%)</td>
+        <td>1095 (1.5%)</td>
+        <td>11.6</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_input.html" class="directory">org/gjt/sp/jedit/input/</a></th>
+        <td>23 (0.7%)</td>
+        <td>1061 (1.4%)</td>
+        <td>46.1</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_io.html" class="directory">org/gjt/sp/jedit/io/</a></th>
+        <td>70 (2.1%)</td>
+        <td>1031 (1.4%)</td>
+        <td>14.7</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_buffer.html" class="directory">org/gjt/sp/jedit/buffer/</a></th>
+        <td>76 (2.3%)</td>
+        <td>760 (1.0%)</td>
+        <td>10.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_syntax.html" class="directory">org/gjt/sp/jedit/syntax/</a></th>
+        <td>57 (1.7%)</td>
+        <td>644 (0.9%)</td>
+        <td>11.2</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_gui_tray.html" class="directory">org/gjt/sp/jedit/gui/tray/</a></th>
+        <td>13 (0.4%)</td>
+        <td>638 (0.8%)</td>
+        <td>49.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_jedit_keymap.html" class="directory">org/jedit/keymap/</a></th>
+        <td>15 (0.5%)</td>
+        <td>627 (0.8%)</td>
+        <td>41.8</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_keymaps.html" class="directory">keymaps/</a></th>
+        <td>5 (0.2%)</td>
+        <td>601 (0.8%)</td>
+        <td>120.2</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_datatransfer.html" class="directory">org/gjt/sp/jedit/datatransfer/</a></th>
+        <td>18 (0.5%)</td>
+        <td>543 (0.7%)</td>
+        <td>30.1</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_indent.html" class="directory">org/gjt/sp/jedit/indent/</a></th>
+        <td>22 (0.7%)</td>
+        <td>490 (0.7%)</td>
+        <td>22.2</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_keymap.html" class="directory">org/gjt/sp/jedit/keymap/</a></th>
+        <td>16 (0.5%)</td>
+        <td>448 (0.6%)</td>
+        <td>28.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_macros_Text.html" class="directory">macros/Text/</a></th>
+        <td>2 (0.1%)</td>
+        <td>378 (0.5%)</td>
+        <td>189.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_visitors.html" class="directory">org/gjt/sp/jedit/visitors/</a></th>
+        <td>3 (0.1%)</td>
+        <td>157 (0.2%)</td>
+        <td>52.3</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_menu.html" class="directory">org/gjt/sp/jedit/menu/</a></th>
+        <td>23 (0.7%)</td>
+        <td>137 (0.2%)</td>
+        <td>5.9</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_help.html" class="directory">org/gjt/sp/jedit/help/</a></th>
+        <td>11 (0.3%)</td>
+        <td>131 (0.2%)</td>
+        <td>11.9</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_macros_Editing.html" class="directory">macros/Editing/</a></th>
+        <td>3 (0.1%)</td>
+        <td>113 (0.2%)</td>
+        <td>37.6</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_migration.html" class="directory">org/gjt/sp/jedit/migration/</a></th>
+        <td>5 (0.2%)</td>
+        <td>103 (0.1%)</td>
+        <td>20.6</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_jedit_migration.html" class="directory">org/jedit/migration/</a></th>
+        <td>5 (0.2%)</td>
+        <td>99 (0.1%)</td>
+        <td>19.8</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_msg.html" class="directory">org/gjt/sp/jedit/msg/</a></th>
+        <td>11 (0.3%)</td>
+        <td>79 (0.1%)</td>
+        <td>7.1</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_macros_Java.html" class="directory">macros/Java/</a></th>
+        <td>3 (0.1%)</td>
+        <td>72 (0.1%)</td>
+        <td>24.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_macros_Misc.html" class="directory">macros/Misc/</a></th>
+        <td>8 (0.2%)</td>
+        <td>68 (0.1%)</td>
+        <td>8.5</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_macros_Clipboard.html" class="directory">macros/Clipboard/</a></th>
+        <td>6 (0.2%)</td>
+        <td>55 (0.1%)</td>
+        <td>9.1</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_jedit_core.html" class="directory">org/jedit/core/</a></th>
+        <td>2 (0.1%)</td>
+        <td>43 (0.1%)</td>
+        <td>21.5</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_macros_Files.html" class="directory">macros/Files/</a></th>
+        <td>2 (0.1%)</td>
+        <td>35 (0.0%)</td>
+        <td>17.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_package-files_windows.html" class="directory">package-files/windows/</a></th>
+        <td>2 (0.1%)</td>
+        <td>18 (0.0%)</td>
+        <td>9.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_jars_MacOSX.html" class="directory">jars/MacOSX/</a></th>
+        <td>4 (0.1%)</td>
+        <td>18 (0.0%)</td>
+        <td>4.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_print.html" class="directory">org/gjt/sp/jedit/print/</a></th>
+        <td>3 (0.1%)</td>
+        <td>17 (0.0%)</td>
+        <td>5.6</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_jars_QuickNotepad.html" class="directory">jars/QuickNotepad/</a></th>
+        <td>4 (0.1%)</td>
+        <td>17 (0.0%)</td>
+        <td>4.2</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_doc_users-guide.html" class="directory">doc/users-guide/</a></th>
+        <td>5 (0.2%)</td>
+        <td>12 (0.0%)</td>
+        <td>2.4</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_jedit_options.html" class="directory">org/jedit/options/</a></th>
+        <td>1 (0.0%)</td>
+        <td>3 (0.0%)</td>
+        <td>3.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_bsh.html" class="directory">org/gjt/sp/jedit/bsh/</a></th>
+        <td>183 (5.5%)</td>
+        <td>2 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_installer.html" class="directory">installer/</a></th>
+        <td>1 (0.0%)</td>
+        <td>2 (0.0%)</td>
+        <td>2.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_doc_tips.html" class="directory">doc/tips/</a></th>
+        <td>2 (0.1%)</td>
+        <td>2 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_icons_themes_tango.html" class="directory">org/gjt/sp/jedit/icons/themes/tango/</a></th>
+        <td>1 (0.0%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_icons_themes_classic.html" class="directory">org/gjt/sp/jedit/icons/themes/classic/</a></th>
+        <td>1 (0.0%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_bsh_reflect.html" class="directory">org/gjt/sp/jedit/bsh/reflect/</a></th>
+        <td>2 (0.1%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_bsh_org_objectweb_asm.html" class="directory">org/gjt/sp/jedit/bsh/org/objectweb/asm/</a></th>
+        <td>20 (0.6%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_bsh_commands.html" class="directory">org/gjt/sp/jedit/bsh/commands/</a></th>
+        <td>40 (1.2%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_bsh_collection.html" class="directory">org/gjt/sp/jedit/bsh/collection/</a></th>
+        <td>4 (0.1%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_bsh_classpath.html" class="directory">org/gjt/sp/jedit/bsh/classpath/</a></th>
+        <td>10 (0.3%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_jars_MacOS_macos_menu.html" class="directory">jars/MacOS/macos/menu/</a></th>
+        <td>1 (0.0%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_jars_MacOS_macos.html" class="directory">jars/MacOS/macos/</a></th>
+        <td>1 (0.0%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_bsh_reflect.html" class="directory">bsh/reflect/</a></th>
+        <td>1 (0.0%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_bsh_org_objectweb_asm.html" class="directory">bsh/org/objectweb/asm/</a></th>
+        <td>20 (0.6%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_bsh_commands.html" class="directory">bsh/commands/</a></th>
+        <td>63 (1.9%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_bsh_collection.html" class="directory">bsh/collection/</a></th>
+        <td>2 (0.1%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_bsh_classpath.html" class="directory">bsh/classpath/</a></th>
+        <td>10 (0.3%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_bsh.html" class="directory">bsh/</a></th>
+        <td>133 (4.0%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+<p class="chart"><img src="directory_sizes_kpouer.png" alt="Activity of kpouer" width="800" height="500" /></p></div>
+<div class="section">
+<h2>Most Recent Commits</h2>
+<dl class="commitlist">
+  <dt><a name="20"></a>
+    <a href="user_kpouer.html" class="author">kpouer</a>
+    <span class="date">2018-06-18 10:35</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24864</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+New method IntegerArray.isEmpty()
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(changed)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/util</strong>:
+        IntegerArray.java&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="19"></a>
+    <a href="user_kpouer.html" class="author">kpouer</a>
+    <span class="date">2018-06-18 08:43</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24863</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Reset Killring only with String collection
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        JEditKillRing.java&#160;<span class="change">(changed)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/buffer</strong>:
+        KillRing.java&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="18"></a>
+    <a href="user_kpouer.html" class="author">kpouer</a>
+    <span class="date">2018-06-18 08:38</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24862</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Killring contains only String
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        JEditKillRing.java&#160;<span class="change">(changed)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/buffer</strong>:
+        KillRing.java&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="17"></a>
+    <a href="user_kpouer.html" class="author">kpouer</a>
+    <span class="date">2017-12-28 10:46</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24798</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fix a bug preventing jEdit from loading when a buffer has an invalid selection and is loaded in two edit panes
+    </p>
+    <p class="commitdetails"><strong>9</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+5&#160;-1)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        EditPane.java&#160;<span class="change">(+4)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="16"></a>
+    <a href="user_kpouer.html" class="author">kpouer</a>
+    <span class="date">2017-10-13 09:56</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24756</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Add Gherkin mode (english) to support Cucumber feature files (Matthieu Casanova)
+    </p>
+    <p class="commitdetails"><strong>57</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+2)</span>
+      </li>
+      <li>
+        <strong>modes</strong>:
+        catalog&#160;<span class="change">(+3)</span>,
+        gherkin.xml&#160;<span class="new">(new&#160;52)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="15"></a>
+    <a href="user_kpouer.html" class="author">kpouer</a>
+    <span class="date">2016-06-20 09:19</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24422</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+New mode for swift Patches #587
+    </p>
+    <p class="commitdetails"><strong>295</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+3&#160;-2)</span>
+      </li>
+      <li>
+        <strong>modes</strong>:
+        catalog&#160;<span class="change">(+3)</span>,
+        swift.xml&#160;<span class="new">(new&#160;289)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="14"></a>
+    <a href="user_kpouer.html" class="author">kpouer</a>
+    <span class="date">2015-08-12 09:48</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">24012</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fixed build of standalone textArea
+    </p>
+    <p class="commitdetails"><strong>42</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        build.xml&#160;<span class="change">(+3&#160;-1)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/options</strong>:
+        EditingOptionPane.java&#160;<span class="change">(+28&#160;-4)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/syntax</strong>:
+        ModeProvider.java&#160;<span class="change">(+11&#160;-39)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="13"></a>
+    <a href="user_kpouer.html" class="author">kpouer</a>
+    <span class="date">2015-05-20 10:28</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">23917</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+added missing annotations and fixed coding style
+    </p>
+    <p class="commitdetails"><strong>32</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/gui</strong>:
+        EnhancedDialog.java&#160;<span class="change">(+32&#160;-36)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="12"></a>
+    <a href="user_kpouer.html" class="author">kpouer</a>
+    <span class="date">2015-05-20 10:05</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">23916</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+ JEditBuffer.isFoldEnd() was unable to detect the fold end when it was the last line (bug #3917)
+    </p>
+    <p class="commitdetails"><strong>5</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+2)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/buffer</strong>:
+        JEditBuffer.java&#160;<span class="change">(+3&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="11"></a>
+    <a href="user_kpouer.html" class="author">kpouer</a>
+    <span class="date">2014-12-31 16:47</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">23816</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Removed uservoice link
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        actions.xml&#160;<span class="change">(-10)</span>,
+        jedit_gui.props&#160;<span class="change">(+1&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="10"></a>
+    <a href="user_kpouer.html" class="author">kpouer</a>
+    <span class="date">2014-07-29 11:26</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">23635</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+use of java 7 syntax
+    </p>
+    <p class="commitdetails"><strong>9</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        Mode.java&#160;<span class="change">(+9&#160;-11)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="9"></a>
+    <a href="user_kpouer.html" class="author">kpouer</a>
+    <span class="date">2014-07-28 15:33</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">23627</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+use java7 syntax
+    </p>
+    <p class="commitdetails"><strong>7</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/pluginmgr</strong>:
+        PluginList.java&#160;<span class="change">(+7&#160;-7)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="8"></a>
+    <a href="user_kpouer.html" class="author">kpouer</a>
+    <span class="date">2014-07-28 11:41</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">23626</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fix a bug preventing from removing an unloaded plugin #3877
+    </p>
+    <p class="commitdetails"><strong>11</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+3)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/pluginmgr</strong>:
+        ManagePanel.java&#160;<span class="change">(+8&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="7"></a>
+    <a href="user_kpouer.html" class="author">kpouer</a>
+    <span class="date">2014-07-28 11:37</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">23625</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+ The native splashscreen is removed as it was not possible to disable it #3876
+    </p>
+    <p class="commitdetails"><strong>3</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+3&#160;-1)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        jedit.manifest&#160;<span class="change">(-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="6"></a>
+    <a href="user_kpouer.html" class="author">kpouer</a>
+    <span class="date">2014-07-28 10:21</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">23624</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+buffer.getFoldHandler() is never null
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        PluginJAR.java&#160;<span class="change">(+2&#160;-5)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="5"></a>
+    <a href="user_kpouer.html" class="author">kpouer</a>
+    <span class="date">2014-02-28 11:39</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">23426</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Speedup of LogViewer:<br />
+<br />
+if there is no filter, do not lowercase the log text<br />
+Keep logs color and refresh them only on properties change
+    </p>
+    <p class="commitdetails"><strong>42</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+2)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/gui</strong>:
+        LogViewer.java&#160;<span class="change">(+40&#160;-11)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="4"></a>
+    <a href="user_kpouer.html" class="author">kpouer</a>
+    <span class="date">2014-02-05 10:24</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">23398</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+removed unused import, added missing @Override annotations
+    </p>
+    <p class="commitdetails"><strong>4</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/gui/statusbar</strong>:
+        MultiSelectWidgetFactory.java&#160;<span class="change">(+4&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="3"></a>
+    <a href="user_kpouer.html" class="author">kpouer</a>
+    <span class="date">2013-12-09 13:43</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">23381</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+use of Objects.equals()
+    </p>
+    <p class="commitdetails"><strong>17</strong> lines of code changed in <span class="files">6 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+3)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/gui</strong>:
+        KeyEventTranslator.java&#160;<span class="change">(+3&#160;-3)</span>,
+        StatusBar.java&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/options</strong>:
+        EditingOptionPane.java&#160;<span class="change">(+5&#160;-8)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/syntax</strong>:
+        TokenMarker.java&#160;<span class="change">(+2&#160;-3)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/util</strong>:
+        StandardUtilities.java&#160;<span class="change">(+2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="2"></a>
+    <a href="user_kpouer.html" class="author">kpouer</a>
+    <span class="date">2013-12-02 11:11</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">23365</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+fixed coding style
+    </p>
+    <p class="commitdetails"><strong>7</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/textarea</strong>:
+        TextArea.java&#160;<span class="change">(+7&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="1"></a>
+    <a href="user_kpouer.html" class="author">kpouer</a>
+    <span class="date">2013-11-13 15:24</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">23332</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fixed Whole word search (#3614975, patch #3615185)
+    </p>
+    <p class="commitdetails"><strong>7</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+4&#160;-2)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        jedit_gui.props&#160;<span class="change">(+1)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/search</strong>:
+        BoyerMooreSearchMatcher.java&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+</dl>
+
+<p>(1302 more)</p>
+</div><div id="generatedby">Generated by <a href="http://www.statsvn.org">StatSVN</a> 0.7.0</div>
+</body>
+</html>

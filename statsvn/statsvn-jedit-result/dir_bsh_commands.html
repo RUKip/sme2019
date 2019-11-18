@@ -1,0 +1,526 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>StatSVN - Directory bsh/commands/</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+    <meta name="Generator" content="StatSVN 0.7.0"/>
+<link rel="stylesheet" href="objectlab-statcvs.css" type="text/css"/>
+<script type="text/javascript" charset="utf-8" src="http://bit.ly/javascript-api.js?version=latest&#38;login=statsvn&#38;apiKey=R_2c362b417d0517c27876cbaca1bb68cc"></script>
+<script type="text/javascript" charset="utf-8">
+   // wait until page is loaded to call API
+   var redir_url;
+   var short_url;
+   BitlyCB.myShortenCallback = function(data) {
+      // this is how to get a result of shortening a single url
+      var result;
+      short_url=null;
+      for (var r in data.results) {
+         result = data.results[r];
+         result['longUrl'] = r;
+         short_url = result['shortUrl'];
+         break;
+      }
+      if (short_url==null) // bit.ly failed
+      document.location=redir_url;
+      else
+      redirToTwitter();
+   };
+   function shortenTweet(url) {
+      if (short_url == null || redir_url!=url) {
+      redir_url = url;
+      BitlyClient.shorten(document.location, 'BitlyCB.myShortenCallback');
+      }
+      else
+      redirToTwitter();
+      return false;
+   }
+   function redirToTwitter() { 
+      // replace {0} which is visible as %7B0} in the link
+      document.location = redir_url.replace('%7B0}', short_url);
+   }
+</script>
+  </head>
+
+<body>
+
+<h1>Directory bsh/commands/</h1>
+<div id="parentlink">&#171; <a href="index.html">Development Statistics for /jEdit/trunk</a></div>
+<dl class="attributes">
+    <dt>Directory Created:</dt>
+    <dd><span class="date">2001-09-02 06:37</span></dd>
+    <dt>Directory Deleted:</dt>
+    <dd><span class="date">2007-10-04 21:45</span></dd>
+    <dt>Total Files:</dt>
+    <dd>0</dd>
+    <dt>Deleted Files:</dt>
+    <dd>56</dd>
+    <dt>Lines of Code:</dt>
+    <dd>0</dd>
+</dl>
+<p class="dirtree">
+<a href="dir.html">[root]</a>/<a href="dir_bsh.html">bsh</a>/<strong>commands</strong><br/>
+</p>
+
+<div class="section">
+<h2>Lines of Code</h2>
+<p class="chart"><img src="loc_module_bsh_commands.png" alt="bsh/commands/ Lines of Code" width="800" height="500" /></p></div>
+<div class="section">
+<h2>Developers</h2>
+  <table  rules="groups" summary="All authors and the number of their changes and lines of code in this directory">
+    <colgroup align="left"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <thead>
+      <tr>
+        <th>Author</th>
+        <th>Changes</th>
+        <th>Lines of Code</th>
+        <th>Lines per Change</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <th>Totals</th>
+        <td>232 (100.0%)</td>
+        <td>599 (100.0%)</td>
+        <td>2.5</td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr  class="odd">
+        <th><a href="user_spestov.html" class="author">spestov</a></th>
+        <td>169 (72.8%)</td>
+        <td>599 (100.0%)</td>
+        <td>3.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_kpouer.html" class="author">kpouer</a></th>
+        <td>63 (27.2%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+<div class="section">
+<h2>Most Recent Commits</h2>
+<dl class="commitlist">
+  <dt><a name="10"></a>
+    <a href="user_kpouer.html" class="author">kpouer</a>
+    <span class="date">2007-10-04 21:45</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">10803</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+beanshell package refactored (bug 893349)
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">56 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>bsh/commands</strong>:
+        addClassPath.bsh&#160;<span class="del">(del)</span>,
+        bg.bsh&#160;<span class="del">(del)</span>,
+        bind.bsh&#160;<span class="del">(del)</span>,
+        browseClass.bsh&#160;<span class="del">(del)</span>,
+        cat.bsh&#160;<span class="del">(del)</span>,
+        cd.bsh&#160;<span class="del">(del)</span>,
+        classBrowser.bsh&#160;<span class="del">(del)</span>,
+        clear.bsh&#160;<span class="del">(del)</span>,
+        cp.bsh&#160;<span class="del">(del)</span>,
+        debug.bsh&#160;<span class="del">(del)</span>,
+        desktop.bsh&#160;<span class="del">(del)</span>,
+        dir.java&#160;<span class="del">(del)</span>,
+        dirname.bsh&#160;<span class="del">(del)</span>,
+        editor.bsh&#160;<span class="del">(del)</span>,
+        error.bsh&#160;<span class="del">(del)</span>,
+        eval.bsh&#160;<span class="del">(del)</span>,
+        exec.bsh&#160;<span class="del">(del)</span>,
+        exit.bsh&#160;<span class="del">(del)</span>,
+        extend.bsh&#160;<span class="del">(del)</span>,
+        fontMenu.bsh&#160;<span class="del">(del)</span>,
+        frame.bsh&#160;<span class="del">(del)</span>,
+        getBshPrompt.bsh&#160;<span class="del">(del)</span>,
+        getClass.bsh&#160;<span class="del">(del)</span>,
+        getClassPath.bsh&#160;<span class="del">(del)</span>,
+        getResource.bsh&#160;<span class="del">(del)</span>,
+        getSourceFileInfo.bsh&#160;<span class="del">(del)</span>,
+        importCommands.bsh&#160;<span class="del">(del)</span>,
+        importObject.bsh&#160;<span class="del">(del)</span>,
+        javap.bsh&#160;<span class="del">(del)</span>,
+        load.bsh&#160;<span class="del">(del)</span>,
+        makeWorkspace.bsh&#160;<span class="del">(del)</span>,
+        mv.bsh&#160;<span class="del">(del)</span>,
+        object.bsh&#160;<span class="del">(del)</span>,
+        pathToFile.bsh&#160;<span class="del">(del)</span>,
+        print.bsh&#160;<span class="del">(del)</span>,
+        printBanner.bsh&#160;<span class="del">(del)</span>,
+        pwd.bsh&#160;<span class="del">(del)</span>,
+        reloadClasses.bsh&#160;<span class="del">(del)</span>,
+        rm.bsh&#160;<span class="del">(del)</span>,
+        run.bsh&#160;<span class="del">(del)</span>,
+        save.bsh&#160;<span class="del">(del)</span>,
+        server.bsh&#160;<span class="del">(del)</span>,
+        setAccessibility.bsh&#160;<span class="del">(del)</span>,
+        setClassPath.bsh&#160;<span class="del">(del)</span>,
+        setFont.bsh&#160;<span class="del">(del)</span>,
+        setNameCompletion.bsh&#160;<span class="del">(del)</span>,
+        setNameSpace.bsh&#160;<span class="del">(del)</span>,
+        setStrictJava.bsh&#160;<span class="del">(del)</span>,
+        show.bsh&#160;<span class="del">(del)</span>,
+        source.bsh&#160;<span class="del">(del)</span>,
+        sourceRelative.bsh&#160;<span class="del">(del)</span>,
+        super.bsh&#160;<span class="del">(del)</span>,
+        thinBorder.bsh&#160;<span class="del">(del)</span>,
+        unset.bsh&#160;<span class="del">(del)</span>,
+        which.bsh&#160;<span class="del">(del)</span>,
+        workspaceEditor.bsh&#160;<span class="del">(del)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="9"></a>
+    <a href="user_kpouer.html" class="author">kpouer</a>
+    <span class="date">2006-07-07 23:28</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">5555</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+beanshell 2.0b4 bundled<br />
+
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">7 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>bsh/commands</strong>:
+        desktop.bsh&#160;<span class="change">(changed)</span>,
+        fontMenu.bsh&#160;<span class="change">(changed)</span>,
+        javap.bsh&#160;<span class="change">(changed)</span>,
+        load.bsh&#160;<span class="change">(changed)</span>,
+        makeWorkspace.bsh&#160;<span class="change">(changed)</span>,
+        show.bsh&#160;<span class="change">(changed)</span>,
+        thinBorder.bsh&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="8"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-12-27 06:02</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4943</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+beanshell 2.0b1<br />
+
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">5 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>bsh/commands</strong>:
+        desktop.bsh&#160;<span class="change">(changed)</span>,
+        importObject.bsh&#160;<span class="new">(new)</span>,
+        javap.bsh&#160;<span class="change">(changed)</span>,
+        makeWorkspace.bsh&#160;<span class="change">(changed)</span>,
+        workspaceEditor.bsh&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="7"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-07-14 23:46</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4825</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+BeanShell 1.3b2<br />
+
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">37 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>bsh/commands</strong>:
+        bg.bsh&#160;<span class="change">(changed)</span>,
+        browseClass.bsh&#160;<span class="change">(changed)</span>,
+        cat.bsh&#160;<span class="change">(changed)</span>,
+        cd.bsh&#160;<span class="change">(changed)</span>,
+        classBrowser.bsh&#160;<span class="change">(changed)</span>,
+        cp.bsh&#160;<span class="change">(changed)</span>,
+        desktop.bsh&#160;<span class="change">(changed)</span>,
+        dir.java&#160;<span class="change">(changed)</span>,
+        dirname.bsh&#160;<span class="change">(changed)</span>,
+        editor.bsh&#160;<span class="change">(changed)</span>,
+        eval.bsh&#160;<span class="change">(changed)</span>,
+        exec.bsh&#160;<span class="change">(changed)</span>,
+        extend.bsh&#160;<span class="change">(changed)</span>,
+        fontMenu.bsh&#160;<span class="new">(new)</span>,
+        frame.bsh&#160;<span class="change">(changed)</span>,
+        getBshPrompt.bsh&#160;<span class="new">(new)</span>,
+        getClassPath.bsh&#160;<span class="change">(changed)</span>,
+        getResource.bsh&#160;<span class="change">(changed)</span>,
+        importCommands.bsh&#160;<span class="new">(new)</span>,
+        javap.bsh&#160;<span class="change">(changed)</span>,
+        load.bsh&#160;<span class="change">(changed)</span>,
+        makeWorkspace.bsh&#160;<span class="change">(changed)</span>,
+        mv.bsh&#160;<span class="change">(changed)</span>,
+        print.bsh&#160;<span class="change">(changed)</span>,
+        printBanner.bsh&#160;<span class="change">(changed)</span>,
+        reloadClasses.bsh&#160;<span class="change">(changed)</span>,
+        rm.bsh&#160;<span class="change">(changed)</span>,
+        run.bsh&#160;<span class="change">(changed)</span>,
+        save.bsh&#160;<span class="change">(changed)</span>,
+        setFont.bsh&#160;<span class="change">(changed)</span>,
+        setNameCompletion.bsh&#160;<span class="change">(changed)</span>,
+        sourceRelative.bsh&#160;<span class="new">(new)</span>,
+        super.bsh&#160;<span class="change">(changed)</span>,
+        thinBorder.bsh&#160;<span class="new">(new)</span>,
+        unset.bsh&#160;<span class="change">(changed)</span>,
+        which.bsh&#160;<span class="change">(changed)</span>,
+        workspaceEditor.bsh&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="6"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2003-05-05 23:39</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4684</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+BeanShell 1.3<br />
+
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">27 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>bsh/commands</strong>:
+        addClassPath.bsh&#160;<span class="change">(changed)</span>,
+        cp.bsh&#160;<span class="new">(new)</span>,
+        debug.bsh&#160;<span class="change">(changed)</span>,
+        dirname.bsh&#160;<span class="new">(new)</span>,
+        editor.bsh&#160;<span class="change">(changed)</span>,
+        error.bsh&#160;<span class="change">(changed)</span>,
+        eval.bsh&#160;<span class="change">(changed)</span>,
+        exec.bsh&#160;<span class="change">(changed)</span>,
+        exit.bsh&#160;<span class="change">(changed)</span>,
+        extend.bsh&#160;<span class="change">(changed)</span>,
+        frame.bsh&#160;<span class="change">(changed)</span>,
+        getClassPath.bsh&#160;<span class="change">(changed)</span>,
+        getResource.bsh&#160;<span class="change">(changed)</span>,
+        javap.bsh&#160;<span class="change">(changed)</span>,
+        makeWorkspace.bsh&#160;<span class="change">(changed)</span>,
+        object.bsh&#160;<span class="change">(changed)</span>,
+        print.bsh&#160;<span class="change">(changed)</span>,
+        pwd.bsh&#160;<span class="change">(changed)</span>,
+        reloadClasses.bsh&#160;<span class="change">(changed)</span>,
+        rm.bsh&#160;<span class="change">(changed)</span>,
+        run.bsh&#160;<span class="change">(changed)</span>,
+        setClassPath.bsh&#160;<span class="change">(changed)</span>,
+        setNameSpace.bsh&#160;<span class="change">(changed)</span>,
+        setStrictJava.bsh&#160;<span class="change">(changed)</span>,
+        source.bsh&#160;<span class="change">(changed)</span>,
+        super.bsh&#160;<span class="change">(changed)</span>,
+        which.bsh&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="5"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2002-12-25 03:08</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4396</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+BeanShell 1.2b7<br />
+
+    </p>
+    <p class="commitdetails"><strong>7</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>bsh/commands</strong>:
+        dir.java&#160;<span class="change">(+7&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="4"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2002-05-28 05:09</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4205</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+bsh 1.2b6 commands<br />
+
+    </p>
+    <p class="commitdetails"><strong>426</strong> lines of code changed in <span class="files">47 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>bsh/commands</strong>:
+        addClassPath.bsh&#160;<span class="change">(+15)</span>,
+        bg.bsh&#160;<span class="change">(+8&#160;-10)</span>,
+        bind.bsh&#160;<span class="change">(+2&#160;-2)</span>,
+        browseClass.bsh&#160;<span class="change">(+10&#160;-3)</span>,
+        cat.bsh&#160;<span class="change">(+9)</span>,
+        cd.bsh&#160;<span class="change">(+4&#160;-1)</span>,
+        classBrowser.bsh&#160;<span class="change">(+4&#160;-1)</span>,
+        clear.bsh&#160;<span class="change">(+1)</span>,
+        debug.bsh&#160;<span class="change">(+3)</span>,
+        desktop.bsh&#160;<span class="change">(+5)</span>,
+        editor.bsh&#160;<span class="change">(+3)</span>,
+        error.bsh&#160;<span class="change">(+5&#160;-1)</span>,
+        eval.bsh&#160;<span class="change">(+16&#160;-6)</span>,
+        exec.bsh&#160;<span class="change">(+4)</span>,
+        exit.bsh&#160;<span class="change">(+3)</span>,
+        extend.bsh&#160;<span class="change">(+42&#160;-3)</span>,
+        frame.bsh&#160;<span class="change">(+11&#160;-1)</span>,
+        getClass.bsh&#160;<span class="change">(+10&#160;-2)</span>,
+        getClassPath.bsh&#160;<span class="change">(+4)</span>,
+        getResource.bsh&#160;<span class="change">(+6&#160;-2)</span>,
+        getSourceFileInfo.bsh&#160;<span class="change">(+5&#160;-5)</span>,
+        javap.bsh&#160;<span class="change">(+10)</span>,
+        load.bsh&#160;<span class="change">(+3)</span>,
+        makeWorkspace.bsh&#160;<span class="change">(+3)</span>,
+        mv.bsh&#160;<span class="change">(+3&#160;-2)</span>,
+        object.bsh&#160;<span class="change">(+12)</span>,
+        pathToFile.bsh&#160;<span class="change">(+4)</span>,
+        print.bsh&#160;<span class="change">(+14&#160;-1)</span>,
+        printBanner.bsh&#160;<span class="change">(+8&#160;-5)</span>,
+        pwd.bsh&#160;<span class="change">(+4&#160;-1)</span>,
+        reloadClasses.bsh&#160;<span class="change">(+18&#160;-5)</span>,
+        rm.bsh&#160;<span class="change">(+4&#160;-1)</span>,
+        run.bsh&#160;<span class="change">(+17&#160;-3)</span>,
+        save.bsh&#160;<span class="change">(+16&#160;-1)</span>,
+        server.bsh&#160;<span class="change">(+5&#160;-1)</span>,
+        setAccessibility.bsh&#160;<span class="change">(+4&#160;-1)</span>,
+        setClassPath.bsh&#160;<span class="change">(+8&#160;-1)</span>,
+        setFont.bsh&#160;<span class="change">(+4)</span>,
+        setNameCompletion.bsh&#160;<span class="change">(+10&#160;-2)</span>,
+        setNameSpace.bsh&#160;<span class="change">(+35&#160;-4)</span>,
+        setStrictJava.bsh&#160;<span class="change">(+14&#160;-1)</span>,
+        show.bsh&#160;<span class="change">(+5)</span>,
+        source.bsh&#160;<span class="change">(+6&#160;-2)</span>,
+        super.bsh&#160;<span class="change">(+28&#160;-4)</span>,
+        unset.bsh&#160;<span class="change">(+8&#160;-1)</span>,
+        which.bsh&#160;<span class="change">(+7&#160;-2)</span>,
+        workspaceEditor.bsh&#160;<span class="change">(+6&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="3"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2002-03-10 05:37</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4077</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Added missing clear.bsh; updated change log to mention BeanShell 1.2b41; changed default S+BACK_SPACE/DELETE shortcuts<br />
+
+    </p>
+    <p class="commitdetails"><strong>11</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>bsh/commands</strong>:
+        clear.bsh&#160;<span class="new">(new&#160;11)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="2"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2002-03-10 05:31</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">4076</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+BeanShell 1.2b41<br />
+
+    </p>
+    <p class="commitdetails"><strong>74</strong> lines of code changed in <span class="files">4 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>bsh/commands</strong>:
+        cat.bsh&#160;<span class="change">(+21&#160;-6)</span>,
+        dir.java&#160;<span class="change">(+1&#160;-1)</span>,
+        eval.bsh&#160;<span class="change">(+48)</span>,
+        javap.bsh&#160;<span class="change">(+4&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="1"></a>
+    <a href="user_spestov.html" class="author">spestov</a>
+    <span class="date">2001-09-02 06:37</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">3792</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Initial revision<br />
+
+    </p>
+    <p class="commitdetails"><strong>81</strong> lines of code changed in <span class="files">47 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>bsh/commands</strong>:
+        addClassPath.bsh&#160;<span class="new">(new)</span>,
+        bg.bsh&#160;<span class="new">(new&#160;10)</span>,
+        bind.bsh&#160;<span class="new">(new&#160;2)</span>,
+        browseClass.bsh&#160;<span class="new">(new&#160;3)</span>,
+        cat.bsh&#160;<span class="new">(new&#160;6)</span>,
+        cd.bsh&#160;<span class="new">(new&#160;1)</span>,
+        classBrowser.bsh&#160;<span class="new">(new&#160;1)</span>,
+        debug.bsh&#160;<span class="new">(new)</span>,
+        desktop.bsh&#160;<span class="new">(new)</span>,
+        dir.java&#160;<span class="new">(new&#160;3)</span>,
+        editor.bsh&#160;<span class="new">(new)</span>,
+        error.bsh&#160;<span class="new">(new&#160;1)</span>,
+        eval.bsh&#160;<span class="new">(new)</span>,
+        exec.bsh&#160;<span class="new">(new)</span>,
+        exit.bsh&#160;<span class="new">(new)</span>,
+        extend.bsh&#160;<span class="new">(new&#160;3)</span>,
+        frame.bsh&#160;<span class="new">(new&#160;1)</span>,
+        getClass.bsh&#160;<span class="new">(new&#160;2)</span>,
+        getClassPath.bsh&#160;<span class="new">(new)</span>,
+        getResource.bsh&#160;<span class="new">(new&#160;2)</span>,
+        getSourceFileInfo.bsh&#160;<span class="new">(new&#160;5)</span>,
+        javap.bsh&#160;<span class="new">(new&#160;2)</span>,
+        load.bsh&#160;<span class="new">(new)</span>,
+        makeWorkspace.bsh&#160;<span class="new">(new)</span>,
+        mv.bsh&#160;<span class="new">(new&#160;2)</span>,
+        object.bsh&#160;<span class="new">(new)</span>,
+        pathToFile.bsh&#160;<span class="new">(new)</span>,
+        print.bsh&#160;<span class="new">(new&#160;1)</span>,
+        printBanner.bsh&#160;<span class="new">(new&#160;5)</span>,
+        pwd.bsh&#160;<span class="new">(new&#160;1)</span>,
+        reloadClasses.bsh&#160;<span class="new">(new&#160;5)</span>,
+        rm.bsh&#160;<span class="new">(new&#160;1)</span>,
+        run.bsh&#160;<span class="new">(new&#160;3)</span>,
+        save.bsh&#160;<span class="new">(new&#160;1)</span>,
+        server.bsh&#160;<span class="new">(new&#160;1)</span>,
+        setAccessibility.bsh&#160;<span class="new">(new&#160;1)</span>,
+        setClassPath.bsh&#160;<span class="new">(new&#160;1)</span>,
+        setFont.bsh&#160;<span class="new">(new)</span>,
+        setNameCompletion.bsh&#160;<span class="new">(new&#160;2)</span>,
+        setNameSpace.bsh&#160;<span class="new">(new&#160;4)</span>,
+        setStrictJava.bsh&#160;<span class="new">(new&#160;1)</span>,
+        show.bsh&#160;<span class="new">(new)</span>,
+        source.bsh&#160;<span class="new">(new&#160;2)</span>,
+        super.bsh&#160;<span class="new">(new&#160;4)</span>,
+        unset.bsh&#160;<span class="new">(new&#160;1)</span>,
+        which.bsh&#160;<span class="new">(new&#160;2)</span>,
+        workspaceEditor.bsh&#160;<span class="new">(new&#160;1)</span>
+      </li>
+    </ul>
+  </dd>
+
+</dl>
+
+</div><div id="generatedby">Generated by <a href="http://www.statsvn.org">StatSVN</a> 0.7.0</div>
+</body>
+</html>

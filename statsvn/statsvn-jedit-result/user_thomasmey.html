@@ -1,0 +1,740 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>StatSVN - /jEdit/trunk Developers: thomasmey</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+    <meta name="Generator" content="StatSVN 0.7.0"/>
+<link rel="stylesheet" href="objectlab-statcvs.css" type="text/css"/>
+<script type="text/javascript" charset="utf-8" src="http://bit.ly/javascript-api.js?version=latest&#38;login=statsvn&#38;apiKey=R_2c362b417d0517c27876cbaca1bb68cc"></script>
+<script type="text/javascript" charset="utf-8">
+   // wait until page is loaded to call API
+   var redir_url;
+   var short_url;
+   BitlyCB.myShortenCallback = function(data) {
+      // this is how to get a result of shortening a single url
+      var result;
+      short_url=null;
+      for (var r in data.results) {
+         result = data.results[r];
+         result['longUrl'] = r;
+         short_url = result['shortUrl'];
+         break;
+      }
+      if (short_url==null) // bit.ly failed
+      document.location=redir_url;
+      else
+      redirToTwitter();
+   };
+   function shortenTweet(url) {
+      if (short_url == null || redir_url!=url) {
+      redir_url = url;
+      BitlyClient.shorten(document.location, 'BitlyCB.myShortenCallback');
+      }
+      else
+      redirToTwitter();
+      return false;
+   }
+   function redirToTwitter() { 
+      // replace {0} which is visible as %7B0} in the link
+      document.location = redir_url.replace('%7B0}', short_url);
+   }
+</script>
+  </head>
+
+<body>
+
+<h1>/jEdit/trunk Developers: thomasmey</h1>
+<div id="parentlink">&#171; <a href="index.html">Development Statistics for /jEdit/trunk</a> &#171; <a href="developers.html">Developers</a></div>
+<dl class="attributes">
+    <dt>Login name:</dt>
+    <dd>thomasmey</dd>
+    <dt>Total Commits:</dt>
+    <dd>139 (0.5%)</dd>
+    <dt>Lines of Code:</dt>
+    <dd>2,120 (0.2%)</dd>
+    <dt>Most Recent Commit:</dt>
+    <dd><span class="date">2013-04-23 19:53</span></dd>
+    <dt>Tweet this:</dt>
+    <dd><a onclick="return shortenTweet(this.href);" href="http://twitter.com/home?status=thomasmey%20contributed%202%2C120%20(0.2%25)%20lines%20to%20%2FjEdit%2Ftrunk%20%7B0}%20most%20recent%20commit%202013-04-23%20stats%20by%20StatSVN%20http%3A%2F%2Fstatsvn.org"><img style="border:0px" alt="Tweet this" src="tweet-this.png"/></a></dd>
+</dl>
+
+<div class="section">
+<h2>Activity by Clock Time</h2>
+<p class="chart"><img src="activity_time_thomasmey.png" alt="Activity by Hour of Day for thomasmey" width="800" height="500" /></p><p class="chart"><img src="activity_day_thomasmey.png" alt="Activity by Day of Week for thomasmey" width="800" height="500" /></p></div>
+<div class="section">
+<h2>Activity in Directories</h2>
+  <table  rules="groups" summary="Overview of this author's activities in different directories">
+    <colgroup align="left"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <thead>
+      <tr>
+        <th>Directory</th>
+        <th>Changes</th>
+        <th>Lines of Code</th>
+        <th>Lines per Change</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <th>Totals</th>
+        <td>139 (100.0%)</td>
+        <td>2120 (100.0%)</td>
+        <td>15.2</td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_textarea.html" class="directory">org/gjt/sp/jedit/textarea/</a></th>
+        <td>23 (16.5%)</td>
+        <td>758 (35.8%)</td>
+        <td>32.9</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_util.html" class="directory">org/gjt/sp/util/</a></th>
+        <td>23 (16.5%)</td>
+        <td>754 (35.6%)</td>
+        <td>32.7</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit.html" class="directory">org/gjt/sp/jedit/</a></th>
+        <td>13 (9.4%)</td>
+        <td>141 (6.7%)</td>
+        <td>10.8</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_gui.html" class="directory">org/gjt/sp/jedit/gui/</a></th>
+        <td>13 (9.4%)</td>
+        <td>87 (4.1%)</td>
+        <td>6.6</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_browser.html" class="directory">org/gjt/sp/jedit/browser/</a></th>
+        <td>11 (7.9%)</td>
+        <td>79 (3.7%)</td>
+        <td>7.1</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_bufferio.html" class="directory">org/gjt/sp/jedit/bufferio/</a></th>
+        <td>12 (8.6%)</td>
+        <td>77 (3.6%)</td>
+        <td>6.4</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_search.html" class="directory">org/gjt/sp/jedit/search/</a></th>
+        <td>17 (12.2%)</td>
+        <td>63 (3.0%)</td>
+        <td>3.7</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_doc.html" class="directory">doc/</a></th>
+        <td>6 (4.3%)</td>
+        <td>47 (2.2%)</td>
+        <td>7.8</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_options.html" class="directory">org/gjt/sp/jedit/options/</a></th>
+        <td>1 (0.7%)</td>
+        <td>45 (2.1%)</td>
+        <td>45.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_io.html" class="directory">org/gjt/sp/jedit/io/</a></th>
+        <td>9 (6.5%)</td>
+        <td>35 (1.7%)</td>
+        <td>3.8</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_print.html" class="directory">org/gjt/sp/jedit/print/</a></th>
+        <td>1 (0.7%)</td>
+        <td>21 (1.0%)</td>
+        <td>21.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_gjt_sp_jedit_gui_statusbar.html" class="directory">org/gjt/sp/jedit/gui/statusbar/</a></th>
+        <td>2 (1.4%)</td>
+        <td>6 (0.3%)</td>
+        <td>3.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_jedit_options.html" class="directory">org/jedit/options/</a></th>
+        <td>2 (1.4%)</td>
+        <td>4 (0.2%)</td>
+        <td>2.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_jedit_keymap.html" class="directory">org/jedit/keymap/</a></th>
+        <td>1 (0.7%)</td>
+        <td>1 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_gjt_sp_jedit_syntax.html" class="directory">org/gjt/sp/jedit/syntax/</a></th>
+        <td>2 (1.4%)</td>
+        <td>1 (0.0%)</td>
+        <td>0.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_macros_Files.html" class="directory">macros/Files/</a></th>
+        <td>1 (0.7%)</td>
+        <td>1 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_org_jedit_localization.html" class="directory">org/jedit/localization/</a></th>
+        <td>1 (0.7%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_org_jedit_core.html" class="directory">org/jedit/core/</a></th>
+        <td>1 (0.7%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+<p class="chart"><img src="directory_sizes_thomasmey.png" alt="Activity of thomasmey" width="800" height="500" /></p></div>
+<div class="section">
+<h2>Most Recent Commits</h2>
+<dl class="commitlist">
+  <dt><a name="20"></a>
+    <a href="user_thomasmey.html" class="author">thomasmey</a>
+    <span class="date">2013-04-23 19:53</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">22949</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fix mode loading for temporary buffers
+    </p>
+    <p class="commitdetails"><strong>65</strong> lines of code changed in <span class="files">8 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+2)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        Buffer.java&#160;<span class="change">(+3&#160;-6)</span>,
+        JEditMode.java&#160;<span class="change">(+2&#160;-3)</span>,
+        Mode.java&#160;<span class="change">(+36&#160;-46)</span>,
+        ModeCatalogHandler.java&#160;<span class="change">(+5&#160;-6)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/search</strong>:
+        HyperSearchRequest.java&#160;<span class="change">(+6&#160;-2)</span>,
+        SearchAndReplace.java&#160;<span class="change">(+10&#160;-4)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/syntax</strong>:
+        ModeProvider.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="19"></a>
+    <a href="user_thomasmey.html" class="author">thomasmey</a>
+    <span class="date">2013-04-23 18:58</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">22948</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fix bug #3598661 - Don't allow negative values in the general option pane.
+    </p>
+    <p class="commitdetails"><strong>49</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+3)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        BufferHistory.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/options</strong>:
+        GeneralOptionPane.java&#160;<span class="change">(+45&#160;-44)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="18"></a>
+    <a href="user_thomasmey.html" class="author">thomasmey</a>
+    <span class="date">2013-04-23 18:50</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">22947</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Update doc/CHANGES.txt
+    </p>
+    <p class="commitdetails"><strong>12</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+12)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="17"></a>
+    <a href="user_thomasmey.html" class="author">thomasmey</a>
+    <span class="date">2013-04-22 13:02</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">22944</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+TaskManager: Refactor io Task: Add missing IoTask class.<br />
+
+    </p>
+    <p class="commitdetails"><strong>7</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/bufferio</strong>:
+        IoTask.java&#160;<span class="new">(new&#160;7)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="16"></a>
+    <a href="user_thomasmey.html" class="author">thomasmey</a>
+    <span class="date">2013-04-22 12:44</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">22943</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+TaskManager: Refactor IoTask<br />
+- Make IoTask a subclass of Task and remove the code of the special case.<br />
+
+    </p>
+    <p class="commitdetails"><strong>42</strong> lines of code changed in <span class="files">7 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        Buffer.java&#160;<span class="change">(+18)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/browser</strong>:
+        VFSFileChooserDialog.java&#160;<span class="change">(+3&#160;-2)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/bufferio</strong>:
+        BufferIORequest.java&#160;<span class="change">(+3&#160;-3)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/io</strong>:
+        VFSManager.java&#160;<span class="change">(+2&#160;-1)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/textarea</strong>:
+        TextAreaTransferHandler.java&#160;<span class="change">(+3&#160;-3)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/util</strong>:
+        Task.java&#160;<span class="change">(+1&#160;-13)</span>,
+        TaskManager.java&#160;<span class="change">(+12&#160;-20)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="15"></a>
+    <a href="user_thomasmey.html" class="author">thomasmey</a>
+    <span class="date">2013-04-22 12:27</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">22942</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+HyperSearch: Make search interruptible even when in VFS.listFiles()<br />
+- API change: Introduce an TaskManager.cancelTasksByClass() method, that<br />
+will interrupt all currently running Tasks of the given type.<br />
+
+    </p>
+    <p class="commitdetails"><strong>35</strong> lines of code changed in <span class="files">4 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/gui</strong>:
+        StatusBar.java&#160;<span class="change">(+1&#160;-2)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/search</strong>:
+        HyperSearchRequest.java&#160;<span class="change">(+1&#160;-3)</span>,
+        HyperSearchResults.java&#160;<span class="change">(+2&#160;-1)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/util</strong>:
+        TaskManager.java&#160;<span class="change">(+31&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="14"></a>
+    <a href="user_thomasmey.html" class="author">thomasmey</a>
+    <span class="date">2013-04-22 12:06</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">22941</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Make SearchMatcher interrupttible:<br />
+1.) API change: let SearchMatcher.nextMatch() throw InterruptedException<br />
+2.) BoyerMooreSearchMatcher: Switch to the new API and react on thread<br />
+interruption<br />
+
+    </p>
+    <p class="commitdetails"><strong>38</strong> lines of code changed in <span class="files">4 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/search</strong>:
+        BoyerMooreSearchMatcher.java&#160;<span class="change">(+9&#160;-2)</span>,
+        HyperSearchRequest.java&#160;<span class="change">(+13&#160;-5)</span>,
+        HyperSearchResults.java&#160;<span class="change">(+15&#160;-2)</span>,
+        SearchMatcher.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="13"></a>
+    <a href="user_thomasmey.html" class="author">thomasmey</a>
+    <span class="date">2013-03-25 12:13</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">22886</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Java is very backward compatible! I better use a real JDK6...
+    </p>
+    <p class="commitdetails"><strong>5</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/gui</strong>:
+        RegisterViewer.java&#160;<span class="change">(+5&#160;-5)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="12"></a>
+    <a href="user_thomasmey.html" class="author">thomasmey</a>
+    <span class="date">2013-03-23 18:58</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">22883</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+More clean ups
+    </p>
+    <p class="commitdetails"><strong>47</strong> lines of code changed in <span class="files">15 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/print</strong>:
+        BufferPrinter1_4.java&#160;<span class="change">(+21&#160;-4)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/search</strong>:
+        HyperSearchRequest.java&#160;<span class="change">(-1)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/syntax</strong>:
+        ParserRuleSet.java&#160;<span class="change">(-1)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/textarea</strong>:
+        ColumnBlock.java&#160;<span class="change">(+1&#160;-1)</span>,
+        ElasticTabStopBufferListener.java&#160;<span class="change">(+9&#160;-12)</span>,
+        ElasticTabstopsTabExpander.java&#160;<span class="change">(+1&#160;-1)</span>,
+        ScrollLineCount.java&#160;<span class="change">(+1&#160;-1)</span>,
+        TextAreaMouseHandler.java&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/util</strong>:
+        Log.java&#160;<span class="change">(+4&#160;-4)</span>,
+        PropertiesBean.java&#160;<span class="change">(+2&#160;-2)</span>,
+        XMLUtilities.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>org/jedit/core</strong>:
+        FileOpenerService.java&#160;<span class="change">(-1)</span>
+      </li>
+      <li>
+        <strong>org/jedit/keymap</strong>:
+        KeymapManagerImpl.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>org/jedit/options</strong>:
+        OptionGroupPane.java&#160;<span class="change">(+4&#160;-4)</span>,
+        TabbedOptionDialog.java&#160;<span class="change">(-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="11"></a>
+    <a href="user_thomasmey.html" class="author">thomasmey</a>
+    <span class="date">2013-03-22 19:27</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">22880</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Clean up RegisterViewer a bit
+    </p>
+    <p class="commitdetails"><strong>16</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/gui</strong>:
+        RegisterViewer.java&#160;<span class="change">(+16&#160;-10)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="10"></a>
+    <a href="user_thomasmey.html" class="author">thomasmey</a>
+    <span class="date">2013-03-17 12:03</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">22851</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+1. Revert class -&gt; enum conversion of TaskManager<br />
+2. Fix warnings in jEdit class
+    </p>
+    <p class="commitdetails"><strong>84</strong> lines of code changed in <span class="files">17 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        BeanShell.java&#160;<span class="change">(+1&#160;-1)</span>,
+        jEdit.java&#160;<span class="change">(+47&#160;-28)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/browser</strong>:
+        AbstractBrowserTask.java&#160;<span class="change">(+2&#160;-2)</span>,
+        VFSBrowser.java&#160;<span class="change">(+2&#160;-2)</span>,
+        VFSFileChooserDialog.java&#160;<span class="change">(+3&#160;-3)</span>,
+        VFSFileNameField.java&#160;<span class="change">(+3&#160;-3)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/gui</strong>:
+        CloseDialog.java&#160;<span class="change">(+1&#160;-1)</span>,
+        StatusBar.java&#160;<span class="change">(+3&#160;-3)</span>,
+        TaskMonitor.java&#160;<span class="change">(+3&#160;-3)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/gui/statusbar</strong>:
+        TaskMonitorWidgetFactory.java&#160;<span class="change">(+3&#160;-4)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/io</strong>:
+        VFSManager.java&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/search</strong>:
+        HyperSearchRequest.java&#160;<span class="change">(+1&#160;-1)</span>,
+        SearchAndReplace.java&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/util</strong>:
+        AwtRunnableQueue.java&#160;<span class="change">(+2&#160;-2)</span>,
+        Task.java&#160;<span class="change">(+5&#160;-5)</span>,
+        TaskManager.java&#160;<span class="change">(+2&#160;-9)</span>,
+        ThreadUtilities.java&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="9"></a>
+    <a href="user_thomasmey.html" class="author">thomasmey</a>
+    <span class="date">2013-03-16 09:28</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">22845</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fix bug 3596616 - Macro Files/Insert_Selection.bsh
+    </p>
+    <p class="commitdetails"><strong>13</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>macros/Files</strong>:
+        Insert_Selection.bsh&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        jEdit.java&#160;<span class="change">(+12&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="8"></a>
+    <a href="user_thomasmey.html" class="author">thomasmey</a>
+    <span class="date">2013-01-12 13:29</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">22670</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fix performance revealed in bug #3590540, patch #3595304
+    </p>
+    <p class="commitdetails"><strong>98</strong> lines of code changed in <span class="files">6 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+12&#160;-1)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/textarea</strong>:
+        ChunkCache.java&#160;<span class="change">(+81&#160;-44)</span>,
+        DisplayManager.java&#160;<span class="change">(+2)</span>,
+        FirstLine.java&#160;<span class="change">(-1)</span>,
+        TextArea.java&#160;<span class="change">(+1&#160;-1)</span>,
+        TextAreaPainter.java&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="7"></a>
+    <a href="user_thomasmey.html" class="author">thomasmey</a>
+    <span class="date">2013-01-12 12:38</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">22669</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Document fixes for #3590540 in CHANGES.TXT
+    </p>
+    <p class="commitdetails"><strong>4</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+4)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="6"></a>
+    <a href="user_thomasmey.html" class="author">thomasmey</a>
+    <span class="date">2012-12-29 18:06</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">22629</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fix bug #3590540 - The patch exchanges short with char type in ScreenLineManager. The new maximum screen lines a physical line can have is now 65535 lines for soft wrap mode
+    </p>
+    <p class="commitdetails"><strong>21</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/textarea</strong>:
+        ScreenLineManager.java&#160;<span class="change">(+21&#160;-14)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="5"></a>
+    <a href="user_thomasmey.html" class="author">thomasmey</a>
+    <span class="date">2012-12-18 19:39</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">22597</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fix javadoc warning in MiscUtilities
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit</strong>:
+        MiscUtilities.java&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="4"></a>
+    <a href="user_thomasmey.html" class="author">thomasmey</a>
+    <span class="date">2012-11-10 12:15</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">22454</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+several small fixes: spelling, unused imports, use createVFSSessionSafe in DirectoryListSet
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">6 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/io</strong>:
+        VFS.java&#160;<span class="change">(changed)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/jedit/search</strong>:
+        BufferListSet.java&#160;<span class="change">(changed)</span>,
+        DirectoryListSet.java&#160;<span class="change">(changed)</span>,
+        SearchAndReplace.java&#160;<span class="change">(changed)</span>,
+        SearchDialog.java&#160;<span class="change">(changed)</span>
+      </li>
+      <li>
+        <strong>org/gjt/sp/util</strong>:
+        TaskManager.java&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="3"></a>
+    <a href="user_thomasmey.html" class="author">thomasmey</a>
+    <span class="date">2012-11-09 17:54</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">22453</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fix German translation
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/jedit/localization</strong>:
+        jedit_de.props&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="2"></a>
+    <a href="user_thomasmey.html" class="author">thomasmey</a>
+    <span class="date">2012-10-13 13:07</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">22361</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fix bugs 2832769, 2998294, and 3193168 - Hopefully nothing else breaks by this invasive change. *Somebody* should create some unit tests to transform fear into boredeom...
+    </p>
+    <p class="commitdetails"><strong>626</strong> lines of code changed in <span class="files">8 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>org/gjt/sp/jedit/textarea</strong>:
+        Anchor.java&#160;<span class="change">(+131&#160;-73)</span>,
+        BufferHandler.java&#160;<span class="change">(+26&#160;-46)</span>,
+        ChunkCache.java&#160;<span class="change">(+4&#160;-4)</span>,
+        DisplayManager.java&#160;<span class="change">(+77&#160;-92)</span>,
+        FirstLine.java&#160;<span class="change">(+282&#160;-111)</span>,
+        ScreenLineManager.java&#160;<span class="change">(+7&#160;-5)</span>,
+        ScrollLineCount.java&#160;<span class="change">(+83&#160;-7)</span>,
+        TextArea.java&#160;<span class="change">(+16&#160;-13)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="1"></a>
+    <a href="user_thomasmey.html" class="author">thomasmey</a>
+    <span class="date">2012-09-06 19:34</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">22172</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Document API changes for patches:<br />
+1.) r22109 - Convert WorkRequest to be more like a Task. Patch 3556968.<br />
+2.) r22110 - Finish conversion of WorkRequest users to Task API. Patch 3556973<br />
+3.) r22164 - Clean up conversion to Task API. Patch 3560625.<br />
+
+    </p>
+    <p class="commitdetails"><strong>14</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>doc</strong>:
+        CHANGES.txt&#160;<span class="change">(+14)</span>
+      </li>
+    </ul>
+  </dd>
+
+</dl>
+
+<p>(3 more)</p>
+</div><div id="generatedby">Generated by <a href="http://www.statsvn.org">StatSVN</a> 0.7.0</div>
+</body>
+</html>
