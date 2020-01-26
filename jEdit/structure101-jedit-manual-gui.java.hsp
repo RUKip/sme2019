@@ -4120,6 +4120,870 @@
           </container-fqn>
         </params>
       </action>
+      <action type="unwrap" active="true" last-applied="true" description="Unwrap jEdit.org.gjt.sp.jedit.gui.gui">
+        <composite-set>
+          <action type="move" active="true" last-applied="true" description="Move jEdit.org.gjt.sp.jedit.gui.gui._Buttons to jEdit.org.gjt.sp.jedit.gui">
+            <params>
+              <source-fqn fqn="jEdit.org.gjt.sp.jedit.gui.gui._Buttons" type="folder">
+                <node name="jEdit" type="jar" />
+                <node name="org" type="package" />
+                <node name="gjt" type="package" />
+                <node name="sp" type="package" />
+                <node name="jedit" type="package" />
+                <node name="gui" type="package" />
+                <node name="gui" type="folder" />
+                <node name="_Buttons" type="folder" />
+              </source-fqn>
+              <to-fqn fqn="jEdit.org.gjt.sp.jedit.gui" type="package">
+                <node name="jEdit" type="jar" />
+                <node name="org" type="package" />
+                <node name="gjt" type="package" />
+                <node name="sp" type="package" />
+                <node name="jedit" type="package" />
+                <node name="gui" type="package" />
+              </to-fqn>
+            </params>
+          </action>
+          <action type="move" active="true" last-applied="true" description="Move jEdit.org.gjt.sp.jedit.gui.gui.FontSelector to jEdit.org.gjt.sp.jedit.gui">
+            <params>
+              <source-fqn fqn="jEdit.org.gjt.sp.jedit.gui.gui.FontSelector" type="class" path="jEdit.org.gjt.sp.jedit.gui.FontSelector">
+                <node name="jEdit" type="jar" />
+                <node name="org" type="package" />
+                <node name="gjt" type="package" />
+                <node name="sp" type="package" />
+                <node name="jedit" type="package" />
+                <node name="gui" type="package" />
+                <node name="gui" type="folder" />
+                <node name="FontSelector" type="class" />
+              </source-fqn>
+              <to-fqn fqn="jEdit.org.gjt.sp.jedit.gui" type="package">
+                <node name="jEdit" type="jar" />
+                <node name="org" type="package" />
+                <node name="gjt" type="package" />
+                <node name="sp" type="package" />
+                <node name="jedit" type="package" />
+                <node name="gui" type="package" />
+              </to-fqn>
+            </params>
+          </action>
+          <action type="move" active="true" last-applied="true" description="Move jEdit.org.gjt.sp.jedit.gui.gui.DefaultInputHandler to jEdit.org.gjt.sp.jedit.gui">
+            <params>
+              <source-fqn fqn="jEdit.org.gjt.sp.jedit.gui.gui.DefaultInputHandler" type="class" path="jEdit.org.gjt.sp.jedit.gui.DefaultInputHandler">
+                <node name="jEdit" type="jar" />
+                <node name="org" type="package" />
+                <node name="gjt" type="package" />
+                <node name="sp" type="package" />
+                <node name="jedit" type="package" />
+                <node name="gui" type="package" />
+                <node name="gui" type="folder" />
+                <node name="DefaultInputHandler" type="class" />
+              </source-fqn>
+              <to-fqn fqn="jEdit.org.gjt.sp.jedit.gui" type="package">
+                <node name="jEdit" type="jar" />
+                <node name="org" type="package" />
+                <node name="gjt" type="package" />
+                <node name="sp" type="package" />
+                <node name="jedit" type="package" />
+                <node name="gui" type="package" />
+              </to-fqn>
+            </params>
+          </action>
+          <action type="move" active="true" last-applied="true" description="Move jEdit.org.gjt.sp.jedit.gui.gui.SelectLineRange to jEdit.org.gjt.sp.jedit.gui">
+            <params>
+              <source-fqn fqn="jEdit.org.gjt.sp.jedit.gui.gui.SelectLineRange" type="class" path="jEdit.org.gjt.sp.jedit.gui.SelectLineRange">
+                <node name="jEdit" type="jar" />
+                <node name="org" type="package" />
+                <node name="gjt" type="package" />
+                <node name="sp" type="package" />
+                <node name="jedit" type="package" />
+                <node name="gui" type="package" />
+                <node name="gui" type="folder" />
+                <node name="SelectLineRange" type="class" />
+              </source-fqn>
+              <to-fqn fqn="jEdit.org.gjt.sp.jedit.gui" type="package">
+                <node name="jEdit" type="jar" />
+                <node name="org" type="package" />
+                <node name="gjt" type="package" />
+                <node name="sp" type="package" />
+                <node name="jedit" type="package" />
+                <node name="gui" type="package" />
+              </to-fqn>
+            </params>
+          </action>
+          <action type="move" active="true" last-applied="true" description="Move jEdit.org.gjt.sp.jedit.gui.gui.StyleEditor to jEdit.org.gjt.sp.jedit.gui">
+            <params>
+              <source-fqn fqn="jEdit.org.gjt.sp.jedit.gui.gui.StyleEditor" type="class" path="jEdit.org.gjt.sp.jedit.gui.StyleEditor">
+                <node name="jEdit" type="jar" />
+                <node name="org" type="package" />
+                <node name="gjt" type="package" />
+                <node name="sp" type="package" />
+                <node name="jedit" type="package" />
+                <node name="gui" type="package" />
+                <node name="gui" type="folder" />
+                <node name="StyleEditor" type="class" />
+              </source-fqn>
+              <to-fqn fqn="jEdit.org.gjt.sp.jedit.gui" type="package">
+                <node name="jEdit" type="jar" />
+                <node name="org" type="package" />
+                <node name="gjt" type="package" />
+                <node name="sp" type="package" />
+                <node name="jedit" type="package" />
+                <node name="gui" type="package" />
+              </to-fqn>
+            </params>
+          </action>
+          <action type="move" active="true" last-applied="true" description="Move jEdit.org.gjt.sp.jedit.gui.gui.SplashScreen to jEdit.org.gjt.sp.jedit.gui">
+            <params>
+              <source-fqn fqn="jEdit.org.gjt.sp.jedit.gui.gui.SplashScreen" type="class" path="jEdit.org.gjt.sp.jedit.gui.SplashScreen">
+                <node name="jEdit" type="jar" />
+                <node name="org" type="package" />
+                <node name="gjt" type="package" />
+                <node name="sp" type="package" />
+                <node name="jedit" type="package" />
+                <node name="gui" type="package" />
+                <node name="gui" type="folder" />
+                <node name="SplashScreen" type="class" />
+              </source-fqn>
+              <to-fqn fqn="jEdit.org.gjt.sp.jedit.gui" type="package">
+                <node name="jEdit" type="jar" />
+                <node name="org" type="package" />
+                <node name="gjt" type="package" />
+                <node name="sp" type="package" />
+                <node name="jedit" type="package" />
+                <node name="gui" type="package" />
+              </to-fqn>
+            </params>
+          </action>
+          <action type="move" active="true" last-applied="true" description="Move jEdit.org.gjt.sp.jedit.gui.gui.InputHandler to jEdit.org.gjt.sp.jedit.gui">
+            <params>
+              <source-fqn fqn="jEdit.org.gjt.sp.jedit.gui.gui.InputHandler" type="class" path="jEdit.org.gjt.sp.jedit.gui.InputHandler">
+                <node name="jEdit" type="jar" />
+                <node name="org" type="package" />
+                <node name="gjt" type="package" />
+                <node name="sp" type="package" />
+                <node name="jedit" type="package" />
+                <node name="gui" type="package" />
+                <node name="gui" type="folder" />
+                <node name="InputHandler" type="class" />
+              </source-fqn>
+              <to-fqn fqn="jEdit.org.gjt.sp.jedit.gui" type="package">
+                <node name="jEdit" type="jar" />
+                <node name="org" type="package" />
+                <node name="gjt" type="package" />
+                <node name="sp" type="package" />
+                <node name="jedit" type="package" />
+                <node name="gui" type="package" />
+              </to-fqn>
+            </params>
+          </action>
+          <action type="move" active="true" last-applied="true" description="Move jEdit.org.gjt.sp.jedit.gui.gui.CompleteWord to jEdit.org.gjt.sp.jedit.gui">
+            <params>
+              <source-fqn fqn="jEdit.org.gjt.sp.jedit.gui.gui.CompleteWord" type="class" path="jEdit.org.gjt.sp.jedit.gui.CompleteWord">
+                <node name="jEdit" type="jar" />
+                <node name="org" type="package" />
+                <node name="gjt" type="package" />
+                <node name="sp" type="package" />
+                <node name="jedit" type="package" />
+                <node name="gui" type="package" />
+                <node name="gui" type="folder" />
+                <node name="CompleteWord" type="class" />
+              </source-fqn>
+              <to-fqn fqn="jEdit.org.gjt.sp.jedit.gui" type="package">
+                <node name="jEdit" type="jar" />
+                <node name="org" type="package" />
+                <node name="gjt" type="package" />
+                <node name="sp" type="package" />
+                <node name="jedit" type="package" />
+                <node name="gui" type="package" />
+              </to-fqn>
+            </params>
+          </action>
+          <action type="move" active="true" last-applied="true" description="Move jEdit.org.gjt.sp.jedit.gui.gui.ActionBar to jEdit.org.gjt.sp.jedit.gui">
+            <params>
+              <source-fqn fqn="jEdit.org.gjt.sp.jedit.gui.gui.ActionBar" type="class" path="jEdit.org.gjt.sp.jedit.gui.ActionBar">
+                <node name="jEdit" type="jar" />
+                <node name="org" type="package" />
+                <node name="gjt" type="package" />
+                <node name="sp" type="package" />
+                <node name="jedit" type="package" />
+                <node name="gui" type="package" />
+                <node name="gui" type="folder" />
+                <node name="ActionBar" type="class" />
+              </source-fqn>
+              <to-fqn fqn="jEdit.org.gjt.sp.jedit.gui" type="package">
+                <node name="jEdit" type="jar" />
+                <node name="org" type="package" />
+                <node name="gjt" type="package" />
+                <node name="sp" type="package" />
+                <node name="jedit" type="package" />
+                <node name="gui" type="package" />
+              </to-fqn>
+            </params>
+          </action>
+          <action type="move" active="true" last-applied="true" description="Move jEdit.org.gjt.sp.jedit.gui.gui._Models to jEdit.org.gjt.sp.jedit.gui">
+            <params>
+              <source-fqn fqn="jEdit.org.gjt.sp.jedit.gui.gui._Models" type="folder">
+                <node name="jEdit" type="jar" />
+                <node name="org" type="package" />
+                <node name="gjt" type="package" />
+                <node name="sp" type="package" />
+                <node name="jedit" type="package" />
+                <node name="gui" type="package" />
+                <node name="gui" type="folder" />
+                <node name="_Models" type="folder" />
+              </source-fqn>
+              <to-fqn fqn="jEdit.org.gjt.sp.jedit.gui" type="package">
+                <node name="jEdit" type="jar" />
+                <node name="org" type="package" />
+                <node name="gjt" type="package" />
+                <node name="sp" type="package" />
+                <node name="jedit" type="package" />
+                <node name="gui" type="package" />
+              </to-fqn>
+            </params>
+          </action>
+          <action type="move" active="true" last-applied="true" description="Move jEdit.org.gjt.sp.jedit.gui.gui.NumericTextField to jEdit.org.gjt.sp.jedit.gui">
+            <params>
+              <source-fqn fqn="jEdit.org.gjt.sp.jedit.gui.gui.NumericTextField" type="class" path="jEdit.org.gjt.sp.jedit.gui.NumericTextField">
+                <node name="jEdit" type="jar" />
+                <node name="org" type="package" />
+                <node name="gjt" type="package" />
+                <node name="sp" type="package" />
+                <node name="jedit" type="package" />
+                <node name="gui" type="package" />
+                <node name="gui" type="folder" />
+                <node name="NumericTextField" type="class" />
+              </source-fqn>
+              <to-fqn fqn="jEdit.org.gjt.sp.jedit.gui" type="package">
+                <node name="jEdit" type="jar" />
+                <node name="org" type="package" />
+                <node name="gjt" type="package" />
+                <node name="sp" type="package" />
+                <node name="jedit" type="package" />
+                <node name="gui" type="package" />
+              </to-fqn>
+            </params>
+          </action>
+          <action type="move" active="true" last-applied="true" description="Move jEdit.org.gjt.sp.jedit.gui.gui.StatusBar to jEdit.org.gjt.sp.jedit.gui">
+            <params>
+              <source-fqn fqn="jEdit.org.gjt.sp.jedit.gui.gui.StatusBar" type="class" path="jEdit.org.gjt.sp.jedit.gui.StatusBar">
+                <node name="jEdit" type="jar" />
+                <node name="org" type="package" />
+                <node name="gjt" type="package" />
+                <node name="sp" type="package" />
+                <node name="jedit" type="package" />
+                <node name="gui" type="package" />
+                <node name="gui" type="folder" />
+                <node name="StatusBar" type="class" />
+              </source-fqn>
+              <to-fqn fqn="jEdit.org.gjt.sp.jedit.gui" type="package">
+                <node name="jEdit" type="jar" />
+                <node name="org" type="package" />
+                <node name="gjt" type="package" />
+                <node name="sp" type="package" />
+                <node name="jedit" type="package" />
+                <node name="gui" type="package" />
+              </to-fqn>
+            </params>
+          </action>
+          <action type="move" active="true" last-applied="true" description="Move jEdit.org.gjt.sp.jedit.gui.gui.ShortcutPrefixActiveEvent to jEdit.org.gjt.sp.jedit.gui">
+            <params>
+              <source-fqn fqn="jEdit.org.gjt.sp.jedit.gui.gui.ShortcutPrefixActiveEvent" type="class" path="jEdit.org.gjt.sp.jedit.gui.ShortcutPrefixActiveEvent">
+                <node name="jEdit" type="jar" />
+                <node name="org" type="package" />
+                <node name="gjt" type="package" />
+                <node name="sp" type="package" />
+                <node name="jedit" type="package" />
+                <node name="gui" type="package" />
+                <node name="gui" type="folder" />
+                <node name="ShortcutPrefixActiveEvent" type="class" />
+              </source-fqn>
+              <to-fqn fqn="jEdit.org.gjt.sp.jedit.gui" type="package">
+                <node name="jEdit" type="jar" />
+                <node name="org" type="package" />
+                <node name="gjt" type="package" />
+                <node name="sp" type="package" />
+                <node name="jedit" type="package" />
+                <node name="gui" type="package" />
+              </to-fqn>
+            </params>
+          </action>
+          <action type="move" active="true" last-applied="true" description="Move jEdit.org.gjt.sp.jedit.gui.gui.AbstractContextOptionPane to jEdit.org.gjt.sp.jedit.gui">
+            <params>
+              <source-fqn fqn="jEdit.org.gjt.sp.jedit.gui.gui.AbstractContextOptionPane" type="class" path="jEdit.org.gjt.sp.jedit.gui.AbstractContextOptionPane">
+                <node name="jEdit" type="jar" />
+                <node name="org" type="package" />
+                <node name="gjt" type="package" />
+                <node name="sp" type="package" />
+                <node name="jedit" type="package" />
+                <node name="gui" type="package" />
+                <node name="gui" type="folder" />
+                <node name="AbstractContextOptionPane" type="class" />
+              </source-fqn>
+              <to-fqn fqn="jEdit.org.gjt.sp.jedit.gui" type="package">
+                <node name="jEdit" type="jar" />
+                <node name="org" type="package" />
+                <node name="gjt" type="package" />
+                <node name="sp" type="package" />
+                <node name="jedit" type="package" />
+                <node name="gui" type="package" />
+              </to-fqn>
+            </params>
+          </action>
+          <action type="move" active="true" last-applied="true" description="Move jEdit.org.gjt.sp.jedit.gui.gui.AbbrevEditor to jEdit.org.gjt.sp.jedit.gui">
+            <params>
+              <source-fqn fqn="jEdit.org.gjt.sp.jedit.gui.gui.AbbrevEditor" type="class" path="jEdit.org.gjt.sp.jedit.gui.AbbrevEditor">
+                <node name="jEdit" type="jar" />
+                <node name="org" type="package" />
+                <node name="gjt" type="package" />
+                <node name="sp" type="package" />
+                <node name="jedit" type="package" />
+                <node name="gui" type="package" />
+                <node name="gui" type="folder" />
+                <node name="AbbrevEditor" type="class" />
+              </source-fqn>
+              <to-fqn fqn="jEdit.org.gjt.sp.jedit.gui" type="package">
+                <node name="jEdit" type="jar" />
+                <node name="org" type="package" />
+                <node name="gjt" type="package" />
+                <node name="sp" type="package" />
+                <node name="jedit" type="package" />
+                <node name="gui" type="package" />
+              </to-fqn>
+            </params>
+          </action>
+          <action type="move" active="true" last-applied="true" description="Move jEdit.org.gjt.sp.jedit.gui.gui.MarkerViewer to jEdit.org.gjt.sp.jedit.gui">
+            <params>
+              <source-fqn fqn="jEdit.org.gjt.sp.jedit.gui.gui.MarkerViewer" type="class" path="jEdit.org.gjt.sp.jedit.gui.MarkerViewer">
+                <node name="jEdit" type="jar" />
+                <node name="org" type="package" />
+                <node name="gjt" type="package" />
+                <node name="sp" type="package" />
+                <node name="jedit" type="package" />
+                <node name="gui" type="package" />
+                <node name="gui" type="folder" />
+                <node name="MarkerViewer" type="class" />
+              </source-fqn>
+              <to-fqn fqn="jEdit.org.gjt.sp.jedit.gui" type="package">
+                <node name="jEdit" type="jar" />
+                <node name="org" type="package" />
+                <node name="gjt" type="package" />
+                <node name="sp" type="package" />
+                <node name="jedit" type="package" />
+                <node name="gui" type="package" />
+              </to-fqn>
+            </params>
+          </action>
+          <action type="move" active="true" last-applied="true" description="Move jEdit.org.gjt.sp.jedit.gui.gui.TaskMonitor to jEdit.org.gjt.sp.jedit.gui">
+            <params>
+              <source-fqn fqn="jEdit.org.gjt.sp.jedit.gui.gui.TaskMonitor" type="class" path="jEdit.org.gjt.sp.jedit.gui.TaskMonitor">
+                <node name="jEdit" type="jar" />
+                <node name="org" type="package" />
+                <node name="gjt" type="package" />
+                <node name="sp" type="package" />
+                <node name="jedit" type="package" />
+                <node name="gui" type="package" />
+                <node name="gui" type="folder" />
+                <node name="TaskMonitor" type="class" />
+              </source-fqn>
+              <to-fqn fqn="jEdit.org.gjt.sp.jedit.gui" type="package">
+                <node name="jEdit" type="jar" />
+                <node name="org" type="package" />
+                <node name="gjt" type="package" />
+                <node name="sp" type="package" />
+                <node name="jedit" type="package" />
+                <node name="gui" type="package" />
+              </to-fqn>
+            </params>
+          </action>
+          <action type="move" active="true" last-applied="true" description="Move jEdit.org.gjt.sp.jedit.gui.gui.RegisterViewer to jEdit.org.gjt.sp.jedit.gui">
+            <params>
+              <source-fqn fqn="jEdit.org.gjt.sp.jedit.gui.gui.RegisterViewer" type="class" path="jEdit.org.gjt.sp.jedit.gui.RegisterViewer">
+                <node name="jEdit" type="jar" />
+                <node name="org" type="package" />
+                <node name="gjt" type="package" />
+                <node name="sp" type="package" />
+                <node name="jedit" type="package" />
+                <node name="gui" type="package" />
+                <node name="gui" type="folder" />
+                <node name="RegisterViewer" type="class" />
+              </source-fqn>
+              <to-fqn fqn="jEdit.org.gjt.sp.jedit.gui" type="package">
+                <node name="jEdit" type="jar" />
+                <node name="org" type="package" />
+                <node name="gjt" type="package" />
+                <node name="sp" type="package" />
+                <node name="jedit" type="package" />
+                <node name="gui" type="package" />
+              </to-fqn>
+            </params>
+          </action>
+          <action type="move" active="true" last-applied="true" description="Move jEdit.org.gjt.sp.jedit.gui.gui.PingPongList to jEdit.org.gjt.sp.jedit.gui">
+            <params>
+              <source-fqn fqn="jEdit.org.gjt.sp.jedit.gui.gui.PingPongList" type="class" path="jEdit.org.gjt.sp.jedit.gui.PingPongList">
+                <node name="jEdit" type="jar" />
+                <node name="org" type="package" />
+                <node name="gjt" type="package" />
+                <node name="sp" type="package" />
+                <node name="jedit" type="package" />
+                <node name="gui" type="package" />
+                <node name="gui" type="folder" />
+                <node name="PingPongList" type="class" />
+              </source-fqn>
+              <to-fqn fqn="jEdit.org.gjt.sp.jedit.gui" type="package">
+                <node name="jEdit" type="jar" />
+                <node name="org" type="package" />
+                <node name="gjt" type="package" />
+                <node name="sp" type="package" />
+                <node name="jedit" type="package" />
+                <node name="gui" type="package" />
+              </to-fqn>
+            </params>
+          </action>
+          <action type="move" active="true" last-applied="true" description="Move jEdit.org.gjt.sp.jedit.gui.gui.BufferSwitcher to jEdit.org.gjt.sp.jedit.gui">
+            <params>
+              <source-fqn fqn="jEdit.org.gjt.sp.jedit.gui.gui.BufferSwitcher" type="class" path="jEdit.org.gjt.sp.jedit.gui.BufferSwitcher">
+                <node name="jEdit" type="jar" />
+                <node name="org" type="package" />
+                <node name="gjt" type="package" />
+                <node name="sp" type="package" />
+                <node name="jedit" type="package" />
+                <node name="gui" type="package" />
+                <node name="gui" type="folder" />
+                <node name="BufferSwitcher" type="class" />
+              </source-fqn>
+              <to-fqn fqn="jEdit.org.gjt.sp.jedit.gui" type="package">
+                <node name="jEdit" type="jar" />
+                <node name="org" type="package" />
+                <node name="gjt" type="package" />
+                <node name="sp" type="package" />
+                <node name="jedit" type="package" />
+                <node name="gui" type="package" />
+              </to-fqn>
+            </params>
+          </action>
+          <action type="move" active="true" last-applied="true" description="Move jEdit.org.gjt.sp.jedit.gui.gui._KeyEvents to jEdit.org.gjt.sp.jedit.gui">
+            <params>
+              <source-fqn fqn="jEdit.org.gjt.sp.jedit.gui.gui._KeyEvents" type="folder">
+                <node name="jEdit" type="jar" />
+                <node name="org" type="package" />
+                <node name="gjt" type="package" />
+                <node name="sp" type="package" />
+                <node name="jedit" type="package" />
+                <node name="gui" type="package" />
+                <node name="gui" type="folder" />
+                <node name="_KeyEvents" type="folder" />
+              </source-fqn>
+              <to-fqn fqn="jEdit.org.gjt.sp.jedit.gui" type="package">
+                <node name="jEdit" type="jar" />
+                <node name="org" type="package" />
+                <node name="gjt" type="package" />
+                <node name="sp" type="package" />
+                <node name="jedit" type="package" />
+                <node name="gui" type="package" />
+              </to-fqn>
+            </params>
+          </action>
+          <action type="move" active="true" last-applied="true" description="Move jEdit.org.gjt.sp.jedit.gui.gui.ToolBarManager to jEdit.org.gjt.sp.jedit.gui">
+            <params>
+              <source-fqn fqn="jEdit.org.gjt.sp.jedit.gui.gui.ToolBarManager" type="class" path="jEdit.org.gjt.sp.jedit.gui.ToolBarManager">
+                <node name="jEdit" type="jar" />
+                <node name="org" type="package" />
+                <node name="gjt" type="package" />
+                <node name="sp" type="package" />
+                <node name="jedit" type="package" />
+                <node name="gui" type="package" />
+                <node name="gui" type="folder" />
+                <node name="ToolBarManager" type="class" />
+              </source-fqn>
+              <to-fqn fqn="jEdit.org.gjt.sp.jedit.gui" type="package">
+                <node name="jEdit" type="jar" />
+                <node name="org" type="package" />
+                <node name="gjt" type="package" />
+                <node name="sp" type="package" />
+                <node name="jedit" type="package" />
+                <node name="gui" type="package" />
+              </to-fqn>
+            </params>
+          </action>
+          <action type="move" active="true" last-applied="true" description="Move jEdit.org.gjt.sp.jedit.gui.gui._History to jEdit.org.gjt.sp.jedit.gui">
+            <params>
+              <source-fqn fqn="jEdit.org.gjt.sp.jedit.gui.gui._History" type="folder">
+                <node name="jEdit" type="jar" />
+                <node name="org" type="package" />
+                <node name="gjt" type="package" />
+                <node name="sp" type="package" />
+                <node name="jedit" type="package" />
+                <node name="gui" type="package" />
+                <node name="gui" type="folder" />
+                <node name="_History" type="folder" />
+              </source-fqn>
+              <to-fqn fqn="jEdit.org.gjt.sp.jedit.gui" type="package">
+                <node name="jEdit" type="jar" />
+                <node name="org" type="package" />
+                <node name="gjt" type="package" />
+                <node name="sp" type="package" />
+                <node name="jedit" type="package" />
+                <node name="gui" type="package" />
+              </to-fqn>
+            </params>
+          </action>
+          <action type="move" active="true" last-applied="true" description="Move jEdit.org.gjt.sp.jedit.gui.gui.VariableGridLayout to jEdit.org.gjt.sp.jedit.gui">
+            <params>
+              <source-fqn fqn="jEdit.org.gjt.sp.jedit.gui.gui.VariableGridLayout" type="class" path="jEdit.org.gjt.sp.jedit.gui.VariableGridLayout">
+                <node name="jEdit" type="jar" />
+                <node name="org" type="package" />
+                <node name="gjt" type="package" />
+                <node name="sp" type="package" />
+                <node name="jedit" type="package" />
+                <node name="gui" type="package" />
+                <node name="gui" type="folder" />
+                <node name="VariableGridLayout" type="class" />
+              </source-fqn>
+              <to-fqn fqn="jEdit.org.gjt.sp.jedit.gui" type="package">
+                <node name="jEdit" type="jar" />
+                <node name="org" type="package" />
+                <node name="gjt" type="package" />
+                <node name="sp" type="package" />
+                <node name="jedit" type="package" />
+                <node name="gui" type="package" />
+              </to-fqn>
+            </params>
+          </action>
+          <action type="move" active="true" last-applied="true" description="Move jEdit.org.gjt.sp.jedit.gui.gui.JCheckBoxList to jEdit.org.gjt.sp.jedit.gui">
+            <params>
+              <source-fqn fqn="jEdit.org.gjt.sp.jedit.gui.gui.JCheckBoxList" type="class" path="jEdit.org.gjt.sp.jedit.gui.JCheckBoxList">
+                <node name="jEdit" type="jar" />
+                <node name="org" type="package" />
+                <node name="gjt" type="package" />
+                <node name="sp" type="package" />
+                <node name="jedit" type="package" />
+                <node name="gui" type="package" />
+                <node name="gui" type="folder" />
+                <node name="JCheckBoxList" type="class" />
+              </source-fqn>
+              <to-fqn fqn="jEdit.org.gjt.sp.jedit.gui" type="package">
+                <node name="jEdit" type="jar" />
+                <node name="org" type="package" />
+                <node name="gjt" type="package" />
+                <node name="sp" type="package" />
+                <node name="jedit" type="package" />
+                <node name="gui" type="package" />
+              </to-fqn>
+            </params>
+          </action>
+          <action type="move" active="true" last-applied="true" description="Move jEdit.org.gjt.sp.jedit.gui.gui.PanelWindowContainer to jEdit.org.gjt.sp.jedit.gui">
+            <params>
+              <source-fqn fqn="jEdit.org.gjt.sp.jedit.gui.gui.PanelWindowContainer" type="class" path="jEdit.org.gjt.sp.jedit.gui.PanelWindowContainer">
+                <node name="jEdit" type="jar" />
+                <node name="org" type="package" />
+                <node name="gjt" type="package" />
+                <node name="sp" type="package" />
+                <node name="jedit" type="package" />
+                <node name="gui" type="package" />
+                <node name="gui" type="folder" />
+                <node name="PanelWindowContainer" type="class" />
+              </source-fqn>
+              <to-fqn fqn="jEdit.org.gjt.sp.jedit.gui" type="package">
+                <node name="jEdit" type="jar" />
+                <node name="org" type="package" />
+                <node name="gjt" type="package" />
+                <node name="sp" type="package" />
+                <node name="jedit" type="package" />
+                <node name="gui" type="package" />
+              </to-fqn>
+            </params>
+          </action>
+          <action type="move" active="true" last-applied="true" description="Move jEdit.org.gjt.sp.jedit.gui.gui.FloatingWindowContainer to jEdit.org.gjt.sp.jedit.gui">
+            <params>
+              <source-fqn fqn="jEdit.org.gjt.sp.jedit.gui.gui.FloatingWindowContainer" type="class" path="jEdit.org.gjt.sp.jedit.gui.FloatingWindowContainer">
+                <node name="jEdit" type="jar" />
+                <node name="org" type="package" />
+                <node name="gjt" type="package" />
+                <node name="sp" type="package" />
+                <node name="jedit" type="package" />
+                <node name="gui" type="package" />
+                <node name="gui" type="folder" />
+                <node name="FloatingWindowContainer" type="class" />
+              </source-fqn>
+              <to-fqn fqn="jEdit.org.gjt.sp.jedit.gui" type="package">
+                <node name="jEdit" type="jar" />
+                <node name="org" type="package" />
+                <node name="gjt" type="package" />
+                <node name="sp" type="package" />
+                <node name="jedit" type="package" />
+                <node name="gui" type="package" />
+              </to-fqn>
+            </params>
+          </action>
+          <action type="move" active="true" last-applied="true" description="Move jEdit.org.gjt.sp.jedit.gui.gui.DefaultFocusComponent to jEdit.org.gjt.sp.jedit.gui">
+            <params>
+              <source-fqn fqn="jEdit.org.gjt.sp.jedit.gui.gui.DefaultFocusComponent" type="class" path="jEdit.org.gjt.sp.jedit.gui.DefaultFocusComponent">
+                <node name="jEdit" type="jar" />
+                <node name="org" type="package" />
+                <node name="gjt" type="package" />
+                <node name="sp" type="package" />
+                <node name="jedit" type="package" />
+                <node name="gui" type="package" />
+                <node name="gui" type="folder" />
+                <node name="DefaultFocusComponent" type="class" />
+              </source-fqn>
+              <to-fqn fqn="jEdit.org.gjt.sp.jedit.gui" type="package">
+                <node name="jEdit" type="jar" />
+                <node name="org" type="package" />
+                <node name="gjt" type="package" />
+                <node name="sp" type="package" />
+                <node name="jedit" type="package" />
+                <node name="gui" type="package" />
+              </to-fqn>
+            </params>
+          </action>
+          <action type="move" active="true" last-applied="true" description="Move jEdit.org.gjt.sp.jedit.gui.gui.DynamicContextMenuService to jEdit.org.gjt.sp.jedit.gui">
+            <params>
+              <source-fqn fqn="jEdit.org.gjt.sp.jedit.gui.gui.DynamicContextMenuService" type="class" path="jEdit.org.gjt.sp.jedit.gui.DynamicContextMenuService">
+                <node name="jEdit" type="jar" />
+                <node name="org" type="package" />
+                <node name="gjt" type="package" />
+                <node name="sp" type="package" />
+                <node name="jedit" type="package" />
+                <node name="gui" type="package" />
+                <node name="gui" type="folder" />
+                <node name="DynamicContextMenuService" type="class" />
+              </source-fqn>
+              <to-fqn fqn="jEdit.org.gjt.sp.jedit.gui" type="package">
+                <node name="jEdit" type="jar" />
+                <node name="org" type="package" />
+                <node name="gjt" type="package" />
+                <node name="sp" type="package" />
+                <node name="jedit" type="package" />
+                <node name="gui" type="package" />
+              </to-fqn>
+            </params>
+          </action>
+          <action type="move" active="true" last-applied="true" description="Move jEdit.org.gjt.sp.jedit.gui.gui.AnimatedIcon to jEdit.org.gjt.sp.jedit.gui">
+            <params>
+              <source-fqn fqn="jEdit.org.gjt.sp.jedit.gui.gui.AnimatedIcon" type="class" path="jEdit.org.gjt.sp.jedit.gui.AnimatedIcon">
+                <node name="jEdit" type="jar" />
+                <node name="org" type="package" />
+                <node name="gjt" type="package" />
+                <node name="sp" type="package" />
+                <node name="jedit" type="package" />
+                <node name="gui" type="package" />
+                <node name="gui" type="folder" />
+                <node name="AnimatedIcon" type="class" />
+              </source-fqn>
+              <to-fqn fqn="jEdit.org.gjt.sp.jedit.gui" type="package">
+                <node name="jEdit" type="jar" />
+                <node name="org" type="package" />
+                <node name="gjt" type="package" />
+                <node name="sp" type="package" />
+                <node name="jedit" type="package" />
+                <node name="gui" type="package" />
+              </to-fqn>
+            </params>
+          </action>
+          <action type="move" active="true" last-applied="true" description="Move jEdit.org.gjt.sp.jedit.gui.gui.LogViewer to jEdit.org.gjt.sp.jedit.gui">
+            <params>
+              <source-fqn fqn="jEdit.org.gjt.sp.jedit.gui.gui.LogViewer" type="class" path="jEdit.org.gjt.sp.jedit.gui.LogViewer">
+                <node name="jEdit" type="jar" />
+                <node name="org" type="package" />
+                <node name="gjt" type="package" />
+                <node name="sp" type="package" />
+                <node name="jedit" type="package" />
+                <node name="gui" type="package" />
+                <node name="gui" type="folder" />
+                <node name="LogViewer" type="class" />
+              </source-fqn>
+              <to-fqn fqn="jEdit.org.gjt.sp.jedit.gui" type="package">
+                <node name="jEdit" type="jar" />
+                <node name="org" type="package" />
+                <node name="gjt" type="package" />
+                <node name="sp" type="package" />
+                <node name="jedit" type="package" />
+                <node name="gui" type="package" />
+              </to-fqn>
+            </params>
+          </action>
+          <action type="move" active="true" last-applied="true" description="Move jEdit.org.gjt.sp.jedit.gui.gui._Dialog to jEdit.org.gjt.sp.jedit.gui">
+            <params>
+              <source-fqn fqn="jEdit.org.gjt.sp.jedit.gui.gui._Dialog" type="folder">
+                <node name="jEdit" type="jar" />
+                <node name="org" type="package" />
+                <node name="gjt" type="package" />
+                <node name="sp" type="package" />
+                <node name="jedit" type="package" />
+                <node name="gui" type="package" />
+                <node name="gui" type="folder" />
+                <node name="_Dialog" type="folder" />
+              </source-fqn>
+              <to-fqn fqn="jEdit.org.gjt.sp.jedit.gui" type="package">
+                <node name="jEdit" type="jar" />
+                <node name="org" type="package" />
+                <node name="gjt" type="package" />
+                <node name="sp" type="package" />
+                <node name="jedit" type="package" />
+                <node name="gui" type="package" />
+              </to-fqn>
+            </params>
+          </action>
+          <action type="move" active="true" last-applied="true" description="Move jEdit.org.gjt.sp.jedit.gui.gui.BufferOptions to jEdit.org.gjt.sp.jedit.gui">
+            <params>
+              <source-fqn fqn="jEdit.org.gjt.sp.jedit.gui.gui.BufferOptions" type="class" path="jEdit.org.gjt.sp.jedit.gui.BufferOptions">
+                <node name="jEdit" type="jar" />
+                <node name="org" type="package" />
+                <node name="gjt" type="package" />
+                <node name="sp" type="package" />
+                <node name="jedit" type="package" />
+                <node name="gui" type="package" />
+                <node name="gui" type="folder" />
+                <node name="BufferOptions" type="class" />
+              </source-fqn>
+              <to-fqn fqn="jEdit.org.gjt.sp.jedit.gui" type="package">
+                <node name="jEdit" type="jar" />
+                <node name="org" type="package" />
+                <node name="gjt" type="package" />
+                <node name="sp" type="package" />
+                <node name="jedit" type="package" />
+                <node name="gui" type="package" />
+              </to-fqn>
+            </params>
+          </action>
+          <action type="move" active="true" last-applied="true" description="Move jEdit.org.gjt.sp.jedit.gui.gui.DropShadowBorder to jEdit.org.gjt.sp.jedit.gui">
+            <params>
+              <source-fqn fqn="jEdit.org.gjt.sp.jedit.gui.gui.DropShadowBorder" type="class" path="jEdit.org.gjt.sp.jedit.gui.DropShadowBorder">
+                <node name="jEdit" type="jar" />
+                <node name="org" type="package" />
+                <node name="gjt" type="package" />
+                <node name="sp" type="package" />
+                <node name="jedit" type="package" />
+                <node name="gui" type="package" />
+                <node name="gui" type="folder" />
+                <node name="DropShadowBorder" type="class" />
+              </source-fqn>
+              <to-fqn fqn="jEdit.org.gjt.sp.jedit.gui" type="package">
+                <node name="jEdit" type="jar" />
+                <node name="org" type="package" />
+                <node name="gjt" type="package" />
+                <node name="sp" type="package" />
+                <node name="jedit" type="package" />
+                <node name="gui" type="package" />
+              </to-fqn>
+            </params>
+          </action>
+          <action type="move" active="true" last-applied="true" description="Move jEdit.org.gjt.sp.jedit.gui.gui._Dockable to jEdit.org.gjt.sp.jedit.gui">
+            <params>
+              <source-fqn fqn="jEdit.org.gjt.sp.jedit.gui.gui._Dockable" type="folder">
+                <node name="jEdit" type="jar" />
+                <node name="org" type="package" />
+                <node name="gjt" type="package" />
+                <node name="sp" type="package" />
+                <node name="jedit" type="package" />
+                <node name="gui" type="package" />
+                <node name="gui" type="folder" />
+                <node name="_Dockable" type="folder" />
+              </source-fqn>
+              <to-fqn fqn="jEdit.org.gjt.sp.jedit.gui" type="package">
+                <node name="jEdit" type="jar" />
+                <node name="org" type="package" />
+                <node name="gjt" type="package" />
+                <node name="sp" type="package" />
+                <node name="jedit" type="package" />
+                <node name="gui" type="package" />
+              </to-fqn>
+            </params>
+          </action>
+          <action type="move" active="true" last-applied="true" description="Move jEdit.org.gjt.sp.jedit.gui.gui._ExtendedGrid to jEdit.org.gjt.sp.jedit.gui">
+            <params>
+              <source-fqn fqn="jEdit.org.gjt.sp.jedit.gui.gui._ExtendedGrid" type="folder">
+                <node name="jEdit" type="jar" />
+                <node name="org" type="package" />
+                <node name="gjt" type="package" />
+                <node name="sp" type="package" />
+                <node name="jedit" type="package" />
+                <node name="gui" type="package" />
+                <node name="gui" type="folder" />
+                <node name="_ExtendedGrid" type="folder" />
+              </source-fqn>
+              <to-fqn fqn="jEdit.org.gjt.sp.jedit.gui" type="package">
+                <node name="jEdit" type="jar" />
+                <node name="org" type="package" />
+                <node name="gjt" type="package" />
+                <node name="sp" type="package" />
+                <node name="jedit" type="package" />
+                <node name="gui" type="package" />
+              </to-fqn>
+            </params>
+          </action>
+          <action type="move" active="true" last-applied="true" description="Move jEdit.org.gjt.sp.jedit.gui.gui.CompletionPopup to jEdit.org.gjt.sp.jedit.gui">
+            <params>
+              <source-fqn fqn="jEdit.org.gjt.sp.jedit.gui.gui.CompletionPopup" type="class" path="jEdit.org.gjt.sp.jedit.gui.CompletionPopup">
+                <node name="jEdit" type="jar" />
+                <node name="org" type="package" />
+                <node name="gjt" type="package" />
+                <node name="sp" type="package" />
+                <node name="jedit" type="package" />
+                <node name="gui" type="package" />
+                <node name="gui" type="folder" />
+                <node name="CompletionPopup" type="class" />
+              </source-fqn>
+              <to-fqn fqn="jEdit.org.gjt.sp.jedit.gui" type="package">
+                <node name="jEdit" type="jar" />
+                <node name="org" type="package" />
+                <node name="gjt" type="package" />
+                <node name="sp" type="package" />
+                <node name="jedit" type="package" />
+                <node name="gui" type="package" />
+              </to-fqn>
+            </params>
+          </action>
+          <action type="move" active="true" last-applied="true" description="Move jEdit.org.gjt.sp.jedit.gui.gui.TipOfTheDay to jEdit.org.gjt.sp.jedit.gui">
+            <params>
+              <source-fqn fqn="jEdit.org.gjt.sp.jedit.gui.gui.TipOfTheDay" type="class" path="jEdit.org.gjt.sp.jedit.gui.TipOfTheDay">
+                <node name="jEdit" type="jar" />
+                <node name="org" type="package" />
+                <node name="gjt" type="package" />
+                <node name="sp" type="package" />
+                <node name="jedit" type="package" />
+                <node name="gui" type="package" />
+                <node name="gui" type="folder" />
+                <node name="TipOfTheDay" type="class" />
+              </source-fqn>
+              <to-fqn fqn="jEdit.org.gjt.sp.jedit.gui" type="package">
+                <node name="jEdit" type="jar" />
+                <node name="org" type="package" />
+                <node name="gjt" type="package" />
+                <node name="sp" type="package" />
+                <node name="jedit" type="package" />
+                <node name="gui" type="package" />
+              </to-fqn>
+            </params>
+          </action>
+          <action type="remove-node" active="true" last-applied="true" description="Remove jEdit.org.gjt.sp.jedit.gui.gui">
+            <params>
+              <source-fqn fqn="jEdit.org.gjt.sp.jedit.gui.gui" type="folder">
+                <node name="jEdit" type="jar" />
+                <node name="org" type="package" />
+                <node name="gjt" type="package" />
+                <node name="sp" type="package" />
+                <node name="jedit" type="package" />
+                <node name="gui" type="package" />
+                <node name="gui" type="folder" />
+              </source-fqn>
+            </params>
+          </action>
+        </composite-set>
+        <params>
+          <container-fqn fqn="jEdit.org.gjt.sp.jedit.gui.gui" type="folder">
+            <node name="jEdit" type="jar" />
+            <node name="org" type="package" />
+            <node name="gjt" type="package" />
+            <node name="sp" type="package" />
+            <node name="jedit" type="package" />
+            <node name="gui" type="package" />
+            <node name="gui" type="folder" />
+          </container-fqn>
+        </params>
+      </action>
       <hide>
         <item-fqn fqn="jEdit.org.jedit" type="package">
           <node name="jEdit" type="jar" />
@@ -4134,16 +4998,6 @@
           <node name="gjt" type="package" />
           <node name="sp" type="package" />
           <node name="util" type="package" />
-        </item-fqn>
-      </hide>
-      <hide>
-        <item-fqn fqn="jEdit.org.gjt.sp.jedit.gui" type="package">
-          <node name="jEdit" type="jar" />
-          <node name="org" type="package" />
-          <node name="gjt" type="package" />
-          <node name="sp" type="package" />
-          <node name="jedit" type="package" />
-          <node name="gui" type="package" />
         </item-fqn>
       </hide>
       <hide>
@@ -4537,6 +5391,16 @@
         </item-fqn>
       </hide>
       <hide>
+        <item-fqn fqn="jEdit.org.gjt.sp.jedit.textarea" type="package">
+          <node name="jEdit" type="jar" />
+          <node name="org" type="package" />
+          <node name="gjt" type="package" />
+          <node name="sp" type="package" />
+          <node name="jedit" type="package" />
+          <node name="textarea" type="package" />
+        </item-fqn>
+      </hide>
+      <hide>
         <item-fqn fqn="jEdit.org.gjt.sp.jedit.EditPlugin" type="class" path="jEdit.org.gjt.sp.jedit.EditPlugin">
           <node name="jEdit" type="jar" />
           <node name="org" type="package" />
@@ -4864,6 +5728,28 @@
           <node name="sp" type="package" />
           <node name="jedit" type="package" />
           <node name="Mode" type="class" />
+        </item-fqn>
+      </hide>
+      <hide>
+        <item-fqn fqn="jEdit.org.gjt.sp.jedit.gui.statusbar" type="package">
+          <node name="jEdit" type="jar" />
+          <node name="org" type="package" />
+          <node name="gjt" type="package" />
+          <node name="sp" type="package" />
+          <node name="jedit" type="package" />
+          <node name="gui" type="package" />
+          <node name="statusbar" type="package" />
+        </item-fqn>
+      </hide>
+      <hide>
+        <item-fqn fqn="jEdit.org.gjt.sp.jedit.gui.tray" type="package">
+          <node name="jEdit" type="jar" />
+          <node name="org" type="package" />
+          <node name="gjt" type="package" />
+          <node name="sp" type="package" />
+          <node name="jedit" type="package" />
+          <node name="gui" type="package" />
+          <node name="tray" type="package" />
         </item-fqn>
       </hide>
     </set>
