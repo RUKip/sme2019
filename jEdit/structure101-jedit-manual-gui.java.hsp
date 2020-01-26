@@ -4137,6 +4137,16 @@
         </item-fqn>
       </hide>
       <hide>
+        <item-fqn fqn="jEdit.org.gjt.sp.jedit.gui" type="package">
+          <node name="jEdit" type="jar" />
+          <node name="org" type="package" />
+          <node name="gjt" type="package" />
+          <node name="sp" type="package" />
+          <node name="jedit" type="package" />
+          <node name="gui" type="package" />
+        </item-fqn>
+      </hide>
+      <hide>
         <item-fqn fqn="jEdit.org.gjt.sp.jedit.visitors" type="package">
           <node name="jEdit" type="jar" />
           <node name="org" type="package" />
@@ -4524,16 +4534,6 @@
           <node name="sp" type="package" />
           <node name="jedit" type="package" />
           <node name="ServiceListHandler" type="class" />
-        </item-fqn>
-      </hide>
-      <hide>
-        <item-fqn fqn="jEdit.org.gjt.sp.jedit.textarea" type="package">
-          <node name="jEdit" type="jar" />
-          <node name="org" type="package" />
-          <node name="gjt" type="package" />
-          <node name="sp" type="package" />
-          <node name="jedit" type="package" />
-          <node name="textarea" type="package" />
         </item-fqn>
       </hide>
       <hide>
