@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<local-project language="java" version="5.0.15064" xml-version="3" flavor="j2se">
+  <property name="show-as-module" value="false" />
+  <property name="publish-architecture-artifacts" value="true" />
+  <property name="force-classpath" value="false" />
+  <property name="root-file" value="structure101-settings.java.hsw" />
+  <property name="project-type" value="s101_workspace" />
+  <property name="hide-externals" value="true" />
+  <property name="parse-archive-in-archive" value="false" />
+  <property name="include-injected-dependency" value="false" />
+  <property name="relative-to" value="const(THIS_FILE)" />
+  <property name="action-set-mod" value="1" />
+  <property name="detail-mode" value="true" />
+  <property name="hide-deprecated" value="false" />
+  <property name="resolve-name-clashes" value="true" />
+  <property name="project-excluded" />
+  <property name="show-needs-to-compile" value="false" />
+  <classpath>
+    <classpathentry kind="lib" path="build/classes/core" module="jEdit" />
+  </classpath>
+  <pom-root-files />
+  <modules>
+    <module name="jEdit" kind="ide-project" />
+  </modules>
+  <modules-in-scope />
+  <restructuring>
+    <set version="3" name="Action list 1" hiview="Codemap" active="true" todo="false" list="0" />
+  </restructuring>
+  <grid-set sep="." version="5.0.15064" />
+  <physical-grid-set sep="." version="5.0.15064">
+    <grid name="Workspace Spec" enforce="true" locked="true" strict="false">
+      <row>
+        <cell name="jEdit" pattern="jEdit.*" vexpanded="false" illegal="false" visibility="public" drill="true" />
+      </row>
+      <description>Top-level breakout</description>
+    </grid>
+  </physical-grid-set>
+</local-project>

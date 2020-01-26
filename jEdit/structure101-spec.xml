@@ -1,0 +1,8 @@
+<physical-grid-set sep="." version="5.0.15064">
+  <grid name="Workspace Spec" enforce="true" locked="true" strict="false">
+    <row>
+      <cell name="jEdit" pattern="jEdit.*" vexpanded="false" illegal="false" visibility="public" drill="true" />
+    </row>
+    <description>Top-level breakout</description>
+  </grid>
+</physical-grid-set>
