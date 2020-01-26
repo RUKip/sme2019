@@ -9,7 +9,7 @@
   <property name="relative-to" value="const(THIS_FILE)" />
   <property name="action-set-mod" value="1" />
   <property name="detail-mode" value="true" />
-  <property name="restructuring-system-file" value="..\..\..\jEdit\structure101-actions.xml" />
+  <property name="restructuring-system-file" value="../../../E:\Courses\MSc CS\2nd year\1b\Software Maintenance and Evolution\assignment-second attempt\jEdit\structure101-actions.xml" />
   <property name="hide-deprecated" value="false" />
   <property name="resolve-name-clashes" value="true" />
   <property name="project-excluded" />
