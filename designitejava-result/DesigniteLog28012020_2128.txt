@@ -1,0 +1,16 @@
+Extracting code smells...
+Exception while parsing literal number (during Magic Number detection). For input string: "8000000000000000"
+Exception while parsing literal number (during Magic Number detection). For input string: "8000000000000000"
+Exception while parsing literal number (during Magic Number detection). For input string: "ffffffffffffdbff"
+Exception while parsing literal number (during Magic Number detection). For input string: "ffffff7fffffdbff"
+Exception while parsing literal number (during Magic Number detection). For input string: "fffffffbffffdbff"
+Exception while parsing literal number (during Magic Number detection). For input string: "ffffffffffffdbff"
+Exception while parsing literal number (during Magic Number detection). For input string: "fffffbffffffffff"
+Exception while parsing literal number (during Magic Number detection). For input string: "ffff7bffffffffff"
+Exception while parsing literal number (during Magic Number detection). For input string: "fffffbffffffffff"
+Exception while parsing literal number (during Magic Number detection). For input string: "fffffbffffffffff"
+Exception while parsing literal number (during Magic Number detection). For input string: "ffff7bffffffffff"
+Exception while parsing literal number (during Magic Number detection). For input string: "fffffbffffffffff"
+Exception while parsing literal number (during Magic Number detection). For input string: "ffffffffefffffff"
+Exception while parsing literal number (during Magic Number detection). For input string: "ffffffffefffffff"
+Done.
