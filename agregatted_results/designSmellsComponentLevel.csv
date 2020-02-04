@@ -1,0 +1,14 @@
+jedit,browser,bsh,buffer,ui,io,pluginmgr,search
+Deficient Encapsulation,Unutilized Abstraction,Unutilized Abstraction,Unutilized Abstraction,Unutilized Abstraction,Unutilized Abstraction,Cyclic-Dependent Modularization,Unutilized Abstraction
+Cyclic-Dependent Modularization,Broken Hierarchy,Unexploited Encapsulation,Cyclic-Dependent Modularization,Broken Hierarchy,Deficient Encapsulation,Insufficient Modularization,Cyclic-Dependent Modularization
+Wide Hierarchy,Cyclic-Dependent Modularization,Missing Hierarchy,Deficient Encapsulation,Cyclic-Dependent Modularization,Broken Hierarchy,Unutilized Abstraction,Deficient Encapsulation
+Unutilized Abstraction,Missing Hierarchy,Deficient Encapsulation,Insufficient Modularization,Imperative Abstraction,Cyclic-Dependent Modularization,Broken Hierarchy,Unexploited Encapsulation
+Insufficient Modularization,Insufficient Modularization,Broken Hierarchy,Hub-like Modularization,Deficient Encapsulation,Insufficient Modularization,Deficient Encapsulation,Missing Hierarchy
+Hub-like Modularization,Deficient Encapsulation,Imperative Abstraction,Unexploited Encapsulation,Insufficient Modularization,,Imperative Abstraction,Insufficient Modularization
+Broken Hierarchy,Hub-like Modularization,Cyclic-Dependent Modularization,Missing Hierarchy,Unexploited Encapsulation,,Broken Modularization,Broken Hierarchy
+Broken Modularization,,Insufficient Modularization,Broken Hierarchy,Missing Hierarchy,,,
+Missing Hierarchy,,Wide Hierarchy,,Wide Hierarchy,,,
+Unexploited Encapsulation,,Unnecessary Abstraction,,Cyclic Hierarchy,,,
+Missing Hierarchy,,,,Imperative Abstraction,,,
+Unnecessary Abstraction,,,,,,,
+121 Total,67 Total,Total 196,Total 47,Total 272,Total 49,Total 63,Total 69
