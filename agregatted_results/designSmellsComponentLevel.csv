@@ -9,6 +9,6 @@ Broken Hierarchy,Hub-like Modularization,Cyclic-Dependent Modularization,Missing
 Broken Modularization,,Insufficient Modularization,Broken Hierarchy,Missing Hierarchy,,,
 Missing Hierarchy,,Wide Hierarchy,,Wide Hierarchy,,,
 Unexploited Encapsulation,,Unnecessary Abstraction,,Cyclic Hierarchy,,,
-Missing Hierarchy,,,,Imperative Abstraction,,,
-Unnecessary Abstraction,,,,,,,
+Unnecessary Abstraction,,,,Imperative Abstraction,,,
+,,,,,,,
 121 Total,67 Total,Total 196,Total 47,Total 272,Total 49,Total 63,Total 69
