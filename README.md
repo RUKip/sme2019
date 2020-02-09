@@ -24,3 +24,5 @@ SonarQube was used to further analyze the software metrics. For this, we used a 
 
 Designite tool for Java (DesigniteJava) is another tool used to detect code and design smells. There is a JAR file attached to git which can be run as follows:
 `java -jar DesigniteJava.jar -i <input-source-folder-path> -o <output-folder-path>`
+
+The output of DesigniteJava was stored in `designitejava-result` folder. These results were aggregated and stored in `aggregated_results` folder. Inside this folder, there are 2 `.csv` files containing the aggregated results and a Python script to load the designite results and aggregate them automatically. The Pyhon file was designed to show only the results of the 7 components (4 components are grouped into 1, so in total there are actually 4 main components), but it can be easily extended for other components as well.

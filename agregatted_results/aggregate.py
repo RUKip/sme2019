@@ -1,3 +1,9 @@
+"""
+Read the design smells .csv file and aggregate the results
+into the main components. The results for the main components
+are shown in the standard output.
+"""
+
 # Load the Pandas libraries with alias 'pd' 
 import pandas as pd 
 
